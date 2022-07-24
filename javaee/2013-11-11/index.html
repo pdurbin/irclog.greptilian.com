@@ -1,0 +1,2312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #javaee" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/javaee/2013-11-11" />
+    <title>IRC log for #javaee, 2013-11-11</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #javaee, 2013-11-11</h1>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+        <p><a href="/javaee/2013-11-10" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2013-11-12" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2013-11-11">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2013-11-11;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2013-11-11;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_40846"><a href="/javaee/2013-11-11#i_40846">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40846"  /></td>
+<td class="nick"></td>
+<td class="msg ">sfisque joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_zoot">
+
+<td class="time" id="i_40847"><a href="/javaee/2013-11-11#i_40847">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40847"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">now i found java:comp/env/hello</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_zoot">
+
+<td class="time" id="i_40848"><a href="/javaee/2013-11-11#i_40848">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40848"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">but do i really need to type this? @Resource(lookup=&quot;java:comp/env/hello&quot;) String hello;</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_zoot">
+
+<td class="time" id="i_40849"><a href="/javaee/2013-11-11#i_40849">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40849"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">hmm maybe</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_zoot">
+
+<td class="time" id="i_40850"><a href="/javaee/2013-11-11#i_40850">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40850"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">it should look up java:comp/env/bank.Cashier/hello, if injected in java:comp/env/bank.Cashier</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_40851"><a href="/javaee/2013-11-11#i_40851">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40851"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">you're missing the point of jndi lookup</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_40852"><a href="/javaee/2013-11-11#i_40852">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40852"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">jndi allows the deployer to be completely agnostic of how you code your product</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_zoot">
+
+<td class="time" id="i_40853"><a href="/javaee/2013-11-11#i_40853">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40853"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">no i'm just having a problem:</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_zoot">
+
+<td class="time" id="i_40854"><a href="/javaee/2013-11-11#i_40854">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40854"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">00:53 &lt; zoot&gt; <a href="http://pastebin.com/jYD9UBfe" title="http://pastebin.com/jYD9UBfe">http://pastebin.com/jYD9UBfe</a></td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_zoot">
+
+<td class="time" id="i_40855"><a href="/javaee/2013-11-11#i_40855">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40855"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">00:53 &lt; zoot&gt; what i'm doing wrong?</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_zoot">
+
+<td class="time" id="i_40856"><a href="/javaee/2013-11-11#i_40856">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40856"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">00:53 &lt; zoot&gt; i droped that env-thingy in my web.xml</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_zoot">
+
+<td class="time" id="i_40857"><a href="/javaee/2013-11-11#i_40857">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40857"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">00:56 &lt; zoot&gt; hm.. i can't find jndiname=java:comp/env/hello</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_zoot">
+
+<td class="time" id="i_40858"><a href="/javaee/2013-11-11#i_40858">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40858"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">since glassfish is ignoring my jar-ejb in my war project :S</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_zoot">
+
+<td class="time" id="i_40859"><a href="/javaee/2013-11-11#i_40859">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40859"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">INFO: ejb java:comp/env/hello</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_zoot">
+
+<td class="time" id="i_40860"><a href="/javaee/2013-11-11#i_40860">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40860"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">it wasn't put under the ejb</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_zoot">
+
+<td class="time" id="i_40861"><a href="/javaee/2013-11-11#i_40861">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40861"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">so it should work in my war project too</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_zoot">
+
+<td class="time" id="i_40862"><a href="/javaee/2013-11-11#i_40862">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40862"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">:/</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_40863"><a href="/javaee/2013-11-11#i_40863">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40863"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">try just @Resource( name=&quot;hello&quot; )</td>
+</tr>
+
+        
+<tr id="id_l20" class="new special">
+
+<td class="time" id="i_40864"><a href="/javaee/2013-11-11#i_40864">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40864"  /></td>
+<td class="nick"></td>
+<td class="msg ">lv2eof joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_zoot dark">
+
+<td class="time" id="i_40865"><a href="/javaee/2013-11-11#i_40865">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40865"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">wth</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_zoot dark">
+
+<td class="time" id="i_40866"><a href="/javaee/2013-11-11#i_40866">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40866"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">it works now</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_zoot dark">
+
+<td class="time" id="i_40867"><a href="/javaee/2013-11-11#i_40867">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40867"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">but it is 1:34am too</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_lv2eof">
+
+<td class="time" id="i_40868"><a href="/javaee/2013-11-11#i_40868">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40868"  /></td>
+<td class="nick">lv2eof</td>
+<td class="msg ">Hello :)</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_zoot dark">
+
+<td class="time" id="i_40869"><a href="/javaee/2013-11-11#i_40869">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40869"  /></td>
+<td class="nick nick4">zoot</td>
+<td class="msg ">hai</td>
+</tr>
+
+        
+<tr id="id_l26" class="new special">
+
+<td class="time" id="i_40870"><a href="/javaee/2013-11-11#i_40870">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40870"  /></td>
+<td class="nick"></td>
+<td class="msg ">lv2eof joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special">
+
+<td class="time" id="i_40871"><a href="/javaee/2013-11-11#i_40871">00:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40871"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlCoF joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special">
+
+<td class="time" id="i_40872"><a href="/javaee/2013-11-11#i_40872">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40872"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlCoF joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special">
+
+<td class="time" id="i_40873"><a href="/javaee/2013-11-11#i_40873">02:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40873"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlCoF___ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont special">
+
+<td class="time" id="i_40874"><a href="/javaee/2013-11-11#i_40874">03:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40874"  /></td>
+<td class="nick"></td>
+<td class="msg ">bitwize joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont special">
+
+<td class="time" id="i_40875"><a href="/javaee/2013-11-11#i_40875">03:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40875"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special">
+
+<td class="time" id="i_40877"><a href="/javaee/2013-11-11#i_40877">05:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40877"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l33" class="new nick nick_balo dark">
+
+<td class="time" id="i_40882"><a href="/javaee/2013-11-11#i_40882">09:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40882"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">morning</td>
+</tr>
+
+        
+<tr id="id_l34" class="new special">
+
+<td class="time" id="i_40883"><a href="/javaee/2013-11-11#i_40883">10:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40883"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont special">
+
+<td class="time" id="i_40884"><a href="/javaee/2013-11-11#i_40884">10:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40884"  /></td>
+<td class="nick"></td>
+<td class="msg ">lv2eof joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont special">
+
+<td class="time" id="i_40885"><a href="/javaee/2013-11-11#i_40885">10:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40885"  /></td>
+<td class="nick"></td>
+<td class="msg ">WileTheCoyot joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_WileTheCoyot dark">
+
+<td class="time" id="i_40886"><a href="/javaee/2013-11-11#i_40886">10:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40886"  /></td>
+<td class="nick">WileTheCoyot</td>
+<td class="msg ">hello everyone</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont nick nick_WileTheCoyot dark">
+
+<td class="time" id="i_40887"><a href="/javaee/2013-11-11#i_40887">10:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40887"  /></td>
+<td class="nick">WileTheCoyot</td>
+<td class="msg ">what is the best place to check if the user is logged in? in the jsps or in the servlets?</td>
+</tr>
+
+        
+<tr id="id_l39" class="new special">
+
+<td class="time" id="i_40888"><a href="/javaee/2013-11-11#i_40888">11:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40888"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont special">
+
+<td class="time" id="i_40889"><a href="/javaee/2013-11-11#i_40889">11:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40889"  /></td>
+<td class="nick"></td>
+<td class="msg ">MegaMatt joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont special">
+
+<td class="time" id="i_40890"><a href="/javaee/2013-11-11#i_40890">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40890"  /></td>
+<td class="nick"></td>
+<td class="msg ">[twisti] joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont special">
+
+<td class="time" id="i_40891"><a href="/javaee/2013-11-11#i_40891">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40891"  /></td>
+<td class="nick"></td>
+<td class="msg ">[twisti] left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_sess dark">
+
+<td class="time" id="i_40892"><a href="/javaee/2013-11-11#i_40892">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40892"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">does anyone know if it's possible to automatically set an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> header after the web framework of choice has returned its response?</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_sess dark">
+
+<td class="time" id="i_40893"><a href="/javaee/2013-11-11#i_40893">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40893"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">im trying to automatically set cache-control if the response is a file download</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_sess dark">
+
+<td class="time" id="i_40894"><a href="/javaee/2013-11-11#i_40894">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40894"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">but it's too early in a filter before doFilter and it's too late after doFilter</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_balo">
+
+<td class="time" id="i_40895"><a href="/javaee/2013-11-11#i_40895">12:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40895"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">set http header after we got the response? I'm not sure you know how http works.</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_balo">
+
+<td class="time" id="i_40896"><a href="/javaee/2013-11-11#i_40896">12:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40896"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">you can try to override getWebResponse or onEndRequest methods and set header on the response</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont nick nick_balo">
+
+<td class="time" id="i_40897"><a href="/javaee/2013-11-11#i_40897">12:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40897"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">if you are using wicket example</td>
+</tr>
+
+        
+<tr id="id_l49" class="new special dark">
+
+<td class="time" id="i_40898"><a href="/javaee/2013-11-11#i_40898">12:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40898"  /></td>
+<td class="nick"></td>
+<td class="msg ">javier joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_sess">
+
+<td class="time" id="i_40899"><a href="/javaee/2013-11-11#i_40899">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40899"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">balo:  its not that i have to do it after the response is commited</td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_sess">
+
+<td class="time" id="i_40900"><a href="/javaee/2013-11-11#i_40900">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40900"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">that is probably not possible</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_sess">
+
+<td class="time" id="i_40901"><a href="/javaee/2013-11-11#i_40901">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40901"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">but a way to hook in and change it just before it's commited or something</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_sess">
+
+<td class="time" id="i_40902"><a href="/javaee/2013-11-11#i_40902">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40902"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">im using JSF</td>
+</tr>
+
+        
+<tr id="id_l54" class="new special dark">
+
+<td class="time" id="i_40903"><a href="/javaee/2013-11-11#i_40903">12:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40903"  /></td>
+<td class="nick"></td>
+<td class="msg ">WileTheCoyot joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_WileTheCoyot">
+
+<td class="time" id="i_40904"><a href="/javaee/2013-11-11#i_40904">12:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40904"  /></td>
+<td class="nick">WileTheCoyot</td>
+<td class="msg ">hello guys</td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick_balo dark">
+
+<td class="time" id="i_40905"><a href="/javaee/2013-11-11#i_40905">12:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40905"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">according to my little research in the topic, indeed, there isn't a trivial answer to this. did you try to create a new filter?</td>
+</tr>
+
+        
+<tr id="id_l57" class="cont nick nick_balo dark">
+
+<td class="time" id="i_40906"><a href="/javaee/2013-11-11#i_40906">12:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40906"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">I used to set headers in apache (I'm using ajp)</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_WileTheCoyot">
+
+<td class="time" id="i_40907"><a href="/javaee/2013-11-11#i_40907">12:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40907"  /></td>
+<td class="nick">WileTheCoyot</td>
+<td class="msg ">is possible to edit web.xml so i can write /mydir/myjsp.jsp istead of /project_name/web/mydir/myjsp.jsp</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_sess dark">
+
+<td class="time" id="i_40908"><a href="/javaee/2013-11-11#i_40908">12:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40908"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">balo:  i have filters, but before doFilter i dont know if its a file download or not)</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont nick nick_sess dark">
+
+<td class="time" id="i_40909"><a href="/javaee/2013-11-11#i_40909">12:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40909"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">and after doFilter its too late</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_sess dark">
+
+<td class="time" id="i_40910"><a href="/javaee/2013-11-11#i_40910">12:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40910"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">i use primefaces filedownload, so i just return a file instance from an action, then the framework sets some headers and commits response</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont nick nick_sess dark">
+
+<td class="time" id="i_40911"><a href="/javaee/2013-11-11#i_40911">12:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40911"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">for now i added some response headers on each action, but that feels a bit risky since you can easily forget to do so</td>
+</tr>
+
+        
+<tr id="id_l63" class="new special">
+
+<td class="time" id="i_40912"><a href="/javaee/2013-11-11#i_40912">12:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40912"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont special">
+
+<td class="time" id="i_40913"><a href="/javaee/2013-11-11#i_40913">12:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40913"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont special">
+
+<td class="time" id="i_40914"><a href="/javaee/2013-11-11#i_40914">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40914"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont special">
+
+<td class="time" id="i_40915"><a href="/javaee/2013-11-11#i_40915">14:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40915"  /></td>
+<td class="nick"></td>
+<td class="msg ">Quest joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont special">
+
+<td class="time" id="i_40916"><a href="/javaee/2013-11-11#i_40916">14:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40916"  /></td>
+<td class="nick"></td>
+<td class="msg ">Naros joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l68" class="cont special">
+
+<td class="time" id="i_40917"><a href="/javaee/2013-11-11#i_40917">14:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40917"  /></td>
+<td class="nick"></td>
+<td class="msg ">cem_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_cem_ dark">
+
+<td class="time" id="i_40918"><a href="/javaee/2013-11-11#i_40918">14:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40918"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">hi</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont nick nick_cem_ dark">
+
+<td class="time" id="i_40919"><a href="/javaee/2013-11-11#i_40919">14:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40919"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">i have a js file of 32 kB and after using certain tool the size got reduced to 23kB how that is possible ?</td>
+</tr>
+
+        
+<tr id="id_l71" class="new nick nick_balo">
+
+<td class="time" id="i_40920"><a href="/javaee/2013-11-11#i_40920">14:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40920"  /></td>
+<td class="nick nick7">balo</td>
+<td class="msg ">uglifier? or is it just removed the whitespaces?</td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_cem_ dark">
+
+<td class="time" id="i_40921"><a href="/javaee/2013-11-11#i_40921">14:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40921"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">like uglifier</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_pdurbin">
+
+<td class="time" id="i_40922"><a href="/javaee/2013-11-11#i_40922">14:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40922"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">seems possible. seems normal</td>
+</tr>
+
+        
+<tr id="id_l74" class="new special dark">
+
+<td class="time" id="i_40923"><a href="/javaee/2013-11-11#i_40923">14:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40923"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40924"><a href="/javaee/2013-11-11#i_40924">15:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40924"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">hey guys.</td>
+</tr>
+
+        
+<tr id="id_l76" class="new special dark">
+
+<td class="time" id="i_40925"><a href="/javaee/2013-11-11#i_40925">15:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40925"  /></td>
+<td class="nick"></td>
+<td class="msg ">kobain joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont special dark">
+
+<td class="time" id="i_40926"><a href="/javaee/2013-11-11#i_40926">15:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40926"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick_cem_">
+
+<td class="time" id="i_40927"><a href="/javaee/2013-11-11#i_40927">15:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40927"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">wooow</td>
+</tr>
+
+        
+<tr id="id_l79" class="new nick nick_Naros dark">
+
+<td class="time" id="i_40928"><a href="/javaee/2013-11-11#i_40928">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40928"  /></td>
+<td class="nick nick9">Naros</td>
+<td class="msg ">sajjadg: hello.</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40929"><a href="/javaee/2013-11-11#i_40929">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40929"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">Naros, hi bro</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick_Naros dark">
+
+<td class="time" id="i_40930"><a href="/javaee/2013-11-11#i_40930">15:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40930"  /></td>
+<td class="nick nick9">Naros</td>
+<td class="msg ">cem_: I've used filters before to do precisely that not only on .js files but the output of jsp files too :P</td>
+</tr>
+
+        
+<tr id="id_l82" class="cont nick nick_Naros dark">
+
+<td class="time" id="i_40931"><a href="/javaee/2013-11-11#i_40931">15:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40931"  /></td>
+<td class="nick nick9">Naros</td>
+<td class="msg ">Has helped wonders when specific user groups are on very low bandwidth connections.</td>
+</tr>
+
+        
+<tr id="id_l83" class="cont nick nick_Naros dark">
+
+<td class="time" id="i_40932"><a href="/javaee/2013-11-11#i_40932">15:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40932"  /></td>
+<td class="nick nick9">Naros</td>
+<td class="msg ">and browsers don't support compression.</td>
+</tr>
+
+        
+<tr id="id_l84" class="new nick nick_sess">
+
+<td class="time" id="i_40933"><a href="/javaee/2013-11-11#i_40933">15:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40933"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">cem_: usually they rename variables and functions to short names and remove all whitespace</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont nick nick_sess">
+
+<td class="time" id="i_40934"><a href="/javaee/2013-11-11#i_40934">15:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40934"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">minifying scripts</td>
+</tr>
+
+        
+<tr id="id_l86" class="cont nick nick_sess">
+
+<td class="time" id="i_40935"><a href="/javaee/2013-11-11#i_40935">15:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40935"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">probably removes unused code aswell</td>
+</tr>
+
+        
+<tr id="id_l87" class="new special dark">
+
+<td class="time" id="i_40938"><a href="/javaee/2013-11-11#i_40938">15:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40938"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l88" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40939"><a href="/javaee/2013-11-11#i_40939">16:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40939"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I don't have a web.xml file in my application and I want to config tomcat server error page...what should I do? I extended ResourceConfig and did a little change in it. but I don't know about advance configuration without web.xml</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_sess dark">
+
+<td class="time" id="i_40940"><a href="/javaee/2013-11-11#i_40940">16:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40940"  /></td>
+<td class="nick nick5">sess</td>
+<td class="msg ">add a web.xml :d</td>
+</tr>
+
+        
+<tr id="id_l90" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40941"><a href="/javaee/2013-11-11#i_40941">16:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40941"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">:D</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40942"><a href="/javaee/2013-11-11#i_40942">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40942"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_40943"><a href="/javaee/2013-11-11#i_40943">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40943"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">what's wrong with having a web.xml?</td>
+</tr>
+
+        
+<tr id="id_l93" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40944"><a href="/javaee/2013-11-11#i_40944">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40944"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">but what if I need some startup configuration with code</td>
+</tr>
+
+        
+<tr id="id_l94" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40945"><a href="/javaee/2013-11-11#i_40945">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40945"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">?</td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40946"><a href="/javaee/2013-11-11#i_40946">16:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40946"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">pdurbin, nothing. but servlet 3.0 introduced a class to remove web.xml I though it will replace it</td>
+</tr>
+
+        
+<tr id="id_l96" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_40947"><a href="/javaee/2013-11-11#i_40947">16:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40947"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">ah. the trend of getting rid of configuration via <abbr title="Extensible Markup Language">XML</abbr>. ok</td>
+</tr>
+
+        
+<tr id="id_l97" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40948"><a href="/javaee/2013-11-11#i_40948">16:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40948"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I need to run a database configuration code at the startup</td>
+</tr>
+
+        
+<tr id="id_l98" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40949"><a href="/javaee/2013-11-11#i_40949">16:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40949"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">pdurbin, yeah. and I like it ;)</td>
+</tr>
+
+        
+<tr id="id_l99" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40950"><a href="/javaee/2013-11-11#i_40950">16:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40950"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">pdurbin, it is not a good thing in some situation like this :P</td>
+</tr>
+
+        
+<tr id="id_l100" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_40951"><a href="/javaee/2013-11-11#i_40951">16:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40951"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">sajjadg: stop trying to be fancy ;)</td>
+</tr>
+
+        
+<tr id="id_l101" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40952"><a href="/javaee/2013-11-11#i_40952">16:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40952"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">my reason to extend Application class was to be able to put my java db config code in it</td>
+</tr>
+
+        
+<tr id="id_l102" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40953"><a href="/javaee/2013-11-11#i_40953">16:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40953"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I had hard time with spring xml configuration and that had very bad affect on my relationship with <abbr title="Extensible Markup Language">XML</abbr> :D</td>
+</tr>
+
+        
+<tr id="id_l103" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_40954"><a href="/javaee/2013-11-11#i_40954">16:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40954"  /></td>
+<td class="nick nick6">* pdurbin</td>
+<td class="msg act ">is trying to make peace with <abbr title="Extensible Markup Language">XML</abbr></td>
+</tr>
+
+        
+<tr id="id_l104" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40955"><a href="/javaee/2013-11-11#i_40955">16:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40955"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I don't have any problem with it in Java EE. but with spring it's hard by <abbr title="Extensible Markup Language">XML</abbr> or annotation</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40956"><a href="/javaee/2013-11-11#i_40956">16:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40956"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I have problem with Spring :D</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40957"><a href="/javaee/2013-11-11#i_40957">16:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40957"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">not xml</td>
+</tr>
+
+        
+<tr id="id_l107" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40958"><a href="/javaee/2013-11-11#i_40958">16:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40958"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">:D</td>
+</tr>
+
+        
+<tr id="id_l108" class="new special dark">
+
+<td class="time" id="i_40959"><a href="/javaee/2013-11-11#i_40959">16:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40959"  /></td>
+<td class="nick"></td>
+<td class="msg ">sross07 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l109" class="cont special dark">
+
+<td class="time" id="i_40960"><a href="/javaee/2013-11-11#i_40960">16:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40960"  /></td>
+<td class="nick"></td>
+<td class="msg ">sross07 left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l110" class="cont special dark">
+
+<td class="time" id="i_40961"><a href="/javaee/2013-11-11#i_40961">16:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40961"  /></td>
+<td class="nick"></td>
+<td class="msg ">sfisque joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l111" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40962"><a href="/javaee/2013-11-11#i_40962">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40962"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">eclipse users here</td>
+</tr>
+
+        
+<tr id="id_l112" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40963"><a href="/javaee/2013-11-11#i_40963">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40963"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">check this out :D</td>
+</tr>
+
+        
+<tr id="id_l113" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40964"><a href="/javaee/2013-11-11#i_40964">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40964"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg "><a href="http://editbox.sourceforge.net/" title="http://editbox.sourceforge.net/">http://editbox.sourceforge.net/</a></td>
+</tr>
+
+        
+<tr id="id_l114" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40965"><a href="/javaee/2013-11-11#i_40965">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40965"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">gotta go</td>
+</tr>
+
+        
+<tr id="id_l115" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40966"><a href="/javaee/2013-11-11#i_40966">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40966"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">take care</td>
+</tr>
+
+        
+<tr id="id_l116" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40967"><a href="/javaee/2013-11-11#i_40967">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40967"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">God Bless all of you</td>
+</tr>
+
+        
+<tr id="id_l117" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40968"><a href="/javaee/2013-11-11#i_40968">16:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40968"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">Goodbye</td>
+</tr>
+
+        
+<tr id="id_l118" class="new nick nick_cem_ dark">
+
+<td class="time" id="i_40969"><a href="/javaee/2013-11-11#i_40969">16:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40969"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">why somewant hilight background ?</td>
+</tr>
+
+        
+<tr id="id_l119" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40970"><a href="/javaee/2013-11-11#i_40970">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40970"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">cem_, it help you have more control on the code</td>
+</tr>
+
+        
+<tr id="id_l120" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40971"><a href="/javaee/2013-11-11#i_40971">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40971"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">at least works for me</td>
+</tr>
+
+        
+<tr id="id_l121" class="new special dark">
+
+<td class="time" id="i_40972"><a href="/javaee/2013-11-11#i_40972">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40972"  /></td>
+<td class="nick"></td>
+<td class="msg ">SoniEx joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l122" class="new nick nick_sajjadg">
+
+<td class="time" id="i_40973"><a href="/javaee/2013-11-11#i_40973">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40973"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">albeit this plugin do it too much</td>
+</tr>
+
+        
+<tr id="id_l123" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40974"><a href="/javaee/2013-11-11#i_40974">16:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40974"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">but the first level highliting is ok</td>
+</tr>
+
+        
+<tr id="id_l124" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40975"><a href="/javaee/2013-11-11#i_40975">16:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40975"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">sometimes I want to find the start and and of a block of code &lt;div&gt;...&lt;/div&gt;</td>
+</tr>
+
+        
+<tr id="id_l125" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40976"><a href="/javaee/2013-11-11#i_40976">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40976"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">and highlighting help you there...</td>
+</tr>
+
+        
+<tr id="id_l126" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40977"><a href="/javaee/2013-11-11#i_40977">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40977"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">netbeans 7.3+ had a feature that shows the first line of the block no matter where you are...</td>
+</tr>
+
+        
+<tr id="id_l127" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40978"><a href="/javaee/2013-11-11#i_40978">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40978"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">it's very cool</td>
+</tr>
+
+        
+<tr id="id_l128" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40979"><a href="/javaee/2013-11-11#i_40979">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40979"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">you click on the line containing close brace } and it show you the opening one public void func(..) {</td>
+</tr>
+
+        
+<tr id="id_l129" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40980"><a href="/javaee/2013-11-11#i_40980">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40980"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">very useful</td>
+</tr>
+
+        
+<tr id="id_l130" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40981"><a href="/javaee/2013-11-11#i_40981">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40981"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I should consider going back to netbeans maybe :P</td>
+</tr>
+
+        
+<tr id="id_l131" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_40982"><a href="/javaee/2013-11-11#i_40982">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40982"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">eclipse is moving slow</td>
+</tr>
+
+        
+<tr id="id_l132" class="new nick nick_cem_ dark">
+
+<td class="time" id="i_40983"><a href="/javaee/2013-11-11#i_40983">16:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40983"  /></td>
+<td class="nick nick8">cem_</td>
+<td class="msg ">some syntax hilighting is far more enough for me ,i dont do that much work</td>
+</tr>
+
+        
+<tr id="id_l133" class="new special">
+
+<td class="time" id="i_40985"><a href="/javaee/2013-11-11#i_40985">16:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40985"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l134" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_40986"><a href="/javaee/2013-11-11#i_40986">17:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40986"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i think today i shall hate on jboss7.1</td>
+</tr>
+
+        
+<tr id="id_l135" class="new nick nick_whartung">
+
+<td class="time" id="i_40987"><a href="/javaee/2013-11-11#i_40987">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40987"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">do tell</td>
+</tr>
+
+        
+<tr id="id_l136" class="new special dark">
+
+<td class="time" id="i_40988"><a href="/javaee/2013-11-11#i_40988">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40988"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l137" class="new nick nick_sfisque">
+
+<td class="time" id="i_40989"><a href="/javaee/2013-11-11#i_40989">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40989"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">trying to upgrade from 5.1 to 7.1 (because 6.x are web profile only) and let's just say, porting all my datasources is &quot;counter intuitive&quot; and none of my apps just &quot;drop in&quot;.  F jboss7</td>
+</tr>
+
+        
+<tr id="id_l138" class="cont nick nick_sfisque">
+
+<td class="time" id="i_40990"><a href="/javaee/2013-11-11#i_40990">17:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40990"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">they should have included a tool to run the DS.xml files through an xslt that massages them for inclusion into the new standalone.xml file</td>
+</tr>
+
+        
+<tr id="id_l139" class="new nick nick_whartung dark">
+
+<td class="time" id="i_40991"><a href="/javaee/2013-11-11#i_40991">17:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40991"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">bah</td>
+</tr>
+
+        
+<tr id="id_l140" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_40992"><a href="/javaee/2013-11-11#i_40992">17:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40992"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">The GF xml file has largely remained consistent over the years.</td>
+</tr>
+
+        
+<tr id="id_l141" class="new nick nick_sfisque">
+
+<td class="time" id="i_40993"><a href="/javaee/2013-11-11#i_40993">17:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40993"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i'd switch to GF4 but some of my personal products leverage jboss annotations</td>
+</tr>
+
+        
+<tr id="id_l142" class="new nick nick_whartung dark">
+
+<td class="time" id="i_40994"><a href="/javaee/2013-11-11#i_40994">17:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40994"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">especially for staples like connection pools</td>
+</tr>
+
+        
+<tr id="id_l143" class="new nick nick_sfisque">
+
+<td class="time" id="i_40995"><a href="/javaee/2013-11-11#i_40995">17:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40995"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">aye.  i disliked GF2, but GF3+ is a real evolution</td>
+</tr>
+
+        
+<tr id="id_l144" class="cont nick nick_sfisque">
+
+<td class="time" id="i_40996"><a href="/javaee/2013-11-11#i_40996">17:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40996"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i'm now googling for &quot;migration&quot; guides.  i cant be the only person who is finding 5.x -&gt; 7.x untenable</td>
+</tr>
+
+        
+<tr id="id_l145" class="new nick nick_whartung dark">
+
+<td class="time" id="i_40997"><a href="/javaee/2013-11-11#i_40997">17:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40997"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">I have avoided Jboss all these years because back i the day, I had a traumatic episode trying to set up an Oracle connection pool.</td>
+</tr>
+
+        
+<tr id="id_l146" class="new nick nick_sfisque">
+
+<td class="time" id="i_40998"><a href="/javaee/2013-11-11#i_40998">17:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40998"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">on 4.x and 5.x it's &quot;a snap&quot;  very simple boilerplate xml file and drop the jdbc driver into the server/{profile}/lib dir.  done</td>
+</tr>
+
+        
+<tr id="id_l147" class="cont nick nick_sfisque">
+
+<td class="time" id="i_40999"><a href="/javaee/2013-11-11#i_40999">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_40999"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">in 7, i have to turn the driver into a module and then configure it as a module.  what?  F U jboss</td>
+</tr>
+
+        
+<tr id="id_l148" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41000"><a href="/javaee/2013-11-11#i_41000">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41000"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">heh</td>
+</tr>
+
+        
+<tr id="id_l149" class="new nick nick_cem_">
+
+<td class="time" id="i_41001"><a href="/javaee/2013-11-11#i_41001">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41001"  /></td>
+<td class="nick nick8">* cem_</td>
+<td class="msg act ">never seen sfisque pissed off like that</td>
+</tr>
+
+        
+<tr id="id_l150" class="new special dark">
+
+<td class="time" id="i_41003"><a href="/javaee/2013-11-11#i_41003">17:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41003"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l151" class="cont special dark">
+
+<td class="time" id="i_41004"><a href="/javaee/2013-11-11#i_41004">18:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41004"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg-2 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l152" class="cont special dark">
+
+<td class="time" id="i_41005"><a href="/javaee/2013-11-11#i_41005">18:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41005"  /></td>
+<td class="nick"></td>
+<td class="msg ">MegaMatt joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l153" class="new nick nick_acuzio">
+
+<td class="time" id="i_41006"><a href="/javaee/2013-11-11#i_41006">18:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41006"  /></td>
+<td class="nick">acuzio</td>
+<td class="msg ">sfisque: ah the world of JBoss modules</td>
+</tr>
+
+        
+<tr id="id_l154" class="cont nick nick_acuzio">
+
+<td class="time" id="i_41007"><a href="/javaee/2013-11-11#i_41007">18:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41007"  /></td>
+<td class="nick">acuzio</td>
+<td class="msg ">sfisque: you might find that waterfly or dragonfly or whatever its called is touting its module system as one of the &quot;plus&quot; points - which it is - except when it snot</td>
+</tr>
+
+        
+<tr id="id_l155" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41008"><a href="/javaee/2013-11-11#i_41008">18:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41008"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">mmm...snot</td>
+</tr>
+
+        
+<tr id="id_l156" class="new special">
+
+<td class="time" id="i_41010"><a href="/javaee/2013-11-11#i_41010">19:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41010"  /></td>
+<td class="nick"></td>
+<td class="msg ">bitwize joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l157" class="new nick nick_acuzio dark">
+
+<td class="time" id="i_41011"><a href="/javaee/2013-11-11#i_41011">19:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41011"  /></td>
+<td class="nick">acuzio</td>
+<td class="msg ">when its not :-)</td>
+</tr>
+
+        
+<tr id="id_l158" class="new special">
+
+<td class="time" id="i_41012"><a href="/javaee/2013-11-11#i_41012">20:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41012"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlCoF_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l159" class="cont special">
+
+<td class="time" id="i_41013"><a href="/javaee/2013-11-11#i_41013">21:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41013"  /></td>
+<td class="nick"></td>
+<td class="msg ">SLovenberg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l160" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41014"><a href="/javaee/2013-11-11#i_41014">21:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41014"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i think you had it right the first time acuzio</td>
+</tr>
+
+        
+<tr id="id_l161" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41015"><a href="/javaee/2013-11-11#i_41015">21:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41015"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">:P</td>
+</tr>
+
+        
+<tr id="id_l162" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41016"><a href="/javaee/2013-11-11#i_41016">21:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41016"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">followed every guide on deploying mysql driver, and i keep ending up with same &quot;dependency&quot; error message in the log.   harrumph</td>
+</tr>
+
+        
+<tr id="id_l163" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41017"><a href="/javaee/2013-11-11#i_41017">21:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41017"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i want to move up to ee6 at the very least, since my personal products are running on 5.1, but jb7.1 is proving to be &quot;not worth the headache&quot;.  i liked jb4 and 5 because they were simple to configure</td>
+</tr>
+
+        
+<tr id="id_l164" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41018"><a href="/javaee/2013-11-11#i_41018">21:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41018"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">drop the jar in the lib dir, write a small xml file, done</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41019"><a href="/javaee/2013-11-11#i_41019">21:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41019"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">it looks like it's a bug in 7.1x.  i guess i'll have to try WFly8.  sigh</td>
+</tr>
+
+        
+<tr id="id_l166" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41020"><a href="/javaee/2013-11-11#i_41020">21:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41020"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">oh, nm, the bug is for openshift, a different redhat product</td>
+</tr>
+
+        
+<tr id="id_l167" class="new nick nick_sfisque">
+
+<td class="time" id="i_41024"><a href="/javaee/2013-11-11#i_41024">21:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41024"  /></td>
+<td class="nick nick1">* sfisque</td>
+<td class="msg act ">sighs</td>
+</tr>
+
+        
+<tr id="id_l168" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41025"><a href="/javaee/2013-11-11#i_41025">21:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41025"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">had to upgrade my mysql driver.  did it on a whim.  they really need to call stuff out like that in their docs</td>
+</tr>
+
+        
+<tr id="id_l169" class="new nick nick_pdurbin">
+
+<td class="time" id="i_41026"><a href="/javaee/2013-11-11#i_41026">21:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41026"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">when will jboss support java ee 7?</td>
+</tr>
+
+        
+<tr id="id_l170" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41027"><a href="/javaee/2013-11-11#i_41027">21:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41027"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i beleive it wont,  they have a new code branch called wildfly (version 8) which i believe is targeted at ee7</td>
+</tr>
+
+        
+<tr id="id_l171" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41028"><a href="/javaee/2013-11-11#i_41028">21:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41028"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i'ts in beta right now</td>
+</tr>
+
+        
+<tr id="id_l172" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41029"><a href="/javaee/2013-11-11#i_41029">21:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41029"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">version 8</td>
+</tr>
+
+        
+<tr id="id_l173" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41030"><a href="/javaee/2013-11-11#i_41030">21:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41030"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">once i get all my deployments ironed out from moving from 5.1 to 7.1 i'll probably switch to WF8 when it goes GA</td>
+</tr>
+
+        
+<tr id="id_l174" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41031"><a href="/javaee/2013-11-11#i_41031">21:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41031"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">javaeebot lucky wildfly 8</td>
+</tr>
+
+        
+<tr id="id_l175" class="new nick nick_javaeebot">
+
+<td class="time" id="i_41032"><a href="/javaee/2013-11-11#i_41032">21:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41032"  /></td>
+<td class="nick">javaeebot</td>
+<td class="msg ">sfisque: <a href="http://www.wildfly.org/about/" title="http://www.wildfly.org/about/">http://www.wildfly.org/about/</a></td>
+</tr>
+
+        
+<tr id="id_l176" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41033"><a href="/javaee/2013-11-11#i_41033">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41033"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">and then i'll be able to remove more code switching from EE5 to EE7</td>
+</tr>
+
+        
+<tr id="id_l177" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41034"><a href="/javaee/2013-11-11#i_41034">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41034"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">:P</td>
+</tr>
+
+        
+<tr id="id_l178" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41035"><a href="/javaee/2013-11-11#i_41035">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41035"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i expect, by EE9 a fully functioning EE product will be 3 java files and one xhtml file</td>
+</tr>
+
+        
+<tr id="id_l179" class="new nick nick_pdurbin">
+
+<td class="time" id="i_41036"><a href="/javaee/2013-11-11#i_41036">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41036"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">right, so they're at beta 1 already. cool. <a href="http://www.wildfly.org/download/" title="http://www.wildfly.org/download/">http://www.wildfly.org/download/</a></td>
+</tr>
+
+        
+<tr id="id_l180" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41037"><a href="/javaee/2013-11-11#i_41037">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41037"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">&gt;.&lt;</td>
+</tr>
+
+        
+<tr id="id_l181" class="new nick nick_pdurbin">
+
+<td class="time" id="i_41038"><a href="/javaee/2013-11-11#i_41038">22:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41038"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">and they seem to be making regular releases</td>
+</tr>
+
+        
+<tr id="id_l182" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41039"><a href="/javaee/2013-11-11#i_41039">22:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41039"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">aye.   now that i fixed my datasource issue, i'm back to drinking the koolaid</td>
+</tr>
+
+        
+<tr id="id_l183" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41040"><a href="/javaee/2013-11-11#i_41040">22:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41040"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i'm hoping my EE5 stuff will just drop in to 7.1.1 and i can then start piecemeal porting up  to EE6 and eventually EE7 without having to &quot;fix&quot; things</td>
+</tr>
+
+        
+<tr id="id_l184" class="new special">
+
+<td class="time" id="i_41041"><a href="/javaee/2013-11-11#i_41041">22:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41041"  /></td>
+<td class="nick"></td>
+<td class="msg ">jieryn_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l185" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41042"><a href="/javaee/2013-11-11#i_41042">22:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41042"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">&quot;No more jar hell!&quot;</td>
+</tr>
+
+        
+<tr id="id_l186" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41043"><a href="/javaee/2013-11-11#i_41043">22:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41043"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">I don't think that means what they think it means</td>
+</tr>
+
+        
+<tr id="id_l187" class="new nick nick_sfisque">
+
+<td class="time" id="i_41044"><a href="/javaee/2013-11-11#i_41044">22:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41044"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">platform question: if i'm &quot;in&quot; a stateless bean, is there a way to capture when the transaction commits/closes.  i know SFSBs have a handler for that, but i'm in a SLSB where i need to capture this</td>
+</tr>
+
+        
+<tr id="id_l188" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41045"><a href="/javaee/2013-11-11#i_41045">22:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41045"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">we already had this discussion sfisque</td>
+</tr>
+
+        
+<tr id="id_l189" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41046"><a href="/javaee/2013-11-11#i_41046">22:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41046"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">now, that said</td>
+</tr>
+
+        
+<tr id="id_l190" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41047"><a href="/javaee/2013-11-11#i_41047">22:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41047"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">I'm pretty sure you can get access to the current transcation</td>
+</tr>
+
+        
+<tr id="id_l191" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41048"><a href="/javaee/2013-11-11#i_41048">22:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41048"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">and connect a listener to it.</td>
+</tr>
+
+        
+<tr id="id_l192" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41049"><a href="/javaee/2013-11-11#i_41049">22:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41049"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">so, you may not know when it STARTED, but you can be notified when it ends</td>
+</tr>
+
+        
+<tr id="id_l193" class="new nick nick_sfisque">
+
+<td class="time" id="i_41050"><a href="/javaee/2013-11-11#i_41050">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41050"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">aye.  i'm in a case wehre i'm storing something in a ThreadLocal, and i need to clean up when the XAct ends, because threads are pooled and reused in the container.  i'm seeing cases where transactions are getting other transactions threadlocal because the threads are pooled and not spawned ad hoc.</td>
+</tr>
+
+        
+<tr id="id_l194" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41051"><a href="/javaee/2013-11-11#i_41051">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41051"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">yea, you should be able to do that -- we've done that before with auditing.</td>
+</tr>
+
+        
+<tr id="id_l195" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41052"><a href="/javaee/2013-11-11#i_41052">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41052"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">I don't think we do it any more tho</td>
+</tr>
+
+        
+<tr id="id_l196" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41053"><a href="/javaee/2013-11-11#i_41053">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41053"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">lemme look</td>
+</tr>
+
+        
+<tr id="id_l197" class="new nick nick_sfisque">
+
+<td class="time" id="i_41054"><a href="/javaee/2013-11-11#i_41054">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41054"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">that's exactly what it's for.  basically i need the ThreadLocal for cases where we run @Asynch</td>
+</tr>
+
+        
+<tr id="id_l198" class="cont nick nick_sfisque">
+
+<td class="time" id="i_41055"><a href="/javaee/2013-11-11#i_41055">22:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41055"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">because the @SessionScoped goes away and we need to store identity stuff</td>
+</tr>
+
+        
+<tr id="id_l199" class="cont nick nick_sfisque">
+
+<td class="time" id="i_41056"><a href="/javaee/2013-11-11#i_41056">22:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41056"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">the real solution would be to run the Asynch in a SFSB but i don't have the cycles to refactor that</td>
+</tr>
+
+        
+<tr id="id_l200" class="new special dark">
+
+<td class="time" id="i_41057"><a href="/javaee/2013-11-11#i_41057">22:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41057"  /></td>
+<td class="nick"></td>
+<td class="msg ">MegaMatt joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l201" class="new nick nick_sfisque">
+
+<td class="time" id="i_41058"><a href="/javaee/2013-11-11#i_41058">22:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41058"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i have a a PreUpdate/PrePersist interceptor with a ThreadLocal and i want to null it out when the xact commits</td>
+</tr>
+
+        
+<tr id="id_l202" class="cont nick nick_sfisque">
+
+<td class="time" id="i_41059"><a href="/javaee/2013-11-11#i_41059">22:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41059"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i cant do the clean up in the SLSB because xact wont commit until the asynch method quits (unless i convert over to BMT, which again is a refactor we cannot bear atm [no extra QA cycles left for regression testing]</td>
+</tr>
+
+        
+<tr id="id_l203" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41060"><a href="/javaee/2013-11-11#i_41060">22:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41060"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">I don't know why they did this: &quot;Only a stateful session bean with container-managed transaction demarcation can receive session synchronization notifications. Other bean types must not implement the SessionSynchronization interface or use the session synchronization annotations.&quot;</td>
+</tr>
+
+        
+<tr id="id_l204" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41061"><a href="/javaee/2013-11-11#i_41061">22:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41061"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">this is clever</td>
+</tr>
+
+        
+<tr id="id_l205" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41062"><a href="/javaee/2013-11-11#i_41062">22:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41062"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">&quot;A stateful session bean class is not required to implement this interface.&quot;</td>
+</tr>
+
+        
+<tr id="id_l206" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_41063"><a href="/javaee/2013-11-11#i_41063">22:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41063"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">no mixed messages there...</td>
+</tr>
+
+        
+<tr id="id_l207" class="new special">
+
+<td class="time" id="i_41064"><a href="/javaee/2013-11-11#i_41064">22:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41064"  /></td>
+<td class="nick"></td>
+<td class="msg ">SoniEx joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l208" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41065"><a href="/javaee/2013-11-11#i_41065">22:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41065"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah.  if i was in a SFSB i'd be golden</td>
+</tr>
+
+        
+<tr id="id_l209" class="new nick nick_whartung">
+
+<td class="time" id="i_41066"><a href="/javaee/2013-11-11#i_41066">22:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41066"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg "><a href="http://docs.oracle.com/cd/E19159-01/819-3672/beanm/index.html" title="http://docs.oracle.com/cd/E19159-01/819-3672/beanm/index.html">http://docs.oracle.com/cd/E19159-01/819-3672/beanm/index.html</a></td>
+</tr>
+
+        
+<tr id="id_l210" class="cont nick nick_whartung">
+
+<td class="time" id="i_41067"><a href="/javaee/2013-11-11#i_41067">22:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41067"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">You can access the Application Server transaction manager, a javax.transaction.TransactionManager implementation, using the JNDI subcontext java:comp/TransactionManager or java:appserver/TransactionManager.</td>
+</tr>
+
+        
+<tr id="id_l211" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41068"><a href="/javaee/2013-11-11#i_41068">22:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41068"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">oh, nifty</td>
+</tr>
+
+        
+<tr id="id_l212" class="new nick nick_whartung">
+
+<td class="time" id="i_41069"><a href="/javaee/2013-11-11#i_41069">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41069"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg "><a href="http://docs.oracle.com/javaee/5/api/javax/transaction/TransactionManager.html" title="http://docs.oracle.com/javaee/5/api/javax/transaction/TransactionManager.html">http://docs.oracle.com/javaee/5/api/javax/transaction/TransactionManager.html</a></td>
+</tr>
+
+        
+<tr id="id_l213" class="cont nick nick_whartung">
+
+<td class="time" id="i_41070"><a href="/javaee/2013-11-11#i_41070">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41070"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">getTransaction</td>
+</tr>
+
+        
+<tr id="id_l214" class="cont nick nick_whartung">
+
+<td class="time" id="i_41071"><a href="/javaee/2013-11-11#i_41071">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41071"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg "><a href="http://docs.oracle.com/javaee/5/api/javax/transaction/Transaction.html" title="http://docs.oracle.com/javaee/5/api/javax/transaction/Transaction.html">http://docs.oracle.com/javaee/5/api/javax/transaction/Transaction.html</a></td>
+</tr>
+
+        
+<tr id="id_l215" class="cont nick nick_whartung">
+
+<td class="time" id="i_41072"><a href="/javaee/2013-11-11#i_41072">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41072"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">registerSynchronization</td>
+</tr>
+
+        
+<tr id="id_l216" class="cont nick nick_whartung">
+
+<td class="time" id="i_41073"><a href="/javaee/2013-11-11#i_41073">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41073"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg "><a href="http://docs.oracle.com/javaee/5/api/javax/transaction/Synchronization.html" title="http://docs.oracle.com/javaee/5/api/javax/transaction/Synchronization.html">http://docs.oracle.com/javaee/5/api/javax/transaction/Synchronization.html</a></td>
+</tr>
+
+        
+<tr id="id_l217" class="cont nick nick_whartung">
+
+<td class="time" id="i_41074"><a href="/javaee/2013-11-11#i_41074">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41074"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">afterCompletion</td>
+</tr>
+
+        
+<tr id="id_l218" class="cont nick nick_whartung">
+
+<td class="time" id="i_41075"><a href="/javaee/2013-11-11#i_41075">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41075"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">there ya go</td>
+</tr>
+
+        
+<tr id="id_l219" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41076"><a href="/javaee/2013-11-11#i_41076">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41076"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">afterCompletion())</td>
+</tr>
+
+        
+<tr id="id_l220" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41077"><a href="/javaee/2013-11-11#i_41077">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41077"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah.  damn you and your faster typing</td>
+</tr>
+
+        
+<tr id="id_l221" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41078"><a href="/javaee/2013-11-11#i_41078">22:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41078"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">:P</td>
+</tr>
+
+        
+<tr id="id_l222" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41079"><a href="/javaee/2013-11-11#i_41079">22:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41079"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">so now i can see if i can inject it rather than having to do a jndi lookup</td>
+</tr>
+
+        
+<tr id="id_l223" class="new nick nick_whartung">
+
+<td class="time" id="i_41080"><a href="/javaee/2013-11-11#i_41080">22:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41080"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">YEa, I bet @Resource will work</td>
+</tr>
+
+        
+<tr id="id_l224" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41081"><a href="/javaee/2013-11-11#i_41081">22:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41081"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">nice find whartung</td>
+</tr>
+
+        
+<tr id="id_l225" class="new nick nick_sfisque">
+
+<td class="time" id="i_41082"><a href="/javaee/2013-11-11#i_41082">22:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41082"  /></td>
+<td class="nick nick1">* sfisque</td>
+<td class="msg act ">gives whartung a hi-5</td>
+</tr>
+
+        
+<tr id="id_l226" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41083"><a href="/javaee/2013-11-11#i_41083">22:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41083"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah, i was hoping i wouldnt have to use @Resource because i still have to use the JNDI name, rather than having it DI'ed by type</td>
+</tr>
+
+        
+<tr id="id_l227" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41084"><a href="/javaee/2013-11-11#i_41084">22:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41084"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i shall dig.</td>
+</tr>
+
+        
+<tr id="id_l228" class="cont nick nick_sfisque dark">
+
+<td class="time" id="i_41085"><a href="/javaee/2013-11-11#i_41085">22:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41085"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">meeting.  swtiching to phone</td>
+</tr>
+
+        
+<tr id="id_l229" class="new nick nick_whartung">
+
+<td class="time" id="i_41086"><a href="/javaee/2013-11-11#i_41086">22:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41086"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">meeting, switching to guns.</td>
+</tr>
+
+        
+<tr id="id_l230" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_41087"><a href="/javaee/2013-11-11#i_41087">22:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41087"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">stun, I hope</td>
+</tr>
+
+        
+<tr id="id_l231" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_41088"><a href="/javaee/2013-11-11#i_41088">22:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41088"  /></td>
+<td class="nick nick6">pdurbin</td>
+<td class="msg ">I just re-discovered this podcast and it's both awesome and on-topic. Tons of links in their show notes: <a href="http://blogs.jsfcentral.com/JSFNewscast/entry/enterprise_java_newscast_episode_16" title="http://blogs.jsfcentral.com/JSFNewscast/entry/enterprise_java_newscast_episode_16">http://blogs.jsfcentral.com/JSFNewscast/entry/enterprise_java_newscast_episode_16</a></td>
+</tr>
+
+        
+<tr id="id_l232" class="new special">
+
+<td class="time" id="i_41089"><a href="/javaee/2013-11-11#i_41089">22:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41089"  /></td>
+<td class="nick"></td>
+<td class="msg ">sfisque_p joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l233" class="new nick nick_sfisque_p dark">
+
+<td class="time" id="i_41090"><a href="/javaee/2013-11-11#i_41090">22:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41090"  /></td>
+<td class="nick nick1">sfisque_p</td>
+<td class="msg ">Meeting hell - :-(</td>
+</tr>
+
+        
+<tr id="id_l234" class="new special">
+
+<td class="time" id="i_41091"><a href="/javaee/2013-11-11#i_41091">22:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41091"  /></td>
+<td class="nick"></td>
+<td class="msg ">sfisque_p joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l235" class="new nick nick_sfisque dark">
+
+<td class="time" id="i_41092"><a href="/javaee/2013-11-11#i_41092">22:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41092"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yay meeting ended early - i must sacrefice a windows cd to the interweb gods</td>
+</tr>
+
+        
+<tr id="id_l236" class="new nick nick_whartung">
+
+<td class="time" id="i_41093"><a href="/javaee/2013-11-11#i_41093">22:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41093"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">\o/! A windows CD sacrifice! It IS a good day!</td>
+</tr>
+
+        
+<tr id="id_l237" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_41094"><a href="/javaee/2013-11-11#i_41094">22:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41094"  /></td>
+<td class="nick">SoniEx2</td>
+<td class="msg ">sfisque: wait</td>
+</tr>
+
+        
+<tr id="id_l238" class="cont nick nick_SoniEx2 dark">
+
+<td class="time" id="i_41095"><a href="/javaee/2013-11-11#i_41095">22:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41095"  /></td>
+<td class="nick">SoniEx2</td>
+<td class="msg ">remember to use a 50kamps transformer</td>
+</tr>
+
+        
+<tr id="id_l239" class="new nick nick_sfisque">
+
+<td class="time" id="i_41096"><a href="/javaee/2013-11-11#i_41096">22:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41096"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">&gt;.&lt;</td>
+</tr>
+
+        
+<tr id="id_l240" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_41097"><a href="/javaee/2013-11-11#i_41097">22:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41097"  /></td>
+<td class="nick">SoniEx2</td>
+<td class="msg "><a href="http://www.youtube.com/watch?v=uXEPy6Za6cI" title="http://www.youtube.com/watch?v=uXEPy6Za6cI">http://www.youtube.com/watch?v=uXEPy6Za6cI</a></td>
+</tr>
+
+        
+<tr id="id_l241" class="new nick nick_whartung">
+
+<td class="time" id="i_41098"><a href="/javaee/2013-11-11#i_41098">22:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41098"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">That…that's a lot of copper!</td>
+</tr>
+
+        
+<tr id="id_l242" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_41099"><a href="/javaee/2013-11-11#i_41099">22:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41099"  /></td>
+<td class="nick">SoniEx2</td>
+<td class="msg ">lol</td>
+</tr>
+
+        
+<tr id="id_l243" class="new nick nick_sfisque">
+
+<td class="time" id="i_41100"><a href="/javaee/2013-11-11#i_41100">23:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41100"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">ooh, this might be handy:  @TransactionScoped</td>
+</tr>
+
+        
+<tr id="id_l244" class="new nick nick_whartung dark">
+
+<td class="time" id="i_41101"><a href="/javaee/2013-11-11#i_41101">23:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41101"  /></td>
+<td class="nick nick3">whartung</td>
+<td class="msg ">isn't' that a CDI thing?</td>
+</tr>
+
+        
+<tr id="id_l245" class="new nick nick_sfisque">
+
+<td class="time" id="i_41102"><a href="/javaee/2013-11-11#i_41102">23:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41102"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah</td>
+</tr>
+
+        
+<tr id="id_l246" class="new special dark">
+
+<td class="time" id="i_41103"><a href="/javaee/2013-11-11#i_41103">23:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_41103"  /></td>
+<td class="nick"></td>
+<td class="msg ">jieryn joined ##javaee</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/javaee/2013-11-10" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2013-11-12" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2013-11-11">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2013-11-11;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2013-11-11;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

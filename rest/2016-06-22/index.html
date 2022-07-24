@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2016-06-22" />
+    <title>IRC log for #rest, 2016-06-22</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2016-06-22</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2016-06-21" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-06-23" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-06-22">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-06-22;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-06-22;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_ModusPwnens dark">
+
+<td class="time" id="i_174278"><a href="/rest/2016-06-22#i_174278">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174278"  /></td>
+<td class="nick nick2">ModusPwnens</td>
+<td class="msg ">whartung: I did some more research after your answer (this time with the -multipart option to reduce noise) and I understand a lot more now. You can just specify whatever mime-types you're receiving and the server will just receive whatever blob of data you send it.</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_ModusPwnens dark">
+
+<td class="time" id="i_174279"><a href="/rest/2016-06-22#i_174279">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174279"  /></td>
+<td class="nick nick2">ModusPwnens</td>
+<td class="msg ">whartung: I guess the only reason people really need to use multipart/form-data is because when you are uploading via an <abbr title="Hypertext Markup Language">HTML</abbr> form, you're usually sending other form elements along with the file</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_whartung">
+
+<td class="time" id="i_174280"><a href="/rest/2016-06-22#i_174280">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174280"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">well to be clear, you need to have code for this. No server &quot;out of the box&quot; will just &quot;take&quot; anything you send it (I mean, it will take it, it won't actually DO anything with it).</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_whartung">
+
+<td class="time" id="i_174281"><a href="/rest/2016-06-22#i_174281">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174281"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">correct</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_ModusPwnens dark">
+
+<td class="time" id="i_174282"><a href="/rest/2016-06-22#i_174282">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174282"  /></td>
+<td class="nick nick2">ModusPwnens</td>
+<td class="msg ">whartung: Yeah, you gotta do processing, but my understanding is that you don't have to do anything special to wire things up and make sure your server gets your data. It just does and then you can parse it. No need to mess around with multipart/form-data</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_whartung">
+
+<td class="time" id="i_174283"><a href="/rest/2016-06-22#i_174283">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174283"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">We have code that does exactly this. We send the parameters as query parameters, and send up a zipped stream. We do this to compress the data, and then store it directy to disk.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_whartung">
+
+<td class="time" id="i_174284"><a href="/rest/2016-06-22#i_174284">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174284"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_whartung">
+
+<td class="time" id="i_174285"><a href="/rest/2016-06-22#i_174285">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174285"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">in our case, out side of some simple buffers, our data never really touches memory.</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_whartung">
+
+<td class="time" id="i_174286"><a href="/rest/2016-06-22#i_174286">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174286"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">(in our case, on the client or the server)</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_whartung">
+
+<td class="time" id="i_174287"><a href="/rest/2016-06-22#i_174287">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174287"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">we use it to extract large amounts of data from databases</td>
+</tr>
+
+        
+<tr id="id_l12" class="new special dark">
+
+<td class="time" id="i_174289"><a href="/rest/2016-06-22#i_174289">03:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174289"  /></td>
+<td class="nick"></td>
+<td class="msg ">ShekharReddy joined #rest</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont special dark">
+
+<td class="time" id="i_174290"><a href="/rest/2016-06-22#i_174290">06:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174290"  /></td>
+<td class="nick"></td>
+<td class="msg ">ShekharReddy joined #rest</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont special dark">
+
+<td class="time" id="i_174293"><a href="/rest/2016-06-22#i_174293">06:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174293"  /></td>
+<td class="nick"></td>
+<td class="msg ">zama_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_trygvis">
+
+<td class="time" id="i_174295"><a href="/rest/2016-06-22#i_174295">07:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174295"  /></td>
+<td class="nick nick3">trygvis</td>
+<td class="msg ">we have a &quot;blob&quot; server that we can throw anything at. it will return a url that the client can use in later calls</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_trygvis">
+
+<td class="time" id="i_174296"><a href="/rest/2016-06-22#i_174296">07:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174296"  /></td>
+<td class="nick nick3">trygvis</td>
+<td class="msg ">our blob service does compression and deduplication so the id is basically a checksum of the data</td>
+</tr>
+
+        
+<tr id="id_l17" class="new special dark">
+
+<td class="time" id="i_174297"><a href="/rest/2016-06-22#i_174297">07:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174297"  /></td>
+<td class="nick"></td>
+<td class="msg ">Macaveli joined #rest</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont special dark">
+
+<td class="time" id="i_174300"><a href="/rest/2016-06-22#i_174300">09:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174300"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont special dark">
+
+<td class="time" id="i_174305"><a href="/rest/2016-06-22#i_174305">10:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174305"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator joined #rest</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont special dark">
+
+<td class="time" id="i_174306"><a href="/rest/2016-06-22#i_174306">10:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174306"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator joined #rest</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont special dark">
+
+<td class="time" id="i_174308"><a href="/rest/2016-06-22#i_174308">11:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174308"  /></td>
+<td class="nick"></td>
+<td class="msg ">Macaveli joined #rest</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont special dark">
+
+<td class="time" id="i_174311"><a href="/rest/2016-06-22#i_174311">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174311"  /></td>
+<td class="nick"></td>
+<td class="msg ">sulky_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont special dark">
+
+<td class="time" id="i_174312"><a href="/rest/2016-06-22#i_174312">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174312"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont special dark">
+
+<td class="time" id="i_174316"><a href="/rest/2016-06-22#i_174316">16:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174316"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special dark">
+
+<td class="time" id="i_174317"><a href="/rest/2016-06-22#i_174317">18:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174317"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special dark">
+
+<td class="time" id="i_174318"><a href="/rest/2016-06-22#i_174318">18:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174318"  /></td>
+<td class="nick"></td>
+<td class="msg ">anth0ny joined #rest</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special dark">
+
+<td class="time" id="i_174319"><a href="/rest/2016-06-22#i_174319">18:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174319"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special dark">
+
+<td class="time" id="i_174320"><a href="/rest/2016-06-22#i_174320">18:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174320"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special dark">
+
+<td class="time" id="i_174321"><a href="/rest/2016-06-22#i_174321">19:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174321"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont special dark">
+
+<td class="time" id="i_174323"><a href="/rest/2016-06-22#i_174323">20:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174323"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice joined #rest</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont special dark">
+
+<td class="time" id="i_174324"><a href="/rest/2016-06-22#i_174324">21:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174324"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special dark">
+
+<td class="time" id="i_174325"><a href="/rest/2016-06-22#i_174325">23:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174325"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special dark">
+
+<td class="time" id="i_174326"><a href="/rest/2016-06-22#i_174326">23:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_174326"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator_ joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2016-06-21" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-06-23" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-06-22">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-06-22;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-06-22;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

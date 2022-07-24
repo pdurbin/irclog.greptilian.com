@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2017-08-30" />
+    <title>IRC log for #friendlyjava, 2017-08-30</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2017-08-30</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2017-08-29" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-08-31" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-08-30">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-08-30;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-08-30;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_215288"><a href="/friendlyjava/2017-08-30#i_215288">04:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215288"  /></td>
+<td class="nick"></td>
+<td class="msg ">df0_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_215290"><a href="/friendlyjava/2017-08-30#i_215290">06:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215290"  /></td>
+<td class="nick"></td>
+<td class="msg ">abba joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_abba">
+
+<td class="time" id="i_215292"><a href="/friendlyjava/2017-08-30#i_215292">06:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215292"  /></td>
+<td class="nick nick3">abba</td>
+<td class="msg ">Hello, I'm developing some command line tools in java. I'm afraid that starting the jvm every time I invoke the tool may take to much time. Is it possible to let the jvm run in the background and execute a jar file when requested, instead of starting the jvm every time?</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_215299"><a href="/friendlyjava/2017-08-30#i_215299">08:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215299"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">not out of the box</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_215300"><a href="/friendlyjava/2017-08-30#i_215300">08:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215300"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">would involve implementing some daemon service.</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_215301"><a href="/friendlyjava/2017-08-30#i_215301">08:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215301"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">what are your constraints?</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_215302"><a href="/friendlyjava/2017-08-30#i_215302">08:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215302"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">on modern hardware startup times for a simple hello world application should not take any longer than 1-2 sec. if this is already a problem for your budget, you will need to come up with some kind of a daemon keeping your commandline tools in a hot state.</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_215303"><a href="/friendlyjava/2017-08-30#i_215303">08:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215303"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">quick search revealed <a href="http://martiansoftware.com/nailgun/" title="http://martiansoftware.com/nailgun/">http://martiansoftware.com/nailgun/</a> for instance.</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_215304"><a href="/friendlyjava/2017-08-30#i_215304">08:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215304"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">which does address this problem. no idea if thats any good though.</td>
+</tr>
+
+        
+<tr id="id_l11" class="new special">
+
+<td class="time" id="i_215305"><a href="/friendlyjava/2017-08-30#i_215305">08:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215305"  /></td>
+<td class="nick"></td>
+<td class="msg ">abba_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_215309"><a href="/friendlyjava/2017-08-30#i_215309">11:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215309"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">no idea if this one is any good either: Scramjet for UNIX: Java acceleration for terminal apps - <a href="https://uazu.net/scramjet/" title="https://uazu.net/scramjet/">https://uazu.net/scramjet/</a></td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_215310"><a href="/friendlyjava/2017-08-30#i_215310">11:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215310"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Hopefully, smaller, modular JVMs using Java 9 will start faster.</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pulsar">
+
+<td class="time" id="i_215311"><a href="/friendlyjava/2017-08-30#i_215311">11:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215311"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">guys.. i need some help with terminology / design patterns.</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215312"><a href="/friendlyjava/2017-08-30#i_215312">11:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215312"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">to help me evaluate frameworks / libraries based on the documentation.</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215313"><a href="/friendlyjava/2017-08-30#i_215313">11:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215313"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">still pondering on a scalable message driven architecture</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215314"><a href="/friendlyjava/2017-08-30#i_215314">11:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215314"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">looking for search terms regarding dynamic message routing / handler instanciation.</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215315"><a href="/friendlyjava/2017-08-30#i_215315">11:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215315"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">what i needs is: message arrives at $someMQ/BUS, system routes the message to a node running a worker assigned to the message-origin (think userid). worker can be instanciated on demand if there is none.</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215316"><a href="/friendlyjava/2017-08-30#i_215316">11:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215316"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">is there a terminology for that in a classic mq system?</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215317"><a href="/friendlyjava/2017-08-30#i_215317">11:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215317"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">i guess not. i am aware of the actor model and see how it fits here.</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pulsar">
+
+<td class="time" id="i_215318"><a href="/friendlyjava/2017-08-30#i_215318">11:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215318"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">latency is key in my usecase, i am open to suggestions in terms of framework choice.</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_215319"><a href="/friendlyjava/2017-08-30#i_215319">11:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215319"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">pulsar: I would ask whartung and Techni in #glassfish in a few hours after they're awake</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_pulsar">
+
+<td class="time" id="i_215321"><a href="/friendlyjava/2017-08-30#i_215321">12:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215321"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">ACK</td>
+</tr>
+
+        
+<tr id="id_l24" class="new special dark">
+
+<td class="time" id="i_215322"><a href="/friendlyjava/2017-08-30#i_215322">12:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215322"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special dark">
+
+<td class="time" id="i_215326"><a href="/friendlyjava/2017-08-30#i_215326">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215326"  /></td>
+<td class="nick"></td>
+<td class="msg ">badLuckJoe joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special dark">
+
+<td class="time" id="i_215328"><a href="/friendlyjava/2017-08-30#i_215328">14:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215328"  /></td>
+<td class="nick"></td>
+<td class="msg ">foojs joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special dark">
+
+<td class="time" id="i_215332"><a href="/friendlyjava/2017-08-30#i_215332">16:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215332"  /></td>
+<td class="nick"></td>
+<td class="msg ">foojs joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special dark">
+
+<td class="time" id="i_215334"><a href="/friendlyjava/2017-08-30#i_215334">17:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215334"  /></td>
+<td class="nick"></td>
+<td class="msg ">df0_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special dark">
+
+<td class="time" id="i_215336"><a href="/friendlyjava/2017-08-30#i_215336">17:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_215336"  /></td>
+<td class="nick"></td>
+<td class="msg ">foojs left ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2017-08-29" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-08-31" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-08-30">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-08-30;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-08-30;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

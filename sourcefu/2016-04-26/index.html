@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-04-26" />
+    <title>IRC log for #sourcefu, 2016-04-26</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-04-26</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-04-25" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-04-27" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-04-26">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-04-26;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-04-26;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_169499"><a href="/sourcefu/2016-04-26#i_169499">17:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169499"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu semiosis: what do you think of ServiceLoader? <a href="https://docs.oracle.com/javase/tutorial/ext/basics/spi.html" title="https://docs.oracle.com/javase/tutorial/ext/basics/spi.html">https://docs.oracle.com/javase/tutorial/ext/basics/spi.html</a> ... my use case is basically <a href="http://stackoverflow.com/questions/16102010/dynamically-loading-plugin-jars-using-serviceloader" title="http://stackoverflow.com/questions/16102010/dynamically-loading-plugin-jars-using-serviceloader">http://stackoverflow.com/questions/16102010/dynamically-loading-plugin-jars-using-serviceloader</a></td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_aditsu">
+
+<td class="time" id="i_169500"><a href="/sourcefu/2016-04-26#i_169500">17:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169500"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: I've used it; the concept is great but I don't like the implementation very much (but it works)</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_169501"><a href="/sourcefu/2016-04-26#i_169501">17:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169501"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">i wrote a filesystem provider plugin by implementing the NIO.2 SPI.  was a big project but it actually worked.  lets you connect to glusterfs using native java filesystem <abbr title="Application Programming Interface">API</abbr>... github.com/semiosis/glusterfs-java-filesystem</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_pdurbin">
+
+<td class="time" id="i_169503"><a href="/sourcefu/2016-04-26#i_169503">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169503"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: ok. thanks</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_169504"><a href="/sourcefu/2016-04-26#i_169504">17:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169504"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">semiosis: well, I'm not interested in writing the plugin itself but rather the plugin system that allows others to write plugins by dropping jars into place: <a href="https://github.com/IISH/dataverse/commit/a1c7615#commitcomment-17238686" title="https://github.com/IISH/dataverse/commit/a1c7615#commitcomment-17238686">https://github.com/IISH/dataverse/commit/a1c7615#commitcomment-17238686</a></td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_169505"><a href="/sourcefu/2016-04-26#i_169505">17:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169505"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you just write an interface and then use ServiceLoader to load implementations</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_169507"><a href="/sourcefu/2016-04-26#i_169507">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169507"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">people implement it and add a reference under META-INF</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_pdurbin">
+
+<td class="time" id="i_169509"><a href="/sourcefu/2016-04-26#i_169509">17:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169509"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: cool. sounds like what I want. lighter than OSGi and I don't have to wait for Jigsaw (Java 9)</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_169511"><a href="/sourcefu/2016-04-26#i_169511">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169511"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">btw, that SO question seems to be more about adding jars at runtime (which I haven't tried, and is not done by ServiceLoader)</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_169512"><a href="/sourcefu/2016-04-26#i_169512">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169512"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">ServiceLoader just loads whatever it can find in the current classpath</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_semiosis">
+
+<td class="time" id="i_169513"><a href="/sourcefu/2016-04-26#i_169513">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169513"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">i get the impression that loading jars at runtime is hard.  both eclipse (last time i used it) and intellij require a restart of the app to add/remove plugins</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_169515"><a href="/sourcefu/2016-04-26#i_169515">17:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169515"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">eclipse doesn't usually require it, but strongly encourages you to restart anyway</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_semiosis">
+
+<td class="time" id="i_169516"><a href="/sourcefu/2016-04-26#i_169516">17:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169516"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">i would also look for other libs to handle plugins that may work better for you than the core javase api</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_semiosis">
+
+<td class="time" id="i_169517"><a href="/sourcefu/2016-04-26#i_169517">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169517"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">maybe this one? <a href="https://github.com/decebals/pf4j" title="https://github.com/decebals/pf4j">https://github.com/decebals/pf4j</a></td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_169518"><a href="/sourcefu/2016-04-26#i_169518">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169518"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">wait, I though you *could* load jars at runtime with ServiceLoader</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_169519"><a href="/sourcefu/2016-04-26#i_169519">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169519"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">semiosis: interesting. thanks</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_169520"><a href="/sourcefu/2016-04-26#i_169520">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169520"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;With PF4J you can easily transform a monolithic java application in a modular application.&quot;</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_aditsu">
+
+<td class="time" id="i_169521"><a href="/sourcefu/2016-04-26#i_169521">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169521"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">nope, the typical usage is you add a jar with an implementation and start (or restart) the application</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_169522"><a href="/sourcefu/2016-04-26#i_169522">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169522"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: oh, well that's fine. people can stop the app for a bit</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_169523"><a href="/sourcefu/2016-04-26#i_169523">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169523"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">it's doesn't need to be *that* dynamic :)</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_aditsu">
+
+<td class="time" id="i_169524"><a href="/sourcefu/2016-04-26#i_169524">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169524"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you can also do it at runtime, as shown in that question; the 2nd example is cleaner</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_169526"><a href="/sourcefu/2016-04-26#i_169526">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169526"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">cool</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_aditsu">
+
+<td class="time" id="i_169527"><a href="/sourcefu/2016-04-26#i_169527">17:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169527"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">(just ServiceLoader doesn't do it for you)</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_169528"><a href="/sourcefu/2016-04-26#i_169528">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169528"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_aditsu">
+
+<td class="time" id="i_169529"><a href="/sourcefu/2016-04-26#i_169529">17:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169529"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">it still helps a bit - it lets you give it a custom ClassLoader</td>
+</tr>
+
+        
+<tr id="id_l27" class="new special dark">
+
+<td class="time" id="i_169545"><a href="/sourcefu/2016-04-26#i_169545">19:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_169545"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-04-25" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-04-27" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-04-26">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-04-26;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-04-26;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

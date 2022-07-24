@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2019-03-12" />
+    <title>IRC log for #friendlyjava, 2019-03-12</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2019-03-12</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2019-03-11" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-03-13" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-03-12">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-03-12;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-03-12;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_243223"><a href="/friendlyjava/2019-03-12#i_243223">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243223"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">aditsu: happy with all these newish Java features? Lambdas and such?</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_aditsu">
+
+<td class="time" id="i_243224"><a href="/friendlyjava/2019-03-12#i_243224">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243224"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">lambdas are awesome, streams not so much</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_243225"><a href="/friendlyjava/2019-03-12#i_243225">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243225"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">What's wrong with streams?</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_aditsu">
+
+<td class="time" id="i_243226"><a href="/friendlyjava/2019-03-12#i_243226">00:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243226"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">they're very complicated and clumsy.. you have to stream a collection, do things with the stream, then collect it back into a list or something</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243227"><a href="/friendlyjava/2019-03-12#i_243227">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243227"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">they added like a zillion new classes and methods</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243228"><a href="/friendlyjava/2019-03-12#i_243228">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243228"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">and extremely laborious ways of doing stuff that's trivial in other languages</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_kirua dark">
+
+<td class="time" id="i_243229"><a href="/friendlyjava/2019-03-12#i_243229">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243229"  /></td>
+<td class="nick nick3">kirua</td>
+<td class="msg ">how do i transfomr this : Collectors.mapping(type -&gt; type.getIndex(), Collectors.toList()))</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243230"><a href="/friendlyjava/2019-03-12#i_243230">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243230"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I guess they're trying to do map reduce.</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_kirua dark">
+
+<td class="time" id="i_243231"><a href="/friendlyjava/2019-03-12#i_243231">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243231"  /></td>
+<td class="nick nick3">kirua</td>
+<td class="msg ">type::getIndex ?</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_aditsu">
+
+<td class="time" id="i_243232"><a href="/friendlyjava/2019-03-12#i_243232">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243232"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">kirua: TypeClass::getIndex</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243233"><a href="/friendlyjava/2019-03-12#i_243233">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243233"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I wrote map and reduce with Lists, it's much nicer</td>
+</tr>
+
+        
+<tr id="id_l13" class="new special dark">
+
+<td class="time" id="i_243234"><a href="/friendlyjava/2019-03-12#i_243234">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243234"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_aditsu">
+
+<td class="time" id="i_243235"><a href="/friendlyjava/2019-03-12#i_243235">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243235"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it makes sense to also have something that works with a stream type of thing (which they already had several implementations of - see <a href="http://irclog.greptilian.com/friendlyjava/2018-12-01#i_240656" title="http://irclog.greptilian.com/friendlyjava/2018-12-01#i_240656">http://irclog.greptilian.com/friendlyjava/2018-12-01#i_240656</a> ), but sometimes you just want something simple</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243236"><a href="/friendlyjava/2019-03-12#i_243236">00:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243236"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">also, <a href="http://irclog.greptilian.com/friendlyjava/2018-11-03#i_239847" title="http://irclog.greptilian.com/friendlyjava/2018-11-03#i_239847">http://irclog.greptilian.com/friendlyjava/2018-11-03#i_239847</a> :)</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243237"><a href="/friendlyjava/2019-03-12#i_243237">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243237"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">guess I haven't really changed my mind since <a href="http://irclog.greptilian.com/friendlyjava/2017-05-21#i_207222" title="http://irclog.greptilian.com/friendlyjava/2017-05-21#i_207222">http://irclog.greptilian.com/friendlyjava/2017-05-21#i_207222</a></td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_243238"><a href="/friendlyjava/2019-03-12#i_243238">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243238"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_aditsu">
+
+<td class="time" id="i_243239"><a href="/friendlyjava/2019-03-12#i_243239">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243239"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I also haven't had to deal with any code that uses particular java 8 features so far</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243240"><a href="/friendlyjava/2019-03-12#i_243240">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243240"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so I'm just using what I like</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243241"><a href="/friendlyjava/2019-03-12#i_243241">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243241"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">oh, I've made use of default methods, they're quite handy, even if a little tricky</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_243242"><a href="/friendlyjava/2019-03-12#i_243242">00:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243242"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Mostly, we're not using Java 8 features at work yet. Just a bit here and there.</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_aditsu">
+
+<td class="time" id="i_243243"><a href="/friendlyjava/2019-03-12#i_243243">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243243"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg "><a href="https://sourceforge.net/p/depeche/depeche/ci/default/tree/src/net/aditsu/depeche/expr/ShortcutBooleanOp2.java" title="https://sourceforge.net/p/depeche/depeche/ci/default/tree/src/net/aditsu/depeche/expr/ShortcutBooleanOp2.java">https://sourceforge.net/p/depeche/depeche/ci/default/tree/src/net/aditsu/depeche/expr/ShortcutBooleanOp2.java</a></td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243244"><a href="/friendlyjava/2019-03-12#i_243244">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243244"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">huh, just realized &quot;public&quot; is redundant</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243245"><a href="/friendlyjava/2019-03-12#i_243245">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243245"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">guess I'm too used to using it when I have a method body</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_243246"><a href="/friendlyjava/2019-03-12#i_243246">01:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243246"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">cool</td>
+</tr>
+
+        
+<tr id="id_l26" class="new special">
+
+<td class="time" id="i_243247"><a href="/friendlyjava/2019-03-12#i_243247">04:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243247"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special">
+
+<td class="time" id="i_243249"><a href="/friendlyjava/2019-03-12#i_243249">06:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243249"  /></td>
+<td class="nick"></td>
+<td class="msg ">deavmiLaptop joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special">
+
+<td class="time" id="i_243250"><a href="/friendlyjava/2019-03-12#i_243250">06:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243250"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special">
+
+<td class="time" id="i_243251"><a href="/friendlyjava/2019-03-12#i_243251">10:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243251"  /></td>
+<td class="nick"></td>
+<td class="msg ">deavmiLaptop joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont special">
+
+<td class="time" id="i_243252"><a href="/friendlyjava/2019-03-12#i_243252">11:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243252"  /></td>
+<td class="nick"></td>
+<td class="msg ">deavmi joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont special">
+
+<td class="time" id="i_243253"><a href="/friendlyjava/2019-03-12#i_243253">14:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243253"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special">
+
+<td class="time" id="i_243255"><a href="/friendlyjava/2019-03-12#i_243255">15:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243255"  /></td>
+<td class="nick"></td>
+<td class="msg ">misthalu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special">
+
+<td class="time" id="i_243256"><a href="/friendlyjava/2019-03-12#i_243256">15:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243256"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont special">
+
+<td class="time" id="i_243257"><a href="/friendlyjava/2019-03-12#i_243257">17:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243257"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2019-03-11" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-03-13" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-03-12">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-03-12;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-03-12;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

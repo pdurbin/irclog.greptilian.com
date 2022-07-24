@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2019-08-13" />
+    <title>IRC log for #friendlyjava, 2019-08-13</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2019-08-13</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2019-08-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-08-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-08-13">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-08-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-08-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_246463"><a href="/friendlyjava/2019-08-13#i_246463">04:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246463"  /></td>
+<td class="nick"></td>
+<td class="msg ">Jantz_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_aditsu">
+
+<td class="time" id="i_246464"><a href="/friendlyjava/2019-08-13#i_246464">05:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246464"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">huh, somebody tried an <abbr title="Structured Query Language">SQL</abbr> injection attack against a site I developed</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_aditsu">
+
+<td class="time" id="i_246465"><a href="/friendlyjava/2019-08-13#i_246465">05:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246465"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">maybe not just <abbr title="Structured Query Language">SQL</abbr>.. it's weird</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_aditsu">
+
+<td class="time" id="i_246466"><a href="/friendlyjava/2019-08-13#i_246466">05:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246466"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it has attempts like offset=[13' and 'x'='x], offset=[13 AnD BeNChMaRK(2999999,MD5(NOW()))], offset=[13'&amp;&amp;sLEEp(3)&amp;&amp;'1]</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_aditsu">
+
+<td class="time" id="i_246467"><a href="/friendlyjava/2019-08-13#i_246467">05:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246467"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">the offset parameter is passed through Integer.parseInt, so.. good luck with that :p</td>
+</tr>
+
+        
+<tr id="id_l7" class="new special dark">
+
+<td class="time" id="i_246468"><a href="/friendlyjava/2019-08-13#i_246468">08:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246468"  /></td>
+<td class="nick"></td>
+<td class="msg ">Jantz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_mr_lou">
+
+<td class="time" id="i_246469"><a href="/friendlyjava/2019-08-13#i_246469">10:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246469"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg ">aditsu, How do you see those attempts?</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_246470"><a href="/friendlyjava/2019-08-13#i_246470">10:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246470"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg ">I added some checking on IndieGameMusic.com because I was tired of hackers. If 10 weird calls like that are detected, then they're blocked.</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_246471"><a href="/friendlyjava/2019-08-13#i_246471">10:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246471"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">mr_lou: error logs</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_mr_lou">
+
+<td class="time" id="i_246472"><a href="/friendlyjava/2019-08-13#i_246472">10:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246472"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg ">aditsu, What server?</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_246473"><a href="/friendlyjava/2019-08-13#i_246473">10:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246473"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg ">I have no access to such fancy stuff with my cheap webhotel provider.</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_246474"><a href="/friendlyjava/2019-08-13#i_246474">10:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246474"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it's a VPS</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pdurbin">
+
+<td class="time" id="i_246475"><a href="/friendlyjava/2019-08-13#i_246475">10:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246475"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">How much analysis of your logs do you do? Is an email alert sent if log volume goes way up? Do you visualize your log traffic? Do you look for anomalies like that &quot;BeNChMaRK&quot; injection? Or did you just happen to be looking at the logs? :)</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_246476"><a href="/friendlyjava/2019-08-13#i_246476">11:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246476"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">in this case it's an automatic email that basically greps the logs for some exceptions</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin">
+
+<td class="time" id="i_246477"><a href="/friendlyjava/2019-08-13#i_246477">11:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246477"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Nice. That's more than we do. :)</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_246478"><a href="/friendlyjava/2019-08-13#i_246478">11:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246478"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I set it up because some serious bugs happened and went undetected until clients complained</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_pdurbin">
+
+<td class="time" id="i_246479"><a href="/friendlyjava/2019-08-13#i_246479">11:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246479"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">makes sense</td>
+</tr>
+
+        
+<tr id="id_l19" class="new special dark">
+
+<td class="time" id="i_246480"><a href="/friendlyjava/2019-08-13#i_246480">12:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246480"  /></td>
+<td class="nick"></td>
+<td class="msg ">Jantz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_mr_lou">
+
+<td class="time" id="i_246483"><a href="/friendlyjava/2019-08-13#i_246483">15:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246483"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg "><a href="https://imgur.com/gallery/XAQ9yEw" title="https://imgur.com/gallery/XAQ9yEw">https://imgur.com/gallery/XAQ9yEw</a></td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_246484"><a href="/friendlyjava/2019-08-13#i_246484">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246484"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg "><a href="https://xkcd.com/386/" title="https://xkcd.com/386/">https://xkcd.com/386/</a></td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_mr_lou">
+
+<td class="time" id="i_246485"><a href="/friendlyjava/2019-08-13#i_246485">15:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_246485"  /></td>
+<td class="nick nick2">mr_lou</td>
+<td class="msg ">:-)  That's an old one I've often shared too.</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2019-08-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-08-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-08-13">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-08-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-08-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-07-11" />
+    <title>IRC log for #sourcefu, 2016-07-11</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-07-11</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-07-10" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-07-12" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-07-11">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-07-11;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-07-11;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_prologic dark">
+
+<td class="time" id="i_175428"><a href="/sourcefu/2016-07-11#i_175428">05:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175428"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">So I'm thinking of building a small daemon in Go that will run on UNIX(ish) systems like Linux, <abbr title="Operating Systems">OS</abbr> X, BSD whose sole purpose is to periodically collect system metrics (and custom metrics via user scripts) and publish them to (at first) InfluxDB</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_175429"><a href="/sourcefu/2016-07-11#i_175429">05:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175429"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">I already have tiny bits of PoC(s) that collect and publish cpu, load, mem, disk metrics</td>
+</tr>
+
+        
+<tr id="id_l4" class="new special">
+
+<td class="time" id="i_175430"><a href="/sourcefu/2016-07-11#i_175430">05:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175430"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont special">
+
+<td class="time" id="i_175437"><a href="/sourcefu/2016-07-11#i_175437">07:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175437"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont special">
+
+<td class="time" id="i_175439"><a href="/sourcefu/2016-07-11#i_175439">07:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175439"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_175448"><a href="/sourcefu/2016-07-11#i_175448">10:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175448"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">prologic: cool, sounds a bit like <a href="https://github.com/prometheus/prometheus" title="https://github.com/prometheus/prometheus">https://github.com/prometheus/prometheus</a></td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_dotplus">
+
+<td class="time" id="i_175453"><a href="/sourcefu/2016-07-11#i_175453">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175453"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">prologic: adding to the world of monitoring, especially improvements to the data flow to tsdbs sounds like a great thing! one question: would it not be easier to add publish-to-influxdb support to one of the plethora of existing metric-collecting agents? perhaps collectd which I know has an established method for output plugins?</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_dotplus">
+
+<td class="time" id="i_175454"><a href="/sourcefu/2016-07-11#i_175454">13:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175454"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">or is the &quot;I built it&quot; an important part? (perfectly reasonable, if it is. I've built lots of things that I could have used something else for, for various reasons)</td>
+</tr>
+
+        
+<tr id="id_l10" class="new special dark">
+
+<td class="time" id="i_175463"><a href="/sourcefu/2016-07-11#i_175463">15:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175463"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_prologic">
+
+<td class="time" id="i_175465"><a href="/sourcefu/2016-07-11#i_175465">15:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175465"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">ahh</td>
+</tr>
+
+        
+<tr id="id_l12" class="new special dark">
+
+<td class="time" id="i_175467"><a href="/sourcefu/2016-07-11#i_175467">16:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175467"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont special dark">
+
+<td class="time" id="i_175478"><a href="/sourcefu/2016-07-11#i_175478">18:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175478"  /></td>
+<td class="nick"></td>
+<td class="msg ">sivoais joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_dotplus">
+
+<td class="time" id="i_175496"><a href="/sourcefu/2016-07-11#i_175496">19:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175496"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">prologic: hm?</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_175504"><a href="/sourcefu/2016-07-11#i_175504">20:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175504"  /></td>
+<td class="nick nick4">sivoais</td>
+<td class="msg ">bear: were you able to transfer the Chandler data by any chance?</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_bear">
+
+<td class="time" id="i_175505"><a href="/sourcefu/2016-07-11#i_175505">20:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175505"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">sivoais - sorry for the lag in updating, some real-life issues slowed me down... the update is that my tarball was the dev side of the house and i'm reaching out to the person who is supposed to be maintaining that box to ask why it's offline, so working on it</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_175506"><a href="/sourcefu/2016-07-11#i_175506">20:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175506"  /></td>
+<td class="nick nick4">sivoais</td>
+<td class="msg ">oh, it's not a problem! I was just looking into the work done by CALO at SRI (same people behind Siri) and it just reminded me of Chandler :-P</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_bear">
+
+<td class="time" id="i_175507"><a href="/sourcefu/2016-07-11#i_175507">20:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175507"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">no worries - your request just spurred me into doing this as it had been on my &quot;would be nice if...&quot; list</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_bear">
+
+<td class="time" id="i_175508"><a href="/sourcefu/2016-07-11#i_175508">20:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175508"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">so I do appreciate the reminders to circle back around to it</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_175509"><a href="/sourcefu/2016-07-11#i_175509">20:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_175509"  /></td>
+<td class="nick nick4">sivoais</td>
+<td class="msg ">hehe :-D</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-07-10" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-07-12" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-07-11">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-07-11;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-07-11;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

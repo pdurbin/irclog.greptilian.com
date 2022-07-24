@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2014-07-27" />
+    <title>IRC log for #friendlyjava, 2014-07-27</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2014-07-27</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2014-07-26" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2014-07-28" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2014-07-27">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2014-07-27;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2014-07-27;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_71572"><a href="/friendlyjava/2014-07-27#i_71572">04:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71572"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_71580"><a href="/friendlyjava/2014-07-27#i_71580">08:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71580"  /></td>
+<td class="nick"></td>
+<td class="msg ">neo_29m joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_neo_29m">
+
+<td class="time" id="i_71581"><a href="/friendlyjava/2014-07-27#i_71581">08:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71581"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">Hi, I have an inheritance/design question. Anyone can help ?</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_71584"><a href="/friendlyjava/2014-07-27#i_71584">08:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71584"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">neo_29m: what's the question?</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_neo_29m">
+
+<td class="time" id="i_71585"><a href="/friendlyjava/2014-07-27#i_71585">08:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71585"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">I'm implementing an abstract factory, and then extending/implementing from it concrete Factory classes. I want to enforce creation of some methods over the subclasses but in the subclasses I want those methods to be private. How can I do that ?</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_71586"><a href="/friendlyjava/2014-07-27#i_71586">08:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71586"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you want to require the subclasses to have certain private methods? I don't think you can do that at compile time..</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_neo_29m">
+
+<td class="time" id="i_71587"><a href="/friendlyjava/2014-07-27#i_71587">08:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71587"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">If I use interfaces, they must be public. If I use abstract classes I can define the methods as abstract but can't use access modifier public when I'm implementing them in the subclass.</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_neo_29m">
+
+<td class="time" id="i_71588"><a href="/friendlyjava/2014-07-27#i_71588">08:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71588"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">*accessmodifier private</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_71589"><a href="/friendlyjava/2014-07-27#i_71589">08:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71589"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">right.. you can do protected though</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_neo_29m">
+
+<td class="time" id="i_71590"><a href="/friendlyjava/2014-07-27#i_71590">08:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71590"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">Yeah, this means I have to put that class in a separate package though, to avoid package access privileges. No other way ?</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_neo_29m">
+
+<td class="time" id="i_71591"><a href="/friendlyjava/2014-07-27#i_71591">09:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71591"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">is that even a good design , or it sounds messed up ?</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_71592"><a href="/friendlyjava/2014-07-27#i_71592">09:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71592"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">if you're so concerned about package access, I guess you have to do that</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_71593"><a href="/friendlyjava/2014-07-27#i_71593">09:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71593"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I don't think keeping them in the same package is a problem</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_neo_29m">
+
+<td class="time" id="i_71594"><a href="/friendlyjava/2014-07-27#i_71594">09:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71594"  /></td>
+<td class="nick nick3">neo_29m</td>
+<td class="msg ">Ok, thanks!</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_71595"><a href="/friendlyjava/2014-07-27#i_71595">09:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71595"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yw</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin">
+
+<td class="time" id="i_71597"><a href="/friendlyjava/2014-07-27#i_71597">10:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71597"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: what about an abstract superclass instead of an interface?</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71598"><a href="/friendlyjava/2014-07-27#i_71598">10:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71598"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;However, with abstract classes, you can declare fields that are not static and final, and **define public, protected, and private concrete methods**.&quot; (emphasis mine) <a href="http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html" title="http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html</a></td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71599"><a href="/friendlyjava/2014-07-27#i_71599">10:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71599"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;Consider using abstract classes if... You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).&quot;</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71600"><a href="/friendlyjava/2014-07-27#i_71600">10:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71600"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">see also '&quot;Program to an interface&quot; really means &quot;Program to a supertype&quot;' on page 12 of <a href="http://wickedlysmart.com/head-first-design-patterns/" title="http://wickedlysmart.com/head-first-design-patterns/">http://wickedlysmart.com/head-first-design-patterns/</a></td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71602"><a href="/friendlyjava/2014-07-27#i_71602">10:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71602"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">hmm. this is nice: &quot;In this interview, Erich Gamma, co-author of the landmark book, Design Patterns, talks with Bill Venners about two design principles: program to an interface, not an implementation, and favor object composition over class inheritance.&quot; <a href="http://www.artima.com/lejava/articles/designprinciples.html" title="http://www.artima.com/lejava/articles/designprinciples.html">http://www.artima.com/lejava/articles/designprinciples.html</a></td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71605"><a href="/friendlyjava/2014-07-27#i_71605">11:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71605"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: hmm, re-reading that chat and playing around with examples from that book... I guess you *are* saying to use abstract classes... to use protected rather than public</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71606"><a href="/friendlyjava/2014-07-27#i_71606">11:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71606"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">and it seems like private is not an option</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71607"><a href="/friendlyjava/2014-07-27#i_71607">11:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71607"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;Private methods are not polymorphic (you cannot inherit them), so it makes no sense to make a private method abstract.&quot; -- <a href="http://stackoverflow.com/questions/2874350/cant-declare-an-abstract-method-private" title="http://stackoverflow.com/questions/2874350/cant-declare-an-abstract-method-private">http://stackoverflow.com/questions/2874350/cant-declare-an-abstract-method-private</a></td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71608"><a href="/friendlyjava/2014-07-27#i_71608">11:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71608"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;A subclass does not inherit the private members of its parent class&quot; -- <a href="http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html" title="http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">http://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html</a></td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71609"><a href="/friendlyjava/2014-07-27#i_71609">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71609"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;error: illegal combination of modifiers: abstract and private&quot;</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71610"><a href="/friendlyjava/2014-07-27#i_71610">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71610"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">that</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71611"><a href="/friendlyjava/2014-07-27#i_71611">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71611"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">for people googling that error :)</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_71614"><a href="/friendlyjava/2014-07-27#i_71614">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71614"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ok, I made a gist of the code I've been playing with: Java interfaces vs. abstract classes - <a href="https://gist.github.com/pdurbin/f2a34896377b6777acc6#file-readme-md" title="https://gist.github.com/pdurbin/f2a34896377b6777acc6#file-readme-md">https://gist.github.com/pdurbin/f2a34896377b6777acc6#file-readme-md</a></td>
+</tr>
+
+        
+<tr id="id_l30" class="new special dark">
+
+<td class="time" id="i_71617"><a href="/friendlyjava/2014-07-27#i_71617">13:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71617"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l31" class="new nick nick_firebird1">
+
+<td class="time" id="i_71618"><a href="/friendlyjava/2014-07-27#i_71618">13:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71618"  /></td>
+<td class="nick nick4">firebird1</td>
+<td class="msg ">pdurbin, hi</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont nick nick_firebird1">
+
+<td class="time" id="i_71619"><a href="/friendlyjava/2014-07-27#i_71619">13:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71619"  /></td>
+<td class="nick nick4">firebird1</td>
+<td class="msg ">u work on java professionally right</td>
+</tr>
+
+        
+<tr id="id_l33" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71622"><a href="/friendlyjava/2014-07-27#i_71622">14:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71622"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">firebird1: yes</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_pdurbin">
+
+<td class="time" id="i_71634"><a href="/friendlyjava/2014-07-27#i_71634">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71634"  /></td>
+<td class="nick nick1">* pdurbin</td>
+<td class="msg act ">adds some <abbr title="Unified Modelling Language">UML</abbr> and class diagrams</td>
+</tr>
+
+        
+<tr id="id_l35" class="new special dark">
+
+<td class="time" id="i_71638"><a href="/friendlyjava/2014-07-27#i_71638">19:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71638"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_aditsu">
+
+<td class="time" id="i_71640"><a href="/friendlyjava/2014-07-27#i_71640">19:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71640"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: heh, you analyzed that a lot :p let me know if I said anything wrong :)</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71641"><a href="/friendlyjava/2014-07-27#i_71641">19:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71641"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: do you think the oracle docs are confusing?</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71642"><a href="/friendlyjava/2014-07-27#i_71642">19:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71642"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;However, with abstract classes, you can declare fields that are not static and final, and **define public, protected, and private concrete methods**.&quot; (emphasis mine) <a href="http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html" title="http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html">http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html</a></td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71643"><a href="/friendlyjava/2014-07-27#i_71643">19:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71643"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">because it seems like in this example anyway, you're limited to public and protected</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71644"><a href="/friendlyjava/2014-07-27#i_71644">19:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71644"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;error: illegal combination of modifiers: abstract and private&quot;</td>
+</tr>
+
+        
+<tr id="id_l41" class="new nick nick_aditsu">
+
+<td class="time" id="i_71645"><a href="/friendlyjava/2014-07-27#i_71645">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71645"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you can have private concrete methods in abstract classes, but not private abstract methods</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_aditsu">
+
+<td class="time" id="i_71646"><a href="/friendlyjava/2014-07-27#i_71646">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71646"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yeah it's a bit confusing</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71647"><a href="/friendlyjava/2014-07-27#i_71647">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71647"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I see what you mean though</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71648"><a href="/friendlyjava/2014-07-27#i_71648">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71648"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">concrete</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71649"><a href="/friendlyjava/2014-07-27#i_71649">19:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71649"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: you even checked out my uml and class diagrams?</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_aditsu">
+
+<td class="time" id="i_71650"><a href="/friendlyjava/2014-07-27#i_71650">19:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71650"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">nope, taking a quick look now</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_aditsu">
+
+<td class="time" id="i_71651"><a href="/friendlyjava/2014-07-27#i_71651">19:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71651"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I'm not a fan of uml</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71652"><a href="/friendlyjava/2014-07-27#i_71652">19:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71652"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: are you a fan of class diagrams?</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_aditsu">
+
+<td class="time" id="i_71653"><a href="/friendlyjava/2014-07-27#i_71653">19:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71653"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">not particularly.. depends if I understand them</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71654"><a href="/friendlyjava/2014-07-27#i_71654">19:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71654"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71655"><a href="/friendlyjava/2014-07-27#i_71655">19:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71655"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: are you a fan or sketching? drawing this stuff?</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71656"><a href="/friendlyjava/2014-07-27#i_71656">19:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71656"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: a guy at work gave this talk: <a href="http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/" title="http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/">http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/</a></td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_71657"><a href="/friendlyjava/2014-07-27#i_71657">19:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71657"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">here's the reply I just made: [TechTalkFollowup] from code to <abbr title="Unified Modelling Language">UML</abbr> (PlantUML) to diagrams - <a href="https://lists.iq.harvard.edu/pipermail/techtalkfollowup/2014-July/000020.html" title="https://lists.iq.harvard.edu/pipermail/techtalkfollowup/2014-July/000020.html">https://lists.iq.harvard.edu/pipermail/techtalkfollowup/2014-July/000020.html</a></td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_aditsu">
+
+<td class="time" id="i_71658"><a href="/friendlyjava/2014-07-27#i_71658">19:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71658"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I'm a fan of coding, but sometimes I may draw things to figure them out</td>
+</tr>
+
+        
+<tr id="id_l55" class="cont nick nick_aditsu">
+
+<td class="time" id="i_71659"><a href="/friendlyjava/2014-07-27#i_71659">19:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71659"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">(and by draw I mean using pen and paper)</td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_71660"><a href="/friendlyjava/2014-07-27#i_71660">19:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_71660"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sure. drawing with pen and paper works a different part of your brain too</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2014-07-26" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2014-07-28" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2014-07-27">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2014-07-27;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2014-07-27;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

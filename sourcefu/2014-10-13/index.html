@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2014-10-13" />
+    <title>IRC log for #sourcefu, 2014-10-13</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2014-10-13</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2014-10-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2014-10-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2014-10-13">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2014-10-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2014-10-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_80092"><a href="/sourcefu/2014-10-13#i_80092">17:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80092"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">pdurbin: to my great surprise i got worse performance from a ForkJoinPool implementation than a plain old thread pool  &amp; queue</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_80099"><a href="/sourcefu/2014-10-13#i_80099">17:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80099"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">good that you're measuring such things</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_80100"><a href="/sourcefu/2014-10-13#i_80100">17:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80100"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sounds like you expected better performance from fork/join</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_80101"><a href="/sourcefu/2014-10-13#i_80101">17:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80101"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">but why do people object to Java 8's lambda/stream stuff being built on top of fork/join? is it a performance thing?</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_80103"><a href="/sourcefu/2014-10-13#i_80103">17:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80103"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">that one article you showed me was a performance complaint</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_semiosis dark">
+
+<td class="time" id="i_80104"><a href="/sourcefu/2014-10-13#i_80104">17:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80104"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">which i thought was purely theoretical and didnt expect to see in practice, which is why i was surprised when the FJP was actaully slower</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_pdurbin">
+
+<td class="time" id="i_80107"><a href="/sourcefu/2014-10-13#i_80107">17:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80107"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">see, I only give you good stuff to read</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_80116"><a href="/sourcefu/2014-10-13#i_80116">18:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80116"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">tyvm</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pdurbin">
+
+<td class="time" id="i_80132"><a href="/sourcefu/2014-10-13#i_80132">18:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80132"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">so does it scare you off from Java's lambda/stream stuff?</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_80133"><a href="/sourcefu/2014-10-13#i_80133">18:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80133"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">no</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_pdurbin">
+
+<td class="time" id="i_80140"><a href="/sourcefu/2014-10-13#i_80140">18:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80140"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">me neither</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_80142"><a href="/sourcefu/2014-10-13#i_80142">19:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80142"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">if you need extreme single thread perf, probably not using java anyway</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_semiosis dark">
+
+<td class="time" id="i_80143"><a href="/sourcefu/2014-10-13#i_80143">19:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80143"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">and besides, this is already about parallel workloads, so just scale out.</td>
+</tr>
+
+        
+<tr id="id_l15" class="new special">
+
+<td class="time" id="i_80145"><a href="/sourcefu/2014-10-13#i_80145">19:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80145"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_80146"><a href="/sourcefu/2014-10-13#i_80146">20:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80146"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_80147"><a href="/sourcefu/2014-10-13#i_80147">20:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80147"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">oh, there's also this: &quot;Brian Goetz explains how lambda expressions are implemented using the invokedynamic instruction introduced in Java SE 7&quot; <a href="http://www.infoq.com/presentations/lambda-invokedynamic" title="http://www.infoq.com/presentations/lambda-invokedynamic">http://www.infoq.com/presentations/lambda-invokedynamic</a></td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_semiosis">
+
+<td class="time" id="i_80148"><a href="/sourcefu/2014-10-13#i_80148">20:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80148"  /></td>
+<td class="nick nick2">semiosis</td>
+<td class="msg ">cool</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_80151"><a href="/sourcefu/2014-10-13#i_80151">23:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80151"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">The Ren'Py Visual Novel Engine - <a href="http://www.renpy.org" title="http://www.renpy.org">http://www.renpy.org</a></td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_80152"><a href="/sourcefu/2014-10-13#i_80152">23:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_80152"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">my kids might like this</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2014-10-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2014-10-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2014-10-13">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2014-10-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2014-10-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

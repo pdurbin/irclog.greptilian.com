@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-08-06" />
+    <title>IRC log for #sourcefu, 2016-08-06</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-08-06</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-08-05" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-08-07" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-08-06">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-08-06;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-08-06;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_177319"><a href="/sourcefu/2016-08-06#i_177319">01:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177319"  /></td>
+<td class="nick"></td>
+<td class="msg ">philbot joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_177320"><a href="/sourcefu/2016-08-06#i_177320">01:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177320"  /></td>
+<td class="nick"></td>
+<td class="msg ">Topic for #sourcefu is now <a href="http://sourcefu.com" title="http://sourcefu.com">http://sourcefu.com</a> | logs at <a href="http://irclog.greptilian.com/sourcefu/today" title="http://irclog.greptilian.com/sourcefu/today">http://irclog.greptilian.com/sourcefu/today</a></td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_177329"><a href="/sourcefu/2016-08-06#i_177329">01:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177329"  /></td>
+<td class="nick"></td>
+<td class="msg ">pdurbin joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_prologic">
+
+<td class="time" id="i_177352"><a href="/sourcefu/2016-08-06#i_177352">08:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177352"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin: I agree</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic">
+
+<td class="time" id="i_177353"><a href="/sourcefu/2016-08-06#i_177353">08:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177353"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">perhaps I'll take the same approach and write up an issue collecting alternatives existing solutions (if any)</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic">
+
+<td class="time" id="i_177354"><a href="/sourcefu/2016-08-06#i_177354">08:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177354"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">But I guess the first thing is actually to define the problem I'm trying to solve</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_prologic">
+
+<td class="time" id="i_177355"><a href="/sourcefu/2016-08-06#i_177355">08:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177355"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">mainly that from Internet -&gt; LB -&gt; ProxyAuth -&gt; Service -- I'd like a way to authenticate and authorize incoming requests at the &quot;ProxyAuth&quot; layer (I think) such that if configured Host: or Path patterns match will force an authenticated session before continuing to proxying to the backend Service(S)</td>
+</tr>
+
+        
+<tr id="id_l9" class="new special dark">
+
+<td class="time" id="i_177356"><a href="/sourcefu/2016-08-06#i_177356">09:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177356"  /></td>
+<td class="nick"></td>
+<td class="msg ">sanctified joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pdurbin">
+
+<td class="time" id="i_177361"><a href="/sourcefu/2016-08-06#i_177361">12:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177361"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">prologic: maybe <a href="http://stackoverflow.com/questions/19491680/protect-a-url-with-http-authentication-based-on-query-string-parameter/19500010#19500010" title="http://stackoverflow.com/questions/19491680/protect-a-url-with-http-authentication-based-on-query-string-parameter/19500010#19500010">http://stackoverflow.com/questions/19491680/protect-a-url-with-http-authentication-based-on-query-string-parameter/19500010#19500010</a> or <a href="http://stackoverflow.com/questions/23469351/how-to-protect-some-urls-with-http-authentication-using-a-regex" title="http://stackoverflow.com/questions/23469351/how-to-protect-some-urls-with-http-authentication-using-a-regex">http://stackoverflow.com/questions/23469351/how-to-protect-some-urls-with-http-authentication-using-a-regex</a> would help</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_prologic dark">
+
+<td class="time" id="i_177381"><a href="/sourcefu/2016-08-06#i_177381">16:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177381"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin: yeah so I can already discount these pretty much</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_177382"><a href="/sourcefu/2016-08-06#i_177382">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177382"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">because whilst of course you can easily write apache or nginx rules that achieve this to some level; you're just reconfiguring a web server right? :)</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-08-05" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-08-07" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-08-06">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-08-06;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-08-06;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

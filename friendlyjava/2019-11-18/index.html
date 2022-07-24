@@ -1,0 +1,584 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2019-11-18" />
+    <title>IRC log for #friendlyjava, 2019-11-18</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2019-11-18</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2019-11-17" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-11-19" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-11-18">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-11-18;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-11-18;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_250193"><a href="/friendlyjava/2019-11-18#i_250193">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250193"  /></td>
+<td class="nick"></td>
+<td class="msg ">rebecca joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_250194"><a href="/friendlyjava/2019-11-18#i_250194">01:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250194"  /></td>
+<td class="nick"></td>
+<td class="msg ">bunsen joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_bunsen">
+
+<td class="time" id="i_250195"><a href="/friendlyjava/2019-11-18#i_250195">01:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250195"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Hey there - does anyone know how to access object methods while iterating through a vector of objects?</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250196"><a href="/friendlyjava/2019-11-18#i_250196">01:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250196"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">hi, if you know what type they are, you can cast them and call the methods</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_bunsen">
+
+<td class="time" id="i_250197"><a href="/friendlyjava/2019-11-18#i_250197">01:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250197"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">It's a vector of a custom class (I'm making a card game). Trying to check if a card isWild, but I'm having trouble accessing the vector elements while iterating through it. Do you have an example? I feel pretty dense. Sorry.</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250198"><a href="/friendlyjava/2019-11-18#i_250198">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250198"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">I thought maybe using an enumerator or an iterator would let me call functions through that ... doesn't seem to work, though.</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250199"><a href="/friendlyjava/2019-11-18#i_250199">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250199"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">if it's a generic vector: for (Card c : v) if (c.isWild()) {...}</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250200"><a href="/friendlyjava/2019-11-18#i_250200">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250200"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">btw, any reason for using Vector instead of ArrayList?</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_bunsen">
+
+<td class="time" id="i_250201"><a href="/friendlyjava/2019-11-18#i_250201">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250201"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">It's for a class - the professor set up vectors as the base, so it's what we're stuck with. Most websites I go to mention ArrayList. Argh!</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250202"><a href="/friendlyjava/2019-11-18#i_250202">01:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250202"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">maybe your professor is stuck in 1998 :p</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_bunsen">
+
+<td class="time" id="i_250203"><a href="/friendlyjava/2019-11-18#i_250203">01:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250203"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">He's definitely an &quot;OG,&quot; as they'd say. Insanely smart, but this class is a bit hard to follow.</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250204"><a href="/friendlyjava/2019-11-18#i_250204">01:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250204"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">if it's not generic, you probably need to do: for (Object o : v) {Card c = (Card) o; if (c.isWild()) {...}}</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250205"><a href="/friendlyjava/2019-11-18#i_250205">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250205"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">that's the casting I was talking about</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_bunsen">
+
+<td class="time" id="i_250206"><a href="/friendlyjava/2019-11-18#i_250206">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250206"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">So if I have a vector called tempHand, and it holds cards (so Vector&lt;Card&gt; tempHand), let me see ...</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250207"><a href="/friendlyjava/2019-11-18#i_250207">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250207"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">oh, it is generic</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250208"><a href="/friendlyjava/2019-11-18#i_250208">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250208"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">use the simple version then</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_bunsen">
+
+<td class="time" id="i_250209"><a href="/friendlyjava/2019-11-18#i_250209">01:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250209"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Yeah, and I come from a mainly C++ background so I'm trying to pick this up fast, but tripping over my feet a bit. Digging it, though.</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250210"><a href="/friendlyjava/2019-11-18#i_250210">01:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250210"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it's a lot like C++ templates</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250211"><a href="/friendlyjava/2019-11-18#i_250211">01:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250211"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">with some differences</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_bunsen">
+
+<td class="time" id="i_250212"><a href="/friendlyjava/2019-11-18#i_250212">01:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250212"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">so when iterating through the vector, would it be something like: for(tempHand c : v) etc?</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250213"><a href="/friendlyjava/2019-11-18#i_250213">01:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250213"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Also, thank you so much for this.</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250214"><a href="/friendlyjava/2019-11-18#i_250214">01:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250214"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it would be for (Card c : tempHand)</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_bunsen">
+
+<td class="time" id="i_250215"><a href="/friendlyjava/2019-11-18#i_250215">01:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250215"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">You're amazing.</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250216"><a href="/friendlyjava/2019-11-18#i_250216">01:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250216"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">haha, not really, this is simple stuff</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250217"><a href="/friendlyjava/2019-11-18#i_250217">01:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250217"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">there are also other ways to iterate, but this is the easiest</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_bunsen">
+
+<td class="time" id="i_250218"><a href="/friendlyjava/2019-11-18#i_250218">02:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250218"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Alright, I think this points me in the right direction. I'm getting a NullPointerException when I run it, but I'm sure that's something I can figure out in no time.</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250219"><a href="/friendlyjava/2019-11-18#i_250219">02:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250219"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Ok, here's another interesting one. Is there any way to trim a vector as I iterate through it? Say I want to remove all the wildcards from the hand I'm working on, and move them into a new hand. I assume I'd need to mark their spots and remove them from back to front.</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250220"><a href="/friendlyjava/2019-11-18#i_250220">02:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250220"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">But perhaps java has some super simple way of doing that, that I don't know about.</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250221"><a href="/friendlyjava/2019-11-18#i_250221">02:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250221"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">that's a little tricky, as normally you're not supposed to modify the collection while iterating it, but you can actually do that if you use an iterator</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250222"><a href="/friendlyjava/2019-11-18#i_250222">02:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250222"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so you can iterate using an iterator, then call remove() on the iterator</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_bunsen">
+
+<td class="time" id="i_250223"><a href="/friendlyjava/2019-11-18#i_250223">02:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250223"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">If iterating front to back I'm assuming that could be catastrophic though?</td>
+</tr>
+
+        
+<tr id="id_l33" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250224"><a href="/friendlyjava/2019-11-18#i_250224">02:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250224"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">no, it can handle it</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_bunsen">
+
+<td class="time" id="i_250225"><a href="/friendlyjava/2019-11-18#i_250225">02:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250225"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Oh, wow, that's neat.</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250226"><a href="/friendlyjava/2019-11-18#i_250226">02:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250226"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">when it moves to iterate to the next entry after removing, wouldn't it skip over one? Say we're on entry 5, and delete it to move onto entry 6. Is java that awesome that it knows to stay where it is, so to speak, instead of jumping from 5 to 7?</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250227"><a href="/friendlyjava/2019-11-18#i_250227">02:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250227"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">This was something that C++ gave me an issue with, when I made the project there.</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250228"><a href="/friendlyjava/2019-11-18#i_250228">02:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250228"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it knows</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_bunsen">
+
+<td class="time" id="i_250229"><a href="/friendlyjava/2019-11-18#i_250229">02:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250229"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">That's wild! (no pun intended)</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250230"><a href="/friendlyjava/2019-11-18#i_250230">02:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250230"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">(ok, pun intended (wild cards and all))</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250231"><a href="/friendlyjava/2019-11-18#i_250231">02:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250231"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">haha</td>
+</tr>
+
+        
+<tr id="id_l41" class="new nick nick_bunsen">
+
+<td class="time" id="i_250232"><a href="/friendlyjava/2019-11-18#i_250232">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250232"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">so if I'm doing the (Card c:tempHand), and I find a wild card, would I do tempHand.remove(c)? That seems to throw an error.</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250233"><a href="/friendlyjava/2019-11-18#i_250233">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250233"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">no, tempHand is the vector, you need an iterator</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250234"><a href="/friendlyjava/2019-11-18#i_250234">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250234"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">you have to replace the for loop</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_bunsen">
+
+<td class="time" id="i_250235"><a href="/friendlyjava/2019-11-18#i_250235">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250235"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Ahhhh I see. Yeah, that was the issue I was running into before. I couldn't pull the card's methods through the iterator for some weird reason. Let me take another look at it now though, since you helped me understand it a bit better</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250236"><a href="/friendlyjava/2019-11-18#i_250236">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250236"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">bunsen: check out the second example in this answer: <a href="https://stackoverflow.com/a/13847716/179864" title="https://stackoverflow.com/a/13847716/179864">https://stackoverflow.com/a/13847716/179864</a></td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250237"><a href="/friendlyjava/2019-11-18#i_250237">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250237"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">replace Bomb with Card, etc</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_250238"><a href="/friendlyjava/2019-11-18#i_250238">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250238"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">or the next answer in that question</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_bunsen">
+
+<td class="time" id="i_250239"><a href="/friendlyjava/2019-11-18#i_250239">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250239"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Excellent - thank you!</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont nick nick_bunsen">
+
+<td class="time" id="i_250240"><a href="/friendlyjava/2019-11-18#i_250240">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250240"  /></td>
+<td class="nick nick2">bunsen</td>
+<td class="msg ">Works like a charm. I'll pay this forward, once I become a java powerhouse.</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_250241"><a href="/friendlyjava/2019-11-18#i_250241">02:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250241"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">cool :)</td>
+</tr>
+
+        
+<tr id="id_l51" class="new special">
+
+<td class="time" id="i_250242"><a href="/friendlyjava/2019-11-18#i_250242">04:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250242"  /></td>
+<td class="nick"></td>
+<td class="msg ">bunsen left ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont special">
+
+<td class="time" id="i_250243"><a href="/friendlyjava/2019-11-18#i_250243">07:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250243"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont special">
+
+<td class="time" id="i_250245"><a href="/friendlyjava/2019-11-18#i_250245">19:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250245"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l54" class="cont special">
+
+<td class="time" id="i_250246"><a href="/friendlyjava/2019-11-18#i_250246">23:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_250246"  /></td>
+<td class="nick"></td>
+<td class="msg ">Guest75243 joined ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2019-11-17" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-11-19" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-11-18">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-11-18;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-11-18;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

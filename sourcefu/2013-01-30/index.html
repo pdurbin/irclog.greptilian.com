@@ -1,0 +1,1169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2013-01-30" />
+    <title>IRC log for #sourcefu, 2013-01-30</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2013-01-30</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2013-01-29" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2013-01-31" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2013-01-30">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2013-01-30;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2013-01-30;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_codex dark">
+
+<td class="time" id="i_2375"><a href="/sourcefu/2013-01-30#i_2375">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2375"  /></td>
+<td class="nick nick7">codex</td>
+<td class="msg ">Did you guys know you can sniff ssh interprocess and get your password in clear text?</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_codex dark">
+
+<td class="time" id="i_2376"><a href="/sourcefu/2013-01-30#i_2376">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2376"  /></td>
+<td class="nick nick7">codex</td>
+<td class="msg ">i felt it was so outrageous that I had to write about it</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_codex dark">
+
+<td class="time" id="i_2377"><a href="/sourcefu/2013-01-30#i_2377">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2377"  /></td>
+<td class="nick nick7">codex</td>
+<td class="msg "><a href="http://blog.vpetkov.net/2013/01/29/sniffing-ssh-password-from-the-server-side/" title="http://blog.vpetkov.net/2013/01/29/sniffing-ssh-password-from-the-server-side/">http://blog.vpetkov.net/2013/01/29/sniffing-ssh-password-from-the-server-side/</a></td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2378"><a href="/sourcefu/2013-01-30#i_2378">01:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2378"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">codex: yikes! worth spreading the news about that: <a href="https://plus.google.com/107770072576338242009/posts/ETqpKHLUEKr" title="https://plus.google.com/107770072576338242009/posts/ETqpKHLUEKr">https://plus.google.com/107770072576338242009/posts/ETqpKHLUEKr</a></td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2379"><a href="/sourcefu/2013-01-30#i_2379">01:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2379"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">codex: what if i use an ssh key pair? can you grab a copy of my private ssh key if you're root on a box and doing your strace trick?</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2380"><a href="/sourcefu/2013-01-30#i_2380">14:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2380"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">pdurbin: You can't get a copy of the private key...but, if someone is using agent forwarding, you can impersonate them (by passing signing requests to their agent) as long as they're connected.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2381"><a href="/sourcefu/2013-01-30#i_2381">14:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2381"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">But codex's article is kind of silly: if you are able to escalate privileges and use &quot;strace&quot;, you could also simply replace the sshd binary with one modified explicitly to harvest passwords.  I've seen this particular trick in the wild.</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2382"><a href="/sourcefu/2013-01-30#i_2382">14:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2382"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">Heck, you could probably accomplish something similar via clever use of LD_PRELOAD.</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2383"><a href="/sourcefu/2013-01-30#i_2383">14:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2383"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">larsks: right, in the gplus post people are commenting that root could replace /usr/bin/ssh with a version with a key logger</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2384"><a href="/sourcefu/2013-01-30#i_2384">14:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2384"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">but i don't agree that codex's article is silly</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2385"><a href="/sourcefu/2013-01-30#i_2385">14:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2385"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">I think that in general the unix security model is predicated on trusting &quot;root&quot;, and that if a &quot;vulnerability&quot; is predicated on having root access to begin with then it's largely a non-issue.</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2386"><a href="/sourcefu/2013-01-30#i_2386">14:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2386"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">...your problem is that someone had root access.</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2387"><a href="/sourcefu/2013-01-30#i_2387">14:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2387"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">For example: I could start a process in an isolated mount namespace and then bind-mount a new version of sshd onto /usr/sbin/sshd.  This would be undetectable from outside of the mount namespace, but would still let me happily harvest passwords.</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2388"><a href="/sourcefu/2013-01-30#i_2388">14:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2388"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">The number of ways I can harvest ssh passwords given root access is large.  This is why we don't permit password authentication on our systems.</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2389"><a href="/sourcefu/2013-01-30#i_2389">14:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2389"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">somehow i'm more ok with a fellow sysadmin becoming root and then becoming me with `su` than i am with that sysadmin grabbing and knowing my ssh password</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2390"><a href="/sourcefu/2013-01-30#i_2390">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2390"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">Right, but the point is they *can*, and that ability is largely indepdent of how ssh handles passwords internally.</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_larsks dark">
+
+<td class="time" id="i_2391"><a href="/sourcefu/2013-01-30#i_2391">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2391"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">And you shouldn't be using passwords with ssh.  Because of this.</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2392"><a href="/sourcefu/2013-01-30#i_2392">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2392"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">know i know!</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2393"><a href="/sourcefu/2013-01-30#i_2393">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2393"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">Of course, they can get your &quot;sudo&quot; password the same way...</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2394"><a href="/sourcefu/2013-01-30#i_2394">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2394"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">now</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2395"><a href="/sourcefu/2013-01-30#i_2395">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2395"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">so i should assume anyone with root knows my password. or can fairly easily get it</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2396"><a href="/sourcefu/2013-01-30#i_2396">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2396"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">Yes.</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2397"><a href="/sourcefu/2013-01-30#i_2397">14:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2397"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">i can use public/private keys for ssh but what about sudo? i need a password, right?</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2398"><a href="/sourcefu/2013-01-30#i_2398">14:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2398"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">That depends.  Our mechanism for administrative access does not involve passwords at any point in the process (although it does involve a google authenticator token).  I can talk about it in more detail if you're interested (but it might be a lot of typing).</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2399"><a href="/sourcefu/2013-01-30#i_2399">14:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2399"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">larsks: ok. cool. maybe a google+ hangout... which we can turn into a podcast :)</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_larsks dark">
+
+<td class="time" id="i_2400"><a href="/sourcefu/2013-01-30#i_2400">15:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2400"  /></td>
+<td class="nick nick3">larsks</td>
+<td class="msg ">I'm more typey-typey than talky-talky, unless you want to drop by our office.  Maybe I can write something up.</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2401"><a href="/sourcefu/2013-01-30#i_2401">15:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2401"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">if you want to typey-typey it up it's certainly on topic for #crimsonfu. consider this an open invitation to start typing whenever you want :)</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_ben_e dark">
+
+<td class="time" id="i_2402"><a href="/sourcefu/2013-01-30#i_2402">15:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2402"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">does having a topic mean we have a moderator?</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2403"><a href="/sourcefu/2013-01-30#i_2403">15:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2403"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ben_e: no, but here's what's on topic (patches welcome!): <a href="http://sourcefu.com/topics" title="http://sourcefu.com/topics">http://sourcefu.com/topics</a></td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2404"><a href="/sourcefu/2013-01-30#i_2404">15:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2404"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">westmaas: i still haven't taken vagrant off since i love and use it so much</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_ben_e dark">
+
+<td class="time" id="i_2405"><a href="/sourcefu/2013-01-30#i_2405">15:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2405"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">i read it</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_ben_e dark">
+
+<td class="time" id="i_2406"><a href="/sourcefu/2013-01-30#i_2406">15:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2406"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">i'm just saying if i start talking about my mole collection, are you going to /kick me? :-)</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_ben_e dark">
+
+<td class="time" id="i_2407"><a href="/sourcefu/2013-01-30#i_2407">15:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2407"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">it seems like there's some crossover between teh channels</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_ben_e dark">
+
+<td class="time" id="i_2408"><a href="/sourcefu/2013-01-30#i_2408">15:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2408"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">so are there really people who would say &quot;i'm a sysadmin! all this python talk is annoying to me. /quit&quot;</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2409"><a href="/sourcefu/2013-01-30#i_2409">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2409"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah, but i believe a split is healthy. like stackoverflow vs. serverfault</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_ben_e dark">
+
+<td class="time" id="i_2410"><a href="/sourcefu/2013-01-30#i_2410">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2410"  /></td>
+<td class="nick nick4">ben_e</td>
+<td class="msg ">nods</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2411"><a href="/sourcefu/2013-01-30#i_2411">15:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2411"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">i'm just saying ssh and password stuff seems to better fit here: <a href="http://crimsonfu.github.com/topics" title="http://crimsonfu.github.com/topics">http://crimsonfu.github.com/topics</a></td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2412"><a href="/sourcefu/2013-01-30#i_2412">15:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2412"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">codex: thanks for posting in both places</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2413"><a href="/sourcefu/2013-01-30#i_2413">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2413"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ben_e: i've never had to kick anyone from either channel, despite the spam concerns i wrote about at <a href="http://crimsonfu.github.com/2012/02/06/crimsonfu-freenode-irc-channel-setup.html" title="http://crimsonfu.github.com/2012/02/06/crimsonfu-freenode-irc-channel-setup.html">http://crimsonfu.github.com/2012/02/06/crimsonfu-freenode-irc-channel-setup.html</a></td>
+</tr>
+
+        
+<tr id="id_l41" class="new special dark">
+
+<td class="time" id="i_2414"><a href="/sourcefu/2013-01-30#i_2414">15:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2414"  /></td>
+<td class="nick"></td>
+<td class="msg ">spilth joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2415"><a href="/sourcefu/2013-01-30#i_2415">15:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2415"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">semiosis: you around? or anyone who knows maven sites? i've been thinking about them again: <a href="http://irclog.iq.harvard.edu/dvn/2013-01-30#i_479" title="http://irclog.iq.harvard.edu/dvn/2013-01-30#i_479">http://irclog.iq.harvard.edu/dvn/2013-01-30#i_479</a></td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2416"><a href="/sourcefu/2013-01-30#i_2416">15:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2416"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">we had discussed them previously here: <a href="http://irclog.greptilian.com/sourcefu/2013-01-15#i_1810" title="http://irclog.greptilian.com/sourcefu/2013-01-15#i_1810">http://irclog.greptilian.com/sourcefu/2013-01-15#i_1810</a></td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_2417"><a href="/sourcefu/2013-01-30#i_2417">16:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2417"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">sup?</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_spilth">
+
+<td class="time" id="i_2418"><a href="/sourcefu/2013-01-30#i_2418">16:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2418"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I know a little bit. What's your question?</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2419"><a href="/sourcefu/2013-01-30#i_2419">16:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2419"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg "><a href="http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/" title="http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/">http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/</a> shows one level deep under overview: intro, goals, usage, quickstart</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2420"><a href="/sourcefu/2013-01-30#i_2420">16:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2420"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">it comes from the &quot;menu&quot; <a href="https://github.com/cescoffier/maven-play2-plugin/blob/master/src/site/site.xml#L44" title="https://github.com/cescoffier/maven-play2-plugin/blob/master/src/site/site.xml#L44">https://github.com/cescoffier/maven-play2-plugin/blob/master/src/site/site.xml#L44</a></td>
+</tr>
+
+        
+<tr id="id_l48" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2421"><a href="/sourcefu/2013-01-30#i_2421">16:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2421"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">it's pretty flat... i'm wondering about a deeper hierarchy</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2422"><a href="/sourcefu/2013-01-30#i_2422">16:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2422"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">more like sphinx/readthedocs</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_spilth">
+
+<td class="time" id="i_2423"><a href="/sourcefu/2013-01-30#i_2423">16:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2423"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">oooh, that looks nice</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_2424"><a href="/sourcefu/2013-01-30#i_2424">16:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2424"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">i actually havent used the site plugin for much, sorry not much help there</td>
+</tr>
+
+        
+<tr id="id_l52" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2425"><a href="/sourcefu/2013-01-30#i_2425">16:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2425"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">no worries. it's very nice in general</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2426"><a href="/sourcefu/2013-01-30#i_2426">16:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2426"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">check this out.. you specify you mailing list here: <a href="https://github.com/cescoffier/maven-play2-plugin/blob/master/pom.xml#L41" title="https://github.com/cescoffier/maven-play2-plugin/blob/master/pom.xml#L41">https://github.com/cescoffier/maven-play2-plugin/blob/master/pom.xml#L41</a></td>
+</tr>
+
+        
+<tr id="id_l54" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2427"><a href="/sourcefu/2013-01-30#i_2427">16:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2427"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">and it gets rendered here: <a href="http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/mail-lists.html" title="http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/mail-lists.html">http://cescoffier.github.com/maven-play2-plugin/maven/snapshot/mail-lists.html</a></td>
+</tr>
+
+        
+<tr id="id_l55" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2428"><a href="/sourcefu/2013-01-30#i_2428">16:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2428"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">that part is done by maven-project-info-reports-plugin - <a href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/" title="http://maven.apache.org/plugins/maven-project-info-reports-plugin/">http://maven.apache.org/plugins/maven-project-info-reports-plugin/</a></td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2429"><a href="/sourcefu/2013-01-30#i_2429">16:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2429"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg "><a href="http://maven.apache.org/guides/mini/guide-site.html" title="http://maven.apache.org/guides/mini/guide-site.html">http://maven.apache.org/guides/mini/guide-site.html</a></td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2430"><a href="/sourcefu/2013-01-30#i_2430">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2430"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">spilth: thanks. i need to throw what i've got over the wall and move on to other things</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2431"><a href="/sourcefu/2013-01-30#i_2431">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2431"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">sounds like it</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2432"><a href="/sourcefu/2013-01-30#i_2432">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2432"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">but so far i'm liking maven sites a lot</td>
+</tr>
+
+        
+<tr id="id_l60" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2433"><a href="/sourcefu/2013-01-30#i_2433">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2433"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">customize more later</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_spilth dark">
+
+<td class="time" id="i_2434"><a href="/sourcefu/2013-01-30#i_2434">16:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2434"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">you could set up a CI server to build those projects and deploy the documentation somewhere with each build</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont nick nick_spilth dark">
+
+<td class="time" id="i_2435"><a href="/sourcefu/2013-01-30#i_2435">16:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2435"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I love that bug where somebody's <abbr title="Rich Site Summary">RSS</abbr> feed suddenly insist that ever article on the site has just been posted</td>
+</tr>
+
+        
+<tr id="id_l63" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2436"><a href="/sourcefu/2013-01-30#i_2436">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2436"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ok, my proof of concept maven site for dvn: <a href="http://dvn.github.com/dvn-mavensitepoc" title="http://dvn.github.com/dvn-mavensitepoc">http://dvn.github.com/dvn-mavensitepoc</a></td>
+</tr>
+
+        
+<tr id="id_l64" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2437"><a href="/sourcefu/2013-01-30#i_2437">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2437"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">see especially the pom.xml stuff at <a href="http://dvn.github.com/dvn-mavensitepoc/mavensite.html" title="http://dvn.github.com/dvn-mavensitepoc/mavensite.html">http://dvn.github.com/dvn-mavensitepoc/mavensite.html</a></td>
+</tr>
+
+        
+<tr id="id_l65" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2438"><a href="/sourcefu/2013-01-30#i_2438">17:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2438"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">nice</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont nick nick_spilth dark">
+
+<td class="time" id="i_2439"><a href="/sourcefu/2013-01-30#i_2439">17:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2439"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I really loathe our internal wiki system</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont nick nick_spilth dark">
+
+<td class="time" id="i_2440"><a href="/sourcefu/2013-01-30#i_2440">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2440"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I just want to use Markdown and a Jekyll site to create and publish documentation</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2441"><a href="/sourcefu/2013-01-30#i_2441">18:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2441"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">spilth: reminds me of docjekyll: <a href="http://irclog.perlgeek.de/crimsonfu/2012-08-02#i_5868537" title="http://irclog.perlgeek.de/crimsonfu/2012-08-02#i_5868537">http://irclog.perlgeek.de/crimsonfu/2012-08-02#i_5868537</a> ... may it rest in peace</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2442"><a href="/sourcefu/2013-01-30#i_2442">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2442"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I prefer people checking out the project from Git and committing their changes... then it goes through some build/deploy process. No web interface.</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont nick nick_spilth dark">
+
+<td class="time" id="i_2443"><a href="/sourcefu/2013-01-30#i_2443">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2443"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I realize that's limiting it to tech savvy people...</td>
+</tr>
+
+        
+<tr id="id_l71" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2444"><a href="/sourcefu/2013-01-30#i_2444">18:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2444"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">then you should use ikiwiki. i has a web interface</td>
+</tr>
+
+        
+<tr id="id_l72" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_2445"><a href="/sourcefu/2013-01-30#i_2445">18:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2445"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">it</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2446"><a href="/sourcefu/2013-01-30#i_2446">18:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2446"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I think I want Git to be the level-of-entry for participating</td>
+</tr>
+
+        
+<tr id="id_l74" class="new nick nick_pdurbin">
+
+<td class="time" id="i_2447"><a href="/sourcefu/2013-01-30#i_2447">18:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2447"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">+1</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2448"><a href="/sourcefu/2013-01-30#i_2448">18:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2448"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I can't find an example, but on difficult mountain biking trails they will often have a &quot;filter technical&quot; - a technical feature at the beginning of the trail that you need to clear in order to access the rest of the trail. It gives you an idea of what you'll be encountering and have to deal with.</td>
+</tr>
+
+        
+<tr id="id_l76" class="new special">
+
+<td class="time" id="i_2449"><a href="/sourcefu/2013-01-30#i_2449">18:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2449"  /></td>
+<td class="nick"></td>
+<td class="msg ">raprasad joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l77" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2450"><a href="/sourcefu/2013-01-30#i_2450">18:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2450"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">makes sense</td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick_raprasad">
+
+<td class="time" id="i_2451"><a href="/sourcefu/2013-01-30#i_2451">18:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2451"  /></td>
+<td class="nick nick6">raprasad</td>
+<td class="msg ">been using this cs-xml spec,  better than json</td>
+</tr>
+
+        
+<tr id="id_l79" class="cont nick nick_raprasad">
+
+<td class="time" id="i_2452"><a href="/sourcefu/2013-01-30#i_2452">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2452"  /></td>
+<td class="nick nick6">raprasad</td>
+<td class="msg ">(comma separated <abbr title="Extensible Markup Language">XML</abbr>)</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2453"><a href="/sourcefu/2013-01-30#i_2453">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2453"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">crimsonfubot: lucky cs-xml</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick_crimsonfubot">
+
+<td class="time" id="i_2454"><a href="/sourcefu/2013-01-30#i_2454">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2454"  /></td>
+<td class="nick">crimsonfubot</td>
+<td class="msg ">pdurbin: <a href="http://www.quackit.com/xml/tutorial/xml_css.cfm" title="http://www.quackit.com/xml/tutorial/xml_css.cfm">http://www.quackit.com/xml/tutorial/xml_css.cfm</a></td>
+</tr>
+
+        
+<tr id="id_l82" class="new special dark">
+
+<td class="time" id="i_2455"><a href="/sourcefu/2013-01-30#i_2455">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2455"  /></td>
+<td class="nick"></td>
+<td class="msg ">agperson joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l83" class="new nick nick_raprasad">
+
+<td class="time" id="i_2456"><a href="/sourcefu/2013-01-30#i_2456">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2456"  /></td>
+<td class="nick nick6">raprasad</td>
+<td class="msg ">just joking</td>
+</tr>
+
+        
+<tr id="id_l84" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2457"><a href="/sourcefu/2013-01-30#i_2457">18:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2457"  /></td>
+<td class="nick nick1">* pdurbin</td>
+<td class="msg act ">shakes fist</td>
+</tr>
+
+        
+<tr id="id_l85" class="new nick nick_spilth">
+
+<td class="time" id="i_2458"><a href="/sourcefu/2013-01-30#i_2458">18:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2458"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">-1</td>
+</tr>
+
+        
+<tr id="id_l86" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2459"><a href="/sourcefu/2013-01-30#i_2459">18:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2459"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">raprasad: i showed a java dev my xml thing and he agrees it's aweseome :)</td>
+</tr>
+
+        
+<tr id="id_l87" class="new nick nick_raprasad">
+
+<td class="time" id="i_2460"><a href="/sourcefu/2013-01-30#i_2460">18:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2460"  /></td>
+<td class="nick nick6">raprasad</td>
+<td class="msg ">re: -1; agreed</td>
+</tr>
+
+        
+<tr id="id_l88" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2461"><a href="/sourcefu/2013-01-30#i_2461">18:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2461"  /></td>
+<td class="nick nick2">* spilth</td>
+<td class="msg act ">goes off to make a pom.yml</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_semiosis">
+
+<td class="time" id="i_2462"><a href="/sourcefu/2013-01-30#i_2462">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2462"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">java devs love xml</td>
+</tr>
+
+        
+<tr id="id_l90" class="cont nick nick_semiosis">
+
+<td class="time" id="i_2463"><a href="/sourcefu/2013-01-30#i_2463">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2463"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">pdurbin: ^</td>
+</tr>
+
+        
+<tr id="id_l91" class="new nick nick_spilth dark">
+
+<td class="time" id="i_2464"><a href="/sourcefu/2013-01-30#i_2464">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2464"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">Well when you get certified in something you want to make sure you use it all the time...</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick_spilth">
+
+<td class="time" id="i_2465"><a href="/sourcefu/2013-01-30#i_2465">19:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2465"  /></td>
+<td class="nick nick2">* spilth</td>
+<td class="msg act ">ducks</td>
+</tr>
+
+        
+<tr id="id_l93" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2466"><a href="/sourcefu/2013-01-30#i_2466">19:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2466"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">i can turn xml to yaml thanks to ironcamel's App::p</td>
+</tr>
+
+        
+<tr id="id_l94" class="new nick nick_spilth">
+
+<td class="time" id="i_2467"><a href="/sourcefu/2013-01-30#i_2467">19:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2467"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">What we really need is XAMLSV</td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_spilth">
+
+<td class="time" id="i_2468"><a href="/sourcefu/2013-01-30#i_2468">19:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2468"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">And then whatever version of that Microsoft comes out with</td>
+</tr>
+
+        
+<tr id="id_l96" class="cont nick nick_spilth">
+
+<td class="time" id="i_2469"><a href="/sourcefu/2013-01-30#i_2469">21:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2469"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">Also, using something like Jekyll let's use extend it with our own tags and tools</td>
+</tr>
+
+        
+<tr id="id_l97" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2470"><a href="/sourcefu/2013-01-30#i_2470">21:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2470"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">spilth: but... ikiwiki already has a nice plugin architecture</td>
+</tr>
+
+        
+<tr id="id_l98" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2471"><a href="/sourcefu/2013-01-30#i_2471">21:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2471"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg "><a href="http://ikiwiki.info/plugins" title="http://ikiwiki.info/plugins">http://ikiwiki.info/plugins</a></td>
+</tr>
+
+        
+<tr id="id_l99" class="new nick nick_spilth">
+
+<td class="time" id="i_2472"><a href="/sourcefu/2013-01-30#i_2472">21:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2472"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">for some reason I just cringe at wikis</td>
+</tr>
+
+        
+<tr id="id_l100" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2473"><a href="/sourcefu/2013-01-30#i_2473">21:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2473"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg "><a href="http://wiki.greptilian.com/ikiwiki" title="http://wiki.greptilian.com/ikiwiki">http://wiki.greptilian.com/ikiwiki</a></td>
+</tr>
+
+        
+<tr id="id_l101" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2474"><a href="/sourcefu/2013-01-30#i_2474">21:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2474"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">you want a blogging platform instead?</td>
+</tr>
+
+        
+<tr id="id_l102" class="new nick nick_spilth">
+
+<td class="time" id="i_2475"><a href="/sourcefu/2013-01-30#i_2475">21:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2475"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">No, I want a way for people to document and organize things.</td>
+</tr>
+
+        
+<tr id="id_l103" class="cont nick nick_spilth">
+
+<td class="time" id="i_2476"><a href="/sourcefu/2013-01-30#i_2476">21:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2476"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">But done by editing text files in whatever editor they like, not through a web interface.</td>
+</tr>
+
+        
+<tr id="id_l104" class="cont nick nick_spilth">
+
+<td class="time" id="i_2477"><a href="/sourcefu/2013-01-30#i_2477">21:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2477"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">And committing their changes to version control.</td>
+</tr>
+
+        
+<tr id="id_l105" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2478"><a href="/sourcefu/2013-01-30#i_2478">21:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2478"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sounds like ikiwiki to me</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_2479"><a href="/sourcefu/2013-01-30#i_2479">21:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2479"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">let's call it ikidocy to make you happy</td>
+</tr>
+
+        
+<tr id="id_l107" class="new nick nick_spilth">
+
+<td class="time" id="i_2480"><a href="/sourcefu/2013-01-30#i_2480">21:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2480"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">Can we take out the &quot;icky&quot; too? :-)</td>
+</tr>
+
+        
+<tr id="id_l108" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2481"><a href="/sourcefu/2013-01-30#i_2481">21:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2481"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">docydocy</td>
+</tr>
+
+        
+<tr id="id_l109" class="new nick nick_spilth">
+
+<td class="time" id="i_2482"><a href="/sourcefu/2013-01-30#i_2482">21:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2482"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">+1</td>
+</tr>
+
+        
+<tr id="id_l110" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2483"><a href="/sourcefu/2013-01-30#i_2483">21:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2483"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">this ikiwiki has decent <abbr title="Cascading Stylesheets">css</abbr>: <a href="http://www.dragonflybsd.org" title="http://www.dragonflybsd.org">http://www.dragonflybsd.org</a></td>
+</tr>
+
+        
+<tr id="id_l111" class="new nick nick_spilth">
+
+<td class="time" id="i_2484"><a href="/sourcefu/2013-01-30#i_2484">21:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2484"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg "><a href="http://code.google.com/p/better-web-readability-project/" title="http://code.google.com/p/better-web-readability-project/">http://code.google.com/p/better-web-readability-project/</a></td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2485"><a href="/sourcefu/2013-01-30#i_2485">21:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2485"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">hmm, <a href="http://www.allapis.com/Better-Web-Readability-Project-CSS-Library/The-Raven.html" title="http://www.allapis.com/Better-Web-Readability-Project-CSS-Library/The-Raven.html">http://www.allapis.com/Better-Web-Readability-Project-CSS-Library/The-Raven.html</a> does look pretty nice</td>
+</tr>
+
+        
+<tr id="id_l113" class="new nick nick_spilth">
+
+<td class="time" id="i_2486"><a href="/sourcefu/2013-01-30#i_2486">21:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2486"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I love that isn't actually applied to their project page :-)</td>
+</tr>
+
+        
+<tr id="id_l114" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_2487"><a href="/sourcefu/2013-01-30#i_2487">21:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2487"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">if shuff were here he'd link to <a href="http://ethanschoonover.com/solarized" title="http://ethanschoonover.com/solarized">http://ethanschoonover.com/solarized</a></td>
+</tr>
+
+        
+<tr id="id_l115" class="new nick nick_spilth">
+
+<td class="time" id="i_2488"><a href="/sourcefu/2013-01-30#i_2488">21:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2488"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I tried solarized. Wasn't digging it.</td>
+</tr>
+
+        
+<tr id="id_l116" class="cont nick nick_spilth">
+
+<td class="time" id="i_2489"><a href="/sourcefu/2013-01-30#i_2489">21:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2489"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">I like this - <a href="http://bootswatch.com/readable/" title="http://bootswatch.com/readable/">http://bootswatch.com/readable/</a></td>
+</tr>
+
+        
+<tr id="id_l117" class="cont nick nick_spilth">
+
+<td class="time" id="i_2490"><a href="/sourcefu/2013-01-30#i_2490">21:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2490"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">You can see how I feel about font sizes - <a href="http://spilth.org/notes/rails3-date-time/" title="http://spilth.org/notes/rails3-date-time/">http://spilth.org/notes/rails3-date-time/</a></td>
+</tr>
+
+        
+<tr id="id_l118" class="cont nick nick_spilth">
+
+<td class="time" id="i_2491"><a href="/sourcefu/2013-01-30#i_2491">21:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2491"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">Our current wiki has a small font and apparently changing the <abbr title="Cascading Stylesheets">CSS</abbr> is a huge pain (hosted solution)</td>
+</tr>
+
+        
+<tr id="id_l119" class="cont nick nick_spilth">
+
+<td class="time" id="i_2492"><a href="/sourcefu/2013-01-30#i_2492">21:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_2492"  /></td>
+<td class="nick nick2">spilth</td>
+<td class="msg ">Okay, I will look at this icky thing</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2013-01-29" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2013-01-31" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2013-01-30">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2013-01-30;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2013-01-30;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

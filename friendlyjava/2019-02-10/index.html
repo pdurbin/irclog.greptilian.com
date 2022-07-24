@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2019-02-10" />
+    <title>IRC log for #friendlyjava, 2019-02-10</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2019-02-10</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2019-02-09" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-02-11" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-02-10">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-02-10;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-02-10;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_242472"><a href="/friendlyjava/2019-02-10#i_242472">05:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242472"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_242474"><a href="/friendlyjava/2019-02-10#i_242474">05:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242474"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_242477"><a href="/friendlyjava/2019-02-10#i_242477">06:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242477"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242489"><a href="/friendlyjava/2019-02-10#i_242489">07:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242489"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">aditsu, So it would appear that J2ME MIDP does not have a Naggle Algoritm I can disable.</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242490"><a href="/friendlyjava/2019-02-10#i_242490">07:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242490"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Gotta experiment with datagrams.</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242491"><a href="/friendlyjava/2019-02-10#i_242491">07:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242491"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">So.. because packets may get lots, I'm thinking I'll just constantly send the current status of my gamepad. This status can be represented with 1 byte.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242493"><a href="/friendlyjava/2019-02-10#i_242493">07:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242493"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Silly question: Should I worry about cluttering up the network? I can't quite see how that should be possible, when only sendting a single byte each loop....</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242518"><a href="/friendlyjava/2019-02-10#i_242518">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242518"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">mr_lou: I guess it depends how many times you're sending it per second; also, each packet has a header, so it's not just 1 byte in practice</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_242520"><a href="/friendlyjava/2019-02-10#i_242520">08:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242520"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you should also try to see if the packet loss is significant or not; with a stable connection that's not overloaded, there should be practically no loss</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242524"><a href="/friendlyjava/2019-02-10#i_242524">08:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242524"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Yes, I read somewhere that the DataGram header is 8 bytes.</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242525"><a href="/friendlyjava/2019-02-10#i_242525">08:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242525"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">vs 20 for <abbr title="Transmission Control Protocol">TCP</abbr></td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242526"><a href="/friendlyjava/2019-02-10#i_242526">08:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242526"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Packet loss will be different depending on where the gamepad is used.</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242528"><a href="/friendlyjava/2019-02-10#i_242528">08:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242528"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg "><abbr title="Internet Protocol">IP</abbr> header is also 20 bytes</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242529"><a href="/friendlyjava/2019-02-10#i_242529">08:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242529"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">oh</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242530"><a href="/friendlyjava/2019-02-10#i_242530">08:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242530"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg "><abbr title="Transmission Control Protocol">TCP</abbr> can be longer, but at least 20</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_242532"><a href="/friendlyjava/2019-02-10#i_242532">08:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242532"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">it's not much, but if your actual data is 1 byte, it counts</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242534"><a href="/friendlyjava/2019-02-10#i_242534">08:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242534"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">1 byte to represent the state of the gamepad. Directions and buttons currently held.</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242535"><a href="/friendlyjava/2019-02-10#i_242535">08:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242535"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">I *could* choose to only send data when a change has been made. But then I have to include some check to see if a packet was lost. E.g. by adding numbers to each packet.</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242537"><a href="/friendlyjava/2019-02-10#i_242537">08:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242537"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Would most likely result in much less trafic.</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242538"><a href="/friendlyjava/2019-02-10#i_242538">08:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242538"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">ah, <abbr title="Internet Protocol">IP</abbr> header can also be larger, but it's normally 20</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_242539"><a href="/friendlyjava/2019-02-10#i_242539">08:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242539"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">or you could repeat each packet a fixed number of times to decrease the probability of loss</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242540"><a href="/friendlyjava/2019-02-10#i_242540">08:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242540"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Would be nice to know what other wifi gamepads does.</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242541"><a href="/friendlyjava/2019-02-10#i_242541">08:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242541"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">if you have one, you can try to sniff it</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242543"><a href="/friendlyjava/2019-02-10#i_242543">08:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242543"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">I don't. But there are many available for Android.</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242544"><a href="/friendlyjava/2019-02-10#i_242544">08:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242544"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">or find open-source software for it and take a look</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242546"><a href="/friendlyjava/2019-02-10#i_242546">08:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242546"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">:-)</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242551"><a href="/friendlyjava/2019-02-10#i_242551">09:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242551"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">there's also another protocol SCTP that combines some features of <abbr title="Transmission Control Protocol">TCP</abbr> and UDP, but in java it's only supported since version 7</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242552"><a href="/friendlyjava/2019-02-10#i_242552">09:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242552"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">k</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242554"><a href="/friendlyjava/2019-02-10#i_242554">09:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242554"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Evolution stops with me. I stick to old stuff.</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242555"><a href="/friendlyjava/2019-02-10#i_242555">09:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242555"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">:-)</td>
+</tr>
+
+        
+<tr id="id_l32" class="new special dark">
+
+<td class="time" id="i_242577"><a href="/friendlyjava/2019-02-10#i_242577">13:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242577"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special dark">
+
+<td class="time" id="i_242578"><a href="/friendlyjava/2019-02-10#i_242578">14:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242578"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont special dark">
+
+<td class="time" id="i_242579"><a href="/friendlyjava/2019-02-10#i_242579">17:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242579"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242580"><a href="/friendlyjava/2019-02-10#i_242580">18:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242580"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">aditsu, If I'm only sending a byte, shouldn't I be able to receive it with datagram.getData()[0]; ?</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242581"><a href="/friendlyjava/2019-02-10#i_242581">18:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242581"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">datagram.getLength() returns 1.</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242582"><a href="/friendlyjava/2019-02-10#i_242582">18:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242582"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">So something is there... except it's always 0.</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242583"><a href="/friendlyjava/2019-02-10#i_242583">18:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242583"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">what's the type of datagram?</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242584"><a href="/friendlyjava/2019-02-10#i_242584">18:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242584"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Oh... nevermind... seems to be on the client.</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242585"><a href="/friendlyjava/2019-02-10#i_242585">18:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242585"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Type?</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242586"><a href="/friendlyjava/2019-02-10#i_242586">18:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242586"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Are there more than one type? :-)</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242587"><a href="/friendlyjava/2019-02-10#i_242587">18:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242587"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">java class</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_mr_lou">
+
+<td class="time" id="i_242588"><a href="/friendlyjava/2019-02-10#i_242588">18:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242588"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Oh.</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242589"><a href="/friendlyjava/2019-02-10#i_242589">18:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242589"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">javax.microedition.<abbr title="Input/Output">io</abbr>.DataGram.</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242590"><a href="/friendlyjava/2019-02-10#i_242590">18:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242590"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">But I spotted an error in the client.</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_242591"><a href="/friendlyjava/2019-02-10#i_242591">18:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242591"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">It's sending 0... so....  makes sense.</td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_242592"><a href="/friendlyjava/2019-02-10#i_242592">18:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242592"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yeah.. I know nothing about that package :p</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_aditsu">
+
+<td class="time" id="i_242593"><a href="/friendlyjava/2019-02-10#i_242593">18:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242593"  /></td>
+<td class="nick nick2">* aditsu</td>
+<td class="msg act ">is trying to customize his Eclipse (adding a menu) and failing miserably</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_mr_lou dark">
+
+<td class="time" id="i_242594"><a href="/friendlyjava/2019-02-10#i_242594">18:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242594"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">:-)</td>
+</tr>
+
+        
+<tr id="id_l50" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242595"><a href="/friendlyjava/2019-02-10#i_242595">18:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242595"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Good to know I'm not the only failure.</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_nanoz">
+
+<td class="time" id="i_242596"><a href="/friendlyjava/2019-02-10#i_242596">18:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242596"  /></td>
+<td class="nick nick3">* nanoz</td>
+<td class="msg act ">currently not into java</td>
+</tr>
+
+        
+<tr id="id_l52" class="new nick nick_mr_lou dark">
+
+<td class="time" id="i_242597"><a href="/friendlyjava/2019-02-10#i_242597">18:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242597"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Apparently I can't even figure out normal bit operators anymore.</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242598"><a href="/friendlyjava/2019-02-10#i_242598">18:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242598"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">I don't see anything wrong, but it's just not working.</td>
+</tr>
+
+        
+<tr id="id_l54" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242599"><a href="/friendlyjava/2019-02-10#i_242599">18:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242599"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">omg I'm stupid</td>
+</tr>
+
+        
+<tr id="id_l55" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242600"><a href="/friendlyjava/2019-02-10#i_242600">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242600"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">yay</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242601"><a href="/friendlyjava/2019-02-10#i_242601">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242601"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Finally</td>
+</tr>
+
+        
+<tr id="id_l57" class="cont nick nick_mr_lou dark">
+
+<td class="time" id="i_242602"><a href="/friendlyjava/2019-02-10#i_242602">19:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_242602"  /></td>
+<td class="nick nick1">mr_lou</td>
+<td class="msg ">Now datagrams instead of socket. doesn't appear to be any faster though.</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2019-02-09" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-02-11" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-02-10">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-02-10;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-02-10;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

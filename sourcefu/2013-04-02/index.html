@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2013-04-02" />
+    <title>IRC log for #sourcefu, 2013-04-02</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2013-04-02</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2013-04-01" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2013-04-03" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2013-04-02">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2013-04-02;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2013-04-02;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_4760"><a href="/sourcefu/2013-04-02#i_4760">11:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4760"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">listening to a new podcast about git. it's pretty good: <a href="http://episodes.gitminutes.com/2013/03/gitminutes-01-randal-l-schwartz-on.html" title="http://episodes.gitminutes.com/2013/03/gitminutes-01-randal-l-schwartz-on.html">http://episodes.gitminutes.com/2013/03/gitminutes-01-randal-l-schwartz-on.html</a></td>
+</tr>
+
+        
+<tr id="id_l3" class="new special">
+
+<td class="time" id="i_4763"><a href="/sourcefu/2013-04-02#i_4763">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4763"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4764"><a href="/sourcefu/2013-04-02#i_4764">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4764"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: hey, so I have some questions about faceted search</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4765"><a href="/sourcefu/2013-04-02#i_4765">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4765"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I think it's simple and fun as long as you have global and independent facets</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4766"><a href="/sourcefu/2013-04-02#i_4766">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4766"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">i'm up to my ears in faceted search</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4767"><a href="/sourcefu/2013-04-02#i_4767">17:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4767"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">it is kinda fun</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4768"><a href="/sourcefu/2013-04-02#i_4768">17:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4768"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">but how do you deal with it if you have 1) facets that depend on the values of other facets and 2) facet values that depend on the values of other facets?</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4769"><a href="/sourcefu/2013-04-02#i_4769">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4769"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">hmm, I'm not really doing that. but you can combine facets. solr seems to call this &quot;pivot facets&quot;</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4770"><a href="/sourcefu/2013-04-02#i_4770">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4770"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: have you spun up solr and played with Solritas - <a href="http://localhost:8983/solr/collection1/browse" title="http://localhost:8983/solr/collection1/browse">http://localhost:8983/solr/collection1/browse</a> ?</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4771"><a href="/sourcefu/2013-04-02#i_4771">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4771"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I barely heard of solr.. do you think I should use it?</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4772"><a href="/sourcefu/2013-04-02#i_4772">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4772"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">maybe. you should at least spin it up and play around with that interface</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4773"><a href="/sourcefu/2013-04-02#i_4773">17:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4773"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">umm.. that localhost link doesn't seem very useful</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4774"><a href="/sourcefu/2013-04-02#i_4774">17:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4774"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">and the admin gui at <a href="http://localhost:8983/solr" title="http://localhost:8983/solr">http://localhost:8983/solr</a></td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4775"><a href="/sourcefu/2013-04-02#i_4775">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4775"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">crimsonfubot: lucky solr 4 tutorial</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_crimsonfubot dark">
+
+<td class="time" id="i_4776"><a href="/sourcefu/2013-04-02#i_4776">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4776"  /></td>
+<td class="nick nick4">crimsonfubot</td>
+<td class="msg ">pdurbin: <a href="http://lucene.apache.org/solr/api-4_0_0-BETA/doc-files/tutorial.html" title="http://lucene.apache.org/solr/api-4_0_0-BETA/doc-files/tutorial.html">http://lucene.apache.org/solr/api-4_0_0-BETA/doc-files/tutorial.html</a></td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4777"><a href="/sourcefu/2013-04-02#i_4777">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4777"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">bad crimsonfubot</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4778"><a href="/sourcefu/2013-04-02#i_4778">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4778"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">use this one: <a href="http://lucene.apache.org/solr/4_2_0/tutorial.html" title="http://lucene.apache.org/solr/4_2_0/tutorial.html">http://lucene.apache.org/solr/4_2_0/tutorial.html</a></td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4779"><a href="/sourcefu/2013-04-02#i_4779">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4779"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">ah, you mean after I run it</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4780"><a href="/sourcefu/2013-04-02#i_4780">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4780"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4781"><a href="/sourcefu/2013-04-02#i_4781">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4781"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">java -jar start.jar</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4782"><a href="/sourcefu/2013-04-02#i_4782">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4782"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">then</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4783"><a href="/sourcefu/2013-04-02#i_4783">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4783"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">java -jar post.jar *.xml</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4784"><a href="/sourcefu/2013-04-02#i_4784">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4784"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">what the... 111MB</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4785"><a href="/sourcefu/2013-04-02#i_4785">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4785"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">maybe elastic search is smaller</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4786"><a href="/sourcefu/2013-04-02#i_4786">17:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4786"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: I mentioned your question at <a href="http://colabti.org/irclogger/irclogger_log/lucene-dev?date=2013-04-02#l74" title="http://colabti.org/irclogger/irclogger_log/lucene-dev?date=2013-04-02#l74">http://colabti.org/irclogger/irclogger_log/lucene-dev?date=2013-04-02#l74</a></td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4787"><a href="/sourcefu/2013-04-02#i_4787">17:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4787"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">ok I got solr running</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4788"><a href="/sourcefu/2013-04-02#i_4788">17:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4788"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I find that Solritas interface a nice starting point for faceting... what it is... how you might implement faceting. I'm also keeping a list of open source projects with faceting at <a href="http://wiki.greptilian.com/search/faceted" title="http://wiki.greptilian.com/search/faceted">http://wiki.greptilian.com/search/faceted</a></td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4789"><a href="/sourcefu/2013-04-02#i_4789">17:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4789"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">so what does it index?</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4790"><a href="/sourcefu/2013-04-02#i_4790">17:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4790"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">xml files?</td>
+</tr>
+
+        
+<tr id="id_l31" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4791"><a href="/sourcefu/2013-04-02#i_4791">17:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4791"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">good question</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4792"><a href="/sourcefu/2013-04-02#i_4792">17:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4792"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">so far I've only fed xml files to solr</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4793"><a href="/sourcefu/2013-04-02#i_4793">17:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4793"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">did you feed it the example xml files? about electronics?</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4794"><a href="/sourcefu/2013-04-02#i_4794">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4794"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yeah I did java -jar post.jar *.xml</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4795"><a href="/sourcefu/2013-04-02#i_4795">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4795"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">cool, so you have some data to play with</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4796"><a href="/sourcefu/2013-04-02#i_4796">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4796"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">you can delete the data with some curl commands: <a href="https://github.com/dvn/solrpoc/blob/master/perl/clear.pl" title="https://github.com/dvn/solrpoc/blob/master/perl/clear.pl">https://github.com/dvn/solrpoc/blob/master/perl/clear.pl</a></td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4797"><a href="/sourcefu/2013-04-02#i_4797">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4797"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yeah, but I'm not sure how to use it for my requirements</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4798"><a href="/sourcefu/2013-04-02#i_4798">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4798"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">what are they? :)</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4799"><a href="/sourcefu/2013-04-02#i_4799">17:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4799"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">well, the main thing is I need to manage some files with metadata attached</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4800"><a href="/sourcefu/2013-04-02#i_4800">17:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4800"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdf, jpg, doc, whatever</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4801"><a href="/sourcefu/2013-04-02#i_4801">17:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4801"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">there will be an upload form with a bunch of fields (for entering the facet values)</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4802"><a href="/sourcefu/2013-04-02#i_4802">17:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4802"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">and I planned to use a database to store the metadata and references to the files</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4803"><a href="/sourcefu/2013-04-02#i_4803">17:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4803"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sounds fairly similar to the open source app I work on, actually: <a href="http://thedata.org" title="http://thedata.org">http://thedata.org</a></td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4804"><a href="/sourcefu/2013-04-02#i_4804">17:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4804"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">people enter metadata for academic studies. I'm treating that metadata a facets (authorName, publicationDate, etc.)</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4805"><a href="/sourcefu/2013-04-02#i_4805">17:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4805"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">as* facets</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4806"><a href="/sourcefu/2013-04-02#i_4806">17:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4806"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">the metadata is stored in postgres. the facets and other lucene index files can be regenerated by re-indexing</td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4807"><a href="/sourcefu/2013-04-02#i_4807">17:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4807"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">also, the system should support different types of users, with access restrictions</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4808"><a href="/sourcefu/2013-04-02#i_4808">17:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4808"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">if it was about books, you could have for example readers, authors and publishers</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4809"><a href="/sourcefu/2013-04-02#i_4809">17:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4809"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yep. our app has similar roles and permissions</td>
+</tr>
+
+        
+<tr id="id_l50" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4810"><a href="/sourcefu/2013-04-02#i_4810">17:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4810"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">readers of data, owners of data, etc.</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4811"><a href="/sourcefu/2013-04-02#i_4811">17:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4811"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">if you already have a database, then what's the point of using lucene index files? or viceversa</td>
+</tr>
+
+        
+<tr id="id_l52" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4812"><a href="/sourcefu/2013-04-02#i_4812">18:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4812"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">you could implement faceting entirely in postgres. evergreen ILS does (listed at <a href="http://wiki.greptilian.com/search/faceted" title="http://wiki.greptilian.com/search/faceted">http://wiki.greptilian.com/search/faceted</a> )</td>
+</tr>
+
+        
+<tr id="id_l53" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4813"><a href="/sourcefu/2013-04-02#i_4813">18:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4813"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yeah I intended to do that, but then I have those 2 questions</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4814"><a href="/sourcefu/2013-04-02#i_4814">18:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4814"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">a lucene index feel kinda... ephemeral... I feel safer having the metadata in a database as well</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4815"><a href="/sourcefu/2013-04-02#i_4815">18:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4815"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">to explain them better.. imagine a shopping site for all kinds of products, for laptops you want to have facets like screen size, memory, cpu type etc. but those will not apply to e.g. toy cars, those are facets that depend on the values of other facets</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4816"><a href="/sourcefu/2013-04-02#i_4816">18:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4816"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">and then you can have manufacturer, series and model, like Lenovo, Ideapad, Yoga; you probably don't want to select the series before the manufacturer, and also the values should be limited to the ones made by that manufacturer</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4817"><a href="/sourcefu/2013-04-02#i_4817">18:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4817"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I can imagine such a site :)</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4818"><a href="/sourcefu/2013-04-02#i_4818">18:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4818"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">this is not just for searching (where you can limit by the values you have), but also for classification (when you add a new item)</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4819"><a href="/sourcefu/2013-04-02#i_4819">18:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4819"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">in practice I add many facets to my search but I only get results for facets that exist</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4820"><a href="/sourcefu/2013-04-02#i_4820">18:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4820"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">if that makes sense</td>
+</tr>
+
+        
+<tr id="id_l61" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4821"><a href="/sourcefu/2013-04-02#i_4821">18:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4821"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">not sure what you mean</td>
+</tr>
+
+        
+<tr id="id_l62" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4822"><a href="/sourcefu/2013-04-02#i_4822">18:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4822"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I could request authorName and productionDate facets but if nobody has been filling in productionDate I would only get authorName facets back</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4823"><a href="/sourcefu/2013-04-02#i_4823">18:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4823"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">oh, here. give this a try: <a href="https://github.com/pdurbin/lucene-facet-demo" title="https://github.com/pdurbin/lucene-facet-demo">https://github.com/pdurbin/lucene-facet-demo</a></td>
+</tr>
+
+        
+<tr id="id_l64" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4824"><a href="/sourcefu/2013-04-02#i_4824">18:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4824"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">that's a different thing</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4825"><a href="/sourcefu/2013-04-02#i_4825">18:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4825"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">um, I don't use maven</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4826"><a href="/sourcefu/2013-04-02#i_4826">18:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4826"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">so I was wondering how to store facets and values.. would EAV be suitable? that makes queries kinda difficult</td>
+</tr>
+
+        
+<tr id="id_l67" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4827"><a href="/sourcefu/2013-04-02#i_4827">18:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4827"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">EAV?</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4828"><a href="/sourcefu/2013-04-02#i_4828">18:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4828"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg "><a href="http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model" title="http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model">http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model</a></td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4829"><a href="/sourcefu/2013-04-02#i_4829">18:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4829"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sounds fancy</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_4830"><a href="/sourcefu/2013-04-02#i_4830">18:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4830"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">these are probably good questions for #lucene-dev</td>
+</tr>
+
+        
+<tr id="id_l71" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4831"><a href="/sourcefu/2013-04-02#i_4831">18:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4831"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">hmm if I ask lucene people, I expect I will get lucene answers</td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4832"><a href="/sourcefu/2013-04-02#i_4832">18:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4832"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">hmm, maybe ##programming</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4833"><a href="/sourcefu/2013-04-02#i_4833">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4833"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I'll try reading more stuff first</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_4834"><a href="/sourcefu/2013-04-02#i_4834">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4834"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">this seems interesting: <a href="http://www.miskatonic.org/library/facet-web-howto.html" title="http://www.miskatonic.org/library/facet-web-howto.html">http://www.miskatonic.org/library/facet-web-howto.html</a></td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4835"><a href="/sourcefu/2013-04-02#i_4835">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4835"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: if I have a eureka moment, I'll let you know :)</td>
+</tr>
+
+        
+<tr id="id_l76" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_4836"><a href="/sourcefu/2013-04-02#i_4836">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4836"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">in case you missed it, a gem from monitorama: &quot;Data mullet: relational db in the front, NoSQL in the back&quot; -@lxt</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont nick nick_semiosis dark">
+
+<td class="time" id="i_4837"><a href="/sourcefu/2013-04-02#i_4837">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4837"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg "><a href="https://twitter.com/amateurhuman/status/317351099235446785" title="https://twitter.com/amateurhuman/status/317351099235446785">https://twitter.com/amateurhuman/status/317351099235446785</a></td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4838"><a href="/sourcefu/2013-04-02#i_4838">18:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4838"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: I've been meaning to read <a href="http://boonious.typepad.com/ux2/2011/01/implementing-faceted-search-ui.html" title="http://boonious.typepad.com/ux2/2011/01/implementing-faceted-search-ui.html">http://boonious.typepad.com/ux2/2011/01/implementing-faceted-search-ui.html</a> ... maybe you can tell me if it's any good</td>
+</tr>
+
+        
+<tr id="id_l79" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_4839"><a href="/sourcefu/2013-04-02#i_4839">18:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4839"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: thanks, if I read it, I can tell you if it's any good *to me* :p</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_pdurbin">
+
+<td class="time" id="i_4840"><a href="/sourcefu/2013-04-02#i_4840">23:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_4840"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">administrivia: I just tweaked philbot so we no longer see &quot;somebody joined #sourcefu&quot; in the logs. I don't see a lot of value in it</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2013-04-01" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2013-04-03" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2013-04-02">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2013-04-02;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2013-04-02;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

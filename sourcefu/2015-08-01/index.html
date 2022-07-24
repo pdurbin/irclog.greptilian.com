@@ -1,0 +1,1619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2015-08-01" />
+    <title>IRC log for #sourcefu, 2015-08-01</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2015-08-01</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2015-07-31" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2015-08-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2015-08-01">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2015-08-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2015-08-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_130947"><a href="/sourcefu/2015-08-01#i_130947">01:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130947"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130965"><a href="/sourcefu/2015-08-01#i_130965">09:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130965"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic and dotplus: I just left some comments on the &quot;add a spec&quot; pull request: <a href="https://github.com/pdurbin/addressbookmvc/pull/12" title="https://github.com/pdurbin/addressbookmvc/pull/12">https://github.com/pdurbin/addressbookmvc/pull/12</a></td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_130966"><a href="/sourcefu/2015-08-01#i_130966">09:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130966"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">obviously, we didn't start with a spec. everyone did their own thing. which was fine maybe, but maybe we should get on the same page before we onboard too many more people and implementations</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_130969"><a href="/sourcefu/2015-08-01#i_130969">10:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130969"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic (or anyone): do you have time for a Java vs. Python question about constructors?</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_130971"><a href="/sourcefu/2015-08-01#i_130971">10:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130971"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">In Java I sometimes delete the default constructor and provide a constructor that initializes some fields that I always want to be present: <a href="https://github.com/IQSS/dataverse/blob/063f9a72ee8b75e4f19d69463d7604373e697d63/src/main/java/edu/harvard/iq/dataverse/search/FacetLabel.java#L12-L15" title="https://github.com/IQSS/dataverse/blob/063f9a72ee8b75e4f19d69463d7604373e697d63/src/main/java/edu/harvard/iq/dataverse/search/FacetLabel.java#L12-L15">https://github.com/IQSS/dataverse/blob/063f9a72ee8b75e4f19d69463d7604373e697d63/src/main/java/edu/harvard/iq/dataverse/search/FacetLabel.java#L12-L15</a> shows a constructor with `FacetLabel(String name, Long count)` for example.</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_130972"><a href="/sourcefu/2015-08-01#i_130972">10:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130972"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">This prevents the object from being instantiated with null for those fields. How can I do this in Python?</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130977"><a href="/sourcefu/2015-08-01#i_130977">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130977"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">pdurbin: trying to answer your question(s)</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130978"><a href="/sourcefu/2015-08-01#i_130978">11:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130978"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">So you essentially want read-only fields?</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130979"><a href="/sourcefu/2015-08-01#i_130979">11:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130979"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">no, I want certain fields to be non null when the object is instatiated</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130980"><a href="/sourcefu/2015-08-01#i_130980">11:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130980"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">Oh I see</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130981"><a href="/sourcefu/2015-08-01#i_130981">11:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130981"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">the Java example accomplishes this</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130982"><a href="/sourcefu/2015-08-01#i_130982">11:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130982"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">just initialize them in __init__ ?</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130983"><a href="/sourcefu/2015-08-01#i_130983">11:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130983"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">well</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130984"><a href="/sourcefu/2015-08-01#i_130984">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130984"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">I will btw give you the idiomatic Python answer :P</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130985"><a href="/sourcefu/2015-08-01#i_130985">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130985"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">can I have __init__ throw an exception or something if the required fields are not supplied?</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130986"><a href="/sourcefu/2015-08-01#i_130986">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130986"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">so it may not be like what you’ve experienced with java</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130987"><a href="/sourcefu/2015-08-01#i_130987">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130987"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">you sure can</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130988"><a href="/sourcefu/2015-08-01#i_130988">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130988"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">or simply make them arguments with non-default values</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130989"><a href="/sourcefu/2015-08-01#i_130989">11:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130989"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">def __init__(self, foo, bar, baz):</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130990"><a href="/sourcefu/2015-08-01#i_130990">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130990"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">btw; porting anything Java to Python (and vice versa) is generally not a good idea; the semantics nor typing are similar at all</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130991"><a href="/sourcefu/2015-08-01#i_130991">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130991"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">What are you doing btw? :P</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130992"><a href="/sourcefu/2015-08-01#i_130992">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130992"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">aside from the “how do I do xyz?&quot;</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130993"><a href="/sourcefu/2015-08-01#i_130993">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130993"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">oh, just messing around with Django: <a href="https://github.com/pdurbin/addressbookmvc/commit/f1a6309" title="https://github.com/pdurbin/addressbookmvc/commit/f1a6309">https://github.com/pdurbin/addressbookmvc/commit/f1a6309</a></td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_130994"><a href="/sourcefu/2015-08-01#i_130994">11:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130994"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">got me thinking about constructors</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130995"><a href="/sourcefu/2015-08-01#i_130995">11:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130995"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">ahh</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130996"><a href="/sourcefu/2015-08-01#i_130996">11:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130996"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">so in Python I can't prevent people (myself) from using a no-argument constructor. or so it sounds</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_prologic dark">
+
+<td class="time" id="i_130997"><a href="/sourcefu/2015-08-01#i_130997">11:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130997"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">huh?</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_130998"><a href="/sourcefu/2015-08-01#i_130998">11:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130998"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">classes only have *one* constructor</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_pdurbin">
+
+<td class="time" id="i_130999"><a href="/sourcefu/2015-08-01#i_130999">11:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_130999"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic: do you understand the Java example?</td>
+</tr>
+
+        
+<tr id="id_l31" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131000"><a href="/sourcefu/2015-08-01#i_131000">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131000"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">kind of :)</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131001"><a href="/sourcefu/2015-08-01#i_131001">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131001"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">heh. ok</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131002"><a href="/sourcefu/2015-08-01#i_131002">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131002"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I think of this as a feature of Java.</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131003"><a href="/sourcefu/2015-08-01#i_131003">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131003"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">been a while since I ever did Java (10+ years?)</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131004"><a href="/sourcefu/2015-08-01#i_131004">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131004"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prevent people from shooting themselves in the foot</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131005"><a href="/sourcefu/2015-08-01#i_131005">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131005"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">ahh</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131006"><a href="/sourcefu/2015-08-01#i_131006">11:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131006"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">you cannot do that really with most dynamic languages</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131007"><a href="/sourcefu/2015-08-01#i_131007">11:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131007"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">shooting yourself in the foot is precisely why we on that side of the camp like dynamic languages :)</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131008"><a href="/sourcefu/2015-08-01#i_131008">11:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131008"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">heh</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131010"><a href="/sourcefu/2015-08-01#i_131010">11:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131010"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">they allow us to do sometimes often silly things</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131011"><a href="/sourcefu/2015-08-01#i_131011">12:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131011"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">most advocates of dynamic languages prfer the contract be between programmers; not interfaces</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131012"><a href="/sourcefu/2015-08-01#i_131012">12:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131012"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">interfaces are merely a “guide” that can often be bent or used in more than one way</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131013"><a href="/sourcefu/2015-08-01#i_131013">12:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131013"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah. maybe I should try Haskell. I kind of like the idea of the compiler helping you</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131015"><a href="/sourcefu/2015-08-01#i_131015">12:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131015"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">heh</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131016"><a href="/sourcefu/2015-08-01#i_131016">12:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131016"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I'm also sort of interested in optional typing. Starting very dynamic and adding some types where it helps the most. Clojure seems to support this well with schemas.</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131017"><a href="/sourcefu/2015-08-01#i_131017">12:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131017"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">huh. I got the impression it was built into the language but maybe this is it: <a href="https://github.com/Prismatic/schema" title="https://github.com/Prismatic/schema">https://github.com/Prismatic/schema</a></td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131018"><a href="/sourcefu/2015-08-01#i_131018">12:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131018"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">you should check out the many type checking libraries for Python then</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131019"><a href="/sourcefu/2015-08-01#i_131019">12:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131019"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah. &quot;Moving from Scala to Clojure, I was horrified and crippled by the lack of declared types. In desperation I cling to Prismatic Schema, which lets me describe parameters and return values, which are optionally enforced: contracts that look like types.&quot; ▶ PolyConf 15: Contracts as Types / Jessica Kerr - YouTube - <a href="https://www.youtube.com/watch?v=zLyd_Ey1GPM" title="https://www.youtube.com/watch?v=zLyd_Ey1GPM">https://www.youtube.com/watch?v=zLyd_Ey1GPM</a></td>
+</tr>
+
+        
+<tr id="id_l49" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131020"><a href="/sourcefu/2015-08-01#i_131020">12:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131020"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">via Jessica Kerr - Cognicast Episode 082 — Cognitect Blog - <a href="http://blog.cognitect.com/cognicast/082" title="http://blog.cognitect.com/cognicast/082">http://blog.cognitect.com/cognicast/082</a></td>
+</tr>
+
+        
+<tr id="id_l50" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131021"><a href="/sourcefu/2015-08-01#i_131021">12:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131021"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">and here is apparently the paper in which it's argued that people are more productive with types declared in method parameters: The Programming Language Wars - <a href="http://dl.acm.org/citation.cfm?id=2661156" title="http://dl.acm.org/citation.cfm?id=2661156">http://dl.acm.org/citation.cfm?id=2661156</a></td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131022"><a href="/sourcefu/2015-08-01#i_131022">12:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131022"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">this was mentioned in the podcast anyway. I'll have to check out the paper</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131023"><a href="/sourcefu/2015-08-01#i_131023">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131023"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: clojure! :)</td>
+</tr>
+
+        
+<tr id="id_l53" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_131025"><a href="/sourcefu/2015-08-01#i_131025">12:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131025"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I believe that Perl5 and Perl6 have been experimenting with the same ideas for a while now</td>
+</tr>
+
+        
+<tr id="id_l54" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131026"><a href="/sourcefu/2015-08-01#i_131026">12:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131026"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">Perl6 has gradual typing</td>
+</tr>
+
+        
+<tr id="id_l55" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131027"><a href="/sourcefu/2015-08-01#i_131027">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131027"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">and Perl5 has been using types for validation and documentation, but usually through libraries like Type::Tiny</td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131028"><a href="/sourcefu/2015-08-01#i_131028">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131028"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">cool, you can download that paper from <a href="http://web.cs.unlv.edu/stefika/Papers.php" title="http://web.cs.unlv.edu/stefika/Papers.php">http://web.cs.unlv.edu/stefika/Papers.php</a></td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_131029"><a href="/sourcefu/2015-08-01#i_131029">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131029"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">where the types can end up compiling to C code ;-)</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131030"><a href="/sourcefu/2015-08-01#i_131030">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131030"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: yes, &quot;gradual typing&quot;. thank you</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_131031"><a href="/sourcefu/2015-08-01#i_131031">12:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131031"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I'm reading this paper and I'm reminded of this post I saw yesterday &lt;<a href="http://www.johndcook.com/blog/2015/07/31/the-success-of-oop/" title="http://www.johndcook.com/blog/2015/07/31/the-success-of-oop/">http://www.johndcook.com/blog/2015/07/31/the-success-of-oop/</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131032"><a href="/sourcefu/2015-08-01#i_131032">12:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131032"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">not a long post, just an observation really</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131033"><a href="/sourcefu/2015-08-01#i_131033">12:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131033"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">&quot;plenty of computer science theories that haven?t been tested. For instance, functional programming, object-oriented programming, and formal methods are all thought to improve programmer productivity, program quality, or both&quot; - pg. 7</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131034"><a href="/sourcefu/2015-08-01#i_131034">12:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131034"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">this is a great paper!</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131035"><a href="/sourcefu/2015-08-01#i_131035">12:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131035"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">asking the right questions :-P</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont nick nick_sivoais dark">
+
+<td class="time" id="i_131036"><a href="/sourcefu/2015-08-01#i_131036">12:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131036"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">reminds me of the work being down under the &quot;Psychology of Programming Interest Group&quot; &lt;<a href="http://www.ppig.org/" title="http://www.ppig.org/">http://www.ppig.org/</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l65" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131037"><a href="/sourcefu/2015-08-01#i_131037">12:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131037"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I printed it out at least. Not sure when I'll have time to read it.</td>
+</tr>
+
+        
+<tr id="id_l66" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_131038"><a href="/sourcefu/2015-08-01#i_131038">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131038"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I just finished :-P</td>
+</tr>
+
+        
+<tr id="id_l67" class="new special">
+
+<td class="time" id="i_131039"><a href="/sourcefu/2015-08-01#i_131039">12:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131039"  /></td>
+<td class="nick"></td>
+<td class="msg ">Azgarech joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_Azgarech dark">
+
+<td class="time" id="i_131040"><a href="/sourcefu/2015-08-01#i_131040">12:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131040"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">Hello all</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_sivoais">
+
+<td class="time" id="i_131041"><a href="/sourcefu/2015-08-01#i_131041">12:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131041"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">hi!</td>
+</tr>
+
+        
+<tr id="id_l70" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131042"><a href="/sourcefu/2015-08-01#i_131042">13:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131042"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Azgarech: welcome!</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131043"><a href="/sourcefu/2015-08-01#i_131043">13:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131043"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: my kids are too loud. can't read</td>
+</tr>
+
+        
+<tr id="id_l72" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131044"><a href="/sourcefu/2015-08-01#i_131044">13:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131044"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: did it explain anything about types in method signatures?</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_sivoais">
+
+<td class="time" id="i_131045"><a href="/sourcefu/2015-08-01#i_131045">13:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131045"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">pdurbin: yeah, on pg. 10 (pg. 292 on paper). It cites a handful of studies.</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131046"><a href="/sourcefu/2015-08-01#i_131046">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131046"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I have a feeling that most of the benefit of types in that context is because it clearly documents the contracts like discussed before</td>
+</tr>
+
+        
+<tr id="id_l75" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131047"><a href="/sourcefu/2015-08-01#i_131047">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131047"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">which means that tools like code completion can use that information</td>
+</tr>
+
+        
+<tr id="id_l76" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131048"><a href="/sourcefu/2015-08-01#i_131048">13:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131048"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I've wanted to take a look at how code completion in languages like Python work without running any code</td>
+</tr>
+
+        
+<tr id="id_l77" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131049"><a href="/sourcefu/2015-08-01#i_131049">13:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131049"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">sivoais, yeah I agree with that</td>
+</tr>
+
+        
+<tr id="id_l78" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131051"><a href="/sourcefu/2015-08-01#i_131051">13:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131051"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">however a counter point is that this is useful only for <abbr title="Integrated Development Environment">IDE</abbr>(s)</td>
+</tr>
+
+        
+<tr id="id_l79" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131052"><a href="/sourcefu/2015-08-01#i_131052">13:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131052"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">and developers that develop the &quot;UNIX&quot; srtyle I guess don't rely on this as much (if at all)</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_sivoais">
+
+<td class="time" id="i_131053"><a href="/sourcefu/2015-08-01#i_131053">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131053"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">yep, I'd be one of those :-P I often have the docs popped open in another terminal window as I code and seeing what kind of parameters are expected helps me even if they are duck types</td>
+</tr>
+
+        
+<tr id="id_l81" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131054"><a href="/sourcefu/2015-08-01#i_131054">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131054"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">that's only if I'm unfamiliar with a library. Which is probably just a week or 2. After that, the names of parameters are enough :-P</td>
+</tr>
+
+        
+<tr id="id_l82" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131055"><a href="/sourcefu/2015-08-01#i_131055">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131055"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">same</td>
+</tr>
+
+        
+<tr id="id_l83" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131056"><a href="/sourcefu/2015-08-01#i_131056">13:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131056"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">So by that token I find the whole argument of types to provide useful information to IDE9S) kind of silly</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131057"><a href="/sourcefu/2015-08-01#i_131057">13:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131057"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">what it really does is give you compile time restrictions on your program</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131058"><a href="/sourcefu/2015-08-01#i_131058">13:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131058"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">inevitably making &quot;some&quot; things harder to do</td>
+</tr>
+
+        
+<tr id="id_l86" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131059"><a href="/sourcefu/2015-08-01#i_131059">13:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131059"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">like anything dynamic :)</td>
+</tr>
+
+        
+<tr id="id_l87" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131060"><a href="/sourcefu/2015-08-01#i_131060">13:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131060"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: thanks! yes, I think the claim made in the podcast about what parts of static typing is most beneficial (use in method signatures) is probably supported by one of those references in that paper</td>
+</tr>
+
+        
+<tr id="id_l88" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131061"><a href="/sourcefu/2015-08-01#i_131061">13:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131061"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: all this discussion is pretty early in that podcast if you'd like to listen</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_131062"><a href="/sourcefu/2015-08-01#i_131062">13:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131062"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I'll give it a listen! I'm trying to diagnose why my phone won't charge properly right now, but I've downloaded it for later :-)</td>
+</tr>
+
+        
+<tr id="id_l90" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131063"><a href="/sourcefu/2015-08-01#i_131063">13:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131063"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">cool. there's some great scala vs. clojure discussion in there</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_131064"><a href="/sourcefu/2015-08-01#i_131064">13:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131064"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic: when I only wrote little scripts I used vim. Now I use an <abbr title="Integrated Development Environment">IDE</abbr> and I really like it. Call me lazy. I think it makes me more productive. I still use vim every day though! :)</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick_prologic dark">
+
+<td class="time" id="i_131065"><a href="/sourcefu/2015-08-01#i_131065">13:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131065"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l93" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131066"><a href="/sourcefu/2015-08-01#i_131066">13:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131066"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">we're all different and work more effectively in different ways</td>
+</tr>
+
+        
+<tr id="id_l94" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131067"><a href="/sourcefu/2015-08-01#i_131067">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131067"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">I find things like auto completion get in the way mself</td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131068"><a href="/sourcefu/2015-08-01#i_131068">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131068"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">and I don't need an <abbr title="Integrated Development Environment">IDE</abbr> to look things up for me that I can look up myself more quickly using tools like grin/grind</td>
+</tr>
+
+        
+<tr id="id_l96" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131069"><a href="/sourcefu/2015-08-01#i_131069">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131069"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">but that's just me!</td>
+</tr>
+
+        
+<tr id="id_l97" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131070"><a href="/sourcefu/2015-08-01#i_131070">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131070"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">call me a UNIX pureist :P</td>
+</tr>
+
+        
+<tr id="id_l98" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_131071"><a href="/sourcefu/2015-08-01#i_131071">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131071"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">purist*</td>
+</tr>
+
+        
+<tr id="id_l99" class="new special">
+
+<td class="time" id="i_131074"><a href="/sourcefu/2015-08-01#i_131074">13:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131074"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l100" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131076"><a href="/sourcefu/2015-08-01#i_131076">13:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131076"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic: don't get me wrong. I love Unix. what's grin/grind?</td>
+</tr>
+
+        
+<tr id="id_l101" class="new nick nick_prologic">
+
+<td class="time" id="i_131077"><a href="/sourcefu/2015-08-01#i_131077">13:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131077"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg "><a href="https://pypi.python.org/pypi/grin" title="https://pypi.python.org/pypi/grin">https://pypi.python.org/pypi/grin</a></td>
+</tr>
+
+        
+<tr id="id_l102" class="cont nick nick_prologic">
+
+<td class="time" id="i_131078"><a href="/sourcefu/2015-08-01#i_131078">13:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131078"  /></td>
+<td class="nick nick3">prologic</td>
+<td class="msg ">basically grep/find on steroids :)</td>
+</tr>
+
+        
+<tr id="id_l103" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131080"><a href="/sourcefu/2015-08-01#i_131080">14:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131080"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">right, right, I use ack for this. fairly often even on projects where I use an <abbr title="Integrated Development Environment">IDE</abbr></td>
+</tr>
+
+        
+<tr id="id_l104" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131081"><a href="/sourcefu/2015-08-01#i_131081">14:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131081"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I'm very much a minimalist at heart so I completely understand not using an <abbr title="Integrated Development Environment">IDE</abbr>. In Java, however, not using an IDE is slowing yourself down, probably.</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131082"><a href="/sourcefu/2015-08-01#i_131082">14:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131082"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">For Python I'm still trying to decide if I should set up vim better or use PyCharm. Or some other <abbr title="Integrated Development Environment">IDE</abbr>.</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131083"><a href="/sourcefu/2015-08-01#i_131083">14:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131083"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I have a strong preference for gratis tools so I may not go for PyCharm.</td>
+</tr>
+
+        
+<tr id="id_l107" class="new nick nick_Azgarech">
+
+<td class="time" id="i_131084"><a href="/sourcefu/2015-08-01#i_131084">14:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131084"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">I may had it to viperr</td>
+</tr>
+
+        
+<tr id="id_l108" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131085"><a href="/sourcefu/2015-08-01#i_131085">14:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131085"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Azgarech: add it?</td>
+</tr>
+
+        
+<tr id="id_l109" class="new nick nick_Azgarech">
+
+<td class="time" id="i_131086"><a href="/sourcefu/2015-08-01#i_131086">14:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131086"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">yes in the tools featured in Viperr</td>
+</tr>
+
+        
+<tr id="id_l110" class="cont nick nick_Azgarech">
+
+<td class="time" id="i_131087"><a href="/sourcefu/2015-08-01#i_131087">14:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131087"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">just put it in directly on the distrib <abbr title="International Organization for Standardization">ISO</abbr></td>
+</tr>
+
+        
+<tr id="id_l111" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131088"><a href="/sourcefu/2015-08-01#i_131088">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131088"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Azgarech: add what?</td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick_Azgarech">
+
+<td class="time" id="i_131089"><a href="/sourcefu/2015-08-01#i_131089">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131089"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">grin</td>
+</tr>
+
+        
+<tr id="id_l113" class="cont nick nick_Azgarech">
+
+<td class="time" id="i_131090"><a href="/sourcefu/2015-08-01#i_131090">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131090"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">sorry</td>
+</tr>
+
+        
+<tr id="id_l114" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131091"><a href="/sourcefu/2015-08-01#i_131091">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131091"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ah. ok. cool</td>
+</tr>
+
+        
+<tr id="id_l115" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131092"><a href="/sourcefu/2015-08-01#i_131092">14:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131092"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Azgarech: prologic made a Linux distribution: <a href="http://vallinux.org" title="http://vallinux.org">http://vallinux.org</a></td>
+</tr>
+
+        
+<tr id="id_l116" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131093"><a href="/sourcefu/2015-08-01#i_131093">14:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131093"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">prologic: Azgarech made a Linux distribution: <a href="https://viperr.org" title="https://viperr.org">https://viperr.org</a></td>
+</tr>
+
+        
+<tr id="id_l117" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131094"><a href="/sourcefu/2015-08-01#i_131094">14:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131094"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l118" class="new nick nick_Azgarech">
+
+<td class="time" id="i_131095"><a href="/sourcefu/2015-08-01#i_131095">14:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131095"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">a minimal Linux</td>
+</tr>
+
+        
+<tr id="id_l119" class="cont nick nick_Azgarech">
+
+<td class="time" id="i_131096"><a href="/sourcefu/2015-08-01#i_131096">14:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131096"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">I like the idea</td>
+</tr>
+
+        
+<tr id="id_l120" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_131100"><a href="/sourcefu/2015-08-01#i_131100">14:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131100"  /></td>
+<td class="nick nick5">dotplus</td>
+<td class="msg ">pdurbin: I forget, do you Vim? If so, a) Ack support for vim <a href="https://github.com/mileszs/ack.vim" title="https://github.com/mileszs/ack.vim">https://github.com/mileszs/ack.vim</a> b) All sorts of python goodness for vim <a href="https://github.com/klen/python-mode" title="https://github.com/klen/python-mode">https://github.com/klen/python-mode</a></td>
+</tr>
+
+        
+<tr id="id_l121" class="cont nick nick_dotplus dark">
+
+<td class="time" id="i_131101"><a href="/sourcefu/2015-08-01#i_131101">14:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131101"  /></td>
+<td class="nick nick5">dotplus</td>
+<td class="msg ">They're still both on my list of one day tools to look into, but I'm hopeful they'll be good. I can only justify a certain proportion of my time to explore/improve tooling; sometimes I actually have to use the tooling.</td>
+</tr>
+
+        
+<tr id="id_l122" class="cont nick nick_dotplus dark">
+
+<td class="time" id="i_131104"><a href="/sourcefu/2015-08-01#i_131104">14:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131104"  /></td>
+<td class="nick nick5">dotplus</td>
+<td class="msg ">I already use ack a fair bit.</td>
+</tr>
+
+        
+<tr id="id_l123" class="new nick nick_pdurbin">
+
+<td class="time" id="i_131105"><a href="/sourcefu/2015-08-01#i_131105">14:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131105"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">dotplus: yeah, I'm a vim person. thanks</td>
+</tr>
+
+        
+<tr id="id_l124" class="new nick nick_Azgarech dark">
+
+<td class="time" id="i_131106"><a href="/sourcefu/2015-08-01#i_131106">14:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131106"  /></td>
+<td class="nick nick4">Azgarech</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l125" class="new nick nick_sivoais">
+
+<td class="time" id="i_131117"><a href="/sourcefu/2015-08-01#i_131117">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131117"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I contributed to ack.vim, but turns out that I prefer git-grep since it is faster</td>
+</tr>
+
+        
+<tr id="id_l126" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131118"><a href="/sourcefu/2015-08-01#i_131118">16:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131118"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">interesting</td>
+</tr>
+
+        
+<tr id="id_l127" class="new nick nick_sivoais">
+
+<td class="time" id="i_131119"><a href="/sourcefu/2015-08-01#i_131119">16:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131119"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">and if you're just searching for symbols, ctags is nice</td>
+</tr>
+
+        
+<tr id="id_l128" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131120"><a href="/sourcefu/2015-08-01#i_131120">16:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131120"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah, I should probably get better set up with vim in general</td>
+</tr>
+
+        
+<tr id="id_l129" class="new nick nick_sivoais">
+
+<td class="time" id="i_131127"><a href="/sourcefu/2015-08-01#i_131127">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131127"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">pdurbin: listening to the podcast...</td>
+</tr>
+
+        
+<tr id="id_l130" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131128"><a href="/sourcefu/2015-08-01#i_131128">17:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131128"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">there's some points where I'm hearing something and wondering why they don't just make their tools work better together rather than trying to duplicate an idea for each tool</td>
+</tr>
+
+        
+<tr id="id_l131" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131129"><a href="/sourcefu/2015-08-01#i_131129">17:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131129"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I don't know Clojure, but why do they have docstrings, schema, and test generators that all contain the same idea? I would put it in one place and generate it in the other places</td>
+</tr>
+
+        
+<tr id="id_l132" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131130"><a href="/sourcefu/2015-08-01#i_131130">17:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131130"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">Keep it DRY</td>
+</tr>
+
+        
+<tr id="id_l133" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131131"><a href="/sourcefu/2015-08-01#i_131131">17:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131131"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">Obviously there are times when it is just one-off and too much work to try to figure out the right abstraction.</td>
+</tr>
+
+        
+<tr id="id_l134" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131132"><a href="/sourcefu/2015-08-01#i_131132">17:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131132"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I'm specifically thinking about how they talk about the <abbr title="JavaScript">JS</abbr> 53-bit numbers example</td>
+</tr>
+
+        
+<tr id="id_l135" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131139"><a href="/sourcefu/2015-08-01#i_131139">18:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131139"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: that schema thing she mentioned is not built in: <a href="http://irclog.greptilian.com/sourcefu/2015-08-01#i_131017" title="http://irclog.greptilian.com/sourcefu/2015-08-01#i_131017">http://irclog.greptilian.com/sourcefu/2015-08-01#i_131017</a></td>
+</tr>
+
+        
+<tr id="id_l136" class="new nick nick_sivoais">
+
+<td class="time" id="i_131140"><a href="/sourcefu/2015-08-01#i_131140">19:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131140"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">oh, I understand that! But if I make an extension to the language, I'm going to try my hardest to make sure it works with other parts of the language and other extensions in a clean way.</td>
+</tr>
+
+        
+<tr id="id_l137" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131141"><a href="/sourcefu/2015-08-01#i_131141">19:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131141"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">e.g., see &lt;<a href="https://metacpan.org/release/Type-Tiny" title="https://metacpan.org/release/Type-Tiny">https://metacpan.org/release/Type-Tiny</a>&gt;. It is a type constraint library for Perl5. The docs include information on how to make it work with various <abbr title="Object-Oriented">OO</abbr> frameworks.</td>
+</tr>
+
+        
+<tr id="id_l138" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131142"><a href="/sourcefu/2015-08-01#i_131142">19:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131142"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">and then that library ends up being used by &lt;<a href="https://metacpan.org/pod/Kavorka" title="https://metacpan.org/pod/Kavorka">https://metacpan.org/pod/Kavorka</a>&gt; which changes much of the Perl5 syntax</td>
+</tr>
+
+        
+<tr id="id_l139" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131143"><a href="/sourcefu/2015-08-01#i_131143">19:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131143"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">only slightly related... have you ever seen object mapper libraries for Java?</td>
+</tr>
+
+        
+<tr id="id_l140" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131145"><a href="/sourcefu/2015-08-01#i_131145">19:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131145"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">like: &lt;<a href="http://dozer.sourceforge.net/" title="http://dozer.sourceforge.net/">http://dozer.sourceforge.net/</a>&gt;, &lt;<a href="http://orika-mapper.github.io/orika-docs/" title="http://orika-mapper.github.io/orika-docs/">http://orika-mapper.github.io/orika-docs/</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l141" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131147"><a href="/sourcefu/2015-08-01#i_131147">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131147"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I haven't.</td>
+</tr>
+
+        
+<tr id="id_l142" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131148"><a href="/sourcefu/2015-08-01#i_131148">19:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131148"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">and I might need to relisten about the <abbr title="JavaScript">JS</abbr> number example</td>
+</tr>
+
+        
+<tr id="id_l143" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131149"><a href="/sourcefu/2015-08-01#i_131149">19:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131149"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I finished the language wars paper. Still thinking about it.</td>
+</tr>
+
+        
+<tr id="id_l144" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131150"><a href="/sourcefu/2015-08-01#i_131150">19:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131150"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">They're definitely taking the long view.</td>
+</tr>
+
+        
+<tr id="id_l145" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131151"><a href="/sourcefu/2015-08-01#i_131151">19:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131151"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">And they're right, of course.</td>
+</tr>
+
+        
+<tr id="id_l146" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131152"><a href="/sourcefu/2015-08-01#i_131152">19:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131152"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">The language wars are a problem. But how big of a problem is it?</td>
+</tr>
+
+        
+<tr id="id_l147" class="new nick nick_sivoais">
+
+<td class="time" id="i_131155"><a href="/sourcefu/2015-08-01#i_131155">20:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131155"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">Exactly what was on my mind. I'm not averse to working in a polyglot environment. And with a good compat layer (perhaps like Dozer), you can make it possible to get the different components to talk to each other.</td>
+</tr>
+
+        
+<tr id="id_l148" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131156"><a href="/sourcefu/2015-08-01#i_131156">20:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131156"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">As long as you can bind the code easily and put a sane interface around it, it's not that hard to deal with.</td>
+</tr>
+
+        
+<tr id="id_l149" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131157"><a href="/sourcefu/2015-08-01#i_131157">20:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131157"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I did read this yesterday: &lt;<a href="http://250bpm.com/blog:42" title="http://250bpm.com/blog:42">http://250bpm.com/blog:42</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l150" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131158"><a href="/sourcefu/2015-08-01#i_131158">20:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131158"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I mean, duplication of effort is expensive but it's survial of the fittest on some level.</td>
+</tr>
+
+        
+<tr id="id_l151" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131159"><a href="/sourcefu/2015-08-01#i_131159">20:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131159"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">&quot;Are you a programmer-mathematician or a programmer-handyman?&quot;</td>
+</tr>
+
+        
+<tr id="id_l152" class="new nick nick_sivoais">
+
+<td class="time" id="i_131160"><a href="/sourcefu/2015-08-01#i_131160">20:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131160"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">perhaps the idea of the complexity involved in our tools is related to how we percieve the number of languages and libraries that we deal with</td>
+</tr>
+
+        
+<tr id="id_l153" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131161"><a href="/sourcefu/2015-08-01#i_131161">20:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131161"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">how much of that duplication of effort is core algorithms rather than business logic?</td>
+</tr>
+
+        
+<tr id="id_l154" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131162"><a href="/sourcefu/2015-08-01#i_131162">20:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131162"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">The web example is almost a bit comical. Yes, perhaps <abbr title="Pansies Hate Perl">PHP</abbr>, Javascript, <abbr title="Structured Query Language">SQL</abbr>, <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Stylesheets">CSS</abbr>, and <abbr title="JavaScript Object Notation">JSON</abbr> are used. How realistic is it to replace all this with a single language? This is why I say they take the long view (which is healthy).</td>
+</tr>
+
+        
+<tr id="id_l155" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131163"><a href="/sourcefu/2015-08-01#i_131163">20:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131163"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I feel like I'm being too negative. It's a good paper. Good for people to think about. I went ahead and shared it at <a href="http://or8.net/pipermail/codecraft/2015-August/000031.html" title="http://or8.net/pipermail/codecraft/2015-August/000031.html">http://or8.net/pipermail/codecraft/2015-August/000031.html</a></td>
+</tr>
+
+        
+<tr id="id_l156" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131164"><a href="/sourcefu/2015-08-01#i_131164">20:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131164"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">first post of August! :)</td>
+</tr>
+
+        
+<tr id="id_l157" class="new nick nick_sivoais">
+
+<td class="time" id="i_131165"><a href="/sourcefu/2015-08-01#i_131165">20:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131165"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">\o/</td>
+</tr>
+
+        
+<tr id="id_l158" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131166"><a href="/sourcefu/2015-08-01#i_131166">20:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131166"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I'm sort of reminded of Spaceballs: &quot;Why are you always preparing? Just go!&quot;</td>
+</tr>
+
+        
+<tr id="id_l159" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131167"><a href="/sourcefu/2015-08-01#i_131167">20:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131167"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">that's how the web was made :)</td>
+</tr>
+
+        
+<tr id="id_l160" class="new nick nick_sivoais">
+
+<td class="time" id="i_131168"><a href="/sourcefu/2015-08-01#i_131168">20:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131168"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">hahah</td>
+</tr>
+
+        
+<tr id="id_l161" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131169"><a href="/sourcefu/2015-08-01#i_131169">20:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131169"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">;-) like &quot;Worse Is Better&quot;</td>
+</tr>
+
+        
+<tr id="id_l162" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131170"><a href="/sourcefu/2015-08-01#i_131170">20:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131170"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">With WebAssembly, things might change :-P</td>
+</tr>
+
+        
+<tr id="id_l163" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_131171"><a href="/sourcefu/2015-08-01#i_131171">20:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131171"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah, will be keeping an eye on that. or an ear. I listened to <a href="http://cppcast.com/2015/07/jf-bastien/" title="http://cppcast.com/2015/07/jf-bastien/">http://cppcast.com/2015/07/jf-bastien/</a> which was good. before that I thought wasm was already out</td>
+</tr>
+
+        
+<tr id="id_l164" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131172"><a href="/sourcefu/2015-08-01#i_131172">20:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131172"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">dotplus: that reminds me. I finally merged in your spec into <a href="https://github.com/pdurbin/addressbookmvc" title="https://github.com/pdurbin/addressbookmvc">https://github.com/pdurbin/addressbookmvc</a> :)</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_131173"><a href="/sourcefu/2015-08-01#i_131173">20:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131173"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">dotplus: thank you very much!</td>
+</tr>
+
+        
+<tr id="id_l166" class="new nick nick_sivoais">
+
+<td class="time" id="i_131176"><a href="/sourcefu/2015-08-01#i_131176">20:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131176"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">I don't understand why the WebAssembly design includes designing an <abbr title="Abstract Syntax Tree">AST</abbr></td>
+</tr>
+
+        
+<tr id="id_l167" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131177"><a href="/sourcefu/2015-08-01#i_131177">20:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131177"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">&lt;<a href="https://github.com/WebAssembly/design/blob/master/AstSemantics.md" title="https://github.com/WebAssembly/design/blob/master/AstSemantics.md">https://github.com/WebAssembly/design/blob/master/AstSemantics.md</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l168" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131178"><a href="/sourcefu/2015-08-01#i_131178">20:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131178"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">The name *assembly* would seem to imply that it is just an instruction set</td>
+</tr>
+
+        
+<tr id="id_l169" class="cont nick nick_sivoais">
+
+<td class="time" id="i_131180"><a href="/sourcefu/2015-08-01#i_131180">20:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_131180"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">My guess is that this <abbr title="Abstract Syntax Tree">AST</abbr> form is meant to be compiled and optimised further. It's just an intermediate representation. Not a bytecode.</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2015-07-31" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2015-08-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2015-08-01">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2015-08-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2015-08-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

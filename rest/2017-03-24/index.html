@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2017-03-24" />
+    <title>IRC log for #rest, 2017-03-24</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2017-03-24</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2017-03-23" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2017-03-25" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2017-03-24">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2017-03-24;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2017-03-24;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_202408"><a href="/rest/2017-03-24#i_202408">03:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202408"  /></td>
+<td class="nick"></td>
+<td class="msg ">Davey joined #rest</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_202409"><a href="/rest/2017-03-24#i_202409">03:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202409"  /></td>
+<td class="nick"></td>
+<td class="msg ">Davey joined #rest</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_202411"><a href="/rest/2017-03-24#i_202411">08:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202411"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont special dark">
+
+<td class="time" id="i_202412"><a href="/rest/2017-03-24#i_202412">10:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202412"  /></td>
+<td class="nick"></td>
+<td class="msg ">aot joined #rest</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_aot">
+
+<td class="time" id="i_202413"><a href="/rest/2017-03-24#i_202413">10:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202413"  /></td>
+<td class="nick nick2">aot</td>
+<td class="msg ">is it good convetion if rest api returns 404 if there were no results with given parameters?</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_asdf dark">
+
+<td class="time" id="i_202414"><a href="/rest/2017-03-24#i_202414">10:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202414"  /></td>
+<td class="nick nick1">asdf</td>
+<td class="msg ">aot, people usually use 200 for that, with the response containing an empty list; 404 would be surprising in that the user wouldn't know if there's no results, or if the url was malformed</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_aot">
+
+<td class="time" id="i_202415"><a href="/rest/2017-03-24#i_202415">11:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202415"  /></td>
+<td class="nick nick2">aot</td>
+<td class="msg ">asdf: 400 bad request</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_asdf dark">
+
+<td class="time" id="i_202416"><a href="/rest/2017-03-24#i_202416">11:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202416"  /></td>
+<td class="nick nick1">asdf</td>
+<td class="msg ">that would be very unusual as well :) i mean, the sky's not gonna fall if you do it, it's just a question of what people expect / what would surprise them</td>
+</tr>
+
+        
+<tr id="id_l10" class="new special">
+
+<td class="time" id="i_202417"><a href="/rest/2017-03-24#i_202417">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202417"  /></td>
+<td class="nick"></td>
+<td class="msg ">mooncup_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont special">
+
+<td class="time" id="i_202418"><a href="/rest/2017-03-24#i_202418">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202418"  /></td>
+<td class="nick"></td>
+<td class="msg ">whartung joined #rest</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont special">
+
+<td class="time" id="i_202421"><a href="/rest/2017-03-24#i_202421">14:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202421"  /></td>
+<td class="nick"></td>
+<td class="msg ">mooncup joined #rest</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont special">
+
+<td class="time" id="i_202422"><a href="/rest/2017-03-24#i_202422">15:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202422"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont special">
+
+<td class="time" id="i_202423"><a href="/rest/2017-03-24#i_202423">17:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202423"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont special">
+
+<td class="time" id="i_202424"><a href="/rest/2017-03-24#i_202424">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202424"  /></td>
+<td class="nick"></td>
+<td class="msg ">romek joined #rest</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont special">
+
+<td class="time" id="i_202425"><a href="/rest/2017-03-24#i_202425">18:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202425"  /></td>
+<td class="nick"></td>
+<td class="msg ">romek joined #rest</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont special">
+
+<td class="time" id="i_202426"><a href="/rest/2017-03-24#i_202426">18:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202426"  /></td>
+<td class="nick"></td>
+<td class="msg ">romek joined #rest</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont special">
+
+<td class="time" id="i_202427"><a href="/rest/2017-03-24#i_202427">19:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202427"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont special">
+
+<td class="time" id="i_202428"><a href="/rest/2017-03-24#i_202428">20:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202428"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont special">
+
+<td class="time" id="i_202431"><a href="/rest/2017-03-24#i_202431">21:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202431"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont special">
+
+<td class="time" id="i_202432"><a href="/rest/2017-03-24#i_202432">21:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202432"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont special">
+
+<td class="time" id="i_202433"><a href="/rest/2017-03-24#i_202433">21:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202433"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont special">
+
+<td class="time" id="i_202434"><a href="/rest/2017-03-24#i_202434">21:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202434"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont special">
+
+<td class="time" id="i_202435"><a href="/rest/2017-03-24#i_202435">21:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202435"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special">
+
+<td class="time" id="i_202436"><a href="/rest/2017-03-24#i_202436">22:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202436"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special">
+
+<td class="time" id="i_202437"><a href="/rest/2017-03-24#i_202437">23:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202437"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special">
+
+<td class="time" id="i_202438"><a href="/rest/2017-03-24#i_202438">23:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202438"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special">
+
+<td class="time" id="i_202439"><a href="/rest/2017-03-24#i_202439">23:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_202439"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2017-03-23" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2017-03-25" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2017-03-24">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2017-03-24;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2017-03-24;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

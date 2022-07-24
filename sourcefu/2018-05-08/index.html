@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2018-05-08" />
+    <title>IRC log for #sourcefu, 2018-05-08</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2018-05-08</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2018-05-07" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-09" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-08">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-08;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-08;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229766"><a href="/sourcefu/2018-05-08#i_229766">02:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229766"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">anyone around?</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229767"><a href="/sourcefu/2018-05-08#i_229767">03:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229767"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">anyone interested in discussing pub/sub designs? specifically as a rest/websocket service</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229768"><a href="/sourcefu/2018-05-08#i_229768">03:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229768"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg "><a href="https://github.com/prologic/msgbus" title="https://github.com/prologic/msgbus">https://github.com/prologic/msgbus</a></td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229769"><a href="/sourcefu/2018-05-08#i_229769">03:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229769"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I need to (eventually; but could do it now) solve for the case of &quot;queue depth&quot; and &quot;leaking queues&quot;</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229770"><a href="/sourcefu/2018-05-08#i_229770">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229770"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">meaning that right now; as long as there are no *explicit* clients using the GET /&lt;topic&gt; <abbr title="Application Programming Interface">API</abbr>; queues for &lt;topic&gt; will grow unbounded</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229771"><a href="/sourcefu/2018-05-08#i_229771">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229771"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">as messages are delivered to topics; they are first published to all subscribers (if any) and enqueued in per-topic queues</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229772"><a href="/sourcefu/2018-05-08#i_229772">03:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229772"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">without some kind of &quot;ack&quot; from subscribers there is no way to delete already processed items from the queue</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229773"><a href="/sourcefu/2018-05-08#i_229773">03:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229773"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">assuming that should be the design at all</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229774"><a href="/sourcefu/2018-05-08#i_229774">03:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229774"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">1) ack messages from subscribers</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229775"><a href="/sourcefu/2018-05-08#i_229775">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229775"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">2) messages have ttls (per topic configured) with garbage collection</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229776"><a href="/sourcefu/2018-05-08#i_229776">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229776"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">3) explicit deletion of old items in queue</td>
+</tr>
+
+        
+<tr id="id_l13" class="new special">
+
+<td class="time" id="i_229784"><a href="/sourcefu/2018-05-08#i_229784">14:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229784"  /></td>
+<td class="nick"></td>
+<td class="msg ">bear joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_dotplus_ dark">
+
+<td class="time" id="i_229785"><a href="/sourcefu/2018-05-08#i_229785">14:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229785"  /></td>
+<td class="nick nick3">dotplus_</td>
+<td class="msg ">if the system has &quot;exactly once&quot; or &quot;at least once&quot; semantics, you have to accept that (1) ack-from-subscriber) is the only possibility and deal with the possibility of unbounded queue-growth elsewhere in the overall architecture. If you can accept that some messages will not be delivered (either because they don't matter or because they will be retried), then you can accept a ttl/gc approach.</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_prologic">
+
+<td class="time" id="i_229787"><a href="/sourcefu/2018-05-08#i_229787">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229787"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">dotplus_ that's precisely what I'm tossing up between</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_prologic">
+
+<td class="time" id="i_229788"><a href="/sourcefu/2018-05-08#i_229788">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229788"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so far for my use-case this is working pretty nicely</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_prologic">
+
+<td class="time" id="i_229789"><a href="/sourcefu/2018-05-08#i_229789">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229789"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">a) as a generic webhook (using it to receive docker hub notifications)</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_prologic">
+
+<td class="time" id="i_229790"><a href="/sourcefu/2018-05-08#i_229790">15:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229790"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and b) as an aggregator of prometheus alerts which you can then do interesting things with (for now I just alert on irc)</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_prologic">
+
+<td class="time" id="i_229791"><a href="/sourcefu/2018-05-08#i_229791">15:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229791"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and 3rd and upcoming use-case is actually going to be the queue for a &quot;job scheduler&quot;</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_prologic">
+
+<td class="time" id="i_229792"><a href="/sourcefu/2018-05-08#i_229792">15:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229792"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I could actually support both options Via configuration</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_prologic">
+
+<td class="time" id="i_229793"><a href="/sourcefu/2018-05-08#i_229793">15:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229793"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">But of course that would be mutually exclusive I think</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_prologic">
+
+<td class="time" id="i_229794"><a href="/sourcefu/2018-05-08#i_229794">15:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229794"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Or maybe not come to think of it</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_prologic">
+
+<td class="time" id="i_229795"><a href="/sourcefu/2018-05-08#i_229795">15:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229795"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">A —enable-ttl option</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_bear dark">
+
+<td class="time" id="i_229797"><a href="/sourcefu/2018-05-08#i_229797">17:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229797"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">this isn't always a popular opinion... but I find anything that is a &quot;Job&quot; system ends up abusing queue systems to make things work</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_bear dark">
+
+<td class="time" id="i_229798"><a href="/sourcefu/2018-05-08#i_229798">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229798"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">IMO it's a more robust design to have the job scheduler be a user of the queue but ensure that you don't try to use the queue to maintain state</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_bear dark">
+
+<td class="time" id="i_229799"><a href="/sourcefu/2018-05-08#i_229799">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229799"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">maintain state of the *job* that is</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_bear dark">
+
+<td class="time" id="i_229800"><a href="/sourcefu/2018-05-08#i_229800">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229800"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">use the queue all you want to deliver tasks and jobs to who ever is listening, but then use a data store for state</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_bear dark">
+
+<td class="time" id="i_229801"><a href="/sourcefu/2018-05-08#i_229801">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229801"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">(yes, being explicit and maybe a bit judgy, but a *lot* of job systems I see in the wild make this mistake</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_bear dark">
+
+<td class="time" id="i_229802"><a href="/sourcefu/2018-05-08#i_229802">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229802"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">)</td>
+</tr>
+
+        
+<tr id="id_l30" class="new special">
+
+<td class="time" id="i_229803"><a href="/sourcefu/2018-05-08#i_229803">18:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229803"  /></td>
+<td class="nick"></td>
+<td class="msg ">codex joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l31" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229805"><a href="/sourcefu/2018-05-08#i_229805">19:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229805"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I agree</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229806"><a href="/sourcefu/2018-05-08#i_229806">19:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229806"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">What do you think about what I said above though in terms of design choices?</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229807"><a href="/sourcefu/2018-05-08#i_229807">19:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229807"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear: And what do you mean by storing state in a queue system? I haven’t seen too many examples of abuse and curious like that myself</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_bear">
+
+<td class="time" id="i_229808"><a href="/sourcefu/2018-05-08#i_229808">20:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229808"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">I'm liking what you had above</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_bear">
+
+<td class="time" id="i_229809"><a href="/sourcefu/2018-05-08#i_229809">20:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229809"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">the biggest I have with storing state is either the consumer or the producer of a message being able to *know* what the message state is from it's view of the queue</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_bear">
+
+<td class="time" id="i_229810"><a href="/sourcefu/2018-05-08#i_229810">20:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229810"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">reality and that rarely agree - consumers of a queue may hold a message but be unaware that it's ttl died and it was requeued, producer of a message may be unaware that a message was dropped or handled but the ack was dropped</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont nick nick_bear">
+
+<td class="time" id="i_229811"><a href="/sourcefu/2018-05-08#i_229811">20:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229811"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">especially when people think they can apply CAP to message queues</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229812"><a href="/sourcefu/2018-05-08#i_229812">20:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229812"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Right</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229813"><a href="/sourcefu/2018-05-08#i_229813">20:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229813"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">In that case I think I’ll support both</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229814"><a href="/sourcefu/2018-05-08#i_229814">20:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229814"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Configurable TTLs with auto <abbr title="Garbage Collection/Collector">GC</abbr></td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229815"><a href="/sourcefu/2018-05-08#i_229815">20:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229815"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg "><abbr title="Application Programming Interface">API</abbr> to purge queues</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229816"><a href="/sourcefu/2018-05-08#i_229816">20:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229816"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Which are themselves like an explicit ack</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229817"><a href="/sourcefu/2018-05-08#i_229817">20:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229817"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Make sense ?</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_bear">
+
+<td class="time" id="i_229818"><a href="/sourcefu/2018-05-08#i_229818">20:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229818"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">that makes sense to have for queue management - yes</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_bear">
+
+<td class="time" id="i_229819"><a href="/sourcefu/2018-05-08#i_229819">20:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229819"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">then it allows your queue consumer/producers to establish the behaviour they want</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_bear">
+
+<td class="time" id="i_229820"><a href="/sourcefu/2018-05-08#i_229820">20:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229820"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">one thing I've wanted a queue environment to have is a callback/notice to happen when a TTL hits - so that both sides get an event that something has changed</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2018-05-07" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-09" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-08">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-08;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-08;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

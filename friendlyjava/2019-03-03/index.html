@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2019-03-03" />
+    <title>IRC log for #friendlyjava, 2019-03-03</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2019-03-03</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2019-03-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-03-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-03-03">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-03-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-03-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243043"><a href="/friendlyjava/2019-03-03#i_243043">01:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243043"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: what exactly do you mean by feedback loop?</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243044"><a href="/friendlyjava/2019-03-03#i_243044">01:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243044"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Well, the example I tried to give was a REST <abbr title="Application Programming Interface">API</abbr> returning some <abbr title="JavaScript Object Notation">JSON</abbr>. Let's say say you add &quot;foo: bar&quot; to the JSON output. From the time you click &quot;save&quot; in your <abbr title="Integrated Development Environment">IDE</abbr> and the code is deployed to the app server, how long before you can use curl on the API and see the new output? For me it was 36 seconds.</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243045"><a href="/friendlyjava/2019-03-03#i_243045">01:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243045"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">are you talking about updating a production server? or just testing during development?</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243046"><a href="/friendlyjava/2019-03-03#i_243046">01:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243046"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: when I'm working on something, I never &quot;deploy&quot; code to an &quot;app server&quot;, I don't build any war, I just run jetty directly from my project and it just uses the classpath I already have</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243047"><a href="/friendlyjava/2019-03-03#i_243047">01:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243047"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so I can run it instantly with the updated code</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243048"><a href="/friendlyjava/2019-03-03#i_243048">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243048"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I never really build war files anyway, I prefer using the expanded folder structure</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243049"><a href="/friendlyjava/2019-03-03#i_243049">01:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243049"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">also the largest set of libraries I've used in a web application is about 25MB</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243050"><a href="/friendlyjava/2019-03-03#i_243050">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243050"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: oh, I forgot the best part: I run it in debug mode, make a change, reload the page in the browser and it's updated - no need to restart or re-login</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243051"><a href="/friendlyjava/2019-03-03#i_243051">02:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243051"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">but sometimes it says it can't update the running app (when making bigger changes), so I still need to restart it</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243052"><a href="/friendlyjava/2019-03-03#i_243052">02:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243052"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">aditsu: so is the problem that we're using Glassfish instead of something like Jetty? &quot;I can run in instantly with the updated code&quot; sounds good. Way faster than 36 seconds. And yes, I'm just talking about development, not production.</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243053"><a href="/friendlyjava/2019-03-03#i_243053">02:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243053"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I haven't tried glassfish, but I would expect to be able to do a similar thing with it.. unless it absolutely has to be run separately</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243054"><a href="/friendlyjava/2019-03-03#i_243054">02:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243054"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Hmm. Maybe we're using it wrong.</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243055"><a href="/friendlyjava/2019-03-03#i_243055">02:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243055"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">a quick search for glassfish embedded suggests it should be possible</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243056"><a href="/friendlyjava/2019-03-03#i_243056">02:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243056"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Embedded Glassfish is definitely a thing.</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243057"><a href="/friendlyjava/2019-03-03#i_243057">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243057"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">gotta go now, ttyl</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243058"><a href="/friendlyjava/2019-03-03#i_243058">13:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243058"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">aditsu: you talked about embedded jetty at <a href="https://github.com/pdurbin/addressbookmvc/tree/master/examples/wicket#2-running-jetty-embedded" title="https://github.com/pdurbin/addressbookmvc/tree/master/examples/wicket#2-running-jetty-embedded">https://github.com/pdurbin/addressbookmvc/tree/master/examples/wicket#2-running-jetty-embedded</a></td>
+</tr>
+
+        
+<tr id="id_l18" class="new special dark">
+
+<td class="time" id="i_243059"><a href="/friendlyjava/2019-03-03#i_243059">13:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243059"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_aditsu">
+
+<td class="time" id="i_243060"><a href="/friendlyjava/2019-03-03#i_243060">13:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243060"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: yeah, that's an example of how I run it (using eclipse)</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243061"><a href="/friendlyjava/2019-03-03#i_243061">13:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243061"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">btw, that project uses my own public ivy repository, which I haven't updated in a few years..</td>
+</tr>
+
+        
+<tr id="id_l21" class="new special dark">
+
+<td class="time" id="i_243062"><a href="/friendlyjava/2019-03-03#i_243062">15:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243062"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont special dark">
+
+<td class="time" id="i_243063"><a href="/friendlyjava/2019-03-03#i_243063">16:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243063"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243064"><a href="/friendlyjava/2019-03-03#i_243064">16:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243064"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I guess you're saying that you use embedded applications servers and have a much tighter feedback loop than I do. By implication, I should investigate embedded application servers. In practice, we use Glassfish and I've never used embedded Glassfish.</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243065"><a href="/friendlyjava/2019-03-03#i_243065">17:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243065"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I don't really think of it as embedded, but I guess that's what it's called</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243066"><a href="/friendlyjava/2019-03-03#i_243066">17:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243066"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I just see it as running the server directly with my web app</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243067"><a href="/friendlyjava/2019-03-03#i_243067">17:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243067"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">instead of &quot;deploying&quot; to a separate app server</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243068"><a href="/friendlyjava/2019-03-03#i_243068">17:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243068"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I think eclipse and probably some other IDEs too have a feature where they manage a server and let you run your application code directly in a similar way, but without you having to do the work of setting up and starting the server from your code</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243069"><a href="/friendlyjava/2019-03-03#i_243069">17:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243069"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">but I don't think I ever tried that</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243070"><a href="/friendlyjava/2019-03-03#i_243070">17:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243070"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">In our setup, our <abbr title="Integrated Development Environment">IDE</abbr> (Netbeans) starts the application server (Glassfish) and deploys the code when you click &quot;Run&quot;. I'm saying that I've already clicked &quot;Run&quot; at least once to start Glassfish and deploy the code the initial time (which takes over a minute, I'm sure). By feedback loop I'm talking about subsequent &quot;Run&quot; clicks after making a change to the code. This takes 36 seconds before I can test</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_243071"><a href="/friendlyjava/2019-03-03#i_243071">17:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243071"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">the change on the running application server.</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_243072"><a href="/friendlyjava/2019-03-03#i_243072">17:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243072"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">And part of my point is that I feel like when the WAR file was smaller years ago it took less than 36 seconds to get feedback. One task I have in mind is to figure out how long it took back in those early days.</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243073"><a href="/friendlyjava/2019-03-03#i_243073">17:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243073"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I guess the question is whether there is an extra step of building/packaging/deploying your app to Netbeans's server when you click &quot;Run&quot;</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243074"><a href="/friendlyjava/2019-03-03#i_243074">17:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243074"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">before actually running it</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243075"><a href="/friendlyjava/2019-03-03#i_243075">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243075"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">when I click Run, it just runs</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243076"><a href="/friendlyjava/2019-03-03#i_243076">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243076"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">it's also possible that your app runs [almost] immediately, but takes 36 sec to initialize</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243077"><a href="/friendlyjava/2019-03-03#i_243077">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243077"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">but you can probably tell that from the logs</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243078"><a href="/friendlyjava/2019-03-03#i_243078">17:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243078"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">There is a *ton* of output in the application server log after you click &quot;Run&quot;. I do think that all sorts of stuff is initializing or unzipping or who knows what.</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243079"><a href="/friendlyjava/2019-03-03#i_243079">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243079"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I tested an application now, it takes 1 sec to get the first log message (basically saying jetty is starting), and 2.5 sec (total) until it's settled and ready</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243080"><a href="/friendlyjava/2019-03-03#i_243080">17:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243080"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Ok. And then you can make a change and test it right away? After a small number or seconds?</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243081"><a href="/friendlyjava/2019-03-03#i_243081">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243081"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">if the change is small enough and it's running in debug mode, I just need to save and reload the page in the browser</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243082"><a href="/friendlyjava/2019-03-03#i_243082">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243082"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">otherwise, restart it and it takes about 2.5 sec again</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243083"><a href="/friendlyjava/2019-03-03#i_243083">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243083"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Ok. How easy is it to demo this stuff in the &quot;wicket&quot; example you added to addressbookmvc?</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243084"><a href="/friendlyjava/2019-03-03#i_243084">17:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243084"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">maybe add 1 sec for stopping it</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243085"><a href="/friendlyjava/2019-03-03#i_243085">17:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243085"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pretty easy, I think I provided full instructions</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243086"><a href="/friendlyjava/2019-03-03#i_243086">17:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243086"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">on the page you linked above</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243087"><a href="/friendlyjava/2019-03-03#i_243087">17:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243087"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">great</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_243088"><a href="/friendlyjava/2019-03-03#i_243088">17:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243088"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">How hard would it be to add a REST <abbr title="Application Programming Interface">API</abbr>? To list an address book entry?</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243089"><a href="/friendlyjava/2019-03-03#i_243089">17:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243089"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">should be easy, but I need more details</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243090"><a href="/friendlyjava/2019-03-03#i_243090">17:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243090"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Well, here's my JAX-RS code in my &quot;javaee7&quot; example for doing a &quot;list&quot; of the address book: <a href="https://github.com/pdurbin/addressbookmvc/blob/890dbdb6a96a10430350dcf533a605a4ad317bf9/examples/javaee7/src/main/java/com/greptilian/addressbookmvc/javaee7/api/People.java#L30" title="https://github.com/pdurbin/addressbookmvc/blob/890dbdb6a96a10430350dcf533a605a4ad317bf9/examples/javaee7/src/main/java/com/greptilian/addressbookmvc/javaee7/api/People.java#L30">https://github.com/pdurbin/addressbookmvc/blob/890dbdb6a96a10430350dcf533a605a4ad317bf9/examples/javaee7/src/main/java/com/greptilian/addressbookmvc/javaee7/api/People.java#L30</a></td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_243091"><a href="/friendlyjava/2019-03-03#i_243091">17:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243091"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">o_O</td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243092"><a href="/friendlyjava/2019-03-03#i_243092">17:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243092"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">erm.. I think it's better if you tell me what it does / what you want it to do</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243093"><a href="/friendlyjava/2019-03-03#i_243093">17:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243093"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">ah, it's just one method for listing</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_243094"><a href="/friendlyjava/2019-03-03#i_243094">17:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243094"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so.. just put everything in a json array?</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243095"><a href="/friendlyjava/2019-03-03#i_243095">17:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243095"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I like <abbr title="JavaScript Object Notation">JSON</abbr> but it could be whatever.</td>
+</tr>
+
+        
+<tr id="id_l55" class="new special dark">
+
+<td class="time" id="i_243096"><a href="/friendlyjava/2019-03-03#i_243096">17:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243096"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick_aditsu">
+
+<td class="time" id="i_243097"><a href="/friendlyjava/2019-03-03#i_243097">18:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243097"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: ok I got some time now, I coded a simple list page, would you like me to update the code on github?</td>
+</tr>
+
+        
+<tr id="id_l57" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243098"><a href="/friendlyjava/2019-03-03#i_243098">18:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243098"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">or just paste it somewhere?</td>
+</tr>
+
+        
+<tr id="id_l58" class="new special dark">
+
+<td class="time" id="i_243099"><a href="/friendlyjava/2019-03-03#i_243099">19:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243099"  /></td>
+<td class="nick"></td>
+<td class="msg ">nanoz joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_aditsu">
+
+<td class="time" id="i_243100"><a href="/friendlyjava/2019-03-03#i_243100">19:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243100"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">well, here's a diff anyway: <a href="http://dpaste.com/1YC5H1K" title="http://dpaste.com/1YC5H1K">http://dpaste.com/1YC5H1K</a></td>
+</tr>
+
+        
+<tr id="id_l60" class="cont nick nick_aditsu">
+
+<td class="time" id="i_243101"><a href="/friendlyjava/2019-03-03#i_243101">19:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243101"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">I have to sleep soon</td>
+</tr>
+
+        
+<tr id="id_l61" class="new special dark">
+
+<td class="time" id="i_243102"><a href="/friendlyjava/2019-03-03#i_243102">20:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243102"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l62" class="new nick nick_pdurbin">
+
+<td class="time" id="i_243103"><a href="/friendlyjava/2019-03-03#i_243103">22:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_243103"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">aditsu: thanks! For how I captured that diff in an issue: <a href="https://github.com/pdurbin/addressbookmvc/issues/18" title="https://github.com/pdurbin/addressbookmvc/issues/18">https://github.com/pdurbin/addressbookmvc/issues/18</a></td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2019-03-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2019-03-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2019-03-03">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2019-03-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2019-03-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

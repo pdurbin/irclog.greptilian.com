@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2016-09-15" />
+    <title>IRC log for #friendlyjava, 2016-09-15</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2016-09-15</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2016-09-14" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2016-09-16" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2016-09-15">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2016-09-15;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2016-09-15;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_182265"><a href="/friendlyjava/2016-09-15#i_182265">07:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182265"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182266"><a href="/friendlyjava/2016-09-15#i_182266">07:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182266"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">hi, would you recommend using ThreadLocal for SimpleDateFormat in a web application?</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182267"><a href="/friendlyjava/2016-09-15#i_182267">07:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182267"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">(to have a separate SimpleDateFormat per thread)</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182268"><a href="/friendlyjava/2016-09-15#i_182268">07:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182268"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">similar question for DecimalFormat..</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182270"><a href="/friendlyjava/2016-09-15#i_182270">08:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182270"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">hmm, ThreadLocal is not serializable</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182272"><a href="/friendlyjava/2016-09-15#i_182272">08:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182272"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">why would you need a threadlocal variable to be serializable? if i use tl in a webapp, i usually put the (de)init into a filter and make 10000% sure i do not forget to clear it after the request is done.</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182273"><a href="/friendlyjava/2016-09-15#i_182273">08:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182273"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">because I was thinking of making it non-static in a converter class, and the converter class has to be serializable; anyway, one option is to make the threadlocal static and hold a map</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182274"><a href="/friendlyjava/2016-09-15#i_182274">08:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182274"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">pulsar: something like this: <a href="http://dpaste.com/2RR8TP6" title="http://dpaste.com/2RR8TP6">http://dpaste.com/2RR8TP6</a></td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182275"><a href="/friendlyjava/2016-09-15#i_182275">08:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182275"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">ic</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182276"><a href="/friendlyjava/2016-09-15#i_182276">08:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182276"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">just out of curiosity, why do you need the time/date/number formats to be TL? I am thinking @context and httpsession/headers/cookies in a similar helper class to determine the format associated with the request / user.</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182277"><a href="/friendlyjava/2016-09-15#i_182277">08:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182277"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">I'd like to reuse them (for performance reasons) and they are not thread safe</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182278"><a href="/friendlyjava/2016-09-15#i_182278">08:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182278"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">or do you think the performance impact is negligible?</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182279"><a href="/friendlyjava/2016-09-15#i_182279">08:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182279"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">pretty much. yeah.</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182280"><a href="/friendlyjava/2016-09-15#i_182280">08:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182280"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">if so, I could just create it on the spot in getDateFormat</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182281"><a href="/friendlyjava/2016-09-15#i_182281">08:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182281"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">if in doubt, i tend to go with the cacheloader from guava</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182282"><a href="/friendlyjava/2016-09-15#i_182282">08:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182282"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">keying will be an issue though, so you wont gain much</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182283"><a href="/friendlyjava/2016-09-15#i_182283">08:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182283"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg "><a href="http://askldjd.com/2013/03/04/simpledateformat-is-slow/" title="http://askldjd.com/2013/03/04/simpledateformat-is-slow/">http://askldjd.com/2013/03/04/simpledateformat-is-slow/</a></td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182284"><a href="/friendlyjava/2016-09-15#i_182284">08:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182284"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">actually, that doesn't really talk about the object creation</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182285"><a href="/friendlyjava/2016-09-15#i_182285">08:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182285"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">yeah, that what i was thinking.</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182286"><a href="/friendlyjava/2016-09-15#i_182286">08:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182286"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">depens on how often you need to format dates</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182287"><a href="/friendlyjava/2016-09-15#i_182287">08:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182287"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">and how it relates to the overall application</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182288"><a href="/friendlyjava/2016-09-15#i_182288">08:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182288"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">from my experience, dateformat will be the last of your concerns in a web application</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182289"><a href="/friendlyjava/2016-09-15#i_182289">08:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182289"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">and you could also cache the formatted strings by wrapping the df in a custom class with a TL cache or something</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182291"><a href="/friendlyjava/2016-09-15#i_182291">08:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182291"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">but all of that would fall into the pre-optimization category</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182292"><a href="/friendlyjava/2016-09-15#i_182292">08:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182292"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">99% of the tiime it is a waste of latter.</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182293"><a href="/friendlyjava/2016-09-15#i_182293">08:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182293"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">this answer <a href="http://stackoverflow.com/a/22100487/179864" title="http://stackoverflow.com/a/22100487/179864">http://stackoverflow.com/a/22100487/179864</a> says &quot;Creating an instance of SimpleDateFormat is very expensive&quot; but it references the same link I posted above o_O</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182294"><a href="/friendlyjava/2016-09-15#i_182294">08:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182294"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">let me do a quick benchmark :p</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182295"><a href="/friendlyjava/2016-09-15#i_182295">08:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182295"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">i would make the benchrmark when you have something to compare order of magnitude of the numbers against</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182296"><a href="/friendlyjava/2016-09-15#i_182296">08:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182296"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">like db queries / persistence layer doing something</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182297"><a href="/friendlyjava/2016-09-15#i_182297">08:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182297"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">i still bet, that it will be a couple of orders of magnitude less significant than your persistence layer</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182298"><a href="/friendlyjava/2016-09-15#i_182298">08:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182298"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">I can create 50k SimpleDateFormat's and add them to a list in less than 0.5s, but 100k are taking around 2.5s for some reason :o</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182299"><a href="/friendlyjava/2016-09-15#i_182299">08:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182299"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">maybe gc kicking in or something?</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182300"><a href="/friendlyjava/2016-09-15#i_182300">08:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182300"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">anyway, sounds fast enough</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_pulsar dark">
+
+<td class="time" id="i_182302"><a href="/friendlyjava/2016-09-15#i_182302">09:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182302"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">yeah, you need to watch the gc spaces to understand the numbers. large number of objects does usually overflow the youngspace</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182303"><a href="/friendlyjava/2016-09-15#i_182303">09:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182303"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">java is pita for synthetic benchmarks usually.</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont nick nick_pulsar dark">
+
+<td class="time" id="i_182304"><a href="/friendlyjava/2016-09-15#i_182304">09:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182304"  /></td>
+<td class="nick nick1">pulsar</td>
+<td class="msg ">and even non synthetic, chances are that some tweaks to the gc / memory ratios will give you a hunge performance boost are not that rare in a massive multithreaded application</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_aditsu_">
+
+<td class="time" id="i_182306"><a href="/friendlyjava/2016-09-15#i_182306">09:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182306"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">oh great, I got my new fancy date converter ready and it's not using it for some reason :/</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182307"><a href="/friendlyjava/2016-09-15#i_182307">09:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182307"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">debug time..</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_aditsu_">
+
+<td class="time" id="i_182308"><a href="/friendlyjava/2016-09-15#i_182308">09:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182308"  /></td>
+<td class="nick nick2">aditsu_</td>
+<td class="msg ">ah, a matter of java.util.Date.class vs java.<abbr title="Structured Query Language">sql</abbr>.Timestamp.class</td>
+</tr>
+
+        
+<tr id="id_l41" class="new special dark">
+
+<td class="time" id="i_182323"><a href="/friendlyjava/2016-09-15#i_182323">12:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182323"  /></td>
+<td class="nick"></td>
+<td class="msg ">Black-Ridder joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_Black-Ridder">
+
+<td class="time" id="i_182324"><a href="/friendlyjava/2016-09-15#i_182324">12:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182324"  /></td>
+<td class="nick nick3">Black-Ridder</td>
+<td class="msg ">bonjour :)</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_Black-Ridder">
+
+<td class="time" id="i_182325"><a href="/friendlyjava/2016-09-15#i_182325">12:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182325"  /></td>
+<td class="nick nick3">Black-Ridder</td>
+<td class="msg ">j'ai un petit pépin avec un code qui plante sous android studio <a href="http://pastebin.com/cdeU3b0F" title="http://pastebin.com/cdeU3b0F">http://pastebin.com/cdeU3b0F</a></td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_Black-Ridder">
+
+<td class="time" id="i_182326"><a href="/friendlyjava/2016-09-15#i_182326">12:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182326"  /></td>
+<td class="nick nick3">Black-Ridder</td>
+<td class="msg ">dès que j'appelle cette fonction l'application plante</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_182339"><a href="/friendlyjava/2016-09-15#i_182339">14:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182339"  /></td>
+<td class="nick">aditsu</td>
+<td class="msg ">25 minutes..</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_pdurbin">
+
+<td class="time" id="i_182349"><a href="/friendlyjava/2016-09-15#i_182349">15:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182349"  /></td>
+<td class="nick">pdurbin</td>
+<td class="msg ">pardon my French</td>
+</tr>
+
+        
+<tr id="id_l47" class="new special dark">
+
+<td class="time" id="i_182353"><a href="/friendlyjava/2016-09-15#i_182353">16:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182353"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont special dark">
+
+<td class="time" id="i_182375"><a href="/friendlyjava/2016-09-15#i_182375">22:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182375"  /></td>
+<td class="nick"></td>
+<td class="msg ">pdurbin_m joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_pdurbin_m">
+
+<td class="time" id="i_182376"><a href="/friendlyjava/2016-09-15#i_182376">22:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_182376"  /></td>
+<td class="nick nick4">pdurbin_m</td>
+<td class="msg ">Java EE Platform on Twitter: &quot;New web site for <abbr title="JavaScript Object Notation">JSON</abbr>-B launched! #JavaEE8 <a href="https://t.co/E43ar51gHS" title="https://t.co/E43ar51gHS">https://t.co/E43ar51gHS</a>&quot;: <a href="https://mobile.twitter.com/Java_EE/status/776094327592198144" title="https://mobile.twitter.com/Java_EE/status/776094327592198144">https://mobile.twitter.com/Java_EE/status/776094327592198144</a></td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2016-09-14" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2016-09-16" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2016-09-15">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2016-09-15;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2016-09-15;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

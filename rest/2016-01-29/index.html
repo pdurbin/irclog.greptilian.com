@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2016-01-29" />
+    <title>IRC log for #rest, 2016-01-29</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2016-01-29</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2016-01-28" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-01-30" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-01-29">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-01-29;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-01-29;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_157735"><a href="/rest/2016-01-29#i_157735">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157735"  /></td>
+<td class="nick"></td>
+<td class="msg ">lemur joined #rest</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_157737"><a href="/rest/2016-01-29#i_157737">00:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157737"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice joined #rest</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_157738"><a href="/rest/2016-01-29#i_157738">01:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157738"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont special dark">
+
+<td class="time" id="i_157739"><a href="/rest/2016-01-29#i_157739">01:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157739"  /></td>
+<td class="nick"></td>
+<td class="msg ">SJr joined #rest</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_SJr">
+
+<td class="time" id="i_157741"><a href="/rest/2016-01-29#i_157741">01:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157741"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">I'm looking at building a RESTful service following a microservices based architecture. I would like to gracefully degrade services in case of failures of persistence or certain nodes. I am kind of stuck between two approaches and would like to know if one of them is entirely bad or if it's just trade offs.</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_SJr">
+
+<td class="time" id="i_157742"><a href="/rest/2016-01-29#i_157742">01:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157742"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">The failures modes I see, is that I can have a failure in my persistence store (either outtage or slowness), or some subset of nodes Web nodes may have connectivity problems externally or with the <abbr title="Database">DB</abbr>, as a failure model.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_SJr">
+
+<td class="time" id="i_157743"><a href="/rest/2016-01-29#i_157743">01:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157743"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">No the good news is that I can actually degrade pretty well without a database so if there is a database or load issue, I could respond with an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> 203 - Non Authoritative Information</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_SJr">
+
+<td class="time" id="i_157744"><a href="/rest/2016-01-29#i_157744">01:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157744"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">I would want the client to try another server and if it can't get an authoritative answer, then oh well.</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_SJr">
+
+<td class="time" id="i_157745"><a href="/rest/2016-01-29#i_157745">01:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157745"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">However here is where my dilemma comes in. To do this properly each node needs to be directly addressable by the application which means that A) the application has handle failures, and B) we can't just use <abbr title="Domain Name Server">DNS</abbr> to resolve the services and C) I'm not sure if I should publish resources for some shared domain that isn't actually where the service is. e.g., if I publish <a href="http://microservice.domain.com/resource" title="http://microservice.domain.com/resource">http://microservice.domain.com/resource</a> but the clients need to access server1.</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_SJr">
+
+<td class="time" id="i_157746"><a href="/rest/2016-01-29#i_157746">01:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157746"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">microservice.domain.com</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_SJr">
+
+<td class="time" id="i_157747"><a href="/rest/2016-01-29#i_157747">01:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157747"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">Alternatively I could use some kind of a load balancer in between, but then I can't really have the degredation of services that I want.</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_SJr">
+
+<td class="time" id="i_157749"><a href="/rest/2016-01-29#i_157749">01:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157749"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">e.g., there is no way for me to say, if this request is a 203 try the other server(s)</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_SJr">
+
+<td class="time" id="i_157750"><a href="/rest/2016-01-29#i_157750">01:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157750"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">also doing things like monitoring individual services is a pain.</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_impl dark">
+
+<td class="time" id="i_157751"><a href="/rest/2016-01-29#i_157751">02:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157751"  /></td>
+<td class="nick nick3">impl</td>
+<td class="msg ">have you considered using something like consul, which provides a <abbr title="Domain Name Server">DNS</abbr> interface? <a href="https://www.consul.io/docs/agent/dns.html" title="https://www.consul.io/docs/agent/dns.html">https://www.consul.io/docs/agent/dns.html</a></td>
+</tr>
+
+        
+<tr id="id_l16" class="new special">
+
+<td class="time" id="i_157752"><a href="/rest/2016-01-29#i_157752">02:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157752"  /></td>
+<td class="nick"></td>
+<td class="msg ">lemur joined #rest</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont special">
+
+<td class="time" id="i_157753"><a href="/rest/2016-01-29#i_157753">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157753"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont special">
+
+<td class="time" id="i_157755"><a href="/rest/2016-01-29#i_157755">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157755"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont special">
+
+<td class="time" id="i_157758"><a href="/rest/2016-01-29#i_157758">03:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157758"  /></td>
+<td class="nick"></td>
+<td class="msg ">bluezone joined #rest</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont special">
+
+<td class="time" id="i_157759"><a href="/rest/2016-01-29#i_157759">03:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157759"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont special">
+
+<td class="time" id="i_157763"><a href="/rest/2016-01-29#i_157763">03:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157763"  /></td>
+<td class="nick"></td>
+<td class="msg ">baweaver joined #rest</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_SJr dark">
+
+<td class="time" id="i_157764"><a href="/rest/2016-01-29#i_157764">03:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157764"  /></td>
+<td class="nick nick1">SJr</td>
+<td class="msg ">hmmmm I'm not quite sure how that solves my problem impl?</td>
+</tr>
+
+        
+<tr id="id_l23" class="new special">
+
+<td class="time" id="i_157765"><a href="/rest/2016-01-29#i_157765">03:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157765"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont special">
+
+<td class="time" id="i_157766"><a href="/rest/2016-01-29#i_157766">04:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157766"  /></td>
+<td class="nick"></td>
+<td class="msg ">baweaver joined #rest</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special">
+
+<td class="time" id="i_157768"><a href="/rest/2016-01-29#i_157768">04:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157768"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special">
+
+<td class="time" id="i_157769"><a href="/rest/2016-01-29#i_157769">05:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157769"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special">
+
+<td class="time" id="i_157770"><a href="/rest/2016-01-29#i_157770">05:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157770"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special">
+
+<td class="time" id="i_157771"><a href="/rest/2016-01-29#i_157771">06:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157771"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special">
+
+<td class="time" id="i_157773"><a href="/rest/2016-01-29#i_157773">06:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157773"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont special">
+
+<td class="time" id="i_157775"><a href="/rest/2016-01-29#i_157775">06:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157775"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs1 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont special">
+
+<td class="time" id="i_157779"><a href="/rest/2016-01-29#i_157779">06:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157779"  /></td>
+<td class="nick"></td>
+<td class="msg ">timg___ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special">
+
+<td class="time" id="i_157780"><a href="/rest/2016-01-29#i_157780">06:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157780"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special">
+
+<td class="time" id="i_157781"><a href="/rest/2016-01-29#i_157781">07:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157781"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont special">
+
+<td class="time" id="i_157782"><a href="/rest/2016-01-29#i_157782">07:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157782"  /></td>
+<td class="nick"></td>
+<td class="msg ">timg___ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont special">
+
+<td class="time" id="i_157783"><a href="/rest/2016-01-29#i_157783">07:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157783"  /></td>
+<td class="nick"></td>
+<td class="msg ">hucklebe_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont special">
+
+<td class="time" id="i_157785"><a href="/rest/2016-01-29#i_157785">07:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157785"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont special">
+
+<td class="time" id="i_157786"><a href="/rest/2016-01-29#i_157786">07:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157786"  /></td>
+<td class="nick"></td>
+<td class="msg ">hucklebe_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont special">
+
+<td class="time" id="i_157787"><a href="/rest/2016-01-29#i_157787">07:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157787"  /></td>
+<td class="nick"></td>
+<td class="msg ">hucklebe_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont special">
+
+<td class="time" id="i_157788"><a href="/rest/2016-01-29#i_157788">07:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157788"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont special">
+
+<td class="time" id="i_157789"><a href="/rest/2016-01-29#i_157789">07:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157789"  /></td>
+<td class="nick"></td>
+<td class="msg ">hucklebe_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont special">
+
+<td class="time" id="i_157790"><a href="/rest/2016-01-29#i_157790">07:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157790"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont special">
+
+<td class="time" id="i_157794"><a href="/rest/2016-01-29#i_157794">08:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157794"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont special">
+
+<td class="time" id="i_157795"><a href="/rest/2016-01-29#i_157795">08:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157795"  /></td>
+<td class="nick"></td>
+<td class="msg ">timg___ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont special">
+
+<td class="time" id="i_157797"><a href="/rest/2016-01-29#i_157797">09:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157797"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont special">
+
+<td class="time" id="i_157798"><a href="/rest/2016-01-29#i_157798">09:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157798"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont special">
+
+<td class="time" id="i_157799"><a href="/rest/2016-01-29#i_157799">09:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157799"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs1 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont special">
+
+<td class="time" id="i_157801"><a href="/rest/2016-01-29#i_157801">10:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157801"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont special">
+
+<td class="time" id="i_157802"><a href="/rest/2016-01-29#i_157802">10:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157802"  /></td>
+<td class="nick"></td>
+<td class="msg ">nesselbosch joined #rest</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont special">
+
+<td class="time" id="i_157803"><a href="/rest/2016-01-29#i_157803">10:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157803"  /></td>
+<td class="nick"></td>
+<td class="msg ">sdeh_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_sdeh_ dark">
+
+<td class="time" id="i_157804"><a href="/rest/2016-01-29#i_157804">10:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157804"  /></td>
+<td class="nick nick2">sdeh_</td>
+<td class="msg ">hi together i try to develope an own rest api project, what is your prefered framework ?</td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_sdeh_ dark">
+
+<td class="time" id="i_157805"><a href="/rest/2016-01-29#i_157805">10:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157805"  /></td>
+<td class="nick nick2">sdeh_</td>
+<td class="msg ">i will also use hypermedia for it</td>
+</tr>
+
+        
+<tr id="id_l52" class="new special">
+
+<td class="time" id="i_157806"><a href="/rest/2016-01-29#i_157806">10:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157806"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l53" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_157808"><a href="/rest/2016-01-29#i_157808">11:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157808"  /></td>
+<td class="nick nick4">pdurbin</td>
+<td class="msg ">sdeh_: I like <a href="https://jersey.java.net" title="https://jersey.java.net">https://jersey.java.net</a> but I haven't done a lot with hypermedia</td>
+</tr>
+
+        
+<tr id="id_l54" class="new special">
+
+<td class="time" id="i_157809"><a href="/rest/2016-01-29#i_157809">11:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157809"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l55" class="cont special">
+
+<td class="time" id="i_157812"><a href="/rest/2016-01-29#i_157812">11:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157812"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont special">
+
+<td class="time" id="i_157813"><a href="/rest/2016-01-29#i_157813">11:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157813"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l57" class="cont special">
+
+<td class="time" id="i_157814"><a href="/rest/2016-01-29#i_157814">12:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157814"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs1 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l58" class="cont special">
+
+<td class="time" id="i_157815"><a href="/rest/2016-01-29#i_157815">12:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157815"  /></td>
+<td class="nick"></td>
+<td class="msg ">mezod joined #rest</td>
+</tr>
+
+        
+<tr id="id_l59" class="cont special">
+
+<td class="time" id="i_157816"><a href="/rest/2016-01-29#i_157816">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157816"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont special">
+
+<td class="time" id="i_157820"><a href="/rest/2016-01-29#i_157820">13:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157820"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont special">
+
+<td class="time" id="i_157824"><a href="/rest/2016-01-29#i_157824">13:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157824"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont special">
+
+<td class="time" id="i_157825"><a href="/rest/2016-01-29#i_157825">13:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157825"  /></td>
+<td class="nick"></td>
+<td class="msg ">Macaveli joined #rest</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont special">
+
+<td class="time" id="i_157826"><a href="/rest/2016-01-29#i_157826">13:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157826"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont special">
+
+<td class="time" id="i_157827"><a href="/rest/2016-01-29#i_157827">14:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157827"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont special">
+
+<td class="time" id="i_157828"><a href="/rest/2016-01-29#i_157828">14:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157828"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont special">
+
+<td class="time" id="i_157829"><a href="/rest/2016-01-29#i_157829">14:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157829"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_home joined #rest</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont special">
+
+<td class="time" id="i_157830"><a href="/rest/2016-01-29#i_157830">14:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157830"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_home joined #rest</td>
+</tr>
+
+        
+<tr id="id_l68" class="cont special">
+
+<td class="time" id="i_157831"><a href="/rest/2016-01-29#i_157831">15:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157831"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l69" class="cont special">
+
+<td class="time" id="i_157833"><a href="/rest/2016-01-29#i_157833">15:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157833"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont special">
+
+<td class="time" id="i_157834"><a href="/rest/2016-01-29#i_157834">15:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157834"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont special">
+
+<td class="time" id="i_157835"><a href="/rest/2016-01-29#i_157835">16:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157835"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l72" class="cont special">
+
+<td class="time" id="i_157836"><a href="/rest/2016-01-29#i_157836">16:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157836"  /></td>
+<td class="nick"></td>
+<td class="msg ">sdeh_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l73" class="cont special">
+
+<td class="time" id="i_157838"><a href="/rest/2016-01-29#i_157838">16:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157838"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont special">
+
+<td class="time" id="i_157839"><a href="/rest/2016-01-29#i_157839">16:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157839"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l75" class="cont special">
+
+<td class="time" id="i_157840"><a href="/rest/2016-01-29#i_157840">16:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157840"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs1 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l76" class="cont special">
+
+<td class="time" id="i_157842"><a href="/rest/2016-01-29#i_157842">16:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157842"  /></td>
+<td class="nick"></td>
+<td class="msg ">mezod joined #rest</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont special">
+
+<td class="time" id="i_157843"><a href="/rest/2016-01-29#i_157843">17:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157843"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l78" class="cont special">
+
+<td class="time" id="i_157846"><a href="/rest/2016-01-29#i_157846">17:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157846"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l79" class="cont special">
+
+<td class="time" id="i_157847"><a href="/rest/2016-01-29#i_157847">17:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157847"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l80" class="cont special">
+
+<td class="time" id="i_157849"><a href="/rest/2016-01-29#i_157849">17:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157849"  /></td>
+<td class="nick"></td>
+<td class="msg ">baweaver joined #rest</td>
+</tr>
+
+        
+<tr id="id_l81" class="cont special">
+
+<td class="time" id="i_157850"><a href="/rest/2016-01-29#i_157850">17:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157850"  /></td>
+<td class="nick"></td>
+<td class="msg ">baweaver joined #rest</td>
+</tr>
+
+        
+<tr id="id_l82" class="cont special">
+
+<td class="time" id="i_157860"><a href="/rest/2016-01-29#i_157860">19:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157860"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l83" class="cont special">
+
+<td class="time" id="i_157861"><a href="/rest/2016-01-29#i_157861">19:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157861"  /></td>
+<td class="nick"></td>
+<td class="msg ">baweaver joined #rest</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont special">
+
+<td class="time" id="i_157863"><a href="/rest/2016-01-29#i_157863">19:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157863"  /></td>
+<td class="nick"></td>
+<td class="msg ">bluezone joined #rest</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont special">
+
+<td class="time" id="i_157864"><a href="/rest/2016-01-29#i_157864">20:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157864"  /></td>
+<td class="nick"></td>
+<td class="msg ">lemur joined #rest</td>
+</tr>
+
+        
+<tr id="id_l86" class="cont special">
+
+<td class="time" id="i_157866"><a href="/rest/2016-01-29#i_157866">20:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157866"  /></td>
+<td class="nick"></td>
+<td class="msg ">sp1rs joined #rest</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont special">
+
+<td class="time" id="i_157867"><a href="/rest/2016-01-29#i_157867">20:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157867"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l88" class="cont special">
+
+<td class="time" id="i_157869"><a href="/rest/2016-01-29#i_157869">21:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157869"  /></td>
+<td class="nick"></td>
+<td class="msg ">huckleberry78 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l89" class="cont special">
+
+<td class="time" id="i_157870"><a href="/rest/2016-01-29#i_157870">21:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157870"  /></td>
+<td class="nick"></td>
+<td class="msg ">sdeh_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l90" class="cont special">
+
+<td class="time" id="i_157871"><a href="/rest/2016-01-29#i_157871">21:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157871"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont special">
+
+<td class="time" id="i_157873"><a href="/rest/2016-01-29#i_157873">21:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157873"  /></td>
+<td class="nick"></td>
+<td class="msg ">sdeh_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l92" class="cont special">
+
+<td class="time" id="i_157877"><a href="/rest/2016-01-29#i_157877">22:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_157877"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2016-01-28" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-01-30" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-01-29">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-01-29;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-01-29;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

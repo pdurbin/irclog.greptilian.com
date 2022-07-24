@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-10-03" />
+    <title>IRC log for #sourcefu, 2016-10-03</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-10-03</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-10-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-10-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-10-03">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-10-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-10-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188595"><a href="/sourcefu/2016-10-03#i_188595">00:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188595"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin: I think I might know why this didn't work for you</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188596"><a href="/sourcefu/2016-10-03#i_188596">00:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188596"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin: what does: $ go version</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188597"><a href="/sourcefu/2016-10-03#i_188597">00:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188597"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">say?</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188598"><a href="/sourcefu/2016-10-03#i_188598">00:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188598"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">go version go1.5.1 linux/amd64</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188601"><a href="/sourcefu/2016-10-03#i_188601">01:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188601"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">ahh</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188602"><a href="/sourcefu/2016-10-03#i_188602">01:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188602"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that's why the vendor'ing is not working</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188603"><a href="/sourcefu/2016-10-03#i_188603">01:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188603"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">go1.5 introduced it but it's optinoal. 1.6 made it default and 1.7 removed the env var that enables/disables the feature :)</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188604"><a href="/sourcefu/2016-10-03#i_188604">01:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188604"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'm mucking around on this Ubuntu desktop running in a Docker container on my Macbook atm</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188605"><a href="/sourcefu/2016-10-03#i_188605">01:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188605"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">got Go 1.7 installed</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188606"><a href="/sourcefu/2016-10-03#i_188606">01:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188606"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but now I think I have issues with the version of QT5 on Ubuntu</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188607"><a href="/sourcefu/2016-10-03#i_188607">01:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188607"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">quite possibly too old :(</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188608"><a href="/sourcefu/2016-10-03#i_188608">01:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188608"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I think I need 5.6+</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188609"><a href="/sourcefu/2016-10-03#i_188609">01:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188609"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'll have this shit figured out yet :)</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188610"><a href="/sourcefu/2016-10-03#i_188610">01:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188610"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">gah</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188611"><a href="/sourcefu/2016-10-03#i_188611">01:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188611"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">`qmake -qt=qt5 --version` shows: Using Qt version 5.4.2 in /usr/lib/x86_64-linux-gnu</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188612"><a href="/sourcefu/2016-10-03#i_188612">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188612"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">hmm rightio</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188613"><a href="/sourcefu/2016-10-03#i_188613">01:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188613"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'm trying to install QT 5.6.1 atm</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188614"><a href="/sourcefu/2016-10-03#i_188614">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188614"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">it's a 655MB download for the installer though :)</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188615"><a href="/sourcefu/2016-10-03#i_188615">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188615"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">lol</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188616"><a href="/sourcefu/2016-10-03#i_188616">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188616"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">of course, ubuntu complaining at me that 15.10 is out of date and that I should upgrade to 16.04.1</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188617"><a href="/sourcefu/2016-10-03#i_188617">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188617"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">did I say how much I love UI :)</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188618"><a href="/sourcefu/2016-10-03#i_188618">01:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188618"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">not</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188619"><a href="/sourcefu/2016-10-03#i_188619">01:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188619"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">prologic: maybe you should use last year's technology :)</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188620"><a href="/sourcefu/2016-10-03#i_188620">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188620"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">d'oh</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188621"><a href="/sourcefu/2016-10-03#i_188621">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188621"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">this container is running Ubuntu Trusty 14.04 LTS</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188622"><a href="/sourcefu/2016-10-03#i_188622">01:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188622"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">no wonder it doesn't have Go 1.7 or QT 5.6.1</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188624"><a href="/sourcefu/2016-10-03#i_188624">02:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188624"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Ahh there we go</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188625"><a href="/sourcefu/2016-10-03#i_188625">02:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188625"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Ubuntu 16.10 seems to have the right things</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188626"><a href="/sourcefu/2016-10-03#i_188626">02:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188626"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">let's see</td>
+</tr>
+
+        
+<tr id="id_l31" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188627"><a href="/sourcefu/2016-10-03#i_188627">02:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188627"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">prologic: maybe you should just always target the latest LTS release</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188628"><a href="/sourcefu/2016-10-03#i_188628">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188628"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">which is?</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188629"><a href="/sourcefu/2016-10-03#i_188629">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188629"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Trusty 14.04 LTS?</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188630"><a href="/sourcefu/2016-10-03#i_188630">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188630"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">man that's old :)</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188631"><a href="/sourcefu/2016-10-03#i_188631">02:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188631"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and I developed this on <abbr title="Operating Systems">OS</abbr> X with Homebrew managed 3rd party software/tools</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_pdurbin">
+
+<td class="time" id="i_188632"><a href="/sourcefu/2016-10-03#i_188632">02:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188632"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">prologic: <a href="http://www.ubuntu.com/info/release-end-of-life" title="http://www.ubuntu.com/info/release-end-of-life">http://www.ubuntu.com/info/release-end-of-life</a></td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_prologic dark">
+
+<td class="time" id="i_188633"><a href="/sourcefu/2016-10-03#i_188633">02:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188633"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">hmm wow</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188634"><a href="/sourcefu/2016-10-03#i_188634">02:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188634"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">16.04 LTS doesn't even have Go 1.7</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188635"><a href="/sourcefu/2016-10-03#i_188635">02:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188635"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">it might still compile though</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188636"><a href="/sourcefu/2016-10-03#i_188636">02:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188636"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">as long as it has QT 5.6+</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188637"><a href="/sourcefu/2016-10-03#i_188637">02:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188637"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'll check it out shortly; just want to  see if I can compile this on 16.10</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188638"><a href="/sourcefu/2016-10-03#i_188638">03:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188638"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">oh boy</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188639"><a href="/sourcefu/2016-10-03#i_188639">03:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188639"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">qtwebengine</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_188640"><a href="/sourcefu/2016-10-03#i_188640">03:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188640"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">there are no Ubuntu packages for this :(</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_semiosis">
+
+<td class="time" id="i_188724"><a href="/sourcefu/2016-10-03#i_188724">15:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188724"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">prologic: <a href="https://launchpad.net/~blaze/+archive/ubuntu/qtwebengine" title="https://launchpad.net/~blaze/+archive/ubuntu/qtwebengine">https://launchpad.net/~blaze/+archive/ubuntu/qtwebengine</a> ?</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_188733"><a href="/sourcefu/2016-10-03#i_188733">16:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188733"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">PLOS Biology: Best Practices for Scientific Computing - <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745" title="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745</a></td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_prologic">
+
+<td class="time" id="i_188734"><a href="/sourcefu/2016-10-03#i_188734">16:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188734"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">there are packages for qtwebgnein?</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-10-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-10-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-10-03">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-10-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-10-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

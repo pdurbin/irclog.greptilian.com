@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2018-05-09" />
+    <title>IRC log for #sourcefu, 2018-05-09</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2018-05-09</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2018-05-08" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-10" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-09">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-09;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-09;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229822"><a href="/sourcefu/2018-05-09#i_229822">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229822"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear: so wheb a masters expires the server publishes a different kind of event for consumers if interested?</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229823"><a href="/sourcefu/2018-05-09#i_229823">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229823"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">For what purpose ?</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229824"><a href="/sourcefu/2018-05-09#i_229824">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229824"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so one thing to consider as well is that queueus really shouldn't have a TTL</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229825"><a href="/sourcefu/2018-05-09#i_229825">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229825"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">in that mixing time and memory or limits is kind of weird/bad</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229826"><a href="/sourcefu/2018-05-09#i_229826">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229826"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">a colleage of mine has argued that its better to have an upper bound on the size of the queues</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229827"><a href="/sourcefu/2018-05-09#i_229827">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229827"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">rather than a time based limit on how long each messave can live in the queue before being GCd</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229828"><a href="/sourcefu/2018-05-09#i_229828">00:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229828"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">this way what you do is enfoce an upper bound onf the size of the queue and start <abbr title="Garbage Collection/Collector">GC</abbr> at the back of the queue (oldest items) to make room for new ones</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229829"><a href="/sourcefu/2018-05-09#i_229829">00:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229829"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">One thing I also want is metrics published for the amount of time messages are in queues</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229830"><a href="/sourcefu/2018-05-09#i_229830">00:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229830"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">meaning the t1 (time published) - t2 (time either explicitly fetched via GET or deleted via DELETE)</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_bear">
+
+<td class="time" id="i_229831"><a href="/sourcefu/2018-05-09#i_229831">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229831"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">upper bound on size presumes that you have a known message rate</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_bear">
+
+<td class="time" id="i_229832"><a href="/sourcefu/2018-05-09#i_229832">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229832"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">ttl allows you to enforce some semblance of order on the consumer dieing</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_bear">
+
+<td class="time" id="i_229833"><a href="/sourcefu/2018-05-09#i_229833">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229833"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">the purpose I want for the &quot;item has timed out event&quot; is to allow a queue to survive a partition event without having to have a true bi-directional protocal implemented via queue</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_bear">
+
+<td class="time" id="i_229834"><a href="/sourcefu/2018-05-09#i_229834">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229834"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">it's a pattern I saw implemented in zeromq that I liked</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229835"><a href="/sourcefu/2018-05-09#i_229835">03:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229835"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Gmmm</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229836"><a href="/sourcefu/2018-05-09#i_229836">03:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229836"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Isn’t a full Q easier to reason about</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229837"><a href="/sourcefu/2018-05-09#i_229837">03:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229837"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Isn’t it easier to reason about memory limits versus time</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229838"><a href="/sourcefu/2018-05-09#i_229838">03:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229838"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Ie: max queue size / max payload size</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_bear">
+
+<td class="time" id="i_229840"><a href="/sourcefu/2018-05-09#i_229840">04:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229840"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">it can be - I live in a world where devs love to pass huge json blobs as message payloads</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_bear">
+
+<td class="time" id="i_229841"><a href="/sourcefu/2018-05-09#i_229841">04:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229841"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">so we can go from 1000 msgs/sec using a gig of ram to using 10 gig</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_bear">
+
+<td class="time" id="i_229842"><a href="/sourcefu/2018-05-09#i_229842">04:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229842"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">why? because they are passing a 150 mb json blob around  :(</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229843"><a href="/sourcefu/2018-05-09#i_229843">04:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229843"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">fuck me</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_229844"><a href="/sourcefu/2018-05-09#i_229844">04:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229844"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that's not what queues are meant for</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_bear">
+
+<td class="time" id="i_229845"><a href="/sourcefu/2018-05-09#i_229845">04:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229845"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">:nods:</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_bear">
+
+<td class="time" id="i_229846"><a href="/sourcefu/2018-05-09#i_229846">04:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229846"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">so yea, take my thoughts with a grain of salt as I have been painfully biased :)</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_prologic dark">
+
+<td class="time" id="i_229860"><a href="/sourcefu/2018-05-09#i_229860">15:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229860"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg "><a href="https://github.com/prologic/msgbus/pull/6" title="https://github.com/prologic/msgbus/pull/6">https://github.com/prologic/msgbus/pull/6</a></td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_bear">
+
+<td class="time" id="i_229869"><a href="/sourcefu/2018-05-09#i_229869">20:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229869"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg "><a href="https://www.bleepingcomputer.com/news/security/backdoored-python-library-caught-stealing-ssh-credentials/" title="https://www.bleepingcomputer.com/news/security/backdoored-python-library-caught-stealing-ssh-credentials/">https://www.bleepingcomputer.com/news/security/backdoored-python-library-caught-stealing-ssh-credentials/</a></td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_bear">
+
+<td class="time" id="i_229870"><a href="/sourcefu/2018-05-09#i_229870">20:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_229870"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">tl;dr is: if you use a module named ssh-decorate your credentials have been stolen</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2018-05-08" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-10" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-09">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-09;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-09;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

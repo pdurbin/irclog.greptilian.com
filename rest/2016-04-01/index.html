@@ -1,0 +1,1223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2016-04-01" />
+    <title>IRC log for #rest, 2016-04-01</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2016-04-01</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2016-03-31" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-04-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-04-01">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-04-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-04-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166636"><a href="/rest/2016-04-01#i_166636">00:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166636"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">there are even cases where PATCH collection/ with {id: null} is better than DELETE collection/item, again because it invalidates the correct <abbr title="Uniform Resource Locator">URL</abbr></td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166637"><a href="/rest/2016-04-01#i_166637">00:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166637"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">So then when would I even use PUT, then?</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166638"><a href="/rest/2016-04-01#i_166638">00:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166638"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">well PATCH doesn't create resources</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166639"><a href="/rest/2016-04-01#i_166639">00:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166639"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">PUT is most useful when creating a resource where you allow the client to name it</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166640"><a href="/rest/2016-04-01#i_166640">00:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166640"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">(whereas if the server needs to name it, POST to the collection instead)</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166641"><a href="/rest/2016-04-01#i_166641">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166641"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Why not support PATCH and PUT/DELETE pairs at once?</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_BlueProtoman">
+
+<td class="time" id="i_166642"><a href="/rest/2016-04-01#i_166642">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166642"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Or, what if I want to only query whether or not I'm following a particular user (e.g. I'm looking at their profile page and want to know what icon to show)</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166643"><a href="/rest/2016-04-01#i_166643">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166643"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">you mean for the same entity <abbr title="Uniform Resource Locator">URL</abbr>? that's occasionallly useful</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166644"><a href="/rest/2016-04-01#i_166644">00:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166644"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">to know what icon to show, GET users/{me}/subscribed/. If it contains a link to users/{that-guy}/, show the &quot;following&quot; icon, otherwise, don't.</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166645"><a href="/rest/2016-04-01#i_166645">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166645"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">give users/{me}/subscribed a long cache lifetime, expecting that a) it will be hit often, and b) only {me} can change it and cares about immediate invalidation</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166646"><a href="/rest/2016-04-01#i_166646">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166646"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">New tangentially related question.  If my users will be able to name their artworks, a sensible <abbr title="Application Programming Interface">API</abbr> would be /api/users/{author}/work/{slug-cased-name}.  But what if they give multiple works the same name, or ones whose differences are lost when slug-casing?</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166647"><a href="/rest/2016-04-01#i_166647">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166647"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">...or want to rename the work without breaking all the links?</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166648"><a href="/rest/2016-04-01#i_166648">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166648"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">That, too.  Or, hell, want to rename themselves?</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166649"><a href="/rest/2016-04-01#i_166649">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166649"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">that's why most APIs either use an opaque id (works/0b4f822a3/) or freeze the slug but allow the full name to vary</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166650"><a href="/rest/2016-04-01#i_166650">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166650"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Ooh, the last one's good.</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166651"><a href="/rest/2016-04-01#i_166651">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166651"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">then you just have to check for collisions when forming slugs</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166652"><a href="/rest/2016-04-01#i_166652">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166652"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">I wanna have friendly-looking URLs.</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166653"><a href="/rest/2016-04-01#i_166653">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166653"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">sure</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166654"><a href="/rest/2016-04-01#i_166654">00:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166654"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">that at least allows you to defer the Rewrite-All-State-That-Might-Refer-To-This-ID logic</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166655"><a href="/rest/2016-04-01#i_166655">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166655"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">which you will run into if you're doing something version-control-y</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166656"><a href="/rest/2016-04-01#i_166656">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166656"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Maybe I'll just submit works with POST instead of PUT...</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166657"><a href="/rest/2016-04-01#i_166657">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166657"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">let the server add trailing underscores and return 200 OK instead of 409 What Were You Thinking You Copyright Infringer You</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166658"><a href="/rest/2016-04-01#i_166658">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166658"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Updated routes <a href="http://pastebin.com/1qq2wsVu" title="http://pastebin.com/1qq2wsVu">http://pastebin.com/1qq2wsVu</a></td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_BlueProtoman">
+
+<td class="time" id="i_166659"><a href="/rest/2016-04-01#i_166659">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166659"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">(The controllers routed to aren't really sensible yet, I'm just focused on the URLs)</td>
+</tr>
+
+        
+<tr id="id_l26" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166660"><a href="/rest/2016-04-01#i_166660">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166660"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">I find &quot;works/&quot; meaning &quot;a collection of works&quot; vs. &quot;users/&quot; meaning &quot;just one user--me&quot; to be pretty confusing</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_BlueProtoman">
+
+<td class="time" id="i_166661"><a href="/rest/2016-04-01#i_166661">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166661"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Oooh, do <abbr title="Hypertext Transfer Protocol">HTTP</abbr> caches care about query strings?</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_BlueProtoman">
+
+<td class="time" id="i_166662"><a href="/rest/2016-04-01#i_166662">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166662"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">E.g. /something?wow=doge</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166663"><a href="/rest/2016-04-01#i_166663">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166663"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">yes; different query strings are different <abbr title="Uniform Resource Locator">URL</abbr>'s</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166664"><a href="/rest/2016-04-01#i_166664">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166664"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">and will be cached/invalidated separately</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166665"><a href="/rest/2016-04-01#i_166665">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166665"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">in addition, several of the more popular caches are configured by default to not cache any <abbr title="Uniform Resource Locator">URL</abbr> that has a query string</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166666"><a href="/rest/2016-04-01#i_166666">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166666"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">e.g. Squid on the server side and <abbr title="Internet Explorer">IE</abbr> on the client</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166667"><a href="/rest/2016-04-01#i_166667">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166667"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">(although I think <abbr title="Internet Explorer">IE</abbr> might have relaxed that a hair in the last few years--not sure)</td>
+</tr>
+
+        
+<tr id="id_l34" class="new special">
+
+<td class="time" id="i_166668"><a href="/rest/2016-04-01#i_166668">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166668"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166669"><a href="/rest/2016-04-01#i_166669">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166669"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">fumanchu_: How about now?  <a href="http://pastebin.com/XTn8AgE5" title="http://pastebin.com/XTn8AgE5">http://pastebin.com/XTn8AgE5</a></td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166670"><a href="/rest/2016-04-01#i_166670">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166670"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Note that &quot;remixing&quot; does not mutate an existing work, it copies it.  So maybe PATCH isn't the most appropriate way to express that?</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166671"><a href="/rest/2016-04-01#i_166671">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166671"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">correct</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166672"><a href="/rest/2016-04-01#i_166672">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166672"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">I'm thinking either POST or PUT</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166673"><a href="/rest/2016-04-01#i_166673">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166673"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">you have a few alternatives, but I would tend to POST to api/users/{me}/works/ with a payload that had the <abbr title="Uniform Resource Locator">URL</abbr> of the work I wanted to copy somewhere meaningful in it</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166674"><a href="/rest/2016-04-01#i_166674">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166674"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Ooh, good idea</td>
+</tr>
+
+        
+<tr id="id_l41" class="new special">
+
+<td class="time" id="i_166675"><a href="/rest/2016-04-01#i_166675">00:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166675"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166676"><a href="/rest/2016-04-01#i_166676">01:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166676"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">fumanchu_: New question.  &quot;/api/users/something&quot; and &quot;/api/works/somethingElse&quot; respectively signify that &quot;something&quot; operates on a user, and &quot;somethingElse&quot; operates on a work?  Where would something like creating a new work fit in?</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166677"><a href="/rest/2016-04-01#i_166677">01:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166677"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">&quot;operates on&quot;?</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166678"><a href="/rest/2016-04-01#i_166678">01:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166678"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Operates on or retrieves from, etc.</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166679"><a href="/rest/2016-04-01#i_166679">01:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166679"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">I find it's best to consider <abbr title="Uniform Resource Locator">URL</abbr>'s as data hierarchies. api/ is all the data. api/users/ is all the users. api/users/{id}/ is one user. api/users/{id}/works/ is all the works for that user. and so on.</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166680"><a href="/rest/2016-04-01#i_166680">01:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166680"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">What if I want to get all the users who've liked a specific work?</td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166681"><a href="/rest/2016-04-01#i_166681">01:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166681"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">I'd offer api/works/{work}/likes, which would have links to each of the users who've liked that work</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166682"><a href="/rest/2016-04-01#i_166682">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166682"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Shouldn't that be /api/works/{user}/{work}/likes?</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166683"><a href="/rest/2016-04-01#i_166683">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166683"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">Because different people may give different works the same name, or one may remix another's</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_fumanchu_">
+
+<td class="time" id="i_166684"><a href="/rest/2016-04-01#i_166684">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166684"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">only if api/works/{user}/ is meaningful. I can't immediately see how</td>
+</tr>
+
+        
+<tr id="id_l51" class="cont nick nick_fumanchu_">
+
+<td class="time" id="i_166685"><a href="/rest/2016-04-01#i_166685">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166685"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">oic</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_fumanchu_">
+
+<td class="time" id="i_166686"><a href="/rest/2016-04-01#i_166686">01:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166686"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">then api/users/{id}/works/{id}/likes</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_fumanchu_">
+
+<td class="time" id="i_166687"><a href="/rest/2016-04-01#i_166687">01:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166687"  /></td>
+<td class="nick nick1">fumanchu_</td>
+<td class="msg ">whatever it takes to uniquely identify the subset of data you're talking about</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_fumanchu_ dark">
+
+<td class="time" id="i_166688"><a href="/rest/2016-04-01#i_166688">01:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166688"  /></td>
+<td class="nick nick1">* fumanchu_</td>
+<td class="msg act ">goes afk for a bit while Selenium takes over his desktop</td>
+</tr>
+
+        
+<tr id="id_l55" class="new special">
+
+<td class="time" id="i_166689"><a href="/rest/2016-04-01#i_166689">01:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166689"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont special">
+
+<td class="time" id="i_166690"><a href="/rest/2016-04-01#i_166690">01:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166690"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_BlueProtoman dark">
+
+<td class="time" id="i_166691"><a href="/rest/2016-04-01#i_166691">01:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166691"  /></td>
+<td class="nick nick2">BlueProtoman</td>
+<td class="msg ">fumanchu_: Still there?  Got one more revision to show you.  I appreciate your feedback and advice on all of this, by the way.  <a href="http://pastebin.com/VD9AVd6X" title="http://pastebin.com/VD9AVd6X">http://pastebin.com/VD9AVd6X</a></td>
+</tr>
+
+        
+<tr id="id_l58" class="new special">
+
+<td class="time" id="i_166692"><a href="/rest/2016-04-01#i_166692">01:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166692"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l59" class="cont special">
+
+<td class="time" id="i_166693"><a href="/rest/2016-04-01#i_166693">01:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166693"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont special">
+
+<td class="time" id="i_166694"><a href="/rest/2016-04-01#i_166694">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166694"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont special">
+
+<td class="time" id="i_166695"><a href="/rest/2016-04-01#i_166695">04:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166695"  /></td>
+<td class="nick"></td>
+<td class="msg ">fumanchu joined #rest</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont special">
+
+<td class="time" id="i_166697"><a href="/rest/2016-04-01#i_166697">04:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166697"  /></td>
+<td class="nick"></td>
+<td class="msg ">fumanchu_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont special">
+
+<td class="time" id="i_166707"><a href="/rest/2016-04-01#i_166707">07:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166707"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont special">
+
+<td class="time" id="i_166709"><a href="/rest/2016-04-01#i_166709">07:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166709"  /></td>
+<td class="nick"></td>
+<td class="msg ">nesselbosch joined #rest</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont special">
+
+<td class="time" id="i_166710"><a href="/rest/2016-04-01#i_166710">07:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166710"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont special">
+
+<td class="time" id="i_166711"><a href="/rest/2016-04-01#i_166711">07:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166711"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont special">
+
+<td class="time" id="i_166712"><a href="/rest/2016-04-01#i_166712">07:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166712"  /></td>
+<td class="nick"></td>
+<td class="msg ">DracoBlue joined #rest</td>
+</tr>
+
+        
+<tr id="id_l68" class="cont special">
+
+<td class="time" id="i_166713"><a href="/rest/2016-04-01#i_166713">08:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166713"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l69" class="cont special">
+
+<td class="time" id="i_166714"><a href="/rest/2016-04-01#i_166714">08:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166714"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrsto_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont special">
+
+<td class="time" id="i_166715"><a href="/rest/2016-04-01#i_166715">08:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166715"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont special">
+
+<td class="time" id="i_166718"><a href="/rest/2016-04-01#i_166718">09:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166718"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l72" class="cont special">
+
+<td class="time" id="i_166719"><a href="/rest/2016-04-01#i_166719">09:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166719"  /></td>
+<td class="nick"></td>
+<td class="msg ">GriffinHeart joined #rest</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_GriffinHeart dark">
+
+<td class="time" id="i_166720"><a href="/rest/2016-04-01#i_166720">09:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166720"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">Hi everyone, how do you handle cases where creating a resource it has the side effect of creating other resources, specifically in the response.</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont nick nick_GriffinHeart dark">
+
+<td class="time" id="i_166721"><a href="/rest/2016-04-01#i_166721">09:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166721"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">example to make sense POST /world, creates a new world and this will also create a /house/3 and /car/4, my naive approach is something like { data { world }, extra { house/3, house/4 } } in response</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_trygvis">
+
+<td class="time" id="i_166722"><a href="/rest/2016-04-01#i_166722">09:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166722"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">I would assume that the world resource would include links to either a &quot;houses&quot; list or the individual houses</td>
+</tr>
+
+        
+<tr id="id_l76" class="cont nick nick_trygvis">
+
+<td class="time" id="i_166723"><a href="/rest/2016-04-01#i_166723">09:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166723"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">so after creating a world resource I would return the created resource (with a Content-Location header)</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont nick nick_trygvis">
+
+<td class="time" id="i_166724"><a href="/rest/2016-04-01#i_166724">09:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166724"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">or you can respond with 201 without a body, but with a Location header</td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick_GriffinHeart dark">
+
+<td class="time" id="i_166725"><a href="/rest/2016-04-01#i_166725">09:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166725"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">so all these side effects should be part of the resource representation?</td>
+</tr>
+
+        
+<tr id="id_l79" class="new nick nick_trygvis">
+
+<td class="time" id="i_166726"><a href="/rest/2016-04-01#i_166726">09:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166726"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">that depends on how your want your resources to be used</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_GriffinHeart dark">
+
+<td class="time" id="i_166727"><a href="/rest/2016-04-01#i_166727">09:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166727"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">hmmm...yeah, not entirely sure its mostly because these might happen or not when creating a world, so I guess the heart of the question is how do I tell, in a RESTful way, that other resources were created as a result of this one.</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick__ollie">
+
+<td class="time" id="i_166728"><a href="/rest/2016-04-01#i_166728">09:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166728"  /></td>
+<td class="nick nick6">_ollie</td>
+<td class="msg ">You return the location of the most fundamental one you created and the representation of that would contain links to the related resources created.</td>
+</tr>
+
+        
+<tr id="id_l82" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166729"><a href="/rest/2016-04-01#i_166729">09:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166729"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">you often don't, you create a new resource R, the client does a GET for R and R points to what is useful from that context</td>
+</tr>
+
+        
+<tr id="id_l83" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166731"><a href="/rest/2016-04-01#i_166731">09:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166731"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">Yeah thanks, that seems to be the way, something wasn't sitting right with me, if they're important to the resource world then they should be inside/linked in its representation</td>
+</tr>
+
+        
+<tr id="id_l84" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166732"><a href="/rest/2016-04-01#i_166732">09:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166732"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">sometimes I've a POST create two separate resource A and B that are important to the client, then I've said that the POST returns a special resource that points to A and B</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont nick nick_trygvis dark">
+
+<td class="time" id="i_166733"><a href="/rest/2016-04-01#i_166733">09:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166733"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">but in your case (worlds and houses) it sounds like there is a natural relationship between the resources</td>
+</tr>
+
+        
+<tr id="id_l86" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166734"><a href="/rest/2016-04-01#i_166734">09:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166734"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">unrelated question, is POST /world/run as in &quot;run this world&quot; a valid way of representing a operation/slash command? (doesn't result in creating a resource)</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont nick nick_GriffinHeart">
+
+<td class="time" id="i_166735"><a href="/rest/2016-04-01#i_166735">09:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166735"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">or that would be better handled by something like PUT /world body: { run: true }</td>
+</tr>
+
+        
+<tr id="id_l88" class="cont nick nick_GriffinHeart">
+
+<td class="time" id="i_166736"><a href="/rest/2016-04-01#i_166736">09:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166736"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">sorry with id in the uri, of course.</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166737"><a href="/rest/2016-04-01#i_166737">09:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166737"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">I would include a relation from the world resource pointing to where the client do a request</td>
+</tr>
+
+        
+<tr id="id_l90" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166738"><a href="/rest/2016-04-01#i_166738">09:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166738"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">@trygvis Thanks, definitely in this case they have a relationship, the two separate resource was the one I was intrigued and begged the question</td>
+</tr>
+
+        
+<tr id="id_l91" class="new special dark">
+
+<td class="time" id="i_166739"><a href="/rest/2016-04-01#i_166739">09:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166739"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166740"><a href="/rest/2016-04-01#i_166740">09:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166740"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">I was thinking its not very restful because you're returning in the body of the response something that is not a resource it self</td>
+</tr>
+
+        
+<tr id="id_l93" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166741"><a href="/rest/2016-04-01#i_166741">09:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166741"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">I don't know how you're modelling your executions, but the POST could easily create a new &quot;execution&quot; resource that the client could poll to see the current status, and/or end result and then delete later on</td>
+</tr>
+
+        
+<tr id="id_l94" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166742"><a href="/rest/2016-04-01#i_166742">09:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166742"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">@trygvis in more abstract how do you handle a command vs an edit? Something that has business logic to it.</td>
+</tr>
+
+        
+<tr id="id_l95" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166744"><a href="/rest/2016-04-01#i_166744">10:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166744"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">I would create a relation from a resource and POST stuff there</td>
+</tr>
+
+        
+<tr id="id_l96" class="cont nick nick_trygvis dark">
+
+<td class="time" id="i_166745"><a href="/rest/2016-04-01#i_166745">10:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166745"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">the documentation specifies what the request should look like</td>
+</tr>
+
+        
+<tr id="id_l97" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166746"><a href="/rest/2016-04-01#i_166746">10:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166746"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">so the operations would be like resources but only with the C of CRUD?! only POST world/1/run would be valid not GET world/1/run</td>
+</tr>
+
+        
+<tr id="id_l98" class="new nick nick_trygvis dark">
+
+<td class="time" id="i_166747"><a href="/rest/2016-04-01#i_166747">10:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166747"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">unless something is telling the client that world/1/run is a place to go, no client will do a GET there</td>
+</tr>
+
+        
+<tr id="id_l99" class="cont nick nick_trygvis dark">
+
+<td class="time" id="i_166748"><a href="/rest/2016-04-01#i_166748">10:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166748"  /></td>
+<td class="nick nick4">trygvis</td>
+<td class="msg ">and REST != CRUD</td>
+</tr>
+
+        
+<tr id="id_l100" class="new nick nick_GriffinHeart">
+
+<td class="time" id="i_166749"><a href="/rest/2016-04-01#i_166749">10:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166749"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">I see</td>
+</tr>
+
+        
+<tr id="id_l101" class="cont nick nick_GriffinHeart">
+
+<td class="time" id="i_166750"><a href="/rest/2016-04-01#i_166750">10:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166750"  /></td>
+<td class="nick nick3">GriffinHeart</td>
+<td class="msg ">Thanks @trygvis very useful</td>
+</tr>
+
+        
+<tr id="id_l102" class="new special dark">
+
+<td class="time" id="i_166751"><a href="/rest/2016-04-01#i_166751">10:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166751"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l103" class="cont special dark">
+
+<td class="time" id="i_166752"><a href="/rest/2016-04-01#i_166752">10:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166752"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l104" class="cont special dark">
+
+<td class="time" id="i_166753"><a href="/rest/2016-04-01#i_166753">11:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166753"  /></td>
+<td class="nick"></td>
+<td class="msg ">Macaveli joined #rest</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont special dark">
+
+<td class="time" id="i_166755"><a href="/rest/2016-04-01#i_166755">11:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166755"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrsto_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont special dark">
+
+<td class="time" id="i_166758"><a href="/rest/2016-04-01#i_166758">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166758"  /></td>
+<td class="nick"></td>
+<td class="msg ">DracoBlue joined #rest</td>
+</tr>
+
+        
+<tr id="id_l107" class="cont special dark">
+
+<td class="time" id="i_166759"><a href="/rest/2016-04-01#i_166759">13:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166759"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980__ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l108" class="cont special dark">
+
+<td class="time" id="i_166760"><a href="/rest/2016-04-01#i_166760">14:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166760"  /></td>
+<td class="nick"></td>
+<td class="msg ">Macaveli_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l109" class="cont special dark">
+
+<td class="time" id="i_166762"><a href="/rest/2016-04-01#i_166762">14:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166762"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsiqueir joined #rest</td>
+</tr>
+
+        
+<tr id="id_l110" class="cont special dark">
+
+<td class="time" id="i_166763"><a href="/rest/2016-04-01#i_166763">14:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166763"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l111" class="cont special dark">
+
+<td class="time" id="i_166764"><a href="/rest/2016-04-01#i_166764">14:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166764"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l112" class="cont special dark">
+
+<td class="time" id="i_166765"><a href="/rest/2016-04-01#i_166765">15:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166765"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l113" class="cont special dark">
+
+<td class="time" id="i_166766"><a href="/rest/2016-04-01#i_166766">15:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166766"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l114" class="cont special dark">
+
+<td class="time" id="i_166768"><a href="/rest/2016-04-01#i_166768">16:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166768"  /></td>
+<td class="nick"></td>
+<td class="msg ">BlueProtoman joined #rest</td>
+</tr>
+
+        
+<tr id="id_l115" class="cont special dark">
+
+<td class="time" id="i_166769"><a href="/rest/2016-04-01#i_166769">16:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166769"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l116" class="cont special dark">
+
+<td class="time" id="i_166770"><a href="/rest/2016-04-01#i_166770">17:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166770"  /></td>
+<td class="nick"></td>
+<td class="msg ">DracoBlue joined #rest</td>
+</tr>
+
+        
+<tr id="id_l117" class="cont special dark">
+
+<td class="time" id="i_166771"><a href="/rest/2016-04-01#i_166771">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166771"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l118" class="cont special dark">
+
+<td class="time" id="i_166772"><a href="/rest/2016-04-01#i_166772">17:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166772"  /></td>
+<td class="nick"></td>
+<td class="msg ">DracoBlue joined #rest</td>
+</tr>
+
+        
+<tr id="id_l119" class="cont special dark">
+
+<td class="time" id="i_166773"><a href="/rest/2016-04-01#i_166773">18:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166773"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l120" class="cont special dark">
+
+<td class="time" id="i_166774"><a href="/rest/2016-04-01#i_166774">18:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166774"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrstorres joined #rest</td>
+</tr>
+
+        
+<tr id="id_l121" class="cont special dark">
+
+<td class="time" id="i_166776"><a href="/rest/2016-04-01#i_166776">19:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166776"  /></td>
+<td class="nick"></td>
+<td class="msg ">Devastator_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l122" class="cont special dark">
+
+<td class="time" id="i_166777"><a href="/rest/2016-04-01#i_166777">19:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166777"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrsto_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l123" class="cont special dark">
+
+<td class="time" id="i_166778"><a href="/rest/2016-04-01#i_166778">19:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166778"  /></td>
+<td class="nick"></td>
+<td class="msg ">quimrsto_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l124" class="cont special dark">
+
+<td class="time" id="i_166779"><a href="/rest/2016-04-01#i_166779">20:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166779"  /></td>
+<td class="nick"></td>
+<td class="msg ">gigo1980 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l125" class="cont special dark">
+
+<td class="time" id="i_166782"><a href="/rest/2016-04-01#i_166782">22:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_166782"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2016-03-31" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-04-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-04-01">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-04-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-04-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

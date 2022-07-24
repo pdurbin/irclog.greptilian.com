@@ -1,0 +1,1844 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #javaee" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/javaee/2014-03-13" />
+    <title>IRC log for #javaee, 2014-03-13</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #javaee, 2014-03-13</h1>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+        <p><a href="/javaee/2014-03-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-03-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-03-13">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-03-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-03-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63499"><a href="/javaee/2014-03-13#i_63499">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63499"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">whartung: I'd be happy to hear you elaborate on &quot;my mistake earlier was conflating the servlet async capability with what node.js does, and it's not the same at all&quot;</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_whartung">
+
+<td class="time" id="i_63500"><a href="/javaee/2014-03-13#i_63500">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63500"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">node.js is a single threaded server.</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63501"><a href="/javaee/2014-03-13#i_63501">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63501"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">yep</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_whartung">
+
+<td class="time" id="i_63502"><a href="/javaee/2014-03-13#i_63502">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63502"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so, pretty much EVERYTHING has to be non-blocking.</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63503"><a href="/javaee/2014-03-13#i_63503">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63503"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_whartung">
+
+<td class="time" id="i_63504"><a href="/javaee/2014-03-13#i_63504">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63504"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">a servlet container, however, is not.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_whartung">
+
+<td class="time" id="i_63505"><a href="/javaee/2014-03-13#i_63505">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63505"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">it's multi threaded</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_whartung">
+
+<td class="time" id="i_63506"><a href="/javaee/2014-03-13#i_63506">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63506"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">and remains multi-threaded even if you leverage the async support</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_whartung">
+
+<td class="time" id="i_63507"><a href="/javaee/2014-03-13#i_63507">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63507"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">the async support is handled internally by the NIO based frameworks in the containers</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_whartung">
+
+<td class="time" id="i_63508"><a href="/javaee/2014-03-13#i_63508">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63508"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">but it's still multi-threaded</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_whartung">
+
+<td class="time" id="i_63509"><a href="/javaee/2014-03-13#i_63509">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63509"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so my question</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_whartung">
+
+<td class="time" id="i_63510"><a href="/javaee/2014-03-13#i_63510">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63510"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">was within a process servicing an async context</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_whartung">
+
+<td class="time" id="i_63511"><a href="/javaee/2014-03-13#i_63511">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63511"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">notably where it's just streaming results down the socket</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_whartung">
+
+<td class="time" id="i_63512"><a href="/javaee/2014-03-13#i_63512">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63512"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">how did this not block?</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_whartung">
+
+<td class="time" id="i_63513"><a href="/javaee/2014-03-13#i_63513">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63513"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">and the answer is… it DOES block</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_whartung">
+
+<td class="time" id="i_63514"><a href="/javaee/2014-03-13#i_63514">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63514"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">an async sservlet is not under the same constraints as something in node.</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_whartung">
+
+<td class="time" id="i_63515"><a href="/javaee/2014-03-13#i_63515">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63515"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">I have not used node</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_whartung">
+
+<td class="time" id="i_63516"><a href="/javaee/2014-03-13#i_63516">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63516"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">but if you want to send anything down the socket, you will hand off what you want to send to the container, and IT will send it down the socket for you, with a call back when it's done.</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_whartung">
+
+<td class="time" id="i_63517"><a href="/javaee/2014-03-13#i_63517">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63517"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so, in a servlet</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_whartung">
+
+<td class="time" id="i_63518"><a href="/javaee/2014-03-13#i_63518">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63518"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">you'd do: for(String line: lines) { out.println(line); }</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_whartung">
+
+<td class="time" id="i_63519"><a href="/javaee/2014-03-13#i_63519">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63519"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">in node, you'd either send the entire payload all at once (i.e. [in java] StringWriter sw = …; for(String line : lines) { sw.println(line); } sendToSocket(sw.toString());</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_whartung">
+
+<td class="time" id="i_63520"><a href="/javaee/2014-03-13#i_63520">00:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63520"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">something like that</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_whartung">
+
+<td class="time" id="i_63521"><a href="/javaee/2014-03-13#i_63521">00:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63521"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so, that means that an async jee server is &quot;not quite&quot; as efficient as node, but at the same time, it's not as tyrannical as node is.</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_whartung">
+
+<td class="time" id="i_63522"><a href="/javaee/2014-03-13#i_63522">00:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63522"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">in terms of mandating programming gmodel</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_whartung">
+
+<td class="time" id="i_63523"><a href="/javaee/2014-03-13#i_63523">00:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63523"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">in the end, you will need a number of threads that you wish to SERVICE at once time (i.e. send output + processing), but not necessarily as many threads as you want to ACCEPT requests from.</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_whartung">
+
+<td class="time" id="i_63524"><a href="/javaee/2014-03-13#i_63524">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63524"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so you can use far fewer threads in the server for a similar workload by using a little bit of async and lightweight message passing in your application using the jEE model</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63525"><a href="/javaee/2014-03-13#i_63525">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63525"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">sounds like a nice feature, generally. async in java ee</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_whartung">
+
+<td class="time" id="i_63526"><a href="/javaee/2014-03-13#i_63526">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63526"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">well I though about how to do this long ago, notably , how do you convert a nominally sync request in to async system.</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_whartung">
+
+<td class="time" id="i_63527"><a href="/javaee/2014-03-13#i_63527">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63527"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">and the trick was to store a monitor in to a queue, send off the request (from the servlet), then Object.wait() on the monitor.</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_whartung">
+
+<td class="time" id="i_63528"><a href="/javaee/2014-03-13#i_63528">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63528"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">in the back ground something else would do processing via JMS queues or whatever, and then when done, and it all returned to the servlet container</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont nick nick_whartung">
+
+<td class="time" id="i_63529"><a href="/javaee/2014-03-13#i_63529">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63529"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">it would Object.notify() the monitor, thus freeing the servlet to move on</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_whartung">
+
+<td class="time" id="i_63530"><a href="/javaee/2014-03-13#i_63530">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63530"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">this makes that easier to do, and unbinds the request form the thread</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_whartung">
+
+<td class="time" id="i_63531"><a href="/javaee/2014-03-13#i_63531">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63531"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">so, it's certainly much more versatile.</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_whartung">
+
+<td class="time" id="i_63532"><a href="/javaee/2014-03-13#i_63532">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63532"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">and I must be off, follow up tomorrow, we can talk about it some more.</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63533"><a href="/javaee/2014-03-13#i_63533">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63533"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">o/</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_pdurbin">
+
+<td class="time" id="i_63534"><a href="/javaee/2014-03-13#i_63534">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63534"  /></td>
+<td class="nick nick5">* pdurbin</td>
+<td class="msg act ">checks out the article whartung linked to earlier: <a href="https://plumbr.eu/blog/how-to-use-asynchronous-servlets-to-improve-performance" title="https://plumbr.eu/blog/how-to-use-asynchronous-servlets-to-improve-performance">https://plumbr.eu/blog/how-to-use-asynchronous-servlets-to-improve-performance</a></td>
+</tr>
+
+        
+<tr id="id_l38" class="new special dark">
+
+<td class="time" id="i_63535"><a href="/javaee/2014-03-13#i_63535">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63535"  /></td>
+<td class="nick"></td>
+<td class="msg ">huhlig_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont special dark">
+
+<td class="time" id="i_63536"><a href="/javaee/2014-03-13#i_63536">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63536"  /></td>
+<td class="nick"></td>
+<td class="msg ">QshelTier joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont special dark">
+
+<td class="time" id="i_63537"><a href="/javaee/2014-03-13#i_63537">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63537"  /></td>
+<td class="nick"></td>
+<td class="msg ">acuzio joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l41" class="new nick nick_pdurbin">
+
+<td class="time" id="i_63538"><a href="/javaee/2014-03-13#i_63538">00:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63538"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">very nice article. I should try this out</td>
+</tr>
+
+        
+<tr id="id_l42" class="new special dark">
+
+<td class="time" id="i_63539"><a href="/javaee/2014-03-13#i_63539">01:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63539"  /></td>
+<td class="nick"></td>
+<td class="msg ">drspockbr joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont special dark">
+
+<td class="time" id="i_63540"><a href="/javaee/2014-03-13#i_63540">02:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63540"  /></td>
+<td class="nick"></td>
+<td class="msg ">gandalfpimp joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont special dark">
+
+<td class="time" id="i_63544"><a href="/javaee/2014-03-13#i_63544">04:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63544"  /></td>
+<td class="nick"></td>
+<td class="msg ">cem__ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_cem__">
+
+<td class="time" id="i_63545"><a href="/javaee/2014-03-13#i_63545">04:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63545"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">recurssively failing on integrating bootstrap with jsf</td>
+</tr>
+
+        
+<tr id="id_l46" class="new special dark">
+
+<td class="time" id="i_63546"><a href="/javaee/2014-03-13#i_63546">06:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63546"  /></td>
+<td class="nick"></td>
+<td class="msg ">Mahi_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont special dark">
+
+<td class="time" id="i_63547"><a href="/javaee/2014-03-13#i_63547">06:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63547"  /></td>
+<td class="nick"></td>
+<td class="msg ">Mahi_ left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont special dark">
+
+<td class="time" id="i_63548"><a href="/javaee/2014-03-13#i_63548">07:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63548"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont special dark">
+
+<td class="time" id="i_63549"><a href="/javaee/2014-03-13#i_63549">08:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63549"  /></td>
+<td class="nick"></td>
+<td class="msg ">fabioportieri joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l50" class="cont special dark">
+
+<td class="time" id="i_63550"><a href="/javaee/2014-03-13#i_63550">08:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63550"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_fabioportieri">
+
+<td class="time" id="i_63551"><a href="/javaee/2014-03-13#i_63551">08:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63551"  /></td>
+<td class="nick">fabioportieri</td>
+<td class="msg ">o/</td>
+</tr>
+
+        
+<tr id="id_l52" class="new special dark">
+
+<td class="time" id="i_63552"><a href="/javaee/2014-03-13#i_63552">08:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63552"  /></td>
+<td class="nick"></td>
+<td class="msg ">ramsrib joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l53" class="new nick nick_AlexCzar">
+
+<td class="time" id="i_63553"><a href="/javaee/2014-03-13#i_63553">09:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63553"  /></td>
+<td class="nick">AlexCzar</td>
+<td class="msg ">hi!</td>
+</tr>
+
+        
+<tr id="id_l54" class="cont nick nick_AlexCzar">
+
+<td class="time" id="i_63554"><a href="/javaee/2014-03-13#i_63554">09:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63554"  /></td>
+<td class="nick">AlexCzar</td>
+<td class="msg ">I've just installed jrebel 5.5.1 in IDEA, strange thing, it works, but there is a shitload of messages in the log saying that reloading failed. I'm testing it on a spring webapp in tomcat</td>
+</tr>
+
+        
+<tr id="id_l55" class="cont nick nick_AlexCzar">
+
+<td class="time" id="i_63555"><a href="/javaee/2014-03-13#i_63555">09:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63555"  /></td>
+<td class="nick">AlexCzar</td>
+<td class="msg ">says &quot;Probable cause: Remoting is not turned on in the server.&quot; And still works :) Any ideas?</td>
+</tr>
+
+        
+<tr id="id_l56" class="new special dark">
+
+<td class="time" id="i_63556"><a href="/javaee/2014-03-13#i_63556">11:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63556"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_cem__">
+
+<td class="time" id="i_63557"><a href="/javaee/2014-03-13#i_63557">12:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63557"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">hi sajjadg</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63558"><a href="/javaee/2014-03-13#i_63558">12:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63558"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">cem__: for a bit we used <a href="http://repository.primefaces.org/org/primefaces/themes/bootstrap/" title="http://repository.primefaces.org/org/primefaces/themes/bootstrap/">http://repository.primefaces.org/org/primefaces/themes/bootstrap/</a> but we switched to native bootstrap</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_cem__">
+
+<td class="time" id="i_63559"><a href="/javaee/2014-03-13#i_63559">12:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63559"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">i feel hibernate quite interesting compared to spring</td>
+</tr>
+
+        
+<tr id="id_l60" class="cont nick nick_cem__">
+
+<td class="time" id="i_63560"><a href="/javaee/2014-03-13#i_63560">12:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63560"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">Y</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_cem__">
+
+<td class="time" id="i_63561"><a href="/javaee/2014-03-13#i_63561">12:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63561"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">both are frameworks :?/</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont nick nick_cem__">
+
+<td class="time" id="i_63562"><a href="/javaee/2014-03-13#i_63562">12:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63562"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">pdurbin: using bootstrap+primeface</td>
+</tr>
+
+        
+<tr id="id_l63" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63563"><a href="/javaee/2014-03-13#i_63563">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63563"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">cem__, both are framework but they are different frameworks doing different things</td>
+</tr>
+
+        
+<tr id="id_l64" class="new special">
+
+<td class="time" id="i_63564"><a href="/javaee/2014-03-13#i_63564">12:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63564"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l65" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63565"><a href="/javaee/2014-03-13#i_63565">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63565"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">cem__, Hi. sorry I got Disconnected</td>
+</tr>
+
+        
+<tr id="id_l66" class="new nick nick_cem__">
+
+<td class="time" id="i_63566"><a href="/javaee/2014-03-13#i_63566">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63566"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">Hibernate : Is making almost all as bidirectional Entity in hibernate is it good  ?</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont nick nick_cem__">
+
+<td class="time" id="i_63567"><a href="/javaee/2014-03-13#i_63567">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63567"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">k sajjadg</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63568"><a href="/javaee/2014-03-13#i_63568">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63568"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">anyone told you about hibernate and spring?</td>
+</tr>
+
+        
+<tr id="id_l69" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63569"><a href="/javaee/2014-03-13#i_63569">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63569"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">they are different. and they are not alternatives.</td>
+</tr>
+
+        
+<tr id="id_l70" class="new nick nick_cem__">
+
+<td class="time" id="i_63570"><a href="/javaee/2014-03-13#i_63570">12:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63570"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">sajjadg: using both</td>
+</tr>
+
+        
+<tr id="id_l71" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63571"><a href="/javaee/2014-03-13#i_63571">12:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63571"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">good.</td>
+</tr>
+
+        
+<tr id="id_l72" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63572"><a href="/javaee/2014-03-13#i_63572">12:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63572"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">you can compare spring to ejb and hibernate to eclipselink</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_cem__">
+
+<td class="time" id="i_63573"><a href="/javaee/2014-03-13#i_63573">12:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63573"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">it will take lot of time to learn these frameworks :)</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont nick nick_cem__">
+
+<td class="time" id="i_63574"><a href="/javaee/2014-03-13#i_63574">12:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63574"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">lot of frameworks and lot of tools :/</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63575"><a href="/javaee/2014-03-13#i_63575">12:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63575"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">yeah. you'll waste large amount of time learning those</td>
+</tr>
+
+        
+<tr id="id_l76" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63576"><a href="/javaee/2014-03-13#i_63576">12:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63576"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">and sometimes in this way you may think about going for another easier and cooler language/framework like python/django and ruby on rails</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63579"><a href="/javaee/2014-03-13#i_63579">12:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63579"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">those morons in schools/university taught us Pascal then C/C++ and we then went for Java</td>
+</tr>
+
+        
+<tr id="id_l78" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63581"><a href="/javaee/2014-03-13#i_63581">12:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63581"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">but I wish I learned Python at first</td>
+</tr>
+
+        
+<tr id="id_l79" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63583"><a href="/javaee/2014-03-13#i_63583">12:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63583"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I suffered a lot for learning Java...</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_pdurbin">
+
+<td class="time" id="i_63584"><a href="/javaee/2014-03-13#i_63584">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63584"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">sajjadg: life is still suffering</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick_cem__ dark">
+
+<td class="time" id="i_63585"><a href="/javaee/2014-03-13#i_63585">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63585"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">some of my friends learnt java and started bidding prj on java in freelance &lt; they only know java&gt;</td>
+</tr>
+
+        
+<tr id="id_l82" class="new nick nick_sajjadg">
+
+<td class="time" id="i_63586"><a href="/javaee/2014-03-13#i_63586">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63586"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">maybe knowing/having python in your mind could be better ...</td>
+</tr>
+
+        
+<tr id="id_l83" class="cont nick nick_sajjadg">
+
+<td class="time" id="i_63587"><a href="/javaee/2014-03-13#i_63587">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63587"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">pdurbin, Java makes it worse :P</td>
+</tr>
+
+        
+<tr id="id_l84" class="new nick nick_cem__ dark">
+
+<td class="time" id="i_63588"><a href="/javaee/2014-03-13#i_63588">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63588"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">i know js</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont nick nick_cem__ dark">
+
+<td class="time" id="i_63589"><a href="/javaee/2014-03-13#i_63589">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63589"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l86" class="new nick nick_pdurbin">
+
+<td class="time" id="i_63590"><a href="/javaee/2014-03-13#i_63590">12:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63590"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">heh</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_63591"><a href="/javaee/2014-03-13#i_63591">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63591"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">i guess. i was doing some refactoring yesterday and thinking that java is kinda nice :)</td>
+</tr>
+
+        
+<tr id="id_l88" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63592"><a href="/javaee/2014-03-13#i_63592">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63592"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">I was just searching about easiest and hardest language (human langs) :)</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_cem__">
+
+<td class="time" id="i_63593"><a href="/javaee/2014-03-13#i_63593">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63593"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">i dont have time to learn haskell :'(</td>
+</tr>
+
+        
+<tr id="id_l90" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63594"><a href="/javaee/2014-03-13#i_63594">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63594"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">pdurbin, it's my favorite ;) but I hate it too :P</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63595"><a href="/javaee/2014-03-13#i_63595">12:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63595"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg "><a href="http://voxy.com/blog/index.php/wide-infographics/what-are-the-hardest-languages-to-learn-infographic/?post=3322" title="http://voxy.com/blog/index.php/wide-infographics/what-are-the-hardest-languages-to-learn-infographic/?post=3322">http://voxy.com/blog/index.php/wide-infographics/what-are-the-hardest-languages-to-learn-infographic/?post=3322</a></td>
+</tr>
+
+        
+<tr id="id_l92" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63596"><a href="/javaee/2014-03-13#i_63596">12:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63596"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">check that inforgraphic</td>
+</tr>
+
+        
+<tr id="id_l93" class="new nick nick_cem__">
+
+<td class="time" id="i_63597"><a href="/javaee/2014-03-13#i_63597">12:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63597"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">sajjadg: doing binary search in brain fuck</td>
+</tr>
+
+        
+<tr id="id_l94" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63598"><a href="/javaee/2014-03-13#i_63598">12:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63598"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">it's cool :P we should've something like that for computer languages</td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63599"><a href="/javaee/2014-03-13#i_63599">12:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63599"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">cem__, what??!!</td>
+</tr>
+
+        
+<tr id="id_l96" class="new nick nick_cem__">
+
+<td class="time" id="i_63600"><a href="/javaee/2014-03-13#i_63600">12:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63600"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg "><a href="http://en.wikipedia.org/wiki/Brainfuck" title="http://en.wikipedia.org/wiki/Brainfuck">http://en.wikipedia.org/wiki/Brainfuck</a></td>
+</tr>
+
+        
+<tr id="id_l97" class="cont nick nick_cem__">
+
+<td class="time" id="i_63601"><a href="/javaee/2014-03-13#i_63601">12:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63601"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">1 of the fav language</td>
+</tr>
+
+        
+<tr id="id_l98" class="cont nick nick_cem__">
+
+<td class="time" id="i_63602"><a href="/javaee/2014-03-13#i_63602">12:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63602"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">there is no clients for this language in freelance &lt;expected&gt; :D</td>
+</tr>
+
+        
+<tr id="id_l99" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63603"><a href="/javaee/2014-03-13#i_63603">12:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63603"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">one of the worse way of designing an interface: worse</td>
+</tr>
+
+        
+<tr id="id_l100" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63604"><a href="/javaee/2014-03-13#i_63604">12:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63604"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">^ <a href="http://wiki.answers.com/Q/What_is_the_hardest_language_to_learn?#slide=16" title="http://wiki.answers.com/Q/What_is_the_hardest_language_to_learn?#slide=16">http://wiki.answers.com/Q/What_is_the_hardest_language_to_learn?#slide=16</a></td>
+</tr>
+
+        
+<tr id="id_l101" class="new special">
+
+<td class="time" id="i_63605"><a href="/javaee/2014-03-13#i_63605">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63605"  /></td>
+<td class="nick"></td>
+<td class="msg ">drspockbr joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l102" class="new nick nick_cem__ dark">
+
+<td class="time" id="i_63606"><a href="/javaee/2014-03-13#i_63606">13:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63606"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">i'm leaving</td>
+</tr>
+
+        
+<tr id="id_l103" class="cont nick nick_cem__ dark">
+
+<td class="time" id="i_63607"><a href="/javaee/2014-03-13#i_63607">13:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63607"  /></td>
+<td class="nick nick3">cem__</td>
+<td class="msg ">:/ bye all</td>
+</tr>
+
+        
+<tr id="id_l104" class="new nick nick_tjsnell">
+
+<td class="time" id="i_63608"><a href="/javaee/2014-03-13#i_63608">13:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63608"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">jews not welcome here anyway</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63609"><a href="/javaee/2014-03-13#i_63609">13:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63609"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">damn, I though you were ron</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63610"><a href="/javaee/2014-03-13#i_63610">13:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63610"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">haha</td>
+</tr>
+
+        
+<tr id="id_l107" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63611"><a href="/javaee/2014-03-13#i_63611">13:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63611"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">same color</td>
+</tr>
+
+        
+<tr id="id_l108" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63612"><a href="/javaee/2014-03-13#i_63612">13:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63612"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">that's a joke with Ron (who is jewish) and knows I'm being silly</td>
+</tr>
+
+        
+<tr id="id_l109" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63613"><a href="/javaee/2014-03-13#i_63613">13:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63613"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">though Ilhami would agree and not be joking</td>
+</tr>
+
+        
+<tr id="id_l110" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63614"><a href="/javaee/2014-03-13#i_63614">13:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63614"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">tjsnell, why? what's wromg with jews?</td>
+</tr>
+
+        
+<tr id="id_l111" class="cont nick nick_sajjadg dark">
+
+<td class="time" id="i_63615"><a href="/javaee/2014-03-13#i_63615">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63615"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">Ron is Jewish...ok i got it</td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick_pdurbin">
+
+<td class="time" id="i_63616"><a href="/javaee/2014-03-13#i_63616">13:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63616"  /></td>
+<td class="nick nick5">pdurbin</td>
+<td class="msg ">tjsnell: but ron isn't here. and it's not very funny</td>
+</tr>
+
+        
+<tr id="id_l113" class="new special dark">
+
+<td class="time" id="i_63617"><a href="/javaee/2014-03-13#i_63617">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63617"  /></td>
+<td class="nick"></td>
+<td class="msg ">Naros joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l114" class="new nick nick_fabioportieri">
+
+<td class="time" id="i_63618"><a href="/javaee/2014-03-13#i_63618">13:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63618"  /></td>
+<td class="nick">fabioportieri</td>
+<td class="msg ">argh.. fuck ie</td>
+</tr>
+
+        
+<tr id="id_l115" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_63619"><a href="/javaee/2014-03-13#i_63619">13:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63619"  /></td>
+<td class="nick nick2">sajjadg</td>
+<td class="msg ">yeah fuck it</td>
+</tr>
+
+        
+<tr id="id_l116" class="new nick nick_tjsnell">
+
+<td class="time" id="i_63620"><a href="/javaee/2014-03-13#i_63620">13:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63620"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">pdurbin:  as I said, I got the channel wrong</td>
+</tr>
+
+        
+<tr id="id_l117" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63621"><a href="/javaee/2014-03-13#i_63621">13:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63621"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">and ron would've thought it was funny and that's all it was intended for</td>
+</tr>
+
+        
+<tr id="id_l118" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63622"><a href="/javaee/2014-03-13#i_63622">13:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63622"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">so I felt bad that here it's be misunderstood :)</td>
+</tr>
+
+        
+<tr id="id_l119" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63623"><a href="/javaee/2014-03-13#i_63623">13:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63623"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">s/it's/it'd/</td>
+</tr>
+
+        
+<tr id="id_l120" class="new special dark">
+
+<td class="time" id="i_63625"><a href="/javaee/2014-03-13#i_63625">14:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63625"  /></td>
+<td class="nick"></td>
+<td class="msg ">fabioportieri_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l121" class="cont special dark">
+
+<td class="time" id="i_63626"><a href="/javaee/2014-03-13#i_63626">15:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63626"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l122" class="cont special dark">
+
+<td class="time" id="i_63628"><a href="/javaee/2014-03-13#i_63628">15:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63628"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l123" class="cont special dark">
+
+<td class="time" id="i_63630"><a href="/javaee/2014-03-13#i_63630">15:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63630"  /></td>
+<td class="nick"></td>
+<td class="msg ">rektide joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l124" class="cont special dark">
+
+<td class="time" id="i_63632"><a href="/javaee/2014-03-13#i_63632">15:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63632"  /></td>
+<td class="nick"></td>
+<td class="msg ">unix-markow joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l125" class="cont special dark">
+
+<td class="time" id="i_63633"><a href="/javaee/2014-03-13#i_63633">15:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63633"  /></td>
+<td class="nick"></td>
+<td class="msg ">unix-markow left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l126" class="new nick nick_semiosis">
+
+<td class="time" id="i_63635"><a href="/javaee/2014-03-13#i_63635">16:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63635"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">tjsnell: what the hell is wrong with you?</td>
+</tr>
+
+        
+<tr id="id_l127" class="cont nick nick_semiosis">
+
+<td class="time" id="i_63636"><a href="/javaee/2014-03-13#i_63636">16:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63636"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">send a PM if you want to joke with &quot;Ron&quot; and keep your off color jokes out of public channels</td>
+</tr>
+
+        
+<tr id="id_l128" class="new nick nick_whartung dark">
+
+<td class="time" id="i_63637"><a href="/javaee/2014-03-13#i_63637">16:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63637"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">anyone done much with encryption?</td>
+</tr>
+
+        
+<tr id="id_l129" class="new nick nick_tjsnell">
+
+<td class="time" id="i_63638"><a href="/javaee/2014-03-13#i_63638">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63638"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">semiosis:  grow up</td>
+</tr>
+
+        
+<tr id="id_l130" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63639"><a href="/javaee/2014-03-13#i_63639">16:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63639"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">that wasn't off color</td>
+</tr>
+
+        
+<tr id="id_l131" class="cont nick nick_tjsnell">
+
+<td class="time" id="i_63640"><a href="/javaee/2014-03-13#i_63640">16:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63640"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">and I apologized</td>
+</tr>
+
+        
+<tr id="id_l132" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_63641"><a href="/javaee/2014-03-13#i_63641">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63641"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">you half heartedly apologized for people not getting it, not for saying something hurtful &amp; exclusionary.  doesnt matter who might or might not find it funny.</td>
+</tr>
+
+        
+<tr id="id_l133" class="new nick nick_tjsnell">
+
+<td class="time" id="i_63642"><a href="/javaee/2014-03-13#i_63642">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63642"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">I really don't care</td>
+</tr>
+
+        
+<tr id="id_l134" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_63643"><a href="/javaee/2014-03-13#i_63643">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63643"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">whartung: plenty.  don't ask to ask, just ask</td>
+</tr>
+
+        
+<tr id="id_l135" class="new special">
+
+<td class="time" id="i_63644"><a href="/javaee/2014-03-13#i_63644">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63644"  /></td>
+<td class="nick"></td>
+<td class="msg ">cem joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l136" class="new nick nick_tjsnell dark">
+
+<td class="time" id="i_63645"><a href="/javaee/2014-03-13#i_63645">16:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63645"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">and you can shove you PC crap up your tight ass</td>
+</tr>
+
+        
+<tr id="id_l137" class="new nick nick_whartung">
+
+<td class="time" id="i_63646"><a href="/javaee/2014-03-13#i_63646">16:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63646"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">how do you deal with keys that are shorter than what are required by the algorithms?</td>
+</tr>
+
+        
+<tr id="id_l138" class="new nick nick_acuzio dark">
+
+<td class="time" id="i_63647"><a href="/javaee/2014-03-13#i_63647">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63647"  /></td>
+<td class="nick nick9">acuzio</td>
+<td class="msg ">ooh a real question</td>
+</tr>
+
+        
+<tr id="id_l139" class="new nick nick_whartung">
+
+<td class="time" id="i_63648"><a href="/javaee/2014-03-13#i_63648">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63648"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">3DES requires a 24 byte key and an 8 byte Initialization Vector, while AES needs a 128 or 256 bit key.</td>
+</tr>
+
+        
+<tr id="id_l140" class="new nick nick_tjsnell dark">
+
+<td class="time" id="i_63649"><a href="/javaee/2014-03-13#i_63649">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63649"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">s/needs/requires/</td>
+</tr>
+
+        
+<tr id="id_l141" class="new nick nick_whartung">
+
+<td class="time" id="i_63650"><a href="/javaee/2014-03-13#i_63650">16:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63650"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">but if that &quot;password&quot; is &quot;too short&quot;, what's best practice here?</td>
+</tr>
+
+        
+<tr id="id_l142" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_63651"><a href="/javaee/2014-03-13#i_63651">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63651"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">whartung: simple solution would be to use a hash function, which always gives a constant lenght output for all inputs</td>
+</tr>
+
+        
+<tr id="id_l143" class="cont nick nick_semiosis dark">
+
+<td class="time" id="i_63652"><a href="/javaee/2014-03-13#i_63652">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63652"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">whartung: there's probably more sophisticated solutions in the literature</td>
+</tr>
+
+        
+<tr id="id_l144" class="new nick nick_whartung">
+
+<td class="time" id="i_63653"><a href="/javaee/2014-03-13#i_63653">16:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63653"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">or, use a key generator from the password (which is effectively the same thing, but  think they use different techniques)</td>
+</tr>
+
+        
+<tr id="id_l145" class="new nick nick_acuzio dark">
+
+<td class="time" id="i_63654"><a href="/javaee/2014-03-13#i_63654">16:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63654"  /></td>
+<td class="nick nick9">acuzio</td>
+<td class="msg ">whartung: The hash technique is pretty standard</td>
+</tr>
+
+        
+<tr id="id_l146" class="new nick nick_whartung">
+
+<td class="time" id="i_63655"><a href="/javaee/2014-03-13#i_63655">16:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63655"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">I was considering using the password as a random seed and populating the rest of the key with random bytes, but I was just curious if that was just false hope.</td>
+</tr>
+
+        
+<tr id="id_l147" class="cont nick nick_whartung">
+
+<td class="time" id="i_63656"><a href="/javaee/2014-03-13#i_63656">16:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63656"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">I'll look in to hashing</td>
+</tr>
+
+        
+<tr id="id_l148" class="cont nick nick_whartung">
+
+<td class="time" id="i_63657"><a href="/javaee/2014-03-13#i_63657">16:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63657"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">thx</td>
+</tr>
+
+        
+<tr id="id_l149" class="new nick nick_acuzio dark">
+
+<td class="time" id="i_63658"><a href="/javaee/2014-03-13#i_63658">16:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63658"  /></td>
+<td class="nick nick9">acuzio</td>
+<td class="msg ">FWIW , Skiena's book mentions hashing as &quot;the&quot; solution for a similar problem</td>
+</tr>
+
+        
+<tr id="id_l150" class="new nick nick_semiosis">
+
+<td class="time" id="i_63659"><a href="/javaee/2014-03-13#i_63659">16:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63659"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">whartung: see also HMAC, which is a keyed-hash.  you use a constant secret and the provided input to get a hash value.  this should make the resulting hash secure against rainbow table attacks (reverse lookups) which would be important if you're saving the values in a <abbr title="Database">DB</abbr></td>
+</tr>
+
+        
+<tr id="id_l151" class="new nick nick_whartung dark">
+
+<td class="time" id="i_63660"><a href="/javaee/2014-03-13#i_63660">16:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63660"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">yea, we do that normally</td>
+</tr>
+
+        
+<tr id="id_l152" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_63661"><a href="/javaee/2014-03-13#i_63661">16:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63661"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">have you used any of those hardware key store things?</td>
+</tr>
+
+        
+<tr id="id_l153" class="new nick nick_semiosis">
+
+<td class="time" id="i_63662"><a href="/javaee/2014-03-13#i_63662">16:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63662"  /></td>
+<td class="nick nick6">semiosis</td>
+<td class="msg ">nope</td>
+</tr>
+
+        
+<tr id="id_l154" class="new nick nick_tjsnell dark">
+
+<td class="time" id="i_63663"><a href="/javaee/2014-03-13#i_63663">16:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63663"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">only to access corporate vpns</td>
+</tr>
+
+        
+<tr id="id_l155" class="cont nick nick_tjsnell dark">
+
+<td class="time" id="i_63664"><a href="/javaee/2014-03-13#i_63664">16:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63664"  /></td>
+<td class="nick nick4">tjsnell</td>
+<td class="msg ">never coded to one</td>
+</tr>
+
+        
+<tr id="id_l156" class="new special">
+
+<td class="time" id="i_63665"><a href="/javaee/2014-03-13#i_63665">16:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63665"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l157" class="new nick nick_whartung dark">
+
+<td class="time" id="i_63666"><a href="/javaee/2014-03-13#i_63666">16:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63666"  /></td>
+<td class="nick nick1">whartung</td>
+<td class="msg ">java has this already, PBEKeySpec, PBKDF2</td>
+</tr>
+
+        
+<tr id="id_l158" class="new special">
+
+<td class="time" id="i_63668"><a href="/javaee/2014-03-13#i_63668">17:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63668"  /></td>
+<td class="nick"></td>
+<td class="msg ">raival joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l159" class="cont special">
+
+<td class="time" id="i_63669"><a href="/javaee/2014-03-13#i_63669">17:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63669"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l160" class="cont special">
+
+<td class="time" id="i_63670"><a href="/javaee/2014-03-13#i_63670">17:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63670"  /></td>
+<td class="nick"></td>
+<td class="msg ">idasilva joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l161" class="cont special">
+
+<td class="time" id="i_63671"><a href="/javaee/2014-03-13#i_63671">17:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63671"  /></td>
+<td class="nick"></td>
+<td class="msg ">idasilva left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l162" class="cont special">
+
+<td class="time" id="i_63672"><a href="/javaee/2014-03-13#i_63672">17:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63672"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l163" class="cont special">
+
+<td class="time" id="i_63673"><a href="/javaee/2014-03-13#i_63673">17:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63673"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l164" class="cont special">
+
+<td class="time" id="i_63674"><a href="/javaee/2014-03-13#i_63674">17:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63674"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont special">
+
+<td class="time" id="i_63675"><a href="/javaee/2014-03-13#i_63675">18:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63675"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l166" class="cont special">
+
+<td class="time" id="i_63676"><a href="/javaee/2014-03-13#i_63676">18:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63676"  /></td>
+<td class="nick"></td>
+<td class="msg ">whiteracoon joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l167" class="cont special">
+
+<td class="time" id="i_63678"><a href="/javaee/2014-03-13#i_63678">18:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63678"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l168" class="cont special">
+
+<td class="time" id="i_63679"><a href="/javaee/2014-03-13#i_63679">18:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63679"  /></td>
+<td class="nick"></td>
+<td class="msg ">waschmittel joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l169" class="cont special">
+
+<td class="time" id="i_63680"><a href="/javaee/2014-03-13#i_63680">18:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63680"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l170" class="cont special">
+
+<td class="time" id="i_63681"><a href="/javaee/2014-03-13#i_63681">19:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63681"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l171" class="cont special">
+
+<td class="time" id="i_63682"><a href="/javaee/2014-03-13#i_63682">19:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63682"  /></td>
+<td class="nick"></td>
+<td class="msg ">balo left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l172" class="cont special">
+
+<td class="time" id="i_63683"><a href="/javaee/2014-03-13#i_63683">19:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63683"  /></td>
+<td class="nick"></td>
+<td class="msg ">arkadi joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l173" class="cont special">
+
+<td class="time" id="i_63684"><a href="/javaee/2014-03-13#i_63684">19:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63684"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l174" class="cont special">
+
+<td class="time" id="i_63685"><a href="/javaee/2014-03-13#i_63685">19:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63685"  /></td>
+<td class="nick"></td>
+<td class="msg ">ramsrib joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l175" class="cont special">
+
+<td class="time" id="i_63687"><a href="/javaee/2014-03-13#i_63687">20:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63687"  /></td>
+<td class="nick"></td>
+<td class="msg ">bvn13 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l176" class="new nick nick_bvn13 dark">
+
+<td class="time" id="i_63688"><a href="/javaee/2014-03-13#i_63688">20:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63688"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">hi!</td>
+</tr>
+
+        
+<tr id="id_l177" class="cont nick nick_bvn13 dark">
+
+<td class="time" id="i_63689"><a href="/javaee/2014-03-13#i_63689">20:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63689"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">Is there the other ways to get current focused system window, than <a href="http://docs.oracle.com/javase/7/docs/api/java/awt/KeyboardFocusManager.html#getGlobalFocusedWindow%28%29" title="http://docs.oracle.com/javase/7/docs/api/java/awt/KeyboardFocusManager.html#getGlobalFocusedWindow%28%29">http://docs.oracle.com/javase/7/docs/api/java/awt/KeyboardFocusManager.html#getGlobalFocusedWindow%28%29</a> ?</td>
+</tr>
+
+        
+<tr id="id_l178" class="new special">
+
+<td class="time" id="i_63690"><a href="/javaee/2014-03-13#i_63690">20:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63690"  /></td>
+<td class="nick"></td>
+<td class="msg ">Voyage joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l179" class="new nick nick_Voyage dark">
+
+<td class="time" id="i_63691"><a href="/javaee/2014-03-13#i_63691">20:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63691"  /></td>
+<td class="nick nick8">Voyage</td>
+<td class="msg ">searched a lot but cant find the jar that contains org.jboss.proxy.ejb.SecurityContextInterceptor. Any one has and ideas?</td>
+</tr>
+
+        
+<tr id="id_l180" class="new nick nick_bvn13">
+
+<td class="time" id="i_63692"><a href="/javaee/2014-03-13#i_63692">20:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63692"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg "><a href="http://grepcode.com/file/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/org/jboss/proxy/ejb/SecurityContextInterceptor.java" title="http://grepcode.com/file/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/org/jboss/proxy/ejb/SecurityContextInterceptor.java">http://grepcode.com/file/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/org/jboss/proxy/ejb/SecurityContextInterceptor.java</a> - ?</td>
+</tr>
+
+        
+<tr id="id_l181" class="new nick nick_Voyage dark">
+
+<td class="time" id="i_63693"><a href="/javaee/2014-03-13#i_63693">20:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63693"  /></td>
+<td class="nick nick8">Voyage</td>
+<td class="msg ">bvn13,  yes i guess but I need a complete jar</td>
+</tr>
+
+        
+<tr id="id_l182" class="new nick nick_bvn13">
+
+<td class="time" id="i_63694"><a href="/javaee/2014-03-13#i_63694">20:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63694"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">maybe <a href="http://www.java2s.com/Code/Jar/j/Downloadjbossjar.htm" title="http://www.java2s.com/Code/Jar/j/Downloadjbossjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjbossjar.htm</a> ?</td>
+</tr>
+
+        
+<tr id="id_l183" class="cont nick nick_bvn13">
+
+<td class="time" id="i_63695"><a href="/javaee/2014-03-13#i_63695">20:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63695"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">Voyage, I saw there Download button</td>
+</tr>
+
+        
+<tr id="id_l184" class="new nick nick_Voyage dark">
+
+<td class="time" id="i_63696"><a href="/javaee/2014-03-13#i_63696">20:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63696"  /></td>
+<td class="nick nick8">Voyage</td>
+<td class="msg ">ya but thats a .java file only. I need a .jar that contains it and others dependancies for it. then I can include the jar in my libs</td>
+</tr>
+
+        
+<tr id="id_l185" class="new nick nick_bvn13">
+
+<td class="time" id="i_63697"><a href="/javaee/2014-03-13#i_63697">20:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63697"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">is it here? <a href="http://grepcode.com/snapshot/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/" title="http://grepcode.com/snapshot/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/">http://grepcode.com/snapshot/repo1.maven.org/maven2/org.jboss.jbossas/jboss-as-server/5.0.0.GA/</a></td>
+</tr>
+
+        
+<tr id="id_l186" class="cont nick nick_bvn13">
+
+<td class="time" id="i_63698"><a href="/javaee/2014-03-13#i_63698">20:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63698"  /></td>
+<td class="nick nick7">bvn13</td>
+<td class="msg ">a lot of jars</td>
+</tr>
+
+        
+<tr id="id_l187" class="new nick nick_Voyage dark">
+
+<td class="time" id="i_63699"><a href="/javaee/2014-03-13#i_63699">20:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63699"  /></td>
+<td class="nick nick8">Voyage</td>
+<td class="msg ">no i gues</td>
+</tr>
+
+        
+<tr id="id_l188" class="new special">
+
+<td class="time" id="i_63700"><a href="/javaee/2014-03-13#i_63700">20:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63700"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l189" class="cont special">
+
+<td class="time" id="i_63701"><a href="/javaee/2014-03-13#i_63701">20:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63701"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l190" class="cont special">
+
+<td class="time" id="i_63703"><a href="/javaee/2014-03-13#i_63703">21:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63703"  /></td>
+<td class="nick"></td>
+<td class="msg ">koperix joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l191" class="cont special">
+
+<td class="time" id="i_63704"><a href="/javaee/2014-03-13#i_63704">22:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63704"  /></td>
+<td class="nick"></td>
+<td class="msg ">AndroidLoverInSF joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l192" class="cont special">
+
+<td class="time" id="i_63705"><a href="/javaee/2014-03-13#i_63705">22:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63705"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l193" class="cont special">
+
+<td class="time" id="i_63706"><a href="/javaee/2014-03-13#i_63706">23:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63706"  /></td>
+<td class="nick"></td>
+<td class="msg ">SEx2 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l194" class="cont special">
+
+<td class="time" id="i_63707"><a href="/javaee/2014-03-13#i_63707">23:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63707"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire_ joined ##javaee</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/javaee/2014-03-12" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-03-14" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-03-13">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-03-13;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-03-13;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

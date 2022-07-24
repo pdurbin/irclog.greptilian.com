@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2017-12-18" />
+    <title>IRC log for #friendlyjava, 2017-12-18</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2017-12-18</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2017-12-17" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-12-19" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-12-18">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-12-18;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-12-18;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224670"><a href="/friendlyjava/2017-12-18#i_224670">01:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224670"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">The other day I was talking about Java 9 in here and I wrote up some more thoughts on how I don't think we should force our users to upgrade to a non-LTS release like Java 9: <a href="https://github.com/IQSS/dataverse/issues/4259" title="https://github.com/IQSS/dataverse/issues/4259">https://github.com/IQSS/dataverse/issues/4259</a></td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_aditsu">
+
+<td class="time" id="i_224671"><a href="/friendlyjava/2017-12-18#i_224671">01:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224671"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">pdurbin: but what are the reasons *for* switching to java 9?</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_aditsu">
+
+<td class="time" id="i_224672"><a href="/friendlyjava/2017-12-18#i_224672">01:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224672"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so far I only know it has improved http/2 support</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224673"><a href="/friendlyjava/2017-12-18#i_224673">01:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224673"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">aditsu: well, &quot;end of public updates&quot; for Java 8 is Sep 2018. That means security patches. This is from <a href="http://www.oracle.com/technetwork/java/eol-135779.html" title="http://www.oracle.com/technetwork/java/eol-135779.html">http://www.oracle.com/technetwork/java/eol-135779.html</a></td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_aditsu">
+
+<td class="time" id="i_224674"><a href="/friendlyjava/2017-12-18#i_224674">01:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224674"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">that means you don't need to worry about it until then :)</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_aditsu">
+
+<td class="time" id="i_224675"><a href="/friendlyjava/2017-12-18#i_224675">01:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224675"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">also, users can upgrade to java 9 and still run a project made for java 8</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224676"><a href="/friendlyjava/2017-12-18#i_224676">01:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224676"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I'm more talking about forcing users to run Java 9. Making our app only run on Java 9.</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_aditsu">
+
+<td class="time" id="i_224677"><a href="/friendlyjava/2017-12-18#i_224677">01:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224677"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">yes, and I'm asking why you would even consider doing that</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224678"><a href="/friendlyjava/2017-12-18#i_224678">01:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224678"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Well, that's what we did when we moved from Java 7 to Java 8. We changed our Maven &quot;target&quot; to 1.8.</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_224679"><a href="/friendlyjava/2017-12-18#i_224679">01:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224679"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">It was the right thing to do because Java 7 wasn't going to keep getting security patches.</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_aditsu">
+
+<td class="time" id="i_224680"><a href="/friendlyjava/2017-12-18#i_224680">01:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224680"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">so far, still no reason; &quot;what we did when we moved from Java 7 to Java 8&quot; is completely irrelevant, and availability of java security patches is a reason for users to upgrade, but not a reason for you to switch and force users to upgrade</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_aditsu">
+
+<td class="time" id="i_224681"><a href="/friendlyjava/2017-12-18#i_224681">01:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224681"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">and even if it was a reason, it wouldn't apply until late 2018</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_aditsu">
+
+<td class="time" id="i_224682"><a href="/friendlyjava/2017-12-18#i_224682">02:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224682"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">switching to java 8 can be justified by the benefits you get from the new language features</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224683"><a href="/friendlyjava/2017-12-18#i_224683">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224683"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I guess you're saying we could keep our app compatible with Java 6 or some other older release that doeson't get security patches and let our users decide when to upgrade to a version of Java that gets security patches.</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_aditsu">
+
+<td class="time" id="i_224684"><a href="/friendlyjava/2017-12-18#i_224684">02:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224684"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">sure, unless you have actual reasons to switch to a newer version (as I just gave an example)</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224685"><a href="/friendlyjava/2017-12-18#i_224685">02:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224685"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">Well, Java 8 had a lot of shiny new features. :)</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_aditsu">
+
+<td class="time" id="i_224686"><a href="/friendlyjava/2017-12-18#i_224686">02:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224686"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">yes, and I agree, but I was asking about java 9</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224687"><a href="/friendlyjava/2017-12-18#i_224687">02:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224687"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">I'm not especially interested in any of the features in Java 9.</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_aditsu">
+
+<td class="time" id="i_224688"><a href="/friendlyjava/2017-12-18#i_224688">02:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224688"  /></td>
+<td class="nick nick1">aditsu</td>
+<td class="msg ">yeah, so then there's no need to upgrade</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_224689"><a href="/friendlyjava/2017-12-18#i_224689">02:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224689"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_mr_lou">
+
+<td class="time" id="i_224691"><a href="/friendlyjava/2017-12-18#i_224691">05:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224691"  /></td>
+<td class="nick nick3">mr_lou</td>
+<td class="msg ">Since Java 9 prevents me from compiling Blu-ray Xlets, I'm hoping to be able to keep on using Java 8 forever.</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_mr_lou">
+
+<td class="time" id="i_224692"><a href="/friendlyjava/2017-12-18#i_224692">05:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224692"  /></td>
+<td class="nick nick3">mr_lou</td>
+<td class="msg ">I mean JDK 8</td>
+</tr>
+
+        
+<tr id="id_l24" class="new special dark">
+
+<td class="time" id="i_224694"><a href="/friendlyjava/2017-12-18#i_224694">08:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224694"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special dark">
+
+<td class="time" id="i_224695"><a href="/friendlyjava/2017-12-18#i_224695">11:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224695"  /></td>
+<td class="nick"></td>
+<td class="msg ">xBADDA555 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special dark">
+
+<td class="time" id="i_224696"><a href="/friendlyjava/2017-12-18#i_224696">11:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224696"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special dark">
+
+<td class="time" id="i_224698"><a href="/friendlyjava/2017-12-18#i_224698">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224698"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special dark">
+
+<td class="time" id="i_224704"><a href="/friendlyjava/2017-12-18#i_224704">21:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224704"  /></td>
+<td class="nick"></td>
+<td class="msg ">ChanServ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special dark">
+
+<td class="time" id="i_224705"><a href="/friendlyjava/2017-12-18#i_224705">21:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224705"  /></td>
+<td class="nick"></td>
+<td class="msg ">xBADDA555 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont special dark">
+
+<td class="time" id="i_224707"><a href="/friendlyjava/2017-12-18#i_224707">22:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_224707"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2017-12-17" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-12-19" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-12-18">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-12-18;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-12-18;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

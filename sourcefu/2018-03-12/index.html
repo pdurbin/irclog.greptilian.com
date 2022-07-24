@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2018-03-12" />
+    <title>IRC log for #sourcefu, 2018-03-12</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2018-03-12</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2018-03-11" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-03-13" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-03-12">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-03-12;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-03-12;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_227651"><a href="/sourcefu/2018-03-12#i_227651">14:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227651"  /></td>
+<td class="nick nick2">dotplus</td>
+<td class="msg ">at work, we're killing rancher-based kubernetes in favour of kubernetes</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_227652"><a href="/sourcefu/2018-03-12#i_227652">14:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227652"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Huh. Why?</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_227653"><a href="/sourcefu/2018-03-12#i_227653">14:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227653"  /></td>
+<td class="nick nick2">dotplus</td>
+<td class="msg ">mostly because rancher is extra complexity for little extra benefit. Both our infra and our apps _must_ be &quot;As Code&quot;, so the webui(s) are only going to be useful for visualization - they are ~readonly.</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_dotplus dark">
+
+<td class="time" id="i_227654"><a href="/sourcefu/2018-03-12#i_227654">14:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227654"  /></td>
+<td class="nick nick2">dotplus</td>
+<td class="msg ">remember rancher started as a sort of abstraction layer between various container scheduling approaches. well, now that we've picked k8s instead of swarm/mesos/whatever, we no longer need that abstraction/portability</td>
+</tr>
+
+        
+<tr id="id_l6" class="new special">
+
+<td class="time" id="i_227655"><a href="/sourcefu/2018-03-12#i_227655">14:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227655"  /></td>
+<td class="nick"></td>
+<td class="msg ">semiosis joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_227656"><a href="/sourcefu/2018-03-12#i_227656">15:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227656"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Right. On Friday I learned that Rancher is older than Kubernetes. I added this to some notes I took at <a href="https://docs.google.com/document/d/12njDDHHfoNdos0By3lKlxYbRWLsAp8Eo-AGpjuBF_rY/edit?usp=sharing" title="https://docs.google.com/document/d/12njDDHHfoNdos0By3lKlxYbRWLsAp8Eo-AGpjuBF_rY/edit?usp=sharing">https://docs.google.com/document/d/12njDDHHfoNdos0By3lKlxYbRWLsAp8Eo-AGpjuBF_rY/edit?usp=sharing</a></td>
+</tr>
+
+        
+<tr id="id_l8" class="new special">
+
+<td class="time" id="i_227657"><a href="/sourcefu/2018-03-12#i_227657">15:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227657"  /></td>
+<td class="nick"></td>
+<td class="msg ">semiosis joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_bear dark">
+
+<td class="time" id="i_227660"><a href="/sourcefu/2018-03-12#i_227660">18:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227660"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">we were thinking of using rancher until we had the same thoughts - with infra-as-code, using helm+k8s was cleaner</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_bear dark">
+
+<td class="time" id="i_227661"><a href="/sourcefu/2018-03-12#i_227661">18:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227661"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">we are also trying to remove <abbr title="Graphical User Interface">GUI</abbr>'s as change agents</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_dotplus">
+
+<td class="time" id="i_227662"><a href="/sourcefu/2018-03-12#i_227662">19:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227662"  /></td>
+<td class="nick nick2">dotplus</td>
+<td class="msg ">nice - I'm stealing that phrase.</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_dotplus">
+
+<td class="time" id="i_227663"><a href="/sourcefu/2018-03-12#i_227663">19:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227663"  /></td>
+<td class="nick nick2">dotplus</td>
+<td class="msg ">we're not currently using helm, just writing (generating/templating) k8s manifests directly, although I believe someone in my org is looking into it. Does helm provide a powerful&amp;useful abstraction layer/<abbr title="Domain-Specific Language">DSL</abbr> around the k8s <abbr title="Application Programming Interface">API</abbr>? I haven't looked into it because when I first heard of it, it was made out [to me] to be just syntactic sugar for newbies so I kinda ignored it. Is that a mistake?</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_bear dark">
+
+<td class="time" id="i_227664"><a href="/sourcefu/2018-03-12#i_227664">19:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227664"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">it does hide a lot of the gnarly bits - but it doesn't fully remove the need for knowledge of k8s</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_bear dark">
+
+<td class="time" id="i_227665"><a href="/sourcefu/2018-03-12#i_227665">19:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227665"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">it's best when given as template examples to devs by SRE folk - we use it to mitigate mistakes in k8s templates that cause balancing issues</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_bear dark">
+
+<td class="time" id="i_227666"><a href="/sourcefu/2018-03-12#i_227666">19:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227666"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">it also allows us to give an air gap between the code deploy and the k8s push</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_bear dark">
+
+<td class="time" id="i_227667"><a href="/sourcefu/2018-03-12#i_227667">19:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227667"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">the code deploy generates the helm chart, that is stored and then a message triggers it's actual application</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_bear dark">
+
+<td class="time" id="i_227668"><a href="/sourcefu/2018-03-12#i_227668">19:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227668"  /></td>
+<td class="nick nick1">bear</td>
+<td class="msg ">which also allows our ops folk to be able to roll back without having to push a commit</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_pdurbin">
+
+<td class="time" id="i_227669"><a href="/sourcefu/2018-03-12#i_227669">20:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227669"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">I heard a bit about Helm at <a href="https://thewomenintechshow.com/2018/02/26/learning-kubernetes-with-amy-chen/" title="https://thewomenintechshow.com/2018/02/26/learning-kubernetes-with-amy-chen/">https://thewomenintechshow.com/2018/02/26/learning-kubernetes-with-amy-chen/</a></td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_227670"><a href="/sourcefu/2018-03-12#i_227670">20:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227670"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">&quot;learned to use Kubernetes by building helm charts&quot;</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_227671"><a href="/sourcefu/2018-03-12#i_227671">20:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_227671"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Lots of apps listed at <a href="https://github.com/kubernetes/charts" title="https://github.com/kubernetes/charts">https://github.com/kubernetes/charts</a></td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2018-03-11" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-03-13" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-03-12">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-03-12;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-03-12;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

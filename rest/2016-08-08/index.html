@@ -1,0 +1,1646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2016-08-08" />
+    <title>IRC log for #rest, 2016-08-08</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2016-08-08</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2016-08-07" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-08-09" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-08-08">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-08-08;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-08-08;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_sfdebug dark">
+
+<td class="time" id="i_177597"><a href="/rest/2016-08-08#i_177597">00:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177597"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">how can i specify the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> verb on the response links...?</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick__ollie">
+
+<td class="time" id="i_177598"><a href="/rest/2016-08-08#i_177598">00:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177598"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Depends on how the hypermedia type works. HAL requires you to attach that to the link relation. Others return the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> verb with the response: { links : { foo : { href : …, method : … } } }</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177599"><a href="/rest/2016-08-08#i_177599">00:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177599"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">sfdebug Siren media type works pretty much like <abbr title="Hypertext Markup Language">HTML</abbr>. you can specify method, args, <abbr title="Uniform Resource Locator">URL</abbr>, even payload media type for each transition</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177600"><a href="/rest/2016-08-08#i_177600">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177600"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">Collection+<abbr title="JavaScript Object Notation">JSON</abbr> relies on CRUD assumptions (like Atom) but also allows you to specify args/params</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177601"><a href="/rest/2016-08-08#i_177601">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177601"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">as _ollie said, HAL expects all that to be associated with the link_rel value.</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick__ollie">
+
+<td class="time" id="i_177602"><a href="/rest/2016-08-08#i_177602">00:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177602"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">mamund: have you ever stumbled above ION? <a href="http://ionwg.org/draft-ion.html" title="http://ionwg.org/draft-ion.html">http://ionwg.org/draft-ion.html</a></td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177603"><a href="/rest/2016-08-08#i_177603">00:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177603"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">i created HAL-FORMS to turn that into a machine-readable thing, tho.</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177604"><a href="/rest/2016-08-08#i_177604">00:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177604"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">ION, hmm...</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177605"><a href="/rest/2016-08-08#i_177605">00:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177605"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">no</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177606"><a href="/rest/2016-08-08#i_177606">00:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177606"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">just looking at it now</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick__ollie">
+
+<td class="time" id="i_177607"><a href="/rest/2016-08-08#i_177607">00:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177607"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">It's been created by Les Hazelwood from Stormpath. They're heavily chasing me down to implement support for it in Spring HATEOAS but I find it quite convoluted.</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177608"><a href="/rest/2016-08-08#i_177608">00:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177608"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right - seems like there is very little structure here to hold onto</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177609"><a href="/rest/2016-08-08#i_177609">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177609"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">would be tough to create a generic parser/client for this, i think.</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick__ollie">
+
+<td class="time" id="i_177610"><a href="/rest/2016-08-08#i_177610">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177610"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Just the decision whether something in the payload is a form seem horribly complex: <a href="http://ionwg.org/draft-ion.html#form-structure" title="http://ionwg.org/draft-ion.html#form-structure">http://ionwg.org/draft-ion.html#form-structure</a></td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177611"><a href="/rest/2016-08-08#i_177611">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177611"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">yeah - looking at that now</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177612"><a href="/rest/2016-08-08#i_177612">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177612"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">ick</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177613"><a href="/rest/2016-08-08#i_177613">00:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177613"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">well, i like the metadata offerings for forms (required, placeholder, pattern, etc.) -- bsasically taking it all from <abbr title="Hypertext Markup Language">HTML</abbr>.</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick__ollie">
+
+<td class="time" id="i_177614"><a href="/rest/2016-08-08#i_177614">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177614"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">That's what he mentioned to be one objective: be more complete than anything else already out there in terms of forms.</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177615"><a href="/rest/2016-08-08#i_177615">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177615"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">input type seems a bit over the top. would not want to implement that&lt;g&gt;</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177616"><a href="/rest/2016-08-08#i_177616">00:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177616"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">to be this explicit w/ forms, but to also have almost no metadata for returned data seems lopsided.</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177617"><a href="/rest/2016-08-08#i_177617">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177617"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">well, i don't really know the whole story, so i should slow down.</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177618"><a href="/rest/2016-08-08#i_177618">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177618"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">does anyone know if facebook website use his own WS <abbr title="Application Programming Interface">API</abbr> to make the website?</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177619"><a href="/rest/2016-08-08#i_177619">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177619"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">sfdebug sorry, don't know anything on that.</td>
+</tr>
+
+        
+<tr id="id_l25" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177620"><a href="/rest/2016-08-08#i_177620">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177620"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">i do this question  because i have i doubt about &quot;when&quot; use REST and when not...</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_sfdebug">
+
+<td class="time" id="i_177621"><a href="/rest/2016-08-08#i_177621">00:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177621"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">for example</td>
+</tr>
+
+        
+<tr id="id_l27" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177622"><a href="/rest/2016-08-08#i_177622">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177622"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">REST or <abbr title="Hypertext Transfer Protocol">HTTP</abbr>?</td>
+</tr>
+
+        
+<tr id="id_l28" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177623"><a href="/rest/2016-08-08#i_177623">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177623"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">if i have a web site and an mobile app</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177624"><a href="/rest/2016-08-08#i_177624">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177624"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">mamund: Looks like the assume symmetry between a form and the payloads received.</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177625"><a href="/rest/2016-08-08#i_177625">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177625"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">i develop a WS <abbr title="Application Programming Interface">API</abbr> to the mobile app consume...</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_sfdebug">
+
+<td class="time" id="i_177626"><a href="/rest/2016-08-08#i_177626">00:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177626"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">can or, must the site consume the same <abbr title="Application Programming Interface">API</abbr>?</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177627"><a href="/rest/2016-08-08#i_177627">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177627"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">_ollie: as in you would assume the metadata for a form field applies to the same field in returned data or items[]?</td>
+</tr>
+
+        
+<tr id="id_l33" class="new nick nick__ollie">
+
+<td class="time" id="i_177628"><a href="/rest/2016-08-08#i_177628">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177628"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177629"><a href="/rest/2016-08-08#i_177629">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177629"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">ick</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick__ollie">
+
+<td class="time" id="i_177630"><a href="/rest/2016-08-08#i_177630">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177630"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick__ollie">
+
+<td class="time" id="i_177631"><a href="/rest/2016-08-08#i_177631">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177631"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">yeah, short sighted</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177632"><a href="/rest/2016-08-08#i_177632">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177632"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">so what happens when the form is not returned? where is the metadata now?</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177633"><a href="/rest/2016-08-08#i_177633">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177633"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">i whiped up a thing for Siren to standardize object metadata. just something to get ma past some implementation challenges.</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177634"><a href="/rest/2016-08-08#i_177634">00:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177634"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">made it a separate &quot;side-call&quot;, like the way i did w/ HAL-FORMS</td>
+</tr>
+
+        
+<tr id="id_l40" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177635"><a href="/rest/2016-08-08#i_177635">00:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177635"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">but it's messy and can be a bit flakey. really a bummer on mobile, too. (battery killer to keep asking for out-of-band info)</td>
+</tr>
+
+        
+<tr id="id_l41" class="new nick nick__ollie">
+
+<td class="time" id="i_177636"><a href="/rest/2016-08-08#i_177636">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177636"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">To me it looks like ION is assumed to be used as media type for forms mostly</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177637"><a href="/rest/2016-08-08#i_177637">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177637"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">might make a decent single-use media type (forms).</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick__ollie">
+
+<td class="time" id="i_177638"><a href="/rest/2016-08-08#i_177638">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177638"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Although they a collection example as well.</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177639"><a href="/rest/2016-08-08#i_177639">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177639"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">wonder if it would make sense to use it instead of HAL-FORMS for HAL responses</td>
+</tr>
+
+        
+<tr id="id_l45" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177640"><a href="/rest/2016-08-08#i_177640">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177640"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">would like to see the OPTIONS input a bit more flexible.</td>
+</tr>
+
+        
+<tr id="id_l46" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177641"><a href="/rest/2016-08-08#i_177641">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177641"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">define the options as another <abbr title="Uniform Resource Locator">URL</abbr> to return the data, maybe support type-ahead search.</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177642"><a href="/rest/2016-08-08#i_177642">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177642"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">proly could extend it to add that</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick__ollie">
+
+<td class="time" id="i_177643"><a href="/rest/2016-08-08#i_177643">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177643"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Not sure. HAL FORMS looks a lot more HALish than ION, so even for only aesthetic reasons</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177644"><a href="/rest/2016-08-08#i_177644">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177644"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">for sure.</td>
+</tr>
+
+        
+<tr id="id_l50" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177645"><a href="/rest/2016-08-08#i_177645">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177645"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">but i've used <abbr title="Hypertext Markup Language">HTML</abbr> forms from HAL, too.</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick__ollie">
+
+<td class="time" id="i_177646"><a href="/rest/2016-08-08#i_177646">00:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177646"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Yeah, I discussed the &quot;suggestions&quot; proposal for HAL FORMS with Ander recently.</td>
+</tr>
+
+        
+<tr id="id_l52" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177647"><a href="/rest/2016-08-08#i_177647">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177647"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right - i totally droppd the ball on your PRs there, didn't i?</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177648"><a href="/rest/2016-08-08#i_177648">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177648"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">really sorry.</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick__ollie">
+
+<td class="time" id="i_177649"><a href="/rest/2016-08-08#i_177649">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177649"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">And I think he updated the PR after we simplified it a bit.</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177650"><a href="/rest/2016-08-08#i_177650">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177650"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">i should get off my a$$ and sort those out</td>
+</tr>
+
+        
+<tr id="id_l56" class="new nick nick__ollie">
+
+<td class="time" id="i_177651"><a href="/rest/2016-08-08#i_177651">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177651"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Oh well, nothign too urgent :)</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177652"><a href="/rest/2016-08-08#i_177652">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177652"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">as long as you're able to do what you need.</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick__ollie">
+
+<td class="time" id="i_177653"><a href="/rest/2016-08-08#i_177653">00:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177653"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">but I guess I'll get my hands onto the implementation again this week.</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177654"><a href="/rest/2016-08-08#i_177654">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177654"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">love that Spring seems to be leading the pack on working through these things</td>
+</tr>
+
+        
+<tr id="id_l60" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177655"><a href="/rest/2016-08-08#i_177655">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177655"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">what's HAL FORMs?</td>
+</tr>
+
+        
+<tr id="id_l61" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177656"><a href="/rest/2016-08-08#i_177656">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177656"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Actually, trying to implement a prototype for the initial proposal brought up a few issues and options for simplification</td>
+</tr>
+
+        
+<tr id="id_l62" class="new nick nick_mamund">
+
+<td class="time" id="i_177657"><a href="/rest/2016-08-08#i_177657">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177657"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">really?</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont nick nick_mamund">
+
+<td class="time" id="i_177658"><a href="/rest/2016-08-08#i_177658">00:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177658"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">sounds interesting</td>
+</tr>
+
+        
+<tr id="id_l64" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177659"><a href="/rest/2016-08-08#i_177659">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177659"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I think the 3 different ways to provide the options were slightly different initially and now we got it to a quite consistent scheme but teh different options distinguished by different field names.</td>
+</tr>
+
+        
+<tr id="id_l65" class="new nick nick_mamund">
+
+<td class="time" id="i_177660"><a href="/rest/2016-08-08#i_177660">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177660"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">hmmm....</td>
+</tr>
+
+        
+<tr id="id_l66" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177661"><a href="/rest/2016-08-08#i_177661">00:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177661"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I think the PR has the new proposed version already.</td>
+</tr>
+
+        
+<tr id="id_l67" class="new nick nick_mamund">
+
+<td class="time" id="i_177662"><a href="/rest/2016-08-08#i_177662">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177662"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">well, i gotta get my head into the game then</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177663"><a href="/rest/2016-08-08#i_177663">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177663"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">sfdebug: an extension to HAL that provides forms support</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177664"><a href="/rest/2016-08-08#i_177664">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177664"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">i don't know what is HAL, when you are telling about HAL, i was thinking you are telling  about &quot;Hardware Abstract Layer&quot;...</td>
+</tr>
+
+        
+<tr id="id_l70" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177665"><a href="/rest/2016-08-08#i_177665">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177665"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">re spring &amp; hypermedia: we've got a big foot in the enterprise, so if we can get more people to actually try hypermedia that could have a big effect</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont nick nick__ollie dark">
+
+<td class="time" id="i_177666"><a href="/rest/2016-08-08#i_177666">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177666"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">sfdebug: HAL <a href="http://stateless.co/hal_specification.html" title="http://stateless.co/hal_specification.html">http://stateless.co/hal_specification.html</a></td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_sfdebug">
+
+<td class="time" id="i_177667"><a href="/rest/2016-08-08#i_177667">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177667"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">let me see.</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177668"><a href="/rest/2016-08-08#i_177668">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177668"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">_ollie: yep - you are a very influential force right now.</td>
+</tr>
+
+        
+<tr id="id_l74" class="new nick nick__ollie">
+
+<td class="time" id="i_177669"><a href="/rest/2016-08-08#i_177669">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177669"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">sfdebug: <a href="https://rwcbook.github.io/hal-forms/" title="https://rwcbook.github.io/hal-forms/">https://rwcbook.github.io/hal-forms/</a></td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177670"><a href="/rest/2016-08-08#i_177670">00:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177670"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">not only can you introduce more people to hypemedia-style, you can learn from all of those experiences faster than most</td>
+</tr>
+
+        
+<tr id="id_l76" class="new nick nick__ollie">
+
+<td class="time" id="i_177671"><a href="/rest/2016-08-08#i_177671">00:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177671"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Yeah, a two way street</td>
+</tr>
+
+        
+<tr id="id_l77" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177672"><a href="/rest/2016-08-08#i_177672">00:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177672"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">figure out what works, what's lame, and how to improve things so that they actually solve real problems at a low cast w/ high safety.</td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick__ollie">
+
+<td class="time" id="i_177673"><a href="/rest/2016-08-08#i_177673">00:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177673"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I am half-way through the pull request for Spring HATEOAS that basically rewrites the link builders we currently have and replaces them with an affordance builder. we have prototypes to the produce HAL FORMS, Siren, Uber and <abbr title="Extensible Hypertext Markup Language">XHTML</abbr> from that metamodel.</td>
+</tr>
+
+        
+<tr id="id_l79" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177674"><a href="/rest/2016-08-08#i_177674">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177674"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">that'd be great. i think a big thing we need for the _internal code_ space is to implement the representor-style patterns</td>
+</tr>
+
+        
+<tr id="id_l80" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177675"><a href="/rest/2016-08-08#i_177675">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177675"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">affordance-builders is a great idea</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick__ollie">
+
+<td class="time" id="i_177676"><a href="/rest/2016-08-08#i_177676">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177676"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I guess we're gonna start with HAL FORMS only and leave the other ones as experimental for now</td>
+</tr>
+
+        
+<tr id="id_l82" class="cont nick nick__ollie">
+
+<td class="time" id="i_177677"><a href="/rest/2016-08-08#i_177677">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177677"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I'd like to start simple and see what people do with it.</td>
+</tr>
+
+        
+<tr id="id_l83" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177678"><a href="/rest/2016-08-08#i_177678">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177678"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">it should be a &quot;no-brainer&quot; for a dev to get a representation back from the object model...</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177679"><a href="/rest/2016-08-08#i_177679">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177679"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">representation = objectModel.toUBER()</td>
+</tr>
+
+        
+<tr id="id_l85" class="new nick nick__ollie">
+
+<td class="time" id="i_177680"><a href="/rest/2016-08-08#i_177680">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177680"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Emphasis on &quot;should&quot; :)</td>
+</tr>
+
+        
+<tr id="id_l86" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177681"><a href="/rest/2016-08-08#i_177681">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177681"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right - we worked through this w/ activeserializer, etc.</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177682"><a href="/rest/2016-08-08#i_177682">00:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177682"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">so this is clearly something that makes sense to people</td>
+</tr>
+
+        
+<tr id="id_l88" class="new nick nick__ollie">
+
+<td class="time" id="i_177683"><a href="/rest/2016-08-08#i_177683">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177683"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">allowing user defined serialization customizations make this not as trivial as I thought initially</td>
+</tr>
+
+        
+<tr id="id_l89" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177684"><a href="/rest/2016-08-08#i_177684">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177684"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">and devs are used to doing all sorts of goofy things to their object models to make it easier to support serializers</td>
+</tr>
+
+        
+<tr id="id_l90" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177685"><a href="/rest/2016-08-08#i_177685">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177685"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right - getting past generic <abbr title="JavaScript Object Notation">JSON</abbr> and <abbr title="Extensible Markup Language">XML</abbr> is not simple.</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177686"><a href="/rest/2016-08-08#i_177686">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177686"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">or everyone would have already done it.</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick__ollie">
+
+<td class="time" id="i_177687"><a href="/rest/2016-08-08#i_177687">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177687"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Yeah, where it should be the other way round actually.</td>
+</tr>
+
+        
+<tr id="id_l93" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177688"><a href="/rest/2016-08-08#i_177688">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177688"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">oh, objectModel = response.toObjectModel()</td>
+</tr>
+
+        
+<tr id="id_l94" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177689"><a href="/rest/2016-08-08#i_177689">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177689"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg "><abbr title="Hypertext Markup Language">HTML</abbr> folks sorted that out by creating the <abbr title="Document Object Model">DOM</abbr></td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177690"><a href="/rest/2016-08-08#i_177690">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177690"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">what many devs would like is a <abbr title="Document Object Model">DOM</abbr>.toMyModel()</td>
+</tr>
+
+        
+<tr id="id_l96" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177691"><a href="/rest/2016-08-08#i_177691">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177691"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">harder.</td>
+</tr>
+
+        
+<tr id="id_l97" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177692"><a href="/rest/2016-08-08#i_177692">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177692"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">getting the first one done -- myModel.toSiren() -- should be a focus first, i think.</td>
+</tr>
+
+        
+<tr id="id_l98" class="new nick nick__ollie">
+
+<td class="time" id="i_177693"><a href="/rest/2016-08-08#i_177693">00:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177693"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Yeah.</td>
+</tr>
+
+        
+<tr id="id_l99" class="new nick nick_mamund dark">
+
+<td class="time" id="i_177694"><a href="/rest/2016-08-08#i_177694">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177694"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">because, i suspect what's going to happen is -- after several successful attempts -- we'll find a pattern to leverage</td>
+</tr>
+
+        
+<tr id="id_l100" class="cont nick nick_mamund dark">
+
+<td class="time" id="i_177695"><a href="/rest/2016-08-08#i_177695">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177695"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">think of the way markdown systems work...</td>
+</tr>
+
+        
+<tr id="id_l101" class="new nick nick__ollie">
+
+<td class="time" id="i_177696"><a href="/rest/2016-08-08#i_177696">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177696"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">We basically hand the model to components to create the serialization and which one's chosen then depends on the configured supported types and content negotiation.</td>
+</tr>
+
+        
+<tr id="id_l102" class="new special dark">
+
+<td class="time" id="i_177698"><a href="/rest/2016-08-08#i_177698">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177698"  /></td>
+<td class="nick"></td>
+<td class="msg ">bluezone joined #rest</td>
+</tr>
+
+        
+<tr id="id_l103" class="new nick nick_mamund">
+
+<td class="time" id="i_177699"><a href="/rest/2016-08-08#i_177699">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177699"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">there is a &quot;engine&quot; in between formats. that's the kind of thing we'll need eventually.</td>
+</tr>
+
+        
+<tr id="id_l104" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177700"><a href="/rest/2016-08-08#i_177700">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177700"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">The thing that seems most tricky is to get model right: include enough APi to express the needs of individual hypermedia formats. tricky one: input types.</td>
+</tr>
+
+        
+<tr id="id_l105" class="new nick nick_mamund">
+
+<td class="time" id="i_177701"><a href="/rest/2016-08-08#i_177701">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177701"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">for now, object-to-representation is going to be helpful by lowering the cost of supporting a new format and reducing the need to create long drawn-out arguments about &quot;which single format we should support&quot;</td>
+</tr>
+
+        
+<tr id="id_l106" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177702"><a href="/rest/2016-08-08#i_177702">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177702"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">ACK</td>
+</tr>
+
+        
+<tr id="id_l107" class="new nick nick_mamund">
+
+<td class="time" id="i_177703"><a href="/rest/2016-08-08#i_177703">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177703"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">yeah - fidelity across formats willb e an issue -- it already is today.</td>
+</tr>
+
+        
+<tr id="id_l108" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177704"><a href="/rest/2016-08-08#i_177704">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177704"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">Input types are all very simple but usually slightly different in the different formats.</td>
+</tr>
+
+        
+<tr id="id_l109" class="new nick nick_mamund">
+
+<td class="time" id="i_177705"><a href="/rest/2016-08-08#i_177705">00:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177705"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right - there are things you simply don't control in Cj that you have in Siren.</td>
+</tr>
+
+        
+<tr id="id_l110" class="new nick nick_sfdebug dark">
+
+<td class="time" id="i_177706"><a href="/rest/2016-08-08#i_177706">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177706"  /></td>
+<td class="nick nick3">sfdebug</td>
+<td class="msg ">_ollie, here: <a href="http://stateless.co/hal_specification.html" title="http://stateless.co/hal_specification.html">http://stateless.co/hal_specification.html</a> is all about HAL?</td>
+</tr>
+
+        
+<tr id="id_l111" class="new nick nick_mamund">
+
+<td class="time" id="i_177707"><a href="/rest/2016-08-08#i_177707">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177707"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">i've been doing two things there: 1) adding extensions in Cj responses, 2) leaving them out of Cj.</td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177708"><a href="/rest/2016-08-08#i_177708">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177708"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I guess we'll just be going wuth a common set and a way to define media type specific extensions that will only be used if that particular one is rendered.</td>
+</tr>
+
+        
+<tr id="id_l113" class="new nick nick_mamund">
+
+<td class="time" id="i_177709"><a href="/rest/2016-08-08#i_177709">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177709"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">in both cases, clients don't complain.</td>
+</tr>
+
+        
+<tr id="id_l114" class="cont nick nick_mamund">
+
+<td class="time" id="i_177710"><a href="/rest/2016-08-08#i_177710">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177710"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">yep - common types will emerge as we work through these things.</td>
+</tr>
+
+        
+<tr id="id_l115" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177711"><a href="/rest/2016-08-08#i_177711">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177711"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">sfdebug: that's what its &lt;h1&gt; suggests ;)</td>
+</tr>
+
+        
+<tr id="id_l116" class="new nick nick_mamund">
+
+<td class="time" id="i_177712"><a href="/rest/2016-08-08#i_177712">00:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177712"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">we won't build &quot;the perfect media type&quot; until we make _lots_ of media types!</td>
+</tr>
+
+        
+<tr id="id_l117" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177713"><a href="/rest/2016-08-08#i_177713">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177713"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">mamund: which time zone are you in actually?</td>
+</tr>
+
+        
+<tr id="id_l118" class="new nick nick_mamund">
+
+<td class="time" id="i_177714"><a href="/rest/2016-08-08#i_177714">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177714"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">and weed out bad ones along the way.</td>
+</tr>
+
+        
+<tr id="id_l119" class="cont nick nick_mamund">
+
+<td class="time" id="i_177715"><a href="/rest/2016-08-08#i_177715">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177715"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">US east coast</td>
+</tr>
+
+        
+<tr id="id_l120" class="cont nick nick_mamund">
+
+<td class="time" id="i_177716"><a href="/rest/2016-08-08#i_177716">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177716"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">you?</td>
+</tr>
+
+        
+<tr id="id_l121" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177717"><a href="/rest/2016-08-08#i_177717">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177717"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">I see :).</td>
+</tr>
+
+        
+<tr id="id_l122" class="cont nick nick__ollie dark">
+
+<td class="time" id="i_177718"><a href="/rest/2016-08-08#i_177718">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177718"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">CET. Still fighting jet lag from a week in Las Vegas for SpringOne.</td>
+</tr>
+
+        
+<tr id="id_l123" class="new nick nick_mamund">
+
+<td class="time" id="i_177719"><a href="/rest/2016-08-08#i_177719">00:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177719"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">ahhhh</td>
+</tr>
+
+        
+<tr id="id_l124" class="cont nick nick_mamund">
+
+<td class="time" id="i_177720"><a href="/rest/2016-08-08#i_177720">00:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177720"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">i should stop talking to you!</td>
+</tr>
+
+        
+<tr id="id_l125" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177721"><a href="/rest/2016-08-08#i_177721">00:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177721"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">:D</td>
+</tr>
+
+        
+<tr id="id_l126" class="cont nick nick__ollie dark">
+
+<td class="time" id="i_177722"><a href="/rest/2016-08-08#i_177722">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177722"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">But I'll probably call it a day for now. More time for you looking at the PR! :D</td>
+</tr>
+
+        
+<tr id="id_l127" class="new nick nick_mamund">
+
+<td class="time" id="i_177723"><a href="/rest/2016-08-08#i_177723">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177723"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">right!</td>
+</tr>
+
+        
+<tr id="id_l128" class="cont nick nick_mamund">
+
+<td class="time" id="i_177724"><a href="/rest/2016-08-08#i_177724">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177724"  /></td>
+<td class="nick nick1">mamund</td>
+<td class="msg ">thanks for the convo. talsk to you again soo.</td>
+</tr>
+
+        
+<tr id="id_l129" class="new nick nick__ollie dark">
+
+<td class="time" id="i_177725"><a href="/rest/2016-08-08#i_177725">00:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177725"  /></td>
+<td class="nick nick2">_ollie</td>
+<td class="msg ">talk to you soon!</td>
+</tr>
+
+        
+<tr id="id_l130" class="new special">
+
+<td class="time" id="i_177726"><a href="/rest/2016-08-08#i_177726">01:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177726"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l131" class="cont special">
+
+<td class="time" id="i_177728"><a href="/rest/2016-08-08#i_177728">01:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177728"  /></td>
+<td class="nick"></td>
+<td class="msg ">tonyacunar joined #rest</td>
+</tr>
+
+        
+<tr id="id_l132" class="cont special">
+
+<td class="time" id="i_177729"><a href="/rest/2016-08-08#i_177729">03:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177729"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l133" class="cont special">
+
+<td class="time" id="i_177730"><a href="/rest/2016-08-08#i_177730">03:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177730"  /></td>
+<td class="nick"></td>
+<td class="msg ">k_j joined #rest</td>
+</tr>
+
+        
+<tr id="id_l134" class="cont special">
+
+<td class="time" id="i_177732"><a href="/rest/2016-08-08#i_177732">04:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177732"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l135" class="cont special">
+
+<td class="time" id="i_177733"><a href="/rest/2016-08-08#i_177733">05:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177733"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l136" class="cont special">
+
+<td class="time" id="i_177735"><a href="/rest/2016-08-08#i_177735">05:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177735"  /></td>
+<td class="nick"></td>
+<td class="msg ">Sna4x81 left #rest</td>
+</tr>
+
+        
+<tr id="id_l137" class="cont special">
+
+<td class="time" id="i_177736"><a href="/rest/2016-08-08#i_177736">06:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177736"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l138" class="cont special">
+
+<td class="time" id="i_177738"><a href="/rest/2016-08-08#i_177738">06:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177738"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsiqueir joined #rest</td>
+</tr>
+
+        
+<tr id="id_l139" class="cont special">
+
+<td class="time" id="i_177739"><a href="/rest/2016-08-08#i_177739">06:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177739"  /></td>
+<td class="nick"></td>
+<td class="msg ">shodan` joined #rest</td>
+</tr>
+
+        
+<tr id="id_l140" class="cont special">
+
+<td class="time" id="i_177740"><a href="/rest/2016-08-08#i_177740">07:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177740"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l141" class="cont special">
+
+<td class="time" id="i_177741"><a href="/rest/2016-08-08#i_177741">07:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177741"  /></td>
+<td class="nick"></td>
+<td class="msg ">DevAntoine joined #rest</td>
+</tr>
+
+        
+<tr id="id_l142" class="cont special">
+
+<td class="time" id="i_177742"><a href="/rest/2016-08-08#i_177742">07:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177742"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l143" class="cont special">
+
+<td class="time" id="i_177743"><a href="/rest/2016-08-08#i_177743">10:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177743"  /></td>
+<td class="nick"></td>
+<td class="msg ">timg__ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l144" class="cont special">
+
+<td class="time" id="i_177745"><a href="/rest/2016-08-08#i_177745">12:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177745"  /></td>
+<td class="nick"></td>
+<td class="msg ">tonyacunar joined #rest</td>
+</tr>
+
+        
+<tr id="id_l145" class="cont special">
+
+<td class="time" id="i_177746"><a href="/rest/2016-08-08#i_177746">12:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177746"  /></td>
+<td class="nick"></td>
+<td class="msg ">tonyacunar joined #rest</td>
+</tr>
+
+        
+<tr id="id_l146" class="cont special">
+
+<td class="time" id="i_177747"><a href="/rest/2016-08-08#i_177747">13:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177747"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l147" class="cont special">
+
+<td class="time" id="i_177749"><a href="/rest/2016-08-08#i_177749">14:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177749"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l148" class="cont special">
+
+<td class="time" id="i_177751"><a href="/rest/2016-08-08#i_177751">14:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177751"  /></td>
+<td class="nick"></td>
+<td class="msg ">_ollie joined #rest</td>
+</tr>
+
+        
+<tr id="id_l149" class="cont special">
+
+<td class="time" id="i_177753"><a href="/rest/2016-08-08#i_177753">15:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177753"  /></td>
+<td class="nick"></td>
+<td class="msg ">graste joined #rest</td>
+</tr>
+
+        
+<tr id="id_l150" class="cont special">
+
+<td class="time" id="i_177754"><a href="/rest/2016-08-08#i_177754">15:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177754"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l151" class="cont special">
+
+<td class="time" id="i_177755"><a href="/rest/2016-08-08#i_177755">15:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177755"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l152" class="cont special">
+
+<td class="time" id="i_177756"><a href="/rest/2016-08-08#i_177756">16:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177756"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l153" class="cont special">
+
+<td class="time" id="i_177757"><a href="/rest/2016-08-08#i_177757">16:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177757"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l154" class="cont special">
+
+<td class="time" id="i_177758"><a href="/rest/2016-08-08#i_177758">17:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177758"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l155" class="cont special">
+
+<td class="time" id="i_177759"><a href="/rest/2016-08-08#i_177759">17:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177759"  /></td>
+<td class="nick"></td>
+<td class="msg ">k_j joined #rest</td>
+</tr>
+
+        
+<tr id="id_l156" class="cont special">
+
+<td class="time" id="i_177760"><a href="/rest/2016-08-08#i_177760">17:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177760"  /></td>
+<td class="nick"></td>
+<td class="msg ">k_j joined #rest</td>
+</tr>
+
+        
+<tr id="id_l157" class="cont special">
+
+<td class="time" id="i_177761"><a href="/rest/2016-08-08#i_177761">18:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177761"  /></td>
+<td class="nick"></td>
+<td class="msg ">anth0ny joined #rest</td>
+</tr>
+
+        
+<tr id="id_l158" class="cont special">
+
+<td class="time" id="i_177762"><a href="/rest/2016-08-08#i_177762">18:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177762"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l159" class="cont special">
+
+<td class="time" id="i_177764"><a href="/rest/2016-08-08#i_177764">18:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177764"  /></td>
+<td class="nick"></td>
+<td class="msg ">itscaleb_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l160" class="cont special">
+
+<td class="time" id="i_177767"><a href="/rest/2016-08-08#i_177767">18:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177767"  /></td>
+<td class="nick"></td>
+<td class="msg ">bigbluehat joined #rest</td>
+</tr>
+
+        
+<tr id="id_l161" class="cont special">
+
+<td class="time" id="i_177768"><a href="/rest/2016-08-08#i_177768">18:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177768"  /></td>
+<td class="nick"></td>
+<td class="msg ">ShekharReddy joined #rest</td>
+</tr>
+
+        
+<tr id="id_l162" class="cont special">
+
+<td class="time" id="i_177769"><a href="/rest/2016-08-08#i_177769">19:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177769"  /></td>
+<td class="nick"></td>
+<td class="msg ">sulky joined #rest</td>
+</tr>
+
+        
+<tr id="id_l163" class="cont special">
+
+<td class="time" id="i_177770"><a href="/rest/2016-08-08#i_177770">19:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177770"  /></td>
+<td class="nick"></td>
+<td class="msg ">Tomatosoup- joined #rest</td>
+</tr>
+
+        
+<tr id="id_l164" class="cont special">
+
+<td class="time" id="i_177771"><a href="/rest/2016-08-08#i_177771">19:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177771"  /></td>
+<td class="nick"></td>
+<td class="msg ">bigbluehat joined #rest</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont special">
+
+<td class="time" id="i_177772"><a href="/rest/2016-08-08#i_177772">19:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177772"  /></td>
+<td class="nick"></td>
+<td class="msg ">ShekharReddy joined #rest</td>
+</tr>
+
+        
+<tr id="id_l166" class="cont special">
+
+<td class="time" id="i_177773"><a href="/rest/2016-08-08#i_177773">20:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177773"  /></td>
+<td class="nick"></td>
+<td class="msg ">Coldblackice joined #rest</td>
+</tr>
+
+        
+<tr id="id_l167" class="cont special">
+
+<td class="time" id="i_177776"><a href="/rest/2016-08-08#i_177776">21:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177776"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l168" class="cont special">
+
+<td class="time" id="i_177777"><a href="/rest/2016-08-08#i_177777">22:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177777"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l169" class="cont special">
+
+<td class="time" id="i_177778"><a href="/rest/2016-08-08#i_177778">22:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177778"  /></td>
+<td class="nick"></td>
+<td class="msg ">tbsf joined #rest</td>
+</tr>
+
+        
+<tr id="id_l170" class="cont special">
+
+<td class="time" id="i_177779"><a href="/rest/2016-08-08#i_177779">22:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177779"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+<tr id="id_l171" class="cont special">
+
+<td class="time" id="i_177780"><a href="/rest/2016-08-08#i_177780">23:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177780"  /></td>
+<td class="nick"></td>
+<td class="msg ">tonyacunar joined #rest</td>
+</tr>
+
+        
+<tr id="id_l172" class="cont special">
+
+<td class="time" id="i_177781"><a href="/rest/2016-08-08#i_177781">23:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_177781"  /></td>
+<td class="nick"></td>
+<td class="msg ">fuzzyhorns joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2016-08-07" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2016-08-09" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2016-08-08">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2016-08-08;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2016-08-08;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

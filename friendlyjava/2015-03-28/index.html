@@ -1,0 +1,863 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2015-03-28" />
+    <title>IRC log for #friendlyjava, 2015-03-28</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2015-03-28</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2015-03-27" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2015-03-29" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2015-03-28">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2015-03-28;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2015-03-28;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105224"><a href="/friendlyjava/2015-03-28#i_105224">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105224"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I have no such problems with jetty and wicket, but I have no idea about glassfish and jsf</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105226"><a href="/friendlyjava/2015-03-28#i_105226">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105226"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105227"><a href="/friendlyjava/2015-03-28#i_105227">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105227"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">the Initializer.class.getResourceAsStream returning null is really weird</td>
+</tr>
+
+        
+<tr id="id_l5" class="new special">
+
+<td class="time" id="i_105230"><a href="/friendlyjava/2015-03-28#i_105230">04:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105230"  /></td>
+<td class="nick"></td>
+<td class="msg ">Richard_2340985 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105231"><a href="/friendlyjava/2015-03-28#i_105231">05:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105231"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">Initializer.class.getResourceA​sStream(&quot;/de/name/Users.java&quot;) does not return null</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105232"><a href="/friendlyjava/2015-03-28#i_105232">05:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105232"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">just like Initializer.class.getResou​rceAsStream(&quot;Users.java&quot;)</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_aditsu">
+
+<td class="time" id="i_105233"><a href="/friendlyjava/2015-03-28#i_105233">05:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105233"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">uh.. that's weird too, java source files have no business being in the classpath</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105234"><a href="/friendlyjava/2015-03-28#i_105234">05:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105234"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">I use the primefaces-extensions showcase</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105235"><a href="/friendlyjava/2015-03-28#i_105235">05:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105235"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">this is used so that they can show the code on the website</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_aditsu">
+
+<td class="time" id="i_105236"><a href="/friendlyjava/2015-03-28#i_105236">05:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105236"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">no idea what that is :p</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_aditsu">
+
+<td class="time" id="i_105237"><a href="/friendlyjava/2015-03-28#i_105237">05:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105237"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">hmm ok</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105238"><a href="/friendlyjava/2015-03-28#i_105238">05:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105238"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg "><a href="http://www.primefaces.org/showcase-ext/views/home.jsf" title="http://www.primefaces.org/showcase-ext/views/home.jsf">http://www.primefaces.org/showcase-ext/views/home.jsf</a></td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105239"><a href="/friendlyjava/2015-03-28#i_105239">05:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105239"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">I think it's because of the maven-resources-plugin - they copy the files</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105241"><a href="/friendlyjava/2015-03-28#i_105241">05:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105241"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">but I just had the idea of trying to use their function</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105242"><a href="/friendlyjava/2015-03-28#i_105242">05:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105242"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">ShowcaseUtil.getFileContent</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105243"><a href="/friendlyjava/2015-03-28#i_105243">05:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105243"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">maybe it's also a cache issue...</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105244"><a href="/friendlyjava/2015-03-28#i_105244">05:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105244"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;ui:define name=&quot;contentTab2&quot;&gt;</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105245"><a href="/friendlyjava/2015-03-28#i_105245">05:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105245"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">${showcase:getFileContent('/org/prim​efaces/extensions/showcase/controlle​r/AjaxErrorHandlerController.java')}</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105246"><a href="/friendlyjava/2015-03-28#i_105246">05:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105246"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;/ui:define&gt;</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105247"><a href="/friendlyjava/2015-03-28#i_105247">05:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105247"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">this is how they use it</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105248"><a href="/friendlyjava/2015-03-28#i_105248">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105248"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;function&gt;</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105249"><a href="/friendlyjava/2015-03-28#i_105249">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105249"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;function-name&gt;getFileContent&lt;/function-name&gt;</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105250"><a href="/friendlyjava/2015-03-28#i_105250">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105250"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;function-class&gt;org.primefaces.extensions.s​howcase.util.ShowcaseUtil&lt;/function-class&gt;</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105251"><a href="/friendlyjava/2015-03-28#i_105251">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105251"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;function-signature&gt;java.lang.String getFileContent(java.lang.St​ring)&lt;/function-signature&gt;</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105252"><a href="/friendlyjava/2015-03-28#i_105252">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105252"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">&lt;/function&gt;</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105253"><a href="/friendlyjava/2015-03-28#i_105253">05:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105253"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">that is in the taglib</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105254"><a href="/friendlyjava/2015-03-28#i_105254">05:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105254"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">but this does not work:         String document = ShowcaseUtil.getFileContent(&quot;/org/pri​mefaces/extensions/showcase/controlle​r/AjaxErrorHandlerController.java&quot;);</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_aditsu">
+
+<td class="time" id="i_105255"><a href="/friendlyjava/2015-03-28#i_105255">05:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105255"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">better use a pastebin; anyway, I doubt I can help much, and I gotta go soon</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_Richard_2340985 dark">
+
+<td class="time" id="i_105256"><a href="/friendlyjava/2015-03-28#i_105256">05:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105256"  /></td>
+<td class="nick nick3">Richard_2340985</td>
+<td class="msg ">yeah, I think I put that into stackoverflow</td>
+</tr>
+
+        
+<tr id="id_l31" class="new special">
+
+<td class="time" id="i_105257"><a href="/friendlyjava/2015-03-28#i_105257">07:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105257"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special">
+
+<td class="time" id="i_105260"><a href="/friendlyjava/2015-03-28#i_105260">08:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105260"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l33" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_105265"><a href="/friendlyjava/2015-03-28#i_105265">11:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105265"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: you've got me wondering if any of your jetty/wicket projects are open source</td>
+</tr>
+
+        
+<tr id="id_l34" class="new nick nick_aditsu">
+
+<td class="time" id="i_105266"><a href="/friendlyjava/2015-03-28#i_105266">11:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105266"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: hmm... not currently</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_105267"><a href="/friendlyjava/2015-03-28#i_105267">11:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105267"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: you could make a website for this channel! :)</td>
+</tr>
+
+        
+<tr id="id_l36" class="new nick nick_aditsu">
+
+<td class="time" id="i_105274"><a href="/friendlyjava/2015-03-28#i_105274">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105274"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: hmm, but why would I need a web application rather than a static site?</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_105277"><a href="/friendlyjava/2015-03-28#i_105277">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105277"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">so I can see the difference between glassfish/jsf and jetty/wicket :)</td>
+</tr>
+
+        
+<tr id="id_l38" class="new special">
+
+<td class="time" id="i_105282"><a href="/friendlyjava/2015-03-28#i_105282">12:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105282"  /></td>
+<td class="nick"></td>
+<td class="msg ">philbot joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont special">
+
+<td class="time" id="i_105283"><a href="/friendlyjava/2015-03-28#i_105283">12:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105283"  /></td>
+<td class="nick"></td>
+<td class="msg ">Topic for ##friendlyjava is now Be friendly :) This channel is publicly logged at <a href="http://irclog.greptilian.com/friendlyjava/today" title="http://irclog.greptilian.com/friendlyjava/today">http://irclog.greptilian.com/friendlyjava/today</a></td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105286"><a href="/friendlyjava/2015-03-28#i_105286">12:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105286"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: tell you what: let's each implement a simple web application, such as a basic phonebook, using our preferred technologies, and compare :)</td>
+</tr>
+
+        
+<tr id="id_l41" class="new special">
+
+<td class="time" id="i_105287"><a href="/friendlyjava/2015-03-28#i_105287">12:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105287"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105288"><a href="/friendlyjava/2015-03-28#i_105288">12:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105288"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">we should agree on the user interface and database structure, and keep it as simple as we can</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105293"><a href="/friendlyjava/2015-03-28#i_105293">12:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105293"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sort of like <a href="http://todomvc.com" title="http://todomvc.com">http://todomvc.com</a></td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105294"><a href="/friendlyjava/2015-03-28#i_105294">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105294"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: does it have to be our preferred technologies? how about the technologies we're actively using? :)</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105295"><a href="/friendlyjava/2015-03-28#i_105295">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105295"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">pdurbin: your choice, for me they're the same thing</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105296"><a href="/friendlyjava/2015-03-28#i_105296">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105296"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105297"><a href="/friendlyjava/2015-03-28#i_105297">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105297"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">must be a good place to be</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105298"><a href="/friendlyjava/2015-03-28#i_105298">12:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105298"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: would you use JPA?</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105299"><a href="/friendlyjava/2015-03-28#i_105299">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105299"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">nope, I'd use depeche (my own library)</td>
+</tr>
+
+        
+<tr id="id_l50" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_105300"><a href="/friendlyjava/2015-03-28#i_105300">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105300"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">which is open-source</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105301"><a href="/friendlyjava/2015-03-28#i_105301">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105301"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">hmm</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105302"><a href="/friendlyjava/2015-03-28#i_105302">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105302"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Java 7 or Java 8?</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105303"><a href="/friendlyjava/2015-03-28#i_105303">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105303"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">(I'm just trying to figure out the common ground.)</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105304"><a href="/friendlyjava/2015-03-28#i_105304">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105304"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I'm actually still coding for java 6 most of the time :p</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105305"><a href="/friendlyjava/2015-03-28#i_105305">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105305"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">ok. I'd probably use Java 7</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105306"><a href="/friendlyjava/2015-03-28#i_105306">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105306"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Maven or Ant?</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105307"><a href="/friendlyjava/2015-03-28#i_105307">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105307"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">fine; ant here (I also use ivy)</td>
+</tr>
+
+        
+<tr id="id_l58" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105308"><a href="/friendlyjava/2015-03-28#i_105308">12:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105308"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">PostgreSQL, MySQL, Derby, or SQlite?</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105309"><a href="/friendlyjava/2015-03-28#i_105309">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105309"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I prefer pg</td>
+</tr>
+
+        
+<tr id="id_l60" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105310"><a href="/friendlyjava/2015-03-28#i_105310">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105310"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">me too</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105311"><a href="/friendlyjava/2015-03-28#i_105311">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105311"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">common ground! :)</td>
+</tr>
+
+        
+<tr id="id_l62" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105312"><a href="/friendlyjava/2015-03-28#i_105312">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105312"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yay :)</td>
+</tr>
+
+        
+<tr id="id_l63" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105313"><a href="/friendlyjava/2015-03-28#i_105313">12:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105313"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">well, for this kind of thing I'd be happy to use SQLlite but I haven't figured out how to use SQLlite with JPA</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105314"><a href="/friendlyjava/2015-03-28#i_105314">12:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105314"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">anybody here know how?</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105315"><a href="/friendlyjava/2015-03-28#i_105315">12:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105315"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">aditsu: does depeche support SQLite?</td>
+</tr>
+
+        
+<tr id="id_l66" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105316"><a href="/friendlyjava/2015-03-28#i_105316">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105316"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">I can use sqlite with depeche, but its jdbc driver is kinda shoddy so some features may not work very well</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont nick nick_aditsu dark">
+
+<td class="time" id="i_105317"><a href="/friendlyjava/2015-03-28#i_105317">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105317"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">or at least that was the case last time I looked into it</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105318"><a href="/friendlyjava/2015-03-28#i_105318">12:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105318"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I wonder if JPA uses the same driver.</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105319"><a href="/friendlyjava/2015-03-28#i_105319">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105319"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">todomvc is not loading...</td>
+</tr>
+
+        
+<tr id="id_l70" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105320"><a href="/friendlyjava/2015-03-28#i_105320">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105320"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">I know! What a bummer.</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105321"><a href="/friendlyjava/2015-03-28#i_105321">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105321"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">for now you'll have to look at <a href="https://github.com/tastejs/todomvc" title="https://github.com/tastejs/todomvc">https://github.com/tastejs/todomvc</a></td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105322"><a href="/friendlyjava/2015-03-28#i_105322">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105322"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">oh yeah, iirc there were 2 drivers for sqlite, in various stages of desolation</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105323"><a href="/friendlyjava/2015-03-28#i_105323">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105323"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">heh, exactly</td>
+</tr>
+
+        
+<tr id="id_l74" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105337"><a href="/friendlyjava/2015-03-28#i_105337">14:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105337"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">so... eclipse's &quot;apply patch&quot; says that the file I'm looking at does not exist</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105348"><a href="/friendlyjava/2015-03-28#i_105348">14:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105348"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">patching the driver, I take it</td>
+</tr>
+
+        
+<tr id="id_l76" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105349"><a href="/friendlyjava/2015-03-28#i_105349">14:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105349"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">you mean the previous discussion? no, unrelated</td>
+</tr>
+
+        
+<tr id="id_l77" class="new nick nick_pdurbin">
+
+<td class="time" id="i_105353"><a href="/friendlyjava/2015-03-28#i_105353">14:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105353"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">oh</td>
+</tr>
+
+        
+<tr id="id_l78" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_105354"><a href="/friendlyjava/2015-03-28#i_105354">14:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105354"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">carry on :)</td>
+</tr>
+
+        
+<tr id="id_l79" class="new special dark">
+
+<td class="time" id="i_105358"><a href="/friendlyjava/2015-03-28#i_105358">15:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105358"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l80" class="cont special dark">
+
+<td class="time" id="i_105369"><a href="/friendlyjava/2015-03-28#i_105369">15:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105369"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l81" class="new nick nick_firebird1">
+
+<td class="time" id="i_105371"><a href="/friendlyjava/2015-03-28#i_105371">15:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105371"  /></td>
+<td class="nick nick4">firebird1</td>
+<td class="msg ">hey aditsu</td>
+</tr>
+
+        
+<tr id="id_l82" class="new nick nick_aditsu dark">
+
+<td class="time" id="i_105372"><a href="/friendlyjava/2015-03-28#i_105372">15:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105372"  /></td>
+<td class="nick nick2">aditsu</td>
+<td class="msg ">yo</td>
+</tr>
+
+        
+<tr id="id_l83" class="new special">
+
+<td class="time" id="i_105374"><a href="/friendlyjava/2015-03-28#i_105374">17:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105374"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont special">
+
+<td class="time" id="i_105406"><a href="/friendlyjava/2015-03-28#i_105406">21:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105406"  /></td>
+<td class="nick"></td>
+<td class="msg ">Richard_2340985 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l85" class="cont special">
+
+<td class="time" id="i_105413"><a href="/friendlyjava/2015-03-28#i_105413">22:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_105413"  /></td>
+<td class="nick"></td>
+<td class="msg ">Omnipot joined ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2015-03-27" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2015-03-29" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2015-03-28">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2015-03-28;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2015-03-28;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

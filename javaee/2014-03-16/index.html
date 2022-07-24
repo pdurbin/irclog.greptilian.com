@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #javaee" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/javaee/2014-03-16" />
+    <title>IRC log for #javaee, 2014-03-16</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #javaee, 2014-03-16</h1>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+        <p><a href="/javaee/2014-03-15" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-03-17" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-03-16">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-03-16;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-03-16;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63936"><a href="/javaee/2014-03-16#i_63936">00:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63936"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">I need null checks for instanceof right?</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_sfisque">
+
+<td class="time" id="i_63937"><a href="/javaee/2014-03-16#i_63937">00:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63937"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah because null has not type</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63938"><a href="/javaee/2014-03-16#i_63938">00:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63938"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">**no type</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63939"><a href="/javaee/2014-03-16#i_63939">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63939"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">I thought it had all the types?</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_sfisque">
+
+<td class="time" id="i_63940"><a href="/javaee/2014-03-16#i_63940">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63940"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">well it has Object type, which is basically anything other than a primitive</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63941"><a href="/javaee/2014-03-16#i_63941">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63941"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">which means instanceof is useless for null</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63942"><a href="/javaee/2014-03-16#i_63942">00:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63942"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">so yes, you need to null gate</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63943"><a href="/javaee/2014-03-16#i_63943">00:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63943"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">or allow a NPE and require the user of the method to catch it</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63944"><a href="/javaee/2014-03-16#i_63944">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63944"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">the same way .equals() generally blows up if you send in null</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63945"><a href="/javaee/2014-03-16#i_63945">00:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63945"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">or most constructors</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63946"><a href="/javaee/2014-03-16#i_63946">00:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63946"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">can I access other instances' private fields from an instance?</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_sfisque">
+
+<td class="time" id="i_63947"><a href="/javaee/2014-03-16#i_63947">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63947"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">2 ways.   override the jvm security or via mutator method</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63948"><a href="/javaee/2014-03-16#i_63948">00:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63948"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i guess 3 ways</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63949"><a href="/javaee/2014-03-16#i_63949">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63949"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">well no.  2 ways.  i was going to say a java.lang.relect.Proxy, but i believe Proxy obeys the private/protected rules.</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63950"><a href="/javaee/2014-03-16#i_63950">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63950"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">*** .reflect.</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63951"><a href="/javaee/2014-03-16#i_63951">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63951"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">so I can't do like class MyClass { private int x = 0; public MyClass() {} public MyClass(MyClass c){print(c.x)} }?</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63952"><a href="/javaee/2014-03-16#i_63952">00:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63952"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">uhh I missed a ;</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_sfisque">
+
+<td class="time" id="i_63953"><a href="/javaee/2014-03-16#i_63953">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63953"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">i believe a class can access another instances (of the same class) attributes.  most .equals methods work this way.  it's one of the loopholes of java</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63954"><a href="/javaee/2014-03-16#i_63954">00:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63954"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">iirc</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63955"><a href="/javaee/2014-03-16#i_63955">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63955"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">testing that theory now</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63956"><a href="/javaee/2014-03-16#i_63956">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63956"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">well not theory, belief based on memory</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_SoniEx2 dark">
+
+<td class="time" id="i_63957"><a href="/javaee/2014-03-16#i_63957">00:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63957"  /></td>
+<td class="nick nick2">SoniEx2</td>
+<td class="msg ">if that's the case then it makes things a lot simpler and I can throw away my getCratePile method</td>
+</tr>
+
+        
+<tr id="id_l24" class="new nick nick_sfisque">
+
+<td class="time" id="i_63958"><a href="/javaee/2014-03-16#i_63958">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63958"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yah i'm looking at the boilerplate .equals() methods generated in JPA entity beans by NB, and they directly access the attributes of the &quot;other&quot; bean as well as &quot;this&quot;</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63959"><a href="/javaee/2014-03-16#i_63959">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63959"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">so inside a class, you can access the attributes of &quot;same class&quot; instances</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63960"><a href="/javaee/2014-03-16#i_63960">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63960"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">so there's a loophole</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63961"><a href="/javaee/2014-03-16#i_63961">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63961"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">for you</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63962"><a href="/javaee/2014-03-16#i_63962">00:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63962"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">afk for a bit</td>
+</tr>
+
+        
+<tr id="id_l29" class="new special dark">
+
+<td class="time" id="i_63966"><a href="/javaee/2014-03-16#i_63966">03:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63966"  /></td>
+<td class="nick"></td>
+<td class="msg ">sess joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_aspire">
+
+<td class="time" id="i_63967"><a href="/javaee/2014-03-16#i_63967">04:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63967"  /></td>
+<td class="nick nick5">aspire</td>
+<td class="msg ">SoniEx2 you can do that</td>
+</tr>
+
+        
+<tr id="id_l31" class="new special dark">
+
+<td class="time" id="i_63968"><a href="/javaee/2014-03-16#i_63968">04:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63968"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special dark">
+
+<td class="time" id="i_63969"><a href="/javaee/2014-03-16#i_63969">04:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63969"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special dark">
+
+<td class="time" id="i_63970"><a href="/javaee/2014-03-16#i_63970">07:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63970"  /></td>
+<td class="nick"></td>
+<td class="msg ">huhlig__ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont special dark">
+
+<td class="time" id="i_63971"><a href="/javaee/2014-03-16#i_63971">08:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63971"  /></td>
+<td class="nick"></td>
+<td class="msg ">lbevanda joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l35" class="new nick nick_lbevanda">
+
+<td class="time" id="i_63972"><a href="/javaee/2014-03-16#i_63972">08:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63972"  /></td>
+<td class="nick nick4">lbevanda</td>
+<td class="msg ">hello, can anyone help me with basic maven JavaEE (EAR) and why I can't call @Named beans in JSF (WAR) from my EJB project?</td>
+</tr>
+
+        
+<tr id="id_l36" class="new special dark">
+
+<td class="time" id="i_63973"><a href="/javaee/2014-03-16#i_63973">09:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63973"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont special dark">
+
+<td class="time" id="i_63974"><a href="/javaee/2014-03-16#i_63974">10:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63974"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont special dark">
+
+<td class="time" id="i_63976"><a href="/javaee/2014-03-16#i_63976">14:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63976"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l39" class="cont special dark">
+
+<td class="time" id="i_63977"><a href="/javaee/2014-03-16#i_63977">15:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63977"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_sfisque">
+
+<td class="time" id="i_63979"><a href="/javaee/2014-03-16#i_63979">18:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63979"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">for the logger if he comes back:   ibevanda that is an anti pattern.  your war packaged beans should be calling &quot;into&quot; the ejb layer, not the other way round.  if your ejb layer is calling &quot;up&quot; into the web layer, you need to redesign</td>
+</tr>
+
+        
+<tr id="id_l41" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63980"><a href="/javaee/2014-03-16#i_63980">18:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63980"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">sfisque: can't I just add &quot;@Named&quot; to anything I want to autocomplete in Netbeans on the JSF side?</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_sfisque">
+
+<td class="time" id="i_63981"><a href="/javaee/2014-03-16#i_63981">18:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63981"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">yes.  the only difference between cdi and jsf managed is jsf managed has viewscoped integraged and cdi you have to explicitly manage conversationscoped</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63982"><a href="/javaee/2014-03-16#i_63982">18:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63982"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">but ibevanda was talkinga bout calling from the ejb layer up to the web layer.  which is, well… broken</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_sfisque">
+
+<td class="time" id="i_63983"><a href="/javaee/2014-03-16#i_63983">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63983"  /></td>
+<td class="nick nick1">sfisque</td>
+<td class="msg ">if you're calling from an ejb to a @named bean, you need to refactor or leave this industry</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_63984"><a href="/javaee/2014-03-16#i_63984">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63984"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l46" class="new special">
+
+<td class="time" id="i_63987"><a href="/javaee/2014-03-16#i_63987">21:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63987"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sy1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l47" class="cont special">
+
+<td class="time" id="i_63988"><a href="/javaee/2014-03-16#i_63988">21:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63988"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l48" class="cont special">
+
+<td class="time" id="i_63989"><a href="/javaee/2014-03-16#i_63989">22:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63989"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont special">
+
+<td class="time" id="i_63990"><a href="/javaee/2014-03-16#i_63990">23:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_63990"  /></td>
+<td class="nick"></td>
+<td class="msg ">aspire joined ##javaee</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/javaee/2014-03-15" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-03-17" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-03-16">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-03-16;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-03-16;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

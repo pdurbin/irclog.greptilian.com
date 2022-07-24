@@ -1,0 +1,2240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #javaee" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/javaee/2014-01-29" />
+    <title>IRC log for #javaee, 2014-01-29</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #javaee, 2014-01-29</h1>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+        <p><a href="/javaee/2014-01-28" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-01-30" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-01-29">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-01-29;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-01-29;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_53951"><a href="/javaee/2014-01-29#i_53951">00:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53951"  /></td>
+<td class="nick"></td>
+<td class="msg ">Naros_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_53952"><a href="/javaee/2014-01-29#i_53952">00:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53952"  /></td>
+<td class="nick"></td>
+<td class="msg ">kobain joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_53954"><a href="/javaee/2014-01-29#i_53954">02:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53954"  /></td>
+<td class="nick"></td>
+<td class="msg ">apric joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_apric">
+
+<td class="time" id="i_53955"><a href="/javaee/2014-01-29#i_53955">02:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53955"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">hey guys, anyone still awake? having problems with an auto-generated value &quot;id&quot; column: em.persist(entity) sets a non-null &quot;id&quot; value even when the transaction is aborted. why does hibernate restore the previous entity state (id=null) ? (hibernate 4.3, JPA, JSF, JEE6)</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_53956"><a href="/javaee/2014-01-29#i_53956">02:32</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53956"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">whartung: nice SO post about databases and binaries. (apric: I have no idea, sorry)</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_apric">
+
+<td class="time" id="i_53957"><a href="/javaee/2014-01-29#i_53957">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53957"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">this _may_ have something to do with the generation strategy: TABLE</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_apric">
+
+<td class="time" id="i_53958"><a href="/javaee/2014-01-29#i_53958">02:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53958"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">nope, same with with SEQUENCE :(</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_53959"><a href="/javaee/2014-01-29#i_53959">03:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53959"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">semiosis: kinda funny that <a href="http://camel.apache.org" title="http://camel.apache.org">http://camel.apache.org</a> punts to <a href="http://stackoverflow.com/questions/8845186/what-exactly-is-apache-camel" title="http://stackoverflow.com/questions/8845186/what-exactly-is-apache-camel">http://stackoverflow.com/questions/8845186/what-exactly-is-apache-camel</a> :)</td>
+</tr>
+
+        
+<tr id="id_l10" class="new special">
+
+<td class="time" id="i_53960"><a href="/javaee/2014-01-29#i_53960">03:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53960"  /></td>
+<td class="nick"></td>
+<td class="msg ">sajjadg joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont special">
+
+<td class="time" id="i_53961"><a href="/javaee/2014-01-29#i_53961">03:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53961"  /></td>
+<td class="nick"></td>
+<td class="msg ">kobain_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont special">
+
+<td class="time" id="i_53962"><a href="/javaee/2014-01-29#i_53962">04:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53962"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_firebird1 dark">
+
+<td class="time" id="i_53963"><a href="/javaee/2014-01-29#i_53963">04:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53963"  /></td>
+<td class="nick">firebird1</td>
+<td class="msg ">i'm talking to client who dont know sockets but good in struts , jsf .... how ?</td>
+</tr>
+
+        
+<tr id="id_l14" class="new special">
+
+<td class="time" id="i_53964"><a href="/javaee/2014-01-29#i_53964">04:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53964"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_kotten_ dark">
+
+<td class="time" id="i_53965"><a href="/javaee/2014-01-29#i_53965">05:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53965"  /></td>
+<td class="nick nick7">kotten_</td>
+<td class="msg ">firebird1 what do you want to do?</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_kotten_ dark">
+
+<td class="time" id="i_53966"><a href="/javaee/2014-01-29#i_53966">05:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53966"  /></td>
+<td class="nick nick7">kotten_</td>
+<td class="msg ">apric I think this has something to do with the way you save it</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_kotten_ dark">
+
+<td class="time" id="i_53967"><a href="/javaee/2014-01-29#i_53967">05:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53967"  /></td>
+<td class="nick nick7">kotten_</td>
+<td class="msg ">session.save(&lt;Object&gt;), session.persist(&lt;Object&gt;) and that stuff</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_apric">
+
+<td class="time" id="i_53968"><a href="/javaee/2014-01-29#i_53968">06:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53968"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">kotten_: i'm using container-managed persistence (JEE6)</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_apric">
+
+<td class="time" id="i_53969"><a href="/javaee/2014-01-29#i_53969">06:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53969"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">i'm simply calling em.persist() which at some point raises a unique key constraint violation (from database), tx rollback</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_apric">
+
+<td class="time" id="i_53970"><a href="/javaee/2014-01-29#i_53970">06:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53970"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">but the entity &quot;id&quot; is not null anymore, even though it has never been persisted to the databse</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_apric">
+
+<td class="time" id="i_53971"><a href="/javaee/2014-01-29#i_53971">06:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53971"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">which leads to unexpected behavior in my application, which ich checking for id==null to find out if the record is &quot;new&quot;</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_apric">
+
+<td class="time" id="i_53972"><a href="/javaee/2014-01-29#i_53972">06:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53972"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">i could add some additional state variable to my code and keep it in sync with the entity state, but that's a hack in my opinion :(</td>
+</tr>
+
+        
+<tr id="id_l23" class="new special dark">
+
+<td class="time" id="i_53973"><a href="/javaee/2014-01-29#i_53973">06:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53973"  /></td>
+<td class="nick"></td>
+<td class="msg ">book` joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont special dark">
+
+<td class="time" id="i_53974"><a href="/javaee/2014-01-29#i_53974">06:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53974"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special dark">
+
+<td class="time" id="i_53975"><a href="/javaee/2014-01-29#i_53975">07:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53975"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special dark">
+
+<td class="time" id="i_53976"><a href="/javaee/2014-01-29#i_53976">07:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53976"  /></td>
+<td class="nick"></td>
+<td class="msg ">Bombe joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont special dark">
+
+<td class="time" id="i_53978"><a href="/javaee/2014-01-29#i_53978">08:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53978"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont special dark">
+
+<td class="time" id="i_53979"><a href="/javaee/2014-01-29#i_53979">08:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53979"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar|2 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont special dark">
+
+<td class="time" id="i_53980"><a href="/javaee/2014-01-29#i_53980">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53980"  /></td>
+<td class="nick"></td>
+<td class="msg ">fabioportieri joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_fabioportieri">
+
+<td class="time" id="i_53981"><a href="/javaee/2014-01-29#i_53981">08:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53981"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">morning</td>
+</tr>
+
+        
+<tr id="id_l31" class="new special dark">
+
+<td class="time" id="i_53982"><a href="/javaee/2014-01-29#i_53982">08:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53982"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special dark">
+
+<td class="time" id="i_53983"><a href="/javaee/2014-01-29#i_53983">08:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53983"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont special dark">
+
+<td class="time" id="i_53984"><a href="/javaee/2014-01-29#i_53984">09:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53984"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont special dark">
+
+<td class="time" id="i_53985"><a href="/javaee/2014-01-29#i_53985">09:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53985"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont special dark">
+
+<td class="time" id="i_53986"><a href="/javaee/2014-01-29#i_53986">09:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53986"  /></td>
+<td class="nick"></td>
+<td class="msg ">AlexCzar|2 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont special dark">
+
+<td class="time" id="i_53987"><a href="/javaee/2014-01-29#i_53987">09:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53987"  /></td>
+<td class="nick"></td>
+<td class="msg ">firebird1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l37" class="cont special dark">
+
+<td class="time" id="i_53988"><a href="/javaee/2014-01-29#i_53988">10:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53988"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l38" class="cont special dark">
+
+<td class="time" id="i_53990"><a href="/javaee/2014-01-29#i_53990">10:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53990"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_pdurbin">
+
+<td class="time" id="i_53991"><a href="/javaee/2014-01-29#i_53991">11:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53991"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">fabioportieri: morning</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_53992"><a href="/javaee/2014-01-29#i_53992">11:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53992"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">hello pdurbin</td>
+</tr>
+
+        
+<tr id="id_l41" class="new special">
+
+<td class="time" id="i_53993"><a href="/javaee/2014-01-29#i_53993">11:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53993"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l42" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_53994"><a href="/javaee/2014-01-29#i_53994">11:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53994"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">in jsf: &quot;The h:panelGrid tag is used to represent an entire table. The h:panelGroup tag is used to represent rows in a table. Other tags are used to represent individual cells in the rows.&quot;  but using icefaces it sets each panelgroup inside a td, i was expecting a row for each panelgroup ?</td>
+</tr>
+
+        
+<tr id="id_l43" class="new nick nick_pdurbin">
+
+<td class="time" id="i_53995"><a href="/javaee/2014-01-29#i_53995">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53995"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">fabioportieri: where is that quote from? can you give a link?</td>
+</tr>
+
+        
+<tr id="id_l44" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_53996"><a href="/javaee/2014-01-29#i_53996">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53996"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg "><a href="http://docs.oracle.com/cd/E19798-01/821-1841/bnasc/" title="http://docs.oracle.com/cd/E19798-01/821-1841/bnasc/">http://docs.oracle.com/cd/E19798-01/821-1841/bnasc/</a></td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_pdurbin">
+
+<td class="time" id="i_53997"><a href="/javaee/2014-01-29#i_53997">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53997"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">fabioportieri: thanks</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_53998"><a href="/javaee/2014-01-29#i_53998">11:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53998"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">no prob</td>
+</tr>
+
+        
+<tr id="id_l47" class="new special">
+
+<td class="time" id="i_53999"><a href="/javaee/2014-01-29#i_53999">11:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_53999"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_54000"><a href="/javaee/2014-01-29#i_54000">12:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54000"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">so this is using html tables for layout?</td>
+</tr>
+
+        
+<tr id="id_l49" class="new nick nick_fabioportieri">
+
+<td class="time" id="i_54001"><a href="/javaee/2014-01-29#i_54001">12:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54001"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l50" class="new special dark">
+
+<td class="time" id="i_54002"><a href="/javaee/2014-01-29#i_54002">12:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54002"  /></td>
+<td class="nick"></td>
+<td class="msg ">Guest99210 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_sess">
+
+<td class="time" id="i_54003"><a href="/javaee/2014-01-29#i_54003">12:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54003"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">fabioportieri: each jsf component will be a cell</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_sess">
+
+<td class="time" id="i_54004"><a href="/javaee/2014-01-29#i_54004">12:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54004"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">children of panelgroup will be inside a single cell</td>
+</tr>
+
+        
+<tr id="id_l53" class="cont nick nick_sess">
+
+<td class="time" id="i_54005"><a href="/javaee/2014-01-29#i_54005">12:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54005"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">im not sure what your problem is</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54006"><a href="/javaee/2014-01-29#i_54006">12:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54006"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess: i expected each panelgroup inside a panelgrid to generate a row</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_sess">
+
+<td class="time" id="i_54007"><a href="/javaee/2014-01-29#i_54007">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54007"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">fabioportieri: you are missunderstanding the text</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont nick nick_sess">
+
+<td class="time" id="i_54008"><a href="/javaee/2014-01-29#i_54008">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54008"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">they are not meant to be used together</td>
+</tr>
+
+        
+<tr id="id_l57" class="cont nick nick_sess">
+
+<td class="time" id="i_54009"><a href="/javaee/2014-01-29#i_54009">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54009"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">they are two different layout tags that do not cooperate</td>
+</tr>
+
+        
+<tr id="id_l58" class="cont nick nick_sess">
+
+<td class="time" id="i_54010"><a href="/javaee/2014-01-29#i_54010">12:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54010"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">you use a panelGroup inside a panelGrid when you want multiple elements inside the same cell</td>
+</tr>
+
+        
+<tr id="id_l59" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54011"><a href="/javaee/2014-01-29#i_54011">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54011"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l60" class="new nick nick_sess">
+
+<td class="time" id="i_54012"><a href="/javaee/2014-01-29#i_54012">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54012"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">if you are not happy with how panelGrid works, just use a normal html table</td>
+</tr>
+
+        
+<tr id="id_l61" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54013"><a href="/javaee/2014-01-29#i_54013">12:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54013"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">no, it's not a real problem, just wondering</td>
+</tr>
+
+        
+<tr id="id_l62" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54014"><a href="/javaee/2014-01-29#i_54014">12:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54014"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">but the text states: panelgrid represent a table. panelgroup represent rows in a table. so...</td>
+</tr>
+
+        
+<tr id="id_l63" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54015"><a href="/javaee/2014-01-29#i_54015">12:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54015"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">i don't see how panelgroup is representing table rows</td>
+</tr>
+
+        
+<tr id="id_l64" class="new nick nick_sess">
+
+<td class="time" id="i_54016"><a href="/javaee/2014-01-29#i_54016">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54016"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it has nothing to do with tables</td>
+</tr>
+
+        
+<tr id="id_l65" class="cont nick nick_sess">
+
+<td class="time" id="i_54017"><a href="/javaee/2014-01-29#i_54017">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54017"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">probably just clumsily described</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont nick nick_sess">
+
+<td class="time" id="i_54018"><a href="/javaee/2014-01-29#i_54018">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54018"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">The panelGroup tag is a container component that renders its child components. It is intended to be used in situations where it is desirable to include several components but when only one child component is allowed, such as within a panelGrid column or a facet component.</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont nick nick_sess">
+
+<td class="time" id="i_54019"><a href="/javaee/2014-01-29#i_54019">12:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54019"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">theres a proper description</td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54020"><a href="/javaee/2014-01-29#i_54020">12:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54020"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">it has to do with tables though</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_sess">
+
+<td class="time" id="i_54021"><a href="/javaee/2014-01-29#i_54021">12:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54021"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">nope</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont nick nick_sess">
+
+<td class="time" id="i_54022"><a href="/javaee/2014-01-29#i_54022">12:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54022"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it's the jsf version of a span</td>
+</tr>
+
+        
+<tr id="id_l71" class="cont nick nick_sess">
+
+<td class="time" id="i_54023"><a href="/javaee/2014-01-29#i_54023">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54023"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it renders a span i think</td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54024"><a href="/javaee/2014-01-29#i_54024">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54024"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">a div iirc</td>
+</tr>
+
+        
+<tr id="id_l73" class="new nick nick_sess">
+
+<td class="time" id="i_54025"><a href="/javaee/2014-01-29#i_54025">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54025"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">or a div, depending on the layout attribute</td>
+</tr>
+
+        
+<tr id="id_l74" class="cont nick nick_sess">
+
+<td class="time" id="i_54026"><a href="/javaee/2014-01-29#i_54026">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54026"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">but a span by default, if layout=&quot;block&quot; is not used</td>
+</tr>
+
+        
+<tr id="id_l75" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54027"><a href="/javaee/2014-01-29#i_54027">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54027"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">it renders a div by default to me</td>
+</tr>
+
+        
+<tr id="id_l76" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54028"><a href="/javaee/2014-01-29#i_54028">12:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54028"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">icefaces at least</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54029"><a href="/javaee/2014-01-29#i_54029">12:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54029"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">probably you're right for h:panelGroup</td>
+</tr>
+
+        
+<tr id="id_l78" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54030"><a href="/javaee/2014-01-29#i_54030">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54030"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">aniway the doc clearly states</td>
+</tr>
+
+        
+<tr id="id_l79" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54031"><a href="/javaee/2014-01-29#i_54031">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54031"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">Laying Out Components with the h:panelGrid and h:panelGroup Tags&quot;</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_sess">
+
+<td class="time" id="i_54032"><a href="/javaee/2014-01-29#i_54032">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54032"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">oh i didnt know icefaces had their own</td>
+</tr>
+
+        
+<tr id="id_l81" class="cont nick nick_sess">
+
+<td class="time" id="i_54033"><a href="/javaee/2014-01-29#i_54033">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54033"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">they are alternatives</td>
+</tr>
+
+        
+<tr id="id_l82" class="cont nick nick_sess">
+
+<td class="time" id="i_54034"><a href="/javaee/2014-01-29#i_54034">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54034"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">not combined</td>
+</tr>
+
+        
+<tr id="id_l83" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54035"><a href="/javaee/2014-01-29#i_54035">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54035"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">but maybe it works as expected with standard jsf</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54036"><a href="/javaee/2014-01-29#i_54036">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54036"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">and the icefaces implementation differs</td>
+</tr>
+
+        
+<tr id="id_l85" class="new nick nick_sess">
+
+<td class="time" id="i_54037"><a href="/javaee/2014-01-29#i_54037">12:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54037"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">if you look at the examples below, they aren't combined</td>
+</tr>
+
+        
+<tr id="id_l86" class="cont nick nick_sess">
+
+<td class="time" id="i_54038"><a href="/javaee/2014-01-29#i_54038">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54038"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it also says panelGrid is used to represent an ENTIRE table</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont nick nick_sess">
+
+<td class="time" id="i_54039"><a href="/javaee/2014-01-29#i_54039">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54039"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">meaning no other tags are used in the process</td>
+</tr>
+
+        
+<tr id="id_l88" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54040"><a href="/javaee/2014-01-29#i_54040">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54040"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">..and panelGroup its rows</td>
+</tr>
+
+        
+<tr id="id_l89" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54041"><a href="/javaee/2014-01-29#i_54041">12:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54041"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">i think that may be true for h tags, just not for icefaces tags</td>
+</tr>
+
+        
+<tr id="id_l90" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54042"><a href="/javaee/2014-01-29#i_54042">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54042"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">because i recall i managed to create rows with panelgroup</td>
+</tr>
+
+        
+<tr id="id_l91" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54043"><a href="/javaee/2014-01-29#i_54043">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54043"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">but probably with the h tags</td>
+</tr>
+
+        
+<tr id="id_l92" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54044"><a href="/javaee/2014-01-29#i_54044">12:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54044"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">as the docs says</td>
+</tr>
+
+        
+<tr id="id_l93" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54045"><a href="/javaee/2014-01-29#i_54045">12:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54045"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">(i was using ice:panelGroup &amp;&amp; ice:panelGrid</td>
+</tr>
+
+        
+<tr id="id_l94" class="new nick nick_sess">
+
+<td class="time" id="i_54046"><a href="/javaee/2014-01-29#i_54046">13:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54046"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">fabioportieri: no it does not say ITS rows</td>
+</tr>
+
+        
+<tr id="id_l95" class="cont nick nick_sess">
+
+<td class="time" id="i_54047"><a href="/javaee/2014-01-29#i_54047">13:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54047"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it says rows</td>
+</tr>
+
+        
+<tr id="id_l96" class="cont nick nick_sess">
+
+<td class="time" id="i_54048"><a href="/javaee/2014-01-29#i_54048">13:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54048"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">there is NO such functionality in jsf</td>
+</tr>
+
+        
+<tr id="id_l97" class="cont nick nick_sess">
+
+<td class="time" id="i_54049"><a href="/javaee/2014-01-29#i_54049">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54049"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">the only row you create with panelgroup is rows of divs</td>
+</tr>
+
+        
+<tr id="id_l98" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54050"><a href="/javaee/2014-01-29#i_54050">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54050"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">then how can you create rows?</td>
+</tr>
+
+        
+<tr id="id_l99" class="new nick nick_sess">
+
+<td class="time" id="i_54051"><a href="/javaee/2014-01-29#i_54051">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54051"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">I cannot speak for ice tags though whatever their purpose is</td>
+</tr>
+
+        
+<tr id="id_l100" class="cont nick nick_sess">
+
+<td class="time" id="i_54052"><a href="/javaee/2014-01-29#i_54052">13:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54052"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">with &lt;tr&gt;</td>
+</tr>
+
+        
+<tr id="id_l101" class="cont nick nick_sess">
+
+<td class="time" id="i_54053"><a href="/javaee/2014-01-29#i_54053">13:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54053"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">you dont need jsf to create a table</td>
+</tr>
+
+        
+<tr id="id_l102" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54054"><a href="/javaee/2014-01-29#i_54054">13:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54054"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">why not? isn't the purpose of panelGrid?</td>
+</tr>
+
+        
+<tr id="id_l103" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54055"><a href="/javaee/2014-01-29#i_54055">13:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54055"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">so &lt;h:panelGrid&gt; &lt;tr&gt;...&lt;/tr&gt; &lt;/h:panelGrid&gt; ?</td>
+</tr>
+
+        
+<tr id="id_l104" class="new nick nick_sess">
+
+<td class="time" id="i_54056"><a href="/javaee/2014-01-29#i_54056">13:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54056"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">no..</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont nick nick_sess">
+
+<td class="time" id="i_54057"><a href="/javaee/2014-01-29#i_54057">13:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54057"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">panelgrid renders rows automatically</td>
+</tr>
+
+        
+<tr id="id_l106" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54058"><a href="/javaee/2014-01-29#i_54058">13:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54058"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess: ok but how can you control how many rows?</td>
+</tr>
+
+        
+<tr id="id_l107" class="new nick nick_sess">
+
+<td class="time" id="i_54059"><a href="/javaee/2014-01-29#i_54059">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54059"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">with the columns attribute in combination with content</td>
+</tr>
+
+        
+<tr id="id_l108" class="cont nick nick_sess">
+
+<td class="time" id="i_54060"><a href="/javaee/2014-01-29#i_54060">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54060"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">what are you trying to render?</td>
+</tr>
+
+        
+<tr id="id_l109" class="cont nick nick_sess">
+
+<td class="time" id="i_54061"><a href="/javaee/2014-01-29#i_54061">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54061"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">static or dynamic content?</td>
+</tr>
+
+        
+<tr id="id_l110" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54062"><a href="/javaee/2014-01-29#i_54062">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54062"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">columns aren't td?</td>
+</tr>
+
+        
+<tr id="id_l111" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54063"><a href="/javaee/2014-01-29#i_54063">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54063"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess: i just miss how you can control rows inside a panelGrid</td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick_sess">
+
+<td class="time" id="i_54064"><a href="/javaee/2014-01-29#i_54064">13:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54064"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">panelgrid is just a convenience thing for rendering for example label - input - message in a table without requiring so much markup</td>
+</tr>
+
+        
+<tr id="id_l113" class="cont nick nick_sess">
+
+<td class="time" id="i_54065"><a href="/javaee/2014-01-29#i_54065">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54065"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">what kind of control</td>
+</tr>
+
+        
+<tr id="id_l114" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54066"><a href="/javaee/2014-01-29#i_54066">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54066"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess: specify a fixed number of rows</td>
+</tr>
+
+        
+<tr id="id_l115" class="new nick nick_sess">
+
+<td class="time" id="i_54067"><a href="/javaee/2014-01-29#i_54067">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54067"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">then use a &lt;table&gt;</td>
+</tr>
+
+        
+<tr id="id_l116" class="cont nick nick_sess">
+
+<td class="time" id="i_54068"><a href="/javaee/2014-01-29#i_54068">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54068"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">that what it is for</td>
+</tr>
+
+        
+<tr id="id_l117" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54069"><a href="/javaee/2014-01-29#i_54069">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54069"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">i thought panelGrid was some convenience tag for tables</td>
+</tr>
+
+        
+<tr id="id_l118" class="new nick nick_sess">
+
+<td class="time" id="i_54070"><a href="/javaee/2014-01-29#i_54070">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54070"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it is</td>
+</tr>
+
+        
+<tr id="id_l119" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54071"><a href="/javaee/2014-01-29#i_54071">13:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54071"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">but if i can't specify rows as i wish</td>
+</tr>
+
+        
+<tr id="id_l120" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54072"><a href="/javaee/2014-01-29#i_54072">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54072"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">what's its purpose?</td>
+</tr>
+
+        
+<tr id="id_l121" class="new nick nick_sess">
+
+<td class="time" id="i_54073"><a href="/javaee/2014-01-29#i_54073">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54073"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">the number of rows is implicit</td>
+</tr>
+
+        
+<tr id="id_l122" class="new nick nick_apric dark">
+
+<td class="time" id="i_54074"><a href="/javaee/2014-01-29#i_54074">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54074"  /></td>
+<td class="nick nick4">apric</td>
+<td class="msg ">it is: a themed table basically</td>
+</tr>
+
+        
+<tr id="id_l123" class="new nick nick_sess">
+
+<td class="time" id="i_54075"><a href="/javaee/2014-01-29#i_54075">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54075"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">from the number of elements you place in the table</td>
+</tr>
+
+        
+<tr id="id_l124" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54076"><a href="/javaee/2014-01-29#i_54076">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54076"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">i can specify columns, not rows..</td>
+</tr>
+
+        
+<tr id="id_l125" class="new nick nick_sess">
+
+<td class="time" id="i_54077"><a href="/javaee/2014-01-29#i_54077">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54077"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">^</td>
+</tr>
+
+        
+<tr id="id_l126" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54078"><a href="/javaee/2014-01-29#i_54078">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54078"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess: indeed, that's why i thought with panelGroup i could do it!</td>
+</tr>
+
+        
+<tr id="id_l127" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54079"><a href="/javaee/2014-01-29#i_54079">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54079"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">as the doc states</td>
+</tr>
+
+        
+<tr id="id_l128" class="new nick nick_sess">
+
+<td class="time" id="i_54080"><a href="/javaee/2014-01-29#i_54080">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54080"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">1. why? 2. no it doesnt</td>
+</tr>
+
+        
+<tr id="id_l129" class="cont nick nick_sess">
+
+<td class="time" id="i_54081"><a href="/javaee/2014-01-29#i_54081">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54081"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">one again</td>
+</tr>
+
+        
+<tr id="id_l130" class="cont nick nick_sess">
+
+<td class="time" id="i_54082"><a href="/javaee/2014-01-29#i_54082">13:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54082"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">what are you trying ti accomplish</td>
+</tr>
+
+        
+<tr id="id_l131" class="cont nick nick_sess">
+
+<td class="time" id="i_54083"><a href="/javaee/2014-01-29#i_54083">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54083"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">what do you want to place in the table</td>
+</tr>
+
+        
+<tr id="id_l132" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54084"><a href="/javaee/2014-01-29#i_54084">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54084"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">nothing i'm just curious in how it works</td>
+</tr>
+
+        
+<tr id="id_l133" class="new nick nick_sess">
+
+<td class="time" id="i_54085"><a href="/javaee/2014-01-29#i_54085">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54085"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it works by rendering each child in a table, and switching row every n children</td>
+</tr>
+
+        
+<tr id="id_l134" class="cont nick nick_sess">
+
+<td class="time" id="i_54086"><a href="/javaee/2014-01-29#i_54086">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54086"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">where n is the columns attribute</td>
+</tr>
+
+        
+<tr id="id_l135" class="cont nick nick_sess">
+
+<td class="time" id="i_54087"><a href="/javaee/2014-01-29#i_54087">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54087"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">thats it</td>
+</tr>
+
+        
+<tr id="id_l136" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54088"><a href="/javaee/2014-01-29#i_54088">13:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54088"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">but if i have</td>
+</tr>
+
+        
+<tr id="id_l137" class="new nick nick_sess">
+
+<td class="time" id="i_54089"><a href="/javaee/2014-01-29#i_54089">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54089"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">columns=&quot;3&quot; and placing 9 elements in it</td>
+</tr>
+
+        
+<tr id="id_l138" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54090"><a href="/javaee/2014-01-29#i_54090">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54090"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">two panelGroup inside a panelGrid</td>
+</tr>
+
+        
+<tr id="id_l139" class="new nick nick_sess">
+
+<td class="time" id="i_54091"><a href="/javaee/2014-01-29#i_54091">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54091"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">will construct them in a 3x3 table</td>
+</tr>
+
+        
+<tr id="id_l140" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54092"><a href="/javaee/2014-01-29#i_54092">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54092"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">that means the panelGrid has two children, correct?</td>
+</tr>
+
+        
+<tr id="id_l141" class="new nick nick_sess">
+
+<td class="time" id="i_54093"><a href="/javaee/2014-01-29#i_54093">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54093"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">2 panelgroups are simply 2 children</td>
+</tr>
+
+        
+<tr id="id_l142" class="cont nick nick_sess">
+
+<td class="time" id="i_54094"><a href="/javaee/2014-01-29#i_54094">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54094"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l143" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54095"><a href="/javaee/2014-01-29#i_54095">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54095"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">then i expect it to generate two rows</td>
+</tr>
+
+        
+<tr id="id_l144" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54096"><a href="/javaee/2014-01-29#i_54096">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54096"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">right?</td>
+</tr>
+
+        
+<tr id="id_l145" class="new nick nick_sess">
+
+<td class="time" id="i_54097"><a href="/javaee/2014-01-29#i_54097">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54097"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">for the 10th time no</td>
+</tr>
+
+        
+<tr id="id_l146" class="cont nick nick_sess">
+
+<td class="time" id="i_54098"><a href="/javaee/2014-01-29#i_54098">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54098"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">panelgroup are children like any other</td>
+</tr>
+
+        
+<tr id="id_l147" class="cont nick nick_sess">
+
+<td class="time" id="i_54099"><a href="/javaee/2014-01-29#i_54099">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54099"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it renders 2 panelgroups like it renders 2 inputs</td>
+</tr>
+
+        
+<tr id="id_l148" class="cont nick nick_sess">
+
+<td class="time" id="i_54100"><a href="/javaee/2014-01-29#i_54100">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54100"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">in 2 different cells</td>
+</tr>
+
+        
+<tr id="id_l149" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54101"><a href="/javaee/2014-01-29#i_54101">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54101"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">sess&gt; it works by rendering each child in a table, and switching row every n children</td>
+</tr>
+
+        
+<tr id="id_l150" class="new nick nick_sess">
+
+<td class="time" id="i_54102"><a href="/javaee/2014-01-29#i_54102">13:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54102"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l151" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54103"><a href="/javaee/2014-01-29#i_54103">13:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54103"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">what do you mean by switching row every n children?</td>
+</tr>
+
+        
+<tr id="id_l152" class="new nick nick_sess">
+
+<td class="time" id="i_54104"><a href="/javaee/2014-01-29#i_54104">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54104"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">&lt;h:panelGroup columns=&quot;2&gt; &lt;input/&gt;&lt;input/&gt;  &lt;input/&gt;  &lt;input/&gt;  &lt;input/&gt;   &lt;/h:panelGroup&gt; renders a table with 3 rows, 2 cells each except the last one that contains a single cell</td>
+</tr>
+
+        
+<tr id="id_l153" class="cont nick nick_sess">
+
+<td class="time" id="i_54105"><a href="/javaee/2014-01-29#i_54105">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54105"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">if the input were jsf elements at least</td>
+</tr>
+
+        
+<tr id="id_l154" class="cont nick nick_sess">
+
+<td class="time" id="i_54106"><a href="/javaee/2014-01-29#i_54106">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54106"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">if columns is changed to 3</td>
+</tr>
+
+        
+<tr id="id_l155" class="cont nick nick_sess">
+
+<td class="time" id="i_54107"><a href="/javaee/2014-01-29#i_54107">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54107"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">it renders 2 rows with 3 columns, the last rows would only have 2 inputs</td>
+</tr>
+
+        
+<tr id="id_l156" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54108"><a href="/javaee/2014-01-29#i_54108">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54108"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">and if instead of input i would have placed panelGroup s?</td>
+</tr>
+
+        
+<tr id="id_l157" class="new nick nick_sess">
+
+<td class="time" id="i_54109"><a href="/javaee/2014-01-29#i_54109">13:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54109"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">same behavior</td>
+</tr>
+
+        
+<tr id="id_l158" class="cont nick nick_sess">
+
+<td class="time" id="i_54110"><a href="/javaee/2014-01-29#i_54110">13:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54110"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">the difference is that you can get multiple elements into the same cell using panelGroup since it can have other elements as children</td>
+</tr>
+
+        
+<tr id="id_l159" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54111"><a href="/javaee/2014-01-29#i_54111">13:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54111"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">why you said no then ?</td>
+</tr>
+
+        
+<tr id="id_l160" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54112"><a href="/javaee/2014-01-29#i_54112">13:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54112"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">yes i know that</td>
+</tr>
+
+        
+<tr id="id_l161" class="new nick nick_sess">
+
+<td class="time" id="i_54113"><a href="/javaee/2014-01-29#i_54113">13:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54113"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">because you said something wrong?</td>
+</tr>
+
+        
+<tr id="id_l162" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54114"><a href="/javaee/2014-01-29#i_54114">13:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54114"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">[14:23] &lt;fabioportieri&gt; then i expect it to generate two rows [14:23] &lt;fabioportieri&gt; right? [14:23] &lt;sess&gt; for the 10th time no</td>
+</tr>
+
+        
+<tr id="id_l163" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54115"><a href="/javaee/2014-01-29#i_54115">13:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54115"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">aaargh</td>
+</tr>
+
+        
+<tr id="id_l164" class="new nick nick_sess">
+
+<td class="time" id="i_54116"><a href="/javaee/2014-01-29#i_54116">13:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54116"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">i dont know why you keep confusing yourself</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont nick nick_sess">
+
+<td class="time" id="i_54117"><a href="/javaee/2014-01-29#i_54117">13:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54117"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">the behavior is extremly simple</td>
+</tr>
+
+        
+<tr id="id_l166" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54118"><a href="/javaee/2014-01-29#i_54118">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54118"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">so if i have two panelgroup inside a panelgrid.. how many rows?</td>
+</tr>
+
+        
+<tr id="id_l167" class="new nick nick_sess">
+
+<td class="time" id="i_54119"><a href="/javaee/2014-01-29#i_54119">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54119"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">depends on your columns attribute</td>
+</tr>
+
+        
+<tr id="id_l168" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54120"><a href="/javaee/2014-01-29#i_54120">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54120"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">if column=1 2 rows, if 2 1 row?</td>
+</tr>
+
+        
+<tr id="id_l169" class="new nick nick_sess">
+
+<td class="time" id="i_54121"><a href="/javaee/2014-01-29#i_54121">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54121"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">with columns=&quot;1&quot;: 2 rows</td>
+</tr>
+
+        
+<tr id="id_l170" class="cont nick nick_sess">
+
+<td class="time" id="i_54122"><a href="/javaee/2014-01-29#i_54122">13:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54122"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l171" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54123"><a href="/javaee/2014-01-29#i_54123">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54123"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">ok that make sense</td>
+</tr>
+
+        
+<tr id="id_l172" class="new nick nick_sess">
+
+<td class="time" id="i_54124"><a href="/javaee/2014-01-29#i_54124">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54124"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">regardless of children inside the panelgroups</td>
+</tr>
+
+        
+<tr id="id_l173" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54125"><a href="/javaee/2014-01-29#i_54125">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54125"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">finally!</td>
+</tr>
+
+        
+<tr id="id_l174" class="new nick nick_sess">
+
+<td class="time" id="i_54126"><a href="/javaee/2014-01-29#i_54126">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54126"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">!</td>
+</tr>
+
+        
+<tr id="id_l175" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54127"><a href="/javaee/2014-01-29#i_54127">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54127"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">aha</td>
+</tr>
+
+        
+<tr id="id_l176" class="new nick nick_sess">
+
+<td class="time" id="i_54128"><a href="/javaee/2014-01-29#i_54128">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54128"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">panelgrid only looks at top level children</td>
+</tr>
+
+        
+<tr id="id_l177" class="cont nick nick_sess">
+
+<td class="time" id="i_54129"><a href="/javaee/2014-01-29#i_54129">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54129"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">thats why you can use panelgroup to have several elements inside the same cell</td>
+</tr>
+
+        
+<tr id="id_l178" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54130"><a href="/javaee/2014-01-29#i_54130">13:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54130"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l179" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54131"><a href="/javaee/2014-01-29#i_54131">13:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54131"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">friggin oracle docs confuses me :)</td>
+</tr>
+
+        
+<tr id="id_l180" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54132"><a href="/javaee/2014-01-29#i_54132">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54132"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">&quot; The h:panelGroup tag is used to represent rows in a table&quot; &lt;- that is just wrong then</td>
+</tr>
+
+        
+<tr id="id_l181" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54133"><a href="/javaee/2014-01-29#i_54133">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54133"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">it has nothing to do with tables</td>
+</tr>
+
+        
+<tr id="id_l182" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54134"><a href="/javaee/2014-01-29#i_54134">13:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54134"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">as you said</td>
+</tr>
+
+        
+<tr id="id_l183" class="new nick nick_sess">
+
+<td class="time" id="i_54135"><a href="/javaee/2014-01-29#i_54135">13:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54135"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">yeah either a typo or someone confused about html elements</td>
+</tr>
+
+        
+<tr id="id_l184" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54136"><a href="/javaee/2014-01-29#i_54136">13:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54136"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">meh</td>
+</tr>
+
+        
+<tr id="id_l185" class="cont nick nick_fabioportieri dark">
+
+<td class="time" id="i_54137"><a href="/javaee/2014-01-29#i_54137">13:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54137"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">thanks for your time sess</td>
+</tr>
+
+        
+<tr id="id_l186" class="new nick nick_sess">
+
+<td class="time" id="i_54138"><a href="/javaee/2014-01-29#i_54138">13:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54138"  /></td>
+<td class="nick nick1">sess</td>
+<td class="msg ">np</td>
+</tr>
+
+        
+<tr id="id_l187" class="new special dark">
+
+<td class="time" id="i_54139"><a href="/javaee/2014-01-29#i_54139">14:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54139"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l188" class="cont special dark">
+
+<td class="time" id="i_54140"><a href="/javaee/2014-01-29#i_54140">14:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54140"  /></td>
+<td class="nick"></td>
+<td class="msg ">Naros joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l189" class="cont special dark">
+
+<td class="time" id="i_54143"><a href="/javaee/2014-01-29#i_54143">15:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54143"  /></td>
+<td class="nick"></td>
+<td class="msg ">kobain joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l190" class="cont special dark">
+
+<td class="time" id="i_54144"><a href="/javaee/2014-01-29#i_54144">15:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54144"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sy1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l191" class="cont special dark">
+
+<td class="time" id="i_54145"><a href="/javaee/2014-01-29#i_54145">15:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54145"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l192" class="cont special dark">
+
+<td class="time" id="i_54146"><a href="/javaee/2014-01-29#i_54146">16:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54146"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l193" class="cont special dark">
+
+<td class="time" id="i_54147"><a href="/javaee/2014-01-29#i_54147">16:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54147"  /></td>
+<td class="nick"></td>
+<td class="msg ">cem1 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l194" class="new nick nick_cem1">
+
+<td class="time" id="i_54148"><a href="/javaee/2014-01-29#i_54148">16:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54148"  /></td>
+<td class="nick nick6">cem1</td>
+<td class="msg ">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</td>
+</tr>
+
+        
+<tr id="id_l195" class="new nick nick_sajjadg dark">
+
+<td class="time" id="i_54149"><a href="/javaee/2014-01-29#i_54149">16:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54149"  /></td>
+<td class="nick nick8">sajjadg</td>
+<td class="msg ">cem1: hi !</td>
+</tr>
+
+        
+<tr id="id_l196" class="new nick nick_cem1">
+
+<td class="time" id="i_54150"><a href="/javaee/2014-01-29#i_54150">16:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54150"  /></td>
+<td class="nick nick6">cem1</td>
+<td class="msg ">few questions on aop</td>
+</tr>
+
+        
+<tr id="id_l197" class="cont nick nick_cem1">
+
+<td class="time" id="i_54151"><a href="/javaee/2014-01-29#i_54151">16:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54151"  /></td>
+<td class="nick nick6">cem1</td>
+<td class="msg ">how aop is realted with DI ?</td>
+</tr>
+
+        
+<tr id="id_l198" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_54152"><a href="/javaee/2014-01-29#i_54152">16:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54152"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">cem1: what does aop mean to you?</td>
+</tr>
+
+        
+<tr id="id_l199" class="new special">
+
+<td class="time" id="i_54153"><a href="/javaee/2014-01-29#i_54153">16:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54153"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l200" class="new nick nick_fabioportieri dark">
+
+<td class="time" id="i_54154"><a href="/javaee/2014-01-29#i_54154">16:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54154"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">it's not</td>
+</tr>
+
+        
+<tr id="id_l201" class="new special">
+
+<td class="time" id="i_54155"><a href="/javaee/2014-01-29#i_54155">16:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54155"  /></td>
+<td class="nick"></td>
+<td class="msg ">Guest99210 joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l202" class="cont special">
+
+<td class="time" id="i_54156"><a href="/javaee/2014-01-29#i_54156">17:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54156"  /></td>
+<td class="nick"></td>
+<td class="msg ">neuro_sys joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l203" class="new nick nick_cem1 dark">
+
+<td class="time" id="i_54157"><a href="/javaee/2014-01-29#i_54157">17:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54157"  /></td>
+<td class="nick nick6">cem1</td>
+<td class="msg ">i'm very hungry and sleepy later</td>
+</tr>
+
+        
+<tr id="id_l204" class="cont nick nick_cem1 dark">
+
+<td class="time" id="i_54158"><a href="/javaee/2014-01-29#i_54158">17:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54158"  /></td>
+<td class="nick nick6">cem1</td>
+<td class="msg ">sorry all</td>
+</tr>
+
+        
+<tr id="id_l205" class="new nick nick_fabioportieri">
+
+<td class="time" id="i_54159"><a href="/javaee/2014-01-29#i_54159">17:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54159"  /></td>
+<td class="nick nick2">fabioportieri</td>
+<td class="msg ">me too</td>
+</tr>
+
+        
+<tr id="id_l206" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_54160"><a href="/javaee/2014-01-29#i_54160">17:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54160"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">tough question when you're sleepy :)</td>
+</tr>
+
+        
+<tr id="id_l207" class="new nick nick_semiosis">
+
+<td class="time" id="i_54161"><a href="/javaee/2014-01-29#i_54161">17:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54161"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">ooh, look what I found!  <a href="http://nicoulaj.github.io/vagrant-maven-plugin/" title="http://nicoulaj.github.io/vagrant-maven-plugin/">http://nicoulaj.github.io/vagrant-maven-plugin/</a></td>
+</tr>
+
+        
+<tr id="id_l208" class="new special dark">
+
+<td class="time" id="i_54162"><a href="/javaee/2014-01-29#i_54162">18:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54162"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l209" class="cont special dark">
+
+<td class="time" id="i_54163"><a href="/javaee/2014-01-29#i_54163">18:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54163"  /></td>
+<td class="nick"></td>
+<td class="msg ">Naros left ##javaee</td>
+</tr>
+
+        
+<tr id="id_l210" class="cont special dark">
+
+<td class="time" id="i_54164"><a href="/javaee/2014-01-29#i_54164">18:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54164"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l211" class="cont special dark">
+
+<td class="time" id="i_54165"><a href="/javaee/2014-01-29#i_54165">18:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54165"  /></td>
+<td class="nick"></td>
+<td class="msg ">Jhosepth joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l212" class="cont special dark">
+
+<td class="time" id="i_54166"><a href="/javaee/2014-01-29#i_54166">19:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54166"  /></td>
+<td class="nick"></td>
+<td class="msg ">kobain_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l213" class="cont special dark">
+
+<td class="time" id="i_54167"><a href="/javaee/2014-01-29#i_54167">19:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54167"  /></td>
+<td class="nick"></td>
+<td class="msg ">fohbahz joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l214" class="new nick nick_sajjadg">
+
+<td class="time" id="i_54168"><a href="/javaee/2014-01-29#i_54168">20:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54168"  /></td>
+<td class="nick nick8">sajjadg</td>
+<td class="msg ">semiosis: what's it?</td>
+</tr>
+
+        
+<tr id="id_l215" class="new special dark">
+
+<td class="time" id="i_54169"><a href="/javaee/2014-01-29#i_54169">20:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54169"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l216" class="cont special dark">
+
+<td class="time" id="i_54170"><a href="/javaee/2014-01-29#i_54170">20:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54170"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunst_ joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l217" class="cont special dark">
+
+<td class="time" id="i_54171"><a href="/javaee/2014-01-29#i_54171">20:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54171"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l218" class="cont special dark">
+
+<td class="time" id="i_54172"><a href="/javaee/2014-01-29#i_54172">20:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54172"  /></td>
+<td class="nick"></td>
+<td class="msg ">Yegor joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l219" class="new nick nick_Yegor">
+
+<td class="time" id="i_54173"><a href="/javaee/2014-01-29#i_54173">20:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54173"  /></td>
+<td class="nick nick9">Yegor</td>
+<td class="msg ">Hi all! I have following question. I try to implement menu with JSF and primefaces. I have menu on left side of my page.On click on menu item i include different pages with ui:include tag, those contains dynamically content, that drawned with using ui:repeat and p:commandButton inside of ui:repeat. In included pages p:commandButton does not invoke method of the managed bean not with action nor with actionListener and also html code of page contain ui:repeat tag</td>
+</tr>
+
+        
+<tr id="id_l220" class="cont nick nick_Yegor">
+
+<td class="time" id="i_54174"><a href="/javaee/2014-01-29#i_54174">20:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54174"  /></td>
+<td class="nick nick9">Yegor</td>
+<td class="msg ">. What i'm doing wrong.</td>
+</tr>
+
+        
+<tr id="id_l221" class="new special dark">
+
+<td class="time" id="i_54175"><a href="/javaee/2014-01-29#i_54175">21:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54175"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l222" class="cont special dark">
+
+<td class="time" id="i_54176"><a href="/javaee/2014-01-29#i_54176">21:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54176"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l223" class="cont special dark">
+
+<td class="time" id="i_54177"><a href="/javaee/2014-01-29#i_54177">21:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54177"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l224" class="cont special dark">
+
+<td class="time" id="i_54178"><a href="/javaee/2014-01-29#i_54178">21:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54178"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l225" class="cont special dark">
+
+<td class="time" id="i_54179"><a href="/javaee/2014-01-29#i_54179">21:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54179"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l226" class="cont special dark">
+
+<td class="time" id="i_54180"><a href="/javaee/2014-01-29#i_54180">21:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54180"  /></td>
+<td class="nick"></td>
+<td class="msg ">mocrunsthecity joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l227" class="new nick nick_neuro_sys">
+
+<td class="time" id="i_54181"><a href="/javaee/2014-01-29#i_54181">22:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54181"  /></td>
+<td class="nick">neuro_sys</td>
+<td class="msg ">hello</td>
+</tr>
+
+        
+<tr id="id_l228" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_54182"><a href="/javaee/2014-01-29#i_54182">23:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54182"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">semiosis: I like the example: <a href="http://nicoulaj.github.io/vagrant-maven-plugin/examples/running-a-vm-during-integration-tests.html" title="http://nicoulaj.github.io/vagrant-maven-plugin/examples/running-a-vm-during-integration-tests.html">http://nicoulaj.github.io/vagrant-maven-plugin/examples/running-a-vm-during-integration-tests.html</a></td>
+</tr>
+
+        
+<tr id="id_l229" class="new nick nick_semiosis">
+
+<td class="time" id="i_54183"><a href="/javaee/2014-01-29#i_54183">23:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54183"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">pdurbin: !!!!</td>
+</tr>
+
+        
+<tr id="id_l230" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_54184"><a href="/javaee/2014-01-29#i_54184">23:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54184"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">hmm?</td>
+</tr>
+
+        
+<tr id="id_l231" class="new nick nick_semiosis">
+
+<td class="time" id="i_54185"><a href="/javaee/2014-01-29#i_54185">23:14</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54185"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">my chat with purpleidea, author of the glusterfs puppet module... <a href="https://botbot.me/freenode/gluster/msg/10314909/" title="https://botbot.me/freenode/gluster/msg/10314909/">https://botbot.me/freenode/gluster/msg/10314909/</a></td>
+</tr>
+
+        
+<tr id="id_l232" class="cont nick nick_semiosis">
+
+<td class="time" id="i_54186"><a href="/javaee/2014-01-29#i_54186">23:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54186"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">was just ranting at him about how excited I am to have maven kick off a vagrant build of a gluster server &amp; run java integration tests against it</td>
+</tr>
+
+        
+<tr id="id_l233" class="cont nick nick_semiosis">
+
+<td class="time" id="i_54187"><a href="/javaee/2014-01-29#i_54187">23:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54187"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">for my glusterfs-java-filesystem project, that is</td>
+</tr>
+
+        
+<tr id="id_l234" class="new special dark">
+
+<td class="time" id="i_54188"><a href="/javaee/2014-01-29#i_54188">23:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54188"  /></td>
+<td class="nick"></td>
+<td class="msg ">sfisque joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l235" class="cont special dark">
+
+<td class="time" id="i_54189"><a href="/javaee/2014-01-29#i_54189">23:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54189"  /></td>
+<td class="nick"></td>
+<td class="msg ">weyer joined ##javaee</td>
+</tr>
+
+        
+<tr id="id_l236" class="new nick nick_pdurbin">
+
+<td class="time" id="i_54190"><a href="/javaee/2014-01-29#i_54190">23:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54190"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">semiosis: sorry, trying to feed kids and pay a plumber. leak fixed! \o/</td>
+</tr>
+
+        
+<tr id="id_l237" class="new nick nick_semiosis dark">
+
+<td class="time" id="i_54191"><a href="/javaee/2014-01-29#i_54191">23:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54191"  /></td>
+<td class="nick nick5">semiosis</td>
+<td class="msg ">take care of that</td>
+</tr>
+
+        
+<tr id="id_l238" class="new nick nick_whartung">
+
+<td class="time" id="i_54192"><a href="/javaee/2014-01-29#i_54192">23:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_54192"  /></td>
+<td class="nick">whartung</td>
+<td class="msg ">plumbers…don't get me started on plumbers...</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/javaee/2014-01-28" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/javaee/">#javaee index</a> |
+<a href="/javaee/today">Today</a> |
+    
+<a href="/javaee/2014-01-30" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=javaee">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Ajavaee">Google Search</a>
+| <a href="/text.pl?channel=javaee;date=2014-01-29">Plain-Text</a>
+    | <a href="/text.pl?channel=javaee;date=2014-01-29;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=javaee;date=2014-01-29;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p>Please see <a href="http://irclog.greptilian.com/javaee">http://irclog.greptilian.com/javaee</a> for which days have been logged.
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

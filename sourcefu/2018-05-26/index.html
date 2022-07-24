@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2018-05-26" />
+    <title>IRC log for #sourcefu, 2018-05-26</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2018-05-26</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2018-05-25" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-27" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-26">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-26;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-26;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_prologic dark">
+
+<td class="time" id="i_230317"><a href="/sourcefu/2018-05-26#i_230317">00:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230317"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear not sure if you have an idea of this at all</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230318"><a href="/sourcefu/2018-05-26#i_230318">00:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230318"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but been doing some local performance benchmarks of my je project (job engine)</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230319"><a href="/sourcefu/2018-05-26#i_230319">00:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230319"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">throughput of about ~180 jobs/s with a p95 latency of (job start -&gt; completion) of ~100ms</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230320"><a href="/sourcefu/2018-05-26#i_230320">00:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230320"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">this is single-machine/single-worker performance</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230321"><a href="/sourcefu/2018-05-26#i_230321">00:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230321"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'm not even sure if this is good or not; but it'll be interesting to see how well this scales once I plumb in msgbus and horizontally scale workers</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_bear">
+
+<td class="time" id="i_230322"><a href="/sourcefu/2018-05-26#i_230322">00:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230322"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">your using a simple memory/cpu only job as your benchmark job?</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_bear">
+
+<td class="time" id="i_230323"><a href="/sourcefu/2018-05-26#i_230323">00:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230323"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">that will be a good indicator of your roundtrip latency</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_prologic dark">
+
+<td class="time" id="i_230324"><a href="/sourcefu/2018-05-26#i_230324">00:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230324"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">the &quot;job&quot; is a C-written &quot;Hello World!&quot; binary</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230325"><a href="/sourcefu/2018-05-26#i_230325">00:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230325"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so it's the best benchmark you're going to get</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_bear">
+
+<td class="time" id="i_230326"><a href="/sourcefu/2018-05-26#i_230326">00:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230326"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yea</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_prologic dark">
+
+<td class="time" id="i_230327"><a href="/sourcefu/2018-05-26#i_230327">00:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230327"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Not sure if I. n improve this single worker perf</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230328"><a href="/sourcefu/2018-05-26#i_230328">00:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230328"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">can</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pdurbin">
+
+<td class="time" id="i_230329"><a href="/sourcefu/2018-05-26#i_230329">01:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230329"  /></td>
+<td class="nick nick4">pdurbin</td>
+<td class="msg ">bear: nice discussion of CircleCI at <a href="https://youtu.be/NHKcHmHejRo?t=21m25s" title="https://youtu.be/NHKcHmHejRo?t=21m25s">https://youtu.be/NHKcHmHejRo?t=21m25s</a></td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_bear dark">
+
+<td class="time" id="i_230330"><a href="/sourcefu/2018-05-26#i_230330">04:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230330"  /></td>
+<td class="nick nick2">* bear</td>
+<td class="msg act ">looks</td>
+</tr>
+
+        
+<tr id="id_l16" class="new special">
+
+<td class="time" id="i_230332"><a href="/sourcefu/2018-05-26#i_230332">04:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230332"  /></td>
+<td class="nick"></td>
+<td class="msg ">aditsu joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_bear dark">
+
+<td class="time" id="i_230334"><a href="/sourcefu/2018-05-26#i_230334">05:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230334"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">cool - passed that to our dev-relations folks to maybe reach out to them</td>
+</tr>
+
+        
+<tr id="id_l18" class="new nick nick_prologic">
+
+<td class="time" id="i_230335"><a href="/sourcefu/2018-05-26#i_230335">05:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230335"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">nice</td>
+</tr>
+
+        
+<tr id="id_l19" class="new special dark">
+
+<td class="time" id="i_230337"><a href="/sourcefu/2018-05-26#i_230337">08:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230337"  /></td>
+<td class="nick"></td>
+<td class="msg ">walterve_MKNCWI joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont special dark">
+
+<td class="time" id="i_230351"><a href="/sourcefu/2018-05-26#i_230351">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230351"  /></td>
+<td class="nick"></td>
+<td class="msg ">Imbiss_Bronkoey joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_Imbiss_Bronkoey">
+
+<td class="time" id="i_230352"><a href="/sourcefu/2018-05-26#i_230352">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230352"  /></td>
+<td class="nick nick3">Imbiss_Bronkoey</td>
+<td class="msg ">Global Notice] Hello freenode, you may have noticed 2 days ago many users got logged out of their NickServ accounts. After our investigation, we have come to the conclusion one or more of our sponsored servers have been compromised. Please change your password IMMEDIATELY. More details are available in #freenode with the command !help</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_Imbiss_Bronkoey">
+
+<td class="time" id="i_230353"><a href="/sourcefu/2018-05-26#i_230353">18:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230353"  /></td>
+<td class="nick nick3">Imbiss_Bronkoey</td>
+<td class="msg ">aditsu pdurbin philbot prologic kzisme semiosis sivoais tumdedum bear codex dotplus</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_prologic dark">
+
+<td class="time" id="i_230355"><a href="/sourcefu/2018-05-26#i_230355">21:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230355"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">weee</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_230356"><a href="/sourcefu/2018-05-26#i_230356">21:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230356"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">local perf (single-process) boosted to 250 jobs/s</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2018-05-25" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-27" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-26">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-26;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-26;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

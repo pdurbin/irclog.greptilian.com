@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #rest" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/rest/2018-07-31" />
+    <title>IRC log for #rest, 2018-07-31</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #rest, 2018-07-31</h1>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+        <p><a href="/rest/2018-07-30" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2018-08-01" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2018-07-31">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2018-07-31;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2018-07-31;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_whartung dark">
+
+<td class="time" id="i_232284"><a href="/rest/2018-07-31#i_232284">00:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232284"  /></td>
+<td class="nick nick2">whartung</td>
+<td class="msg ">because in the end, it’s the same resource, right?</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont nick nick_whartung dark">
+
+<td class="time" id="i_232285"><a href="/rest/2018-07-31#i_232285">00:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232285"  /></td>
+<td class="nick nick2">whartung</td>
+<td class="msg ">and that’s the important part — resources names are supposed to, you know, name resources!</td>
+</tr>
+
+        
+<tr id="id_l4" class="new nick nick_ModusPwnens">
+
+<td class="time" id="i_232286"><a href="/rest/2018-07-31#i_232286">00:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232286"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">Yeah, that's what I thought too, except that the resource could be considered different since there are other transformations being applied</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_ModusPwnens">
+
+<td class="time" id="i_232287"><a href="/rest/2018-07-31#i_232287">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232287"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">for reasons I don't want to get into, I don't want clients picking and choosing what audio optimizations to run</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_whartung dark">
+
+<td class="time" id="i_232288"><a href="/rest/2018-07-31#i_232288">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232288"  /></td>
+<td class="nick nick2">whartung</td>
+<td class="msg ">No, resource is the same, the REPRESENTATION is different. Represenation and Resource are not necessarily identical.</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_ModusPwnens">
+
+<td class="time" id="i_232289"><a href="/rest/2018-07-31#i_232289">00:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232289"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">however, it is probably reasonable to provide an option to have NO optimizations run. That could then be paired with a conditional check on the transfer encoding header to accomplish what I'm after, I think.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_ModusPwnens">
+
+<td class="time" id="i_232290"><a href="/rest/2018-07-31#i_232290">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232290"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">and i think that would be the restful design i'm after.</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_ModusPwnens">
+
+<td class="time" id="i_232291"><a href="/rest/2018-07-31#i_232291">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232291"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">how does that sound?</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_whartung dark">
+
+<td class="time" id="i_232292"><a href="/rest/2018-07-31#i_232292">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232292"  /></td>
+<td class="nick nick2">whartung</td>
+<td class="msg ">yea, that could work.</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_ModusPwnens">
+
+<td class="time" id="i_232293"><a href="/rest/2018-07-31#i_232293">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232293"  /></td>
+<td class="nick nick1">ModusPwnens</td>
+<td class="msg ">awesome. thanks for the help :)</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_whartung dark">
+
+<td class="time" id="i_232294"><a href="/rest/2018-07-31#i_232294">00:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232294"  /></td>
+<td class="nick nick2">whartung</td>
+<td class="msg ">Here’s a picture of a sleeping cat. This will help too. They always help. <a href="http://oi65.tinypic.com/11rakx2.jpg" title="http://oi65.tinypic.com/11rakx2.jpg">http://oi65.tinypic.com/11rakx2.jpg</a></td>
+</tr>
+
+        
+<tr id="id_l13" class="new special">
+
+<td class="time" id="i_232295"><a href="/rest/2018-07-31#i_232295">04:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232295"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont special">
+
+<td class="time" id="i_232298"><a href="/rest/2018-07-31#i_232298">09:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232298"  /></td>
+<td class="nick"></td>
+<td class="msg ">zama joined #rest</td>
+</tr>
+
+        
+<tr id="id_l15" class="cont special">
+
+<td class="time" id="i_232301"><a href="/rest/2018-07-31#i_232301">10:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232301"  /></td>
+<td class="nick"></td>
+<td class="msg ">zama_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont special">
+
+<td class="time" id="i_232302"><a href="/rest/2018-07-31#i_232302">10:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232302"  /></td>
+<td class="nick"></td>
+<td class="msg ">zama_ joined #rest</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont special">
+
+<td class="time" id="i_232303"><a href="/rest/2018-07-31#i_232303">11:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232303"  /></td>
+<td class="nick"></td>
+<td class="msg ">Guest52070 joined #rest</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont special">
+
+<td class="time" id="i_232304"><a href="/rest/2018-07-31#i_232304">11:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232304"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont special">
+
+<td class="time" id="i_232305"><a href="/rest/2018-07-31#i_232305">11:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232305"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont special">
+
+<td class="time" id="i_232306"><a href="/rest/2018-07-31#i_232306">11:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232306"  /></td>
+<td class="nick"></td>
+<td class="msg ">interop_madness joined #rest</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont special">
+
+<td class="time" id="i_232308"><a href="/rest/2018-07-31#i_232308">14:26</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232308"  /></td>
+<td class="nick"></td>
+<td class="msg ">igitoor joined #rest</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont special">
+
+<td class="time" id="i_232309"><a href="/rest/2018-07-31#i_232309">14:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232309"  /></td>
+<td class="nick"></td>
+<td class="msg ">igitoor joined #rest</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont special">
+
+<td class="time" id="i_232310"><a href="/rest/2018-07-31#i_232310">14:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232310"  /></td>
+<td class="nick"></td>
+<td class="msg ">wsieroci joined #rest</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont special">
+
+<td class="time" id="i_232311"><a href="/rest/2018-07-31#i_232311">20:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232311"  /></td>
+<td class="nick"></td>
+<td class="msg ">mchelen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont special">
+
+<td class="time" id="i_232315"><a href="/rest/2018-07-31#i_232315">23:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232315"  /></td>
+<td class="nick"></td>
+<td class="msg ">Haudegen joined #rest</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont special">
+
+<td class="time" id="i_232316"><a href="/rest/2018-07-31#i_232316">23:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_232316"  /></td>
+<td class="nick"></td>
+<td class="msg ">Wildblue joined #rest</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/rest/2018-07-30" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/rest/">#rest index</a> |
+<a href="/rest/today">Today</a> |
+    
+<a href="/rest/2018-08-01" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=rest">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Arest">Google Search</a>
+| <a href="/text.pl?channel=rest;date=2018-07-31">Plain-Text</a>
+    | <a href="/text.pl?channel=rest;date=2018-07-31;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=rest;date=2018-07-31;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="https://trygvis.io/rest-wiki/">https://trygvis.io/rest-wiki/</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

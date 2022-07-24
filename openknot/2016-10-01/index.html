@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #openknot" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/openknot/2016-10-01" />
+    <title>IRC log for #openknot, 2016-10-01</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #openknot, 2016-10-01</h1>
+
+    <p>Open Knot Communications Platform - <a href="https://github.com/openknot">https://github.com/openknot</a>
+</p>
+
+        <p><a href="/openknot/2016-09-30" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/openknot/">#openknot index</a> |
+<a href="/openknot/today">Today</a> |
+    
+<a href="/openknot/2016-10-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=openknot">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Aopenknot">Google Search</a>
+| <a href="/text.pl?channel=openknot;date=2016-10-01">Plain-Text</a>
+    | <a href="/text.pl?channel=openknot;date=2016-10-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=openknot;date=2016-10-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_188423"><a href="/openknot/2016-10-01#i_188423">17:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188423"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">How could <abbr title="Internet Relay Chat">IRC</abbr> support threads or subjects? For more context, please see <a href="https://gitter.im/gitterHQ/irc-bridge/archives/2016/10/01" title="https://gitter.im/gitterHQ/irc-bridge/archives/2016/10/01">https://gitter.im/gitterHQ/irc-bridge/archives/2016/10/01</a> and how I'm being told <a href="http://blog.gitter.im/2016/09/30/introducing-gitter-topics/" title="http://blog.gitter.im/2016/09/30/introducing-gitter-topics/">http://blog.gitter.im/2016/09/30/introducing-gitter-topics/</a> can't be supported via <abbr title="Internet Relay Chat">IRC</abbr>.</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_dotplus">
+
+<td class="time" id="i_188429"><a href="/openknot/2016-10-01#i_188429">19:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188429"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">I don't think it's crazy talk - but also I can't see traditional <abbr title="Internet Relay Chat">IRC</abbr> clients supporting a threaded/conversation-based model, although it wouldn't be impossible. I could see it happening for web/browser-based clients.</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_dotplus">
+
+<td class="time" id="i_188430"><a href="/openknot/2016-10-01#i_188430">19:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188430"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">The difficulty, basically, would be: how to provide the user with a frictionless, preferably completely transparent, method of (switching between|following [new] threads).</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_dotplus">
+
+<td class="time" id="i_188431"><a href="/openknot/2016-10-01#i_188431">19:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188431"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">that's not how <abbr title="Internet Relay Chat">IRC</abbr> clients work currently.</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_dotplus">
+
+<td class="time" id="i_188435"><a href="/openknot/2016-10-01#i_188435">19:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188435"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">One way would be to have unusually sophisticated &quot;room&quot; list, which would really be a &quot;thread&quot; list. What kind of sophistication am I talking about? it would auto-update and it would offer uncommonly powerful search/filter such as 1) by regex (to take advantage of possible conventionalizing of the thread/room names, such as pre/suffix with (threadcreator|lastpostauthor) or pre/suffix with &quot;parent&quot; room/thread 2) timestamp of (creation|last ...</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_dotplus">
+
+<td class="time" id="i_188436"><a href="/openknot/2016-10-01#i_188436">19:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188436"  /></td>
+<td class="nick nick1">dotplus</td>
+<td class="msg ">... post) 3) probably more, but that's what springs to mind before I get on the plane</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_188450"><a href="/openknot/2016-10-01#i_188450">23:16</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_188450"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">dotplus: nice thoughts. thanks. safe flight</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/openknot/2016-09-30" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/openknot/">#openknot index</a> |
+<a href="/openknot/today">Today</a> |
+    
+<a href="/openknot/2016-10-02" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=openknot">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Aopenknot">Google Search</a>
+| <a href="/text.pl?channel=openknot;date=2016-10-01">Plain-Text</a>
+    | <a href="/text.pl?channel=openknot;date=2016-10-01;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=openknot;date=2016-10-01;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p>Open Knot Communications Platform - <a href="https://github.com/openknot">https://github.com/openknot</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

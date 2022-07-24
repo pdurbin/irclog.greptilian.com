@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-11-21" />
+    <title>IRC log for #sourcefu, 2016-11-21</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-11-21</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-11-20" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-11-22" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-11-21">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-11-21;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-11-21;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_193141"><a href="/sourcefu/2016-11-21#i_193141">04:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193141"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">hehe, sorry I missed out on this fun! I should join that Gitter channel. Seems like a great place.</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_pdurbin">
+
+<td class="time" id="i_193166"><a href="/sourcefu/2016-11-21#i_193166">12:07</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193166"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: well, I'm still curious what tool you'd use. It's not too late! :)</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_193167"><a href="/sourcefu/2016-11-21#i_193167">12:08</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193167"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">Yeah, that pandas channel provided a nice bite sized challenge yesterday. Usually I'm in there thinking, &quot;I wonder if I should learn pandas.&quot; :)</td>
+</tr>
+
+        
+<tr id="id_l5" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_193187"><a href="/sourcefu/2016-11-21#i_193187">14:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193187"  /></td>
+<td class="nick nick4">dotplus</td>
+<td class="msg ">pdurbin: before reading the log beyond &quot;how would you find the state ...?&quot;, I thought about it and came up with an <abbr title="Structured Query Language">SQL</abbr> approach identical to yours. And an alternate approach using max() and a subselect instead of &quot;desc limit 1&quot; that I would use if we might also want to answer other similar questions (top10, bottom10, various averages, usw.)</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_pdurbin">
+
+<td class="time" id="i_193189"><a href="/sourcefu/2016-11-21#i_193189">15:30</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193189"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">dotplus: ok, so you'd use <abbr title="Structured Query Language">SQL</abbr> as well</td>
+</tr>
+
+        
+<tr id="id_l7" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_193190"><a href="/sourcefu/2016-11-21#i_193190">15:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193190"  /></td>
+<td class="nick nick4">dotplus</td>
+<td class="msg ">with my existing knowledge, I'd find that quickest, easiest for the specfic question. If I wanted to run with it and be easily extensible to answering other questions, perhaps not.</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_pdurbin">
+
+<td class="time" id="i_193191"><a href="/sourcefu/2016-11-21#i_193191">15:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193191"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">yeah, me too</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_193192"><a href="/sourcefu/2016-11-21#i_193192">15:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193192"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">but R is good for this stuff too</td>
+</tr>
+
+        
+<tr id="id_l10" class="new nick nick_dotplus dark">
+
+<td class="time" id="i_193193"><a href="/sourcefu/2016-11-21#i_193193">15:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193193"  /></td>
+<td class="nick nick4">* dotplus</td>
+<td class="msg act ">can't even spell R</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_semiosis">
+
+<td class="time" id="i_193197"><a href="/sourcefu/2016-11-21#i_193197">16:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193197"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">pdurbin: for a quick analysis of a csv file, honestly, i would write a throwaway php script.  i would iterate over the lines and increment a value in an associative array keyed by state.</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_semiosis">
+
+<td class="time" id="i_193198"><a href="/sourcefu/2016-11-21#i_193198">16:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193198"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">then dump the resulting array</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_193200"><a href="/sourcefu/2016-11-21#i_193200">17:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193200"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">interesting. I'm sure that would work fine.</td>
+</tr>
+
+        
+<tr id="id_l14" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_193201"><a href="/sourcefu/2016-11-21#i_193201">17:10</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193201"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">semiosis: would the script run from the command line or a browser?</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_semiosis">
+
+<td class="time" id="i_193202"><a href="/sourcefu/2016-11-21#i_193202">17:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193202"  /></td>
+<td class="nick nick3">semiosis</td>
+<td class="msg ">command line</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_193203"><a href="/sourcefu/2016-11-21#i_193203">17:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193203"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">pdurbin: I'll give it a try in R</td>
+</tr>
+
+        
+<tr id="id_l17" class="new nick nick_pdurbin">
+
+<td class="time" id="i_193204"><a href="/sourcefu/2016-11-21#i_193204">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193204"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">semiosis: cool</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_193205"><a href="/sourcefu/2016-11-21#i_193205">17:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193205"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: thanks, I'm lost in R again</td>
+</tr>
+
+        
+<tr id="id_l19" class="new nick nick_sivoais dark">
+
+<td class="time" id="i_193207"><a href="/sourcefu/2016-11-21#i_193207">17:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193207"  /></td>
+<td class="nick nick2">sivoais</td>
+<td class="msg ">pdurbin: not golfed, but uses magrittr to make it easier to read &lt;<a href="https://gist.github.com/zmughal/1c2a4e0ff4502b32135b4b82760a4b25" title="https://gist.github.com/zmughal/1c2a4e0ff4502b32135b4b82760a4b25">https://gist.github.com/zmughal/1c2a4e0ff4502b32135b4b82760a4b25</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l20" class="new nick nick_pdurbin">
+
+<td class="time" id="i_193210"><a href="/sourcefu/2016-11-21#i_193210">18:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193210"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">huh, &quot;A Forward-Pipe Operator for R&quot; <a href="https://cran.r-project.org/web/packages/magrittr/" title="https://cran.r-project.org/web/packages/magrittr/">https://cran.r-project.org/web/packages/magrittr/</a></td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_193211"><a href="/sourcefu/2016-11-21#i_193211">18:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_193211"  /></td>
+<td class="nick nick1">pdurbin</td>
+<td class="msg ">sivoais: thanks!</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-11-20" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-11-22" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-11-21">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-11-21;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-11-21;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

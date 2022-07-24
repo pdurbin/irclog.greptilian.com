@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #friendlyjava" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/friendlyjava/2017-08-10" />
+    <title>IRC log for #friendlyjava, 2017-08-10</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #friendlyjava, 2017-08-10</h1>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+        <p><a href="/friendlyjava/2017-08-09" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-08-11" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-08-10">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-08-10;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-08-10;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_213216"><a href="/friendlyjava/2017-08-10#i_213216">05:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213216"  /></td>
+<td class="nick"></td>
+<td class="msg ">df0 joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l3" class="cont special dark">
+
+<td class="time" id="i_213229"><a href="/friendlyjava/2017-08-10#i_213229">06:28</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213229"  /></td>
+<td class="nick"></td>
+<td class="msg ">abba joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont special dark">
+
+<td class="time" id="i_213240"><a href="/friendlyjava/2017-08-10#i_213240">07:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213240"  /></td>
+<td class="nick"></td>
+<td class="msg ">mr_lou joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont special dark">
+
+<td class="time" id="i_213255"><a href="/friendlyjava/2017-08-10#i_213255">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213255"  /></td>
+<td class="nick"></td>
+<td class="msg ">kirua joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l6" class="new nick nick_kirua">
+
+<td class="time" id="i_213256"><a href="/friendlyjava/2017-08-10#i_213256">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213256"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">hi</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_kirua">
+
+<td class="time" id="i_213257"><a href="/friendlyjava/2017-08-10#i_213257">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213257"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">here is the situation i'm confronted to : i need to develop a webservice thatneeds to retrieve a list  of elements from a database and send it back via a webservice.  For example the webservice' client asks for the list of commands made between date A and date B. The list can contain several millions elements, which creates two problems,  1) execution speed (the whole process takes a long time to perfom) 2) memory issue (the app runs on a jvm</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_kirua">
+
+<td class="time" id="i_213258"><a href="/friendlyjava/2017-08-10#i_213258">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213258"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">with 1gb <abbr title="Random Access Memory">RAM</abbr>). When the query returns 100 000 elements, it works fine but when it has to return several millions, it runs out of memory..     I tried for testing purposes to increase the memory allowed to the <abbr title="Java Virtual Machine">JVM</abbr> in the dev envoironment, and when the client asks for the list of commands for a whole year (it's a list of around 10 millions rows ), it takes up to 20 minutes between the moment he sends the request and receives a response. I'm using</td>
+</tr>
+
+        
+<tr id="id_l9" class="cont nick nick_kirua">
+
+<td class="time" id="i_213259"><a href="/friendlyjava/2017-08-10#i_213259">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213259"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">Ibatis to perform a queryforlist (which is not streamed like a JDBC' queryforlist and retrieves the full db response in one time) and send the list back via  a JAX-WS  webservice. I tried to set a fetch size in the query but it didnt make any difference. So I though about another possibility, which is to store the list (of commands) in a file on the webcontainer (WebLogic in this case) so instead of making a <abbr title="Database">DB</abbr> query each time a client makes a</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_kirua">
+
+<td class="time" id="i_213260"><a href="/friendlyjava/2017-08-10#i_213260">08:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213260"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">request and so on. I can just read the file and stream out the content to the client, what do you think of that solution and will it solve the problem ? or are there better solutions and ways to solve this issue ?</td>
+</tr>
+
+        
+<tr id="id_l11" class="new special dark">
+
+<td class="time" id="i_213284"><a href="/friendlyjava/2017-08-10#i_213284">09:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213284"  /></td>
+<td class="nick"></td>
+<td class="msg ">foojs joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l12" class="new nick nick_kirua">
+
+<td class="time" id="i_213285"><a href="/friendlyjava/2017-08-10#i_213285">10:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213285"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">help^please</td>
+</tr>
+
+        
+<tr id="id_l13" class="new nick nick_foojs dark">
+
+<td class="time" id="i_213286"><a href="/friendlyjava/2017-08-10#i_213286">10:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213286"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">kirua</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_kirua">
+
+<td class="time" id="i_213287"><a href="/friendlyjava/2017-08-10#i_213287">10:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213287"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">hi foojs</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_foojs dark">
+
+<td class="time" id="i_213288"><a href="/friendlyjava/2017-08-10#i_213288">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213288"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">hello</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_kirua">
+
+<td class="time" id="i_213289"><a href="/friendlyjava/2017-08-10#i_213289">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213289"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">i'm going to repost my question</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_kirua">
+
+<td class="time" id="i_213290"><a href="/friendlyjava/2017-08-10#i_213290">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213290"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">maybe you know better</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_kirua">
+
+<td class="time" id="i_213292"><a href="/friendlyjava/2017-08-10#i_213292">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213292"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">i'm sure you are a competent java dev</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_kirua">
+
+<td class="time" id="i_213293"><a href="/friendlyjava/2017-08-10#i_213293">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213293"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">here is the situation i'm confronted to : i need to develop a webservice thatneeds to retrieve a list  of elements from a database and send it back via a webservice.  For example the webservice' client asks for the list of commands made between date A and date B. The list can contain several millions elements, which creates two problems,  1) execution speed (the whole process takes a long time to perfom) 2) memory issue (the app runs on a jvm</td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_kirua">
+
+<td class="time" id="i_213294"><a href="/friendlyjava/2017-08-10#i_213294">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213294"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">with 1gb <abbr title="Random Access Memory">RAM</abbr>). When the query returns 100 000 elements, it works fine but when it has to return several millions, it runs out of memory..     I tried for testing purposes to increase the memory allowed to the <abbr title="Java Virtual Machine">JVM</abbr> in the dev envoironment, and when the client asks for the list of commands for a whole year (it's a list of around 10 millions rows ), it takes up to 20 minutes between the moment he sends the request and receives a response. I'm using</td>
+</tr>
+
+        
+<tr id="id_l21" class="cont nick nick_kirua">
+
+<td class="time" id="i_213295"><a href="/friendlyjava/2017-08-10#i_213295">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213295"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">Ibatis to perform a queryforlist (which is not streamed like a JDBC' queryforlist and retrieves the full db response in one time) and send the list back via  a JAX-WS  webservice. I tried to set a fetch size in the query but it didnt make any difference. So I though about another possibility, which is to store the list (of commands) in a file on the webcontainer (WebLogic in this case) so instead of making a <abbr title="Database">DB</abbr> query each time a client makes a</td>
+</tr>
+
+        
+<tr id="id_l22" class="cont nick nick_kirua">
+
+<td class="time" id="i_213296"><a href="/friendlyjava/2017-08-10#i_213296">10:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213296"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">request and so on. I can just read the file and stream out the content to the client, what do you think of that solution and will it solve the problem ? or are there better solutions and ways to solve this issue ?</td>
+</tr>
+
+        
+<tr id="id_l23" class="new nick nick_foojs dark">
+
+<td class="time" id="i_213297"><a href="/friendlyjava/2017-08-10#i_213297">10:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213297"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">k i have worked on JAX-WS and not JAX-RS , coming back to your question</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_foojs dark">
+
+<td class="time" id="i_213298"><a href="/friendlyjava/2017-08-10#i_213298">10:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213298"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">20 min is heck lot of time</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_foojs dark">
+
+<td class="time" id="i_213299"><a href="/friendlyjava/2017-08-10#i_213299">10:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213299"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">I tried to set a fetch size in the query but it didnt make any difference ???</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_foojs dark">
+
+<td class="time" id="i_213300"><a href="/friendlyjava/2017-08-10#i_213300">10:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213300"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">there is a better solution to this i believe</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_foojs dark">
+
+<td class="time" id="i_213301"><a href="/friendlyjava/2017-08-10#i_213301">10:11</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213301"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">why do you need to return that amount of data kirua ?</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_foojs dark">
+
+<td class="time" id="i_213302"><a href="/friendlyjava/2017-08-10#i_213302">10:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213302"  /></td>
+<td class="nick nick2">foojs</td>
+<td class="msg ">i have used pagination most of the time when data is dynamic</td>
+</tr>
+
+        
+<tr id="id_l29" class="new nick nick_kirua">
+
+<td class="time" id="i_213305"><a href="/friendlyjava/2017-08-10#i_213305">10:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213305"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">because the client needs the whole resultset and not to get it by chunk</td>
+</tr>
+
+        
+<tr id="id_l30" class="cont nick nick_kirua">
+
+<td class="time" id="i_213306"><a href="/friendlyjava/2017-08-10#i_213306">10:39</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213306"  /></td>
+<td class="nick nick1">kirua</td>
+<td class="msg ">do you know if it's possible to stream out a list with jax-ws ?</td>
+</tr>
+
+        
+<tr id="id_l31" class="new special dark">
+
+<td class="time" id="i_213327"><a href="/friendlyjava/2017-08-10#i_213327">15:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213327"  /></td>
+<td class="nick"></td>
+<td class="msg ">abba_ joined ##friendlyjava</td>
+</tr>
+
+        
+<tr id="id_l32" class="cont special dark">
+
+<td class="time" id="i_213331"><a href="/friendlyjava/2017-08-10#i_213331">16:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_213331"  /></td>
+<td class="nick"></td>
+<td class="msg ">df0 joined ##friendlyjava</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/friendlyjava/2017-08-09" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/friendlyjava/">#friendlyjava index</a> |
+<a href="/friendlyjava/today">Today</a> |
+    
+<a href="/friendlyjava/2017-08-11" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=friendlyjava">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Afriendlyjava">Google Search</a>
+| <a href="/text.pl?channel=friendlyjava;date=2017-08-10">Plain-Text</a>
+    | <a href="/text.pl?channel=friendlyjava;date=2017-08-10;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=friendlyjava;date=2017-08-10;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> ##friendlyjava on freenode
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

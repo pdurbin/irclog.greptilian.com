@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2016-09-03" />
+    <title>IRC log for #sourcefu, 2016-09-03</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2016-09-03</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2016-09-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-09-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-09-03">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-09-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-09-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new special dark">
+
+<td class="time" id="i_180508"><a href="/sourcefu/2016-09-03#i_180508">04:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180508"  /></td>
+<td class="nick"></td>
+<td class="msg ">dotplus joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_sivoais">
+
+<td class="time" id="i_180511"><a href="/sourcefu/2016-09-03#i_180511">06:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180511"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">pdurbin: you all are using merge commits, right? It looks like your release process does place tagging *after* doing the merge, so that seems right. &lt;<a href="http://guides.dataverse.org/en/4.2.3/developers/making-releases.html" title="http://guides.dataverse.org/en/4.2.3/developers/making-releases.html">http://guides.dataverse.org/en/4.2.3/developers/making-releases.html</a>&gt;</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180512"><a href="/sourcefu/2016-09-03#i_180512">06:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180512"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">&gt; git checkout master</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180513"><a href="/sourcefu/2016-09-03#i_180513">06:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180513"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">&gt; git merge my-release-branch; # now HEAD is pointing at a merge commit</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180514"><a href="/sourcefu/2016-09-03#i_180514">06:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180514"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">&gt; git tag vX.Y.Z; # tag it</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180515"><a href="/sourcefu/2016-09-03#i_180515">06:22</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180515"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">I know it isn't Java, but I use dzil on Perl projects and it has plugins that handle tagging and versioning automatically. They also check that the changelog has been edited.</td>
+</tr>
+
+        
+<tr id="id_l8" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180516"><a href="/sourcefu/2016-09-03#i_180516">06:23</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180516"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">It helps me make a release with some piece-of-mind.</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_180533"><a href="/sourcefu/2016-09-03#i_180533">11:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180533"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">semiosis: one can definitely merge a tag onto a branch. Like you said, a tag is just a pointer to a commit.</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_180534"><a href="/sourcefu/2016-09-03#i_180534">11:29</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180534"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">sivoais: what we say we do in those docs and what we actually do in practice has changed, mostly because I stopped doing all the merging and tagging at the command line. Now it's done via the GitHub web interface.</td>
+</tr>
+
+        
+<tr id="id_l11" class="new nick nick_sivoais">
+
+<td class="time" id="i_180545"><a href="/sourcefu/2016-09-03#i_180545">14:24</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180545"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">Mmmhmm. My issue with the GitHub interface is that it is very limited and can't handle every operation that Git users might want.</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180546"><a href="/sourcefu/2016-09-03#i_180546">14:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180546"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">If automating it through the interface is really important, you could have a GitHub hook that does it for you.</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_sivoais">
+
+<td class="time" id="i_180547"><a href="/sourcefu/2016-09-03#i_180547">14:27</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180547"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">It could be similar to the GitHub code review services that will only let you merge once certain conditions are met (*approved by X*, *passes these tests*, etc.)</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_180549"><a href="/sourcefu/2016-09-03#i_180549">14:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180549"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">it's mostly about making it easy for others on the team to easily merge and tag via a gui rather than having them mess with the command line</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_sivoais">
+
+<td class="time" id="i_180554"><a href="/sourcefu/2016-09-03#i_180554">15:09</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180554"  /></td>
+<td class="nick nick1">sivoais</td>
+<td class="msg ">If you can create a script that takes a branch name and a release number, then you might be able to wrap that into a service that does the release in one step.</td>
+</tr>
+
+        
+<tr id="id_l16" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_180574"><a href="/sourcefu/2016-09-03#i_180574">18:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_180574"  /></td>
+<td class="nick nick2">pdurbin</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2016-09-02" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2016-09-04" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2016-09-03">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2016-09-03;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2016-09-03;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

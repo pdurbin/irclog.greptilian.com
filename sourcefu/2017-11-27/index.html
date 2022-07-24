@@ -1,0 +1,1925 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2017-11-27" />
+    <title>IRC log for #sourcefu, 2017-11-27</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2017-11-27</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2017-11-26" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2017-11-28" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2017-11-27">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2017-11-27;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2017-11-27;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_221422"><a href="/sourcefu/2017-11-27#i_221422">00:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221422"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">bear: I hadn't really thought of an ircd logging the channel as a privacy thing, but I see what you mean. If the channel is logged, the expectation is the topic says &quot;this channel is being logged&quot; and in the nick list you see a bot with a name like &quot;irclogger&quot;.</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_prologic">
+
+<td class="time" id="i_221423"><a href="/sourcefu/2017-11-27#i_221423">01:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221423"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">its actually even worse than that</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic">
+
+<td class="time" id="i_221424"><a href="/sourcefu/2017-11-27#i_221424">01:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221424"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">an irc server operator can basically intercept all messages anyway</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_prologic">
+
+<td class="time" id="i_221425"><a href="/sourcefu/2017-11-27#i_221425">01:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221425"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">or modify the ircd to capture all exchanged messages</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic">
+
+<td class="time" id="i_221426"><a href="/sourcefu/2017-11-27#i_221426">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221426"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I'm thinking about ways to solve for this as well where despite the server being used as the &quot;exchange&quot; that the server cannot &quot;see&quot; the messages at all</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic">
+
+<td class="time" id="i_221427"><a href="/sourcefu/2017-11-27#i_221427">01:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221427"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">because they are encrypted e2e from each participating client</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_bear dark">
+
+<td class="time" id="i_221428"><a href="/sourcefu/2017-11-27#i_221428">01:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221428"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">that could be part of the secure channel flag - clients would need to establish e2e credentials in order to join</td>
+</tr>
+
+        
+<tr id="id_l9" class="new nick nick_prologic">
+
+<td class="time" id="i_221429"><a href="/sourcefu/2017-11-27#i_221429">01:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221429"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">could work</td>
+</tr>
+
+        
+<tr id="id_l10" class="cont nick nick_prologic">
+
+<td class="time" id="i_221430"><a href="/sourcefu/2017-11-27#i_221430">01:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221430"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">ofc much of that kind of e2e encryption would require some sane client support</td>
+</tr>
+
+        
+<tr id="id_l11" class="cont nick nick_prologic">
+
+<td class="time" id="i_221431"><a href="/sourcefu/2017-11-27#i_221431">01:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221431"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">do we use <abbr title="GNU Privacy Guard">GPG</abbr>?</td>
+</tr>
+
+        
+<tr id="id_l12" class="cont nick nick_prologic">
+
+<td class="time" id="i_221432"><a href="/sourcefu/2017-11-27#i_221432">01:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221432"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Signal?</td>
+</tr>
+
+        
+<tr id="id_l13" class="cont nick nick_prologic">
+
+<td class="time" id="i_221433"><a href="/sourcefu/2017-11-27#i_221433">01:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221433"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">how do you get client support into Textual, mIRC, X-Chat, HExChat, irssi, Palaver, MutterIRC, etc</td>
+</tr>
+
+        
+<tr id="id_l14" class="new nick nick_bear dark">
+
+<td class="time" id="i_221434"><a href="/sourcefu/2017-11-27#i_221434">01:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221434"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yea, e2e channels will almost mean custom client IMO</td>
+</tr>
+
+        
+<tr id="id_l15" class="new nick nick_prologic">
+
+<td class="time" id="i_221435"><a href="/sourcefu/2017-11-27#i_221435">02:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221435"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Or...</td>
+</tr>
+
+        
+<tr id="id_l16" class="cont nick nick_prologic">
+
+<td class="time" id="i_221436"><a href="/sourcefu/2017-11-27#i_221436">02:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221436"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">We could implement supplementary software to go along with eris</td>
+</tr>
+
+        
+<tr id="id_l17" class="cont nick nick_prologic">
+
+<td class="time" id="i_221437"><a href="/sourcefu/2017-11-27#i_221437">02:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221437"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that acts as a proxy</td>
+</tr>
+
+        
+<tr id="id_l18" class="cont nick nick_prologic">
+
+<td class="time" id="i_221438"><a href="/sourcefu/2017-11-27#i_221438">02:02</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221438"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">normal client -&gt; proxy  (via localhost)-&gt; server</td>
+</tr>
+
+        
+<tr id="id_l19" class="cont nick nick_prologic">
+
+<td class="time" id="i_221439"><a href="/sourcefu/2017-11-27#i_221439">02:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221439"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bit like what RobustIRC =&gt; <a href="https://robustirc.net/" title="https://robustirc.net/">https://robustirc.net/</a></td>
+</tr>
+
+        
+<tr id="id_l20" class="cont nick nick_prologic">
+
+<td class="time" id="i_221440"><a href="/sourcefu/2017-11-27#i_221440">02:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221440"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but for a different purpose (e2e enc)</td>
+</tr>
+
+        
+<tr id="id_l21" class="new nick nick_bear dark">
+
+<td class="time" id="i_221441"><a href="/sourcefu/2017-11-27#i_221441">02:13</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221441"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">that would enable bots to act on behalf of a registered secure user</td>
+</tr>
+
+        
+<tr id="id_l22" class="new nick nick_prologic">
+
+<td class="time" id="i_221442"><a href="/sourcefu/2017-11-27#i_221442">02:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221442"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">indeed</td>
+</tr>
+
+        
+<tr id="id_l23" class="cont nick nick_prologic">
+
+<td class="time" id="i_221443"><a href="/sourcefu/2017-11-27#i_221443">02:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221443"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">not such a bad idea?</td>
+</tr>
+
+        
+<tr id="id_l24" class="cont nick nick_prologic">
+
+<td class="time" id="i_221444"><a href="/sourcefu/2017-11-27#i_221444">02:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221444"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">if you want e2e enc; run up this local proxy?</td>
+</tr>
+
+        
+<tr id="id_l25" class="cont nick nick_prologic">
+
+<td class="time" id="i_221445"><a href="/sourcefu/2017-11-27#i_221445">02:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221445"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">make sure you use a trusted irc network that runs a trusted ircd -- Eris *cough*</td>
+</tr>
+
+        
+<tr id="id_l26" class="cont nick nick_prologic">
+
+<td class="time" id="i_221446"><a href="/sourcefu/2017-11-27#i_221446">02:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221446"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Or...</td>
+</tr>
+
+        
+<tr id="id_l27" class="cont nick nick_prologic">
+
+<td class="time" id="i_221447"><a href="/sourcefu/2017-11-27#i_221447">02:19</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221447"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Hmm no nvm</td>
+</tr>
+
+        
+<tr id="id_l28" class="cont nick nick_prologic">
+
+<td class="time" id="i_221448"><a href="/sourcefu/2017-11-27#i_221448">02:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221448"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I was thinking; what about building Eris to support storing/exchanging public <abbr title="GNU Privacy Guard">GPG</abbr> keys</td>
+</tr>
+
+        
+<tr id="id_l29" class="cont nick nick_prologic">
+
+<td class="time" id="i_221449"><a href="/sourcefu/2017-11-27#i_221449">02:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221449"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">the proxy would then know what to do with these and encrypt messages appropriately using the right public keys depending on recipient or channel</td>
+</tr>
+
+        
+<tr id="id_l30" class="new nick nick_bear dark">
+
+<td class="time" id="i_221450"><a href="/sourcefu/2017-11-27#i_221450">02:31</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221450"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">your talking about eris being a key server no?</td>
+</tr>
+
+        
+<tr id="id_l31" class="cont nick nick_bear dark">
+
+<td class="time" id="i_221451"><a href="/sourcefu/2017-11-27#i_221451">02:33</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221451"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">the closest thing I can think of is how keybase does secure channels</td>
+</tr>
+
+        
+<tr id="id_l32" class="new nick nick_prologic">
+
+<td class="time" id="i_221452"><a href="/sourcefu/2017-11-27#i_221452">02:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221452"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pretty much yeah</td>
+</tr>
+
+        
+<tr id="id_l33" class="cont nick nick_prologic">
+
+<td class="time" id="i_221453"><a href="/sourcefu/2017-11-27#i_221453">02:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221453"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that's what I was thinking</td>
+</tr>
+
+        
+<tr id="id_l34" class="cont nick nick_prologic">
+
+<td class="time" id="i_221454"><a href="/sourcefu/2017-11-27#i_221454">02:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221454"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">keybase</td>
+</tr>
+
+        
+<tr id="id_l35" class="cont nick nick_prologic">
+
+<td class="time" id="i_221455"><a href="/sourcefu/2017-11-27#i_221455">02:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221455"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">why not</td>
+</tr>
+
+        
+<tr id="id_l36" class="cont nick nick_prologic">
+
+<td class="time" id="i_221456"><a href="/sourcefu/2017-11-27#i_221456">02:34</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221456"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">it doesn't sound too far fetched</td>
+</tr>
+
+        
+<tr id="id_l37" class="new nick nick_bear dark">
+
+<td class="time" id="i_221457"><a href="/sourcefu/2017-11-27#i_221457">02:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221457"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">to be truly secure the server should only be the transport and even it would not be able to see the messages</td>
+</tr>
+
+        
+<tr id="id_l38" class="new nick nick_prologic">
+
+<td class="time" id="i_221458"><a href="/sourcefu/2017-11-27#i_221458">02:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221458"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">to date I know of no ircds or clients that support native e2e enc</td>
+</tr>
+
+        
+<tr id="id_l39" class="new nick nick_bear dark">
+
+<td class="time" id="i_221459"><a href="/sourcefu/2017-11-27#i_221459">02:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221459"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">IIRC they were talking about something like this for XMPP's MUCs in the next version of it's protocols</td>
+</tr>
+
+        
+<tr id="id_l40" class="new nick nick_prologic">
+
+<td class="time" id="i_221460"><a href="/sourcefu/2017-11-27#i_221460">02:35</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221460"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">well if you're talking about e2e enc</td>
+</tr>
+
+        
+<tr id="id_l41" class="cont nick nick_prologic">
+
+<td class="time" id="i_221461"><a href="/sourcefu/2017-11-27#i_221461">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221461"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">if the server only sees public keys used to enc messages</td>
+</tr>
+
+        
+<tr id="id_l42" class="cont nick nick_prologic">
+
+<td class="time" id="i_221462"><a href="/sourcefu/2017-11-27#i_221462">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221462"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">then the server can never truely see the enc'd messges</td>
+</tr>
+
+        
+<tr id="id_l43" class="cont nick nick_prologic">
+
+<td class="time" id="i_221463"><a href="/sourcefu/2017-11-27#i_221463">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221463"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">because it never has the private keys</td>
+</tr>
+
+        
+<tr id="id_l44" class="cont nick nick_prologic">
+
+<td class="time" id="i_221464"><a href="/sourcefu/2017-11-27#i_221464">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221464"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">this is how keybase works essentially AFAIK</td>
+</tr>
+
+        
+<tr id="id_l45" class="new nick nick_bear dark">
+
+<td class="time" id="i_221465"><a href="/sourcefu/2017-11-27#i_221465">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221465"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l46" class="new nick nick_prologic">
+
+<td class="time" id="i_221466"><a href="/sourcefu/2017-11-27#i_221466">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221466"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">at least from my understanding of how <abbr title="GNU Privacy Guard">GPG</abbr> (what is it called techincally) works?</td>
+</tr>
+
+        
+<tr id="id_l47" class="new nick nick_bear dark">
+
+<td class="time" id="i_221467"><a href="/sourcefu/2017-11-27#i_221467">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221467"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">then eris is nothing but a message router</td>
+</tr>
+
+        
+<tr id="id_l48" class="new nick nick_prologic">
+
+<td class="time" id="i_221468"><a href="/sourcefu/2017-11-27#i_221468">02:36</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221468"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">sure</td>
+</tr>
+
+        
+<tr id="id_l49" class="cont nick nick_prologic">
+
+<td class="time" id="i_221469"><a href="/sourcefu/2017-11-27#i_221469">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221469"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">the question becomes really</td>
+</tr>
+
+        
+<tr id="id_l50" class="new nick nick_bear dark">
+
+<td class="time" id="i_221470"><a href="/sourcefu/2017-11-27#i_221470">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221470"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">which is perfectly fine - my client can be of two minds with eris</td>
+</tr>
+
+        
+<tr id="id_l51" class="new nick nick_prologic">
+
+<td class="time" id="i_221471"><a href="/sourcefu/2017-11-27#i_221471">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221471"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">why can't we support this natively</td>
+</tr>
+
+        
+<tr id="id_l52" class="cont nick nick_prologic">
+
+<td class="time" id="i_221472"><a href="/sourcefu/2017-11-27#i_221472">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221472"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">without requiring clients to support this or proxies to implement this</td>
+</tr>
+
+        
+<tr id="id_l53" class="new nick nick_bear dark">
+
+<td class="time" id="i_221473"><a href="/sourcefu/2017-11-27#i_221473">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221473"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">because then the server would need enough information to perform the handshake or discovery</td>
+</tr>
+
+        
+<tr id="id_l54" class="new nick nick_prologic">
+
+<td class="time" id="i_221474"><a href="/sourcefu/2017-11-27#i_221474">02:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221474"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">can't we build custom (to be spced out) server-side features to exchange pub key pairs?</td>
+</tr>
+
+        
+<tr id="id_l55" class="new nick nick_bear dark">
+
+<td class="time" id="i_221475"><a href="/sourcefu/2017-11-27#i_221475">02:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221475"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">my thought would be that eris provides a place for clients to advertise their capabilities and for channels to register what capabilities are required for entry</td>
+</tr>
+
+        
+<tr id="id_l56" class="cont nick nick_bear dark">
+
+<td class="time" id="i_221476"><a href="/sourcefu/2017-11-27#i_221476">02:38</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221476"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">after that it is then nothing but a transport</td>
+</tr>
+
+        
+<tr id="id_l57" class="new nick nick_prologic">
+
+<td class="time" id="i_221477"><a href="/sourcefu/2017-11-27#i_221477">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221477"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">sure</td>
+</tr>
+
+        
+<tr id="id_l58" class="cont nick nick_prologic">
+
+<td class="time" id="i_221478"><a href="/sourcefu/2017-11-27#i_221478">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221478"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">you could do something like: /mode #foo +E &lt;pubkey&gt;</td>
+</tr>
+
+        
+<tr id="id_l59" class="cont nick nick_prologic">
+
+<td class="time" id="i_221479"><a href="/sourcefu/2017-11-27#i_221479">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221479"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">then anyone that joins and messages the channel is expected to use that key to encrypt messages</td>
+</tr>
+
+        
+<tr id="id_l60" class="new nick nick_bear dark">
+
+<td class="time" id="i_221480"><a href="/sourcefu/2017-11-27#i_221480">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221480"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">but yes, having it spec'd out as to how client A requests entry to channel Y which is owned by client B</td>
+</tr>
+
+        
+<tr id="id_l61" class="cont nick nick_bear dark">
+
+<td class="time" id="i_221481"><a href="/sourcefu/2017-11-27#i_221481">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221481"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l62" class="new nick nick_prologic">
+
+<td class="time" id="i_221482"><a href="/sourcefu/2017-11-27#i_221482">02:40</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221482"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">only clients/users actually have a valid matching private key to go with</td>
+</tr>
+
+        
+<tr id="id_l63" class="new nick nick_bear dark">
+
+<td class="time" id="i_221483"><a href="/sourcefu/2017-11-27#i_221483">02:41</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221483"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">client B's pubkey would be the channel's and anyone wanting access would have to send an invite request</td>
+</tr>
+
+        
+<tr id="id_l64" class="cont nick nick_bear dark">
+
+<td class="time" id="i_221484"><a href="/sourcefu/2017-11-27#i_221484">02:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221484"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">server receives it, unwraps the envelope, re-wraps it for client B with a stamp that it came from client A (which would be different from what client A signed for OOB verification)</td>
+</tr>
+
+        
+<tr id="id_l65" class="new nick nick_prologic">
+
+<td class="time" id="i_221485"><a href="/sourcefu/2017-11-27#i_221485">02:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221485"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l66" class="cont nick nick_prologic">
+
+<td class="time" id="i_221486"><a href="/sourcefu/2017-11-27#i_221486">02:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221486"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">makes sense</td>
+</tr>
+
+        
+<tr id="id_l67" class="cont nick nick_prologic">
+
+<td class="time" id="i_221487"><a href="/sourcefu/2017-11-27#i_221487">02:42</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221487"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">basically the way I share passwords between me and my wife over <abbr title="GNU Privacy Guard">GPG</abbr></td>
+</tr>
+
+        
+<tr id="id_l68" class="new nick nick_bear dark">
+
+<td class="time" id="i_221488"><a href="/sourcefu/2017-11-27#i_221488">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221488"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yep</td>
+</tr>
+
+        
+<tr id="id_l69" class="new nick nick_prologic">
+
+<td class="time" id="i_221489"><a href="/sourcefu/2017-11-27#i_221489">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221489"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I actually have to encrypt the data twice</td>
+</tr>
+
+        
+<tr id="id_l70" class="cont nick nick_prologic">
+
+<td class="time" id="i_221490"><a href="/sourcefu/2017-11-27#i_221490">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221490"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">once for her pub key and once or mine</td>
+</tr>
+
+        
+<tr id="id_l71" class="new nick nick_bear dark">
+
+<td class="time" id="i_221491"><a href="/sourcefu/2017-11-27#i_221491">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221491"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">right - stock <abbr title="GNU Privacy Guard">GPG</abbr> multi-party stuff</td>
+</tr>
+
+        
+<tr id="id_l72" class="new nick nick_prologic">
+
+<td class="time" id="i_221492"><a href="/sourcefu/2017-11-27#i_221492">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221492"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">it would become computationally expensive as the channel member list grows</td>
+</tr>
+
+        
+<tr id="id_l73" class="cont nick nick_prologic">
+
+<td class="time" id="i_221493"><a href="/sourcefu/2017-11-27#i_221493">02:43</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221493"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">which is the only downside</td>
+</tr>
+
+        
+<tr id="id_l74" class="new nick nick_bear dark">
+
+<td class="time" id="i_221494"><a href="/sourcefu/2017-11-27#i_221494">02:44</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221494"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">I don't see this level of security being used for large channels</td>
+</tr>
+
+        
+<tr id="id_l75" class="cont nick nick_bear dark">
+
+<td class="time" id="i_221495"><a href="/sourcefu/2017-11-27#i_221495">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221495"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">I would see these types of channels: public, private, secure</td>
+</tr>
+
+        
+<tr id="id_l76" class="new nick nick_prologic">
+
+<td class="time" id="i_221496"><a href="/sourcefu/2017-11-27#i_221496">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221496"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">me neither but still</td>
+</tr>
+
+        
+<tr id="id_l77" class="cont nick nick_prologic">
+
+<td class="time" id="i_221497"><a href="/sourcefu/2017-11-27#i_221497">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221497"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">yup</td>
+</tr>
+
+        
+<tr id="id_l78" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_221498"><a href="/sourcefu/2017-11-27#i_221498">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221498"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">I guess I don't see a problem with ircd being able to capture all exchanged messages. Isn't that like saying a newspaper is capturing all the words the reporter is writing? Isn't it ircd's job to publish words out to readers?</td>
+</tr>
+
+        
+<tr id="id_l79" class="new nick nick_bear">
+
+<td class="time" id="i_221499"><a href="/sourcefu/2017-11-27#i_221499">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221499"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">public -- no encryption; private -- server provided channel key; secure -- what were describing above</td>
+</tr>
+
+        
+<tr id="id_l80" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221500"><a href="/sourcefu/2017-11-27#i_221500">02:45</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221500"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin no :)</td>
+</tr>
+
+        
+<tr id="id_l81" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221501"><a href="/sourcefu/2017-11-27#i_221501">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221501"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">what we're talking about here is another level of privacy</td>
+</tr>
+
+        
+<tr id="id_l82" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221502"><a href="/sourcefu/2017-11-27#i_221502">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221502"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and the ircd just being a great platform for exchange</td>
+</tr>
+
+        
+<tr id="id_l83" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221503"><a href="/sourcefu/2017-11-27#i_221503">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221503"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">i.e: the transport</td>
+</tr>
+
+        
+<tr id="id_l84" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221504"><a href="/sourcefu/2017-11-27#i_221504">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221504"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">it should not care nor see what clients are exchanging</td>
+</tr>
+
+        
+<tr id="id_l85" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221505"><a href="/sourcefu/2017-11-27#i_221505">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221505"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Ok, I guess I'm interested in exchanging ideas. What you call &quot;public&quot;.</td>
+</tr>
+
+        
+<tr id="id_l86" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221506"><a href="/sourcefu/2017-11-27#i_221506">02:46</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221506"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">public is fine</td>
+</tr>
+
+        
+<tr id="id_l87" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221507"><a href="/sourcefu/2017-11-27#i_221507">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221507"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">private/secret channels too</td>
+</tr>
+
+        
+<tr id="id_l88" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221508"><a href="/sourcefu/2017-11-27#i_221508">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221508"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">already supproted by Eris quite well</td>
+</tr>
+
+        
+<tr id="id_l89" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221509"><a href="/sourcefu/2017-11-27#i_221509">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221509"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">as well as Secure vs. non-Secure client transports</td>
+</tr>
+
+        
+<tr id="id_l90" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221510"><a href="/sourcefu/2017-11-27#i_221510">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221510"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but I want to take Eris to a level of privacy/security where the server cannot possibly ever see or know what is being exchanged between clients</td>
+</tr>
+
+        
+<tr id="id_l91" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221511"><a href="/sourcefu/2017-11-27#i_221511">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221511"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">XMPP has some sort of &quot;off the record&quot; (OTR) mode.</td>
+</tr>
+
+        
+<tr id="id_l92" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221512"><a href="/sourcefu/2017-11-27#i_221512">02:47</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221512"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">we call this &quot;e2e secure&quot;</td>
+</tr>
+
+        
+<tr id="id_l93" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221513"><a href="/sourcefu/2017-11-27#i_221513">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221513"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">yup</td>
+</tr>
+
+        
+<tr id="id_l94" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221514"><a href="/sourcefu/2017-11-27#i_221514">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221514"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that's what we're talking about :)</td>
+</tr>
+
+        
+<tr id="id_l95" class="new nick nick_bear">
+
+<td class="time" id="i_221515"><a href="/sourcefu/2017-11-27#i_221515">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221515"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yea, OTR is what we were discussing above</td>
+</tr>
+
+        
+<tr id="id_l96" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221516"><a href="/sourcefu/2017-11-27#i_221516">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221516"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bringing some form of OTR to <abbr title="Internet Relay Chat">IRC</abbr></td>
+</tr>
+
+        
+<tr id="id_l97" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221517"><a href="/sourcefu/2017-11-27#i_221517">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221517"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">whether it's <abbr title="GNU Privacy Guard">GPG</abbr>-multi-party stuff</td>
+</tr>
+
+        
+<tr id="id_l98" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221518"><a href="/sourcefu/2017-11-27#i_221518">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221518"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">Signal</td>
+</tr>
+
+        
+<tr id="id_l99" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221519"><a href="/sourcefu/2017-11-27#i_221519">02:48</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221519"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">or something ismilar</td>
+</tr>
+
+        
+<tr id="id_l100" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221520"><a href="/sourcefu/2017-11-27#i_221520">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221520"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">Most of the time, when people use OTR with me, I think, &quot;Is this really necessary?&quot;</td>
+</tr>
+
+        
+<tr id="id_l101" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221521"><a href="/sourcefu/2017-11-27#i_221521">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221521"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">since we're on the topic</td>
+</tr>
+
+        
+<tr id="id_l102" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221522"><a href="/sourcefu/2017-11-27#i_221522">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221522"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">what I've seen some folkd do in the wold</td>
+</tr>
+
+        
+<tr id="id_l103" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221523"><a href="/sourcefu/2017-11-27#i_221523">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221523"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">is use fish encryption</td>
+</tr>
+
+        
+<tr id="id_l104" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221524"><a href="/sourcefu/2017-11-27#i_221524">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221524"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and somehow store the key used for enc/dec in teh channel</td>
+</tr>
+
+        
+<tr id="id_l105" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221525"><a href="/sourcefu/2017-11-27#i_221525">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221525"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">not sure how on that part though</td>
+</tr>
+
+        
+<tr id="id_l106" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221526"><a href="/sourcefu/2017-11-27#i_221526">02:49</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221526"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">anyone familiar?</td>
+</tr>
+
+        
+<tr id="id_l107" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221527"><a href="/sourcefu/2017-11-27#i_221527">02:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221527"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but this is vulnerable since the key is not asymetric and can be used for both dec and enc</td>
+</tr>
+
+        
+<tr id="id_l108" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221528"><a href="/sourcefu/2017-11-27#i_221528">02:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221528"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">(I think that's the right terminology)</td>
+</tr>
+
+        
+<tr id="id_l109" class="new nick nick_bear">
+
+<td class="time" id="i_221529"><a href="/sourcefu/2017-11-27#i_221529">02:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221529"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">that's something I could see eris doing is to allow semi-private channels by having discovery of the key</td>
+</tr>
+
+        
+<tr id="id_l110" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_221530"><a href="/sourcefu/2017-11-27#i_221530">02:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221530"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">codex is the security guy</td>
+</tr>
+
+        
+<tr id="id_l111" class="new nick nick_bear">
+
+<td class="time" id="i_221531"><a href="/sourcefu/2017-11-27#i_221531">02:50</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221531"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">well, that can be solved by having that key only be used for the knock - after the auth is done the server would generate a session key</td>
+</tr>
+
+        
+<tr id="id_l112" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221532"><a href="/sourcefu/2017-11-27#i_221532">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221532"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear like +p meaning something semi-secure in encryptiuon terms?</td>
+</tr>
+
+        
+<tr id="id_l113" class="new nick nick_bear">
+
+<td class="time" id="i_221533"><a href="/sourcefu/2017-11-27#i_221533">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221533"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">but yea, we are getting into the nuts and bolts where I am not comfortable being authoritative</td>
+</tr>
+
+        
+<tr id="id_l114" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221534"><a href="/sourcefu/2017-11-27#i_221534">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221534"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">yeah</td>
+</tr>
+
+        
+<tr id="id_l115" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221535"><a href="/sourcefu/2017-11-27#i_221535">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221535"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">me neither tbh</td>
+</tr>
+
+        
+<tr id="id_l116" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221536"><a href="/sourcefu/2017-11-27#i_221536">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221536"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but I've been learning a lot about this stuff</td>
+</tr>
+
+        
+<tr id="id_l117" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221537"><a href="/sourcefu/2017-11-27#i_221537">02:51</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221537"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">big interest of mine lately</td>
+</tr>
+
+        
+<tr id="id_l118" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221538"><a href="/sourcefu/2017-11-27#i_221538">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221538"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I will very likely at least toy with some ideas</td>
+</tr>
+
+        
+<tr id="id_l119" class="new nick nick_bear">
+
+<td class="time" id="i_221539"><a href="/sourcefu/2017-11-27#i_221539">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221539"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yep</td>
+</tr>
+
+        
+<tr id="id_l120" class="cont nick nick_bear">
+
+<td class="time" id="i_221540"><a href="/sourcefu/2017-11-27#i_221540">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221540"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">get some sort of prototype implemented and have folks review it</td>
+</tr>
+
+        
+<tr id="id_l121" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221541"><a href="/sourcefu/2017-11-27#i_221541">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221541"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">meanwhile there was a debate earlier on in #ircv3 and #lobby on Mills about +s vs. +p for channels</td>
+</tr>
+
+        
+<tr id="id_l122" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221542"><a href="/sourcefu/2017-11-27#i_221542">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221542"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">+s (secure) +p (private)</td>
+</tr>
+
+        
+<tr id="id_l123" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221543"><a href="/sourcefu/2017-11-27#i_221543">02:52</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221543"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and whether or not Eris should implement either/or or both</td>
+</tr>
+
+        
+<tr id="id_l124" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221544"><a href="/sourcefu/2017-11-27#i_221544">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221544"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">right now it implements +p -- but it acts more like +s</td>
+</tr>
+
+        
+<tr id="id_l125" class="new nick nick_bear">
+
+<td class="time" id="i_221545"><a href="/sourcefu/2017-11-27#i_221545">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221545"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">why not both?</td>
+</tr>
+
+        
+<tr id="id_l126" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221546"><a href="/sourcefu/2017-11-27#i_221546">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221546"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I don't tbh see the point of supporting +p (private)</td>
+</tr>
+
+        
+<tr id="id_l127" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221547"><a href="/sourcefu/2017-11-27#i_221547">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221547"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">its a question of what one should do over the other</td>
+</tr>
+
+        
+<tr id="id_l128" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221548"><a href="/sourcefu/2017-11-27#i_221548">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221548"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">and what the right behaviors are</td>
+</tr>
+
+        
+<tr id="id_l129" class="new nick nick_bear">
+
+<td class="time" id="i_221549"><a href="/sourcefu/2017-11-27#i_221549">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221549"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">+p private is, IMO, an invisible channel that you have to be invited into</td>
+</tr>
+
+        
+<tr id="id_l130" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221550"><a href="/sourcefu/2017-11-27#i_221550">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221550"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">some ircds actually implement +p as a mdoe meaning &quot;no knocks allows&quot;</td>
+</tr>
+
+        
+<tr id="id_l131" class="new nick nick_bear">
+
+<td class="time" id="i_221551"><a href="/sourcefu/2017-11-27#i_221551">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221551"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">and only registered users would be allowed</td>
+</tr>
+
+        
+<tr id="id_l132" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221552"><a href="/sourcefu/2017-11-27#i_221552">02:53</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221552"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">freenode I think</td>
+</tr>
+
+        
+<tr id="id_l133" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221553"><a href="/sourcefu/2017-11-27#i_221553">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221553"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">hmm</td>
+</tr>
+
+        
+<tr id="id_l134" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221554"><a href="/sourcefu/2017-11-27#i_221554">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221554"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">not sure I agree completely</td>
+</tr>
+
+        
+<tr id="id_l135" class="new nick nick_bear">
+
+<td class="time" id="i_221555"><a href="/sourcefu/2017-11-27#i_221555">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221555"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l136" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221556"><a href="/sourcefu/2017-11-27#i_221556">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221556"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">since users get +r on conenction if authed</td>
+</tr>
+
+        
+<tr id="id_l137" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221557"><a href="/sourcefu/2017-11-27#i_221557">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221557"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so its naturelaly for a channel to have +R</td>
+</tr>
+
+        
+<tr id="id_l138" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221558"><a href="/sourcefu/2017-11-27#i_221558">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221558"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">(RegisteredOnly)</td>
+</tr>
+
+        
+<tr id="id_l139" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221559"><a href="/sourcefu/2017-11-27#i_221559">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221559"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so that makes +p useless (sort of)</td>
+</tr>
+
+        
+<tr id="id_l140" class="new nick nick_bear">
+
+<td class="time" id="i_221560"><a href="/sourcefu/2017-11-27#i_221560">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221560"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">ah - I was being imprecise</td>
+</tr>
+
+        
+<tr id="id_l141" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221561"><a href="/sourcefu/2017-11-27#i_221561">02:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221561"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l142" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221562"><a href="/sourcefu/2017-11-27#i_221562">02:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221562"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but something I want to sort out before a minor release (1.7)</td>
+</tr>
+
+        
+<tr id="id_l143" class="new nick nick_bear">
+
+<td class="time" id="i_221563"><a href="/sourcefu/2017-11-27#i_221563">02:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221563"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">I should have said &quot;users who are securely connected and have registered with the server&quot;</td>
+</tr>
+
+        
+<tr id="id_l144" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221564"><a href="/sourcefu/2017-11-27#i_221564">02:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221564"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">oh?</td>
+</tr>
+
+        
+<tr id="id_l145" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221565"><a href="/sourcefu/2017-11-27#i_221565">02:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221565"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">so +s (securet) means no-one can see the channel unless they are on it or a netop</td>
+</tr>
+
+        
+<tr id="id_l146" class="new nick nick_bear">
+
+<td class="time" id="i_221566"><a href="/sourcefu/2017-11-27#i_221566">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221566"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">right</td>
+</tr>
+
+        
+<tr id="id_l147" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221567"><a href="/sourcefu/2017-11-27#i_221567">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221567"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">+p (private) means only registered and securely connected users can see the channel?</td>
+</tr>
+
+        
+<tr id="id_l148" class="new nick nick_bear">
+
+<td class="time" id="i_221568"><a href="/sourcefu/2017-11-27#i_221568">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221568"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yes</td>
+</tr>
+
+        
+<tr id="id_l149" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221569"><a href="/sourcefu/2017-11-27#i_221569">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221569"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">ahhh ha!</td>
+</tr>
+
+        
+<tr id="id_l150" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221570"><a href="/sourcefu/2017-11-27#i_221570">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221570"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I like this idea</td>
+</tr>
+
+        
+<tr id="id_l151" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221571"><a href="/sourcefu/2017-11-27#i_221571">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221571"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">a lot</td>
+</tr>
+
+        
+<tr id="id_l152" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221572"><a href="/sourcefu/2017-11-27#i_221572">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221572"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">its actually in line with Eris's focus</td>
+</tr>
+
+        
+<tr id="id_l153" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221573"><a href="/sourcefu/2017-11-27#i_221573">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221573"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">nice one bear :)</td>
+</tr>
+
+        
+<tr id="id_l154" class="new nick nick_bear">
+
+<td class="time" id="i_221574"><a href="/sourcefu/2017-11-27#i_221574">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221574"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l155" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221575"><a href="/sourcefu/2017-11-27#i_221575">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221575"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">can you write this up in an issue and one of us can fix this mess? :)</td>
+</tr>
+
+        
+<tr id="id_l156" class="new nick nick_bear">
+
+<td class="time" id="i_221576"><a href="/sourcefu/2017-11-27#i_221576">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221576"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">i've had these thoughts in my brain for many years</td>
+</tr>
+
+        
+<tr id="id_l157" class="cont nick nick_bear">
+
+<td class="time" id="i_221577"><a href="/sourcefu/2017-11-27#i_221577">02:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221577"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">sure can</td>
+</tr>
+
+        
+<tr id="id_l158" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221578"><a href="/sourcefu/2017-11-27#i_221578">02:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221578"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">htank you :)</td>
+</tr>
+
+        
+<tr id="id_l159" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221579"><a href="/sourcefu/2017-11-27#i_221579">02:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221579"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">yeah apparently so have i :)</td>
+</tr>
+
+        
+<tr id="id_l160" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221580"><a href="/sourcefu/2017-11-27#i_221580">02:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221580"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">great minds ... :P</td>
+</tr>
+
+        
+<tr id="id_l161" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221581"><a href="/sourcefu/2017-11-27#i_221581">02:57</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221581"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">bear: please drop a link in here when you're done</td>
+</tr>
+
+        
+<tr id="id_l162" class="new nick nick_bear dark">
+
+<td class="time" id="i_221582"><a href="/sourcefu/2017-11-27#i_221582">02:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221582"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">yep</td>
+</tr>
+
+        
+<tr id="id_l163" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221583"><a href="/sourcefu/2017-11-27#i_221583">02:58</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221583"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">thanks</td>
+</tr>
+
+        
+<tr id="id_l164" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221584"><a href="/sourcefu/2017-11-27#i_221584">02:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221584"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">🙃</td>
+</tr>
+
+        
+<tr id="id_l165" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221585"><a href="/sourcefu/2017-11-27#i_221585">03:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221585"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg "><a href="https://grafana.mills.io/dashboard/db/eris?refresh=10s&amp;panelId=3&amp;fullscreen&amp;orgId=1" title="https://grafana.mills.io/dashboard/db/eris?refresh=10s&amp;panelId=3&amp;fullscreen&amp;orgId=1">https://grafana.mills.io/dashboard/db/eris?refresh=10s&amp;panelId=3&amp;fullscreen&amp;orgId=1</a></td>
+</tr>
+
+        
+<tr id="id_l166" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221586"><a href="/sourcefu/2017-11-27#i_221586">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221586"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">as it is right now there are 3 insecure users on the Mills network</td>
+</tr>
+
+        
+<tr id="id_l167" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221587"><a href="/sourcefu/2017-11-27#i_221587">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221587"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">although to be fair two of them are probably bots (which their networks are actually secure)</td>
+</tr>
+
+        
+<tr id="id_l168" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221588"><a href="/sourcefu/2017-11-27#i_221588">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221588"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">because they're on the same physical SW</td>
+</tr>
+
+        
+<tr id="id_l169" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221589"><a href="/sourcefu/2017-11-27#i_221589">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221589"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">the 3rd is actually pdurbin himself :P</td>
+</tr>
+
+        
+<tr id="id_l170" class="new nick nick_bear">
+
+<td class="time" id="i_221590"><a href="/sourcefu/2017-11-27#i_221590">03:01</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221590"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l171" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221591"><a href="/sourcefu/2017-11-27#i_221591">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221591"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">oh nope I'm wrong haha</td>
+</tr>
+
+        
+<tr id="id_l172" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221592"><a href="/sourcefu/2017-11-27#i_221592">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221592"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">the bots are connected securely</td>
+</tr>
+
+        
+<tr id="id_l173" class="new nick nick_bear">
+
+<td class="time" id="i_221593"><a href="/sourcefu/2017-11-27#i_221593">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221593"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg "><a href="https://github.com/prologic/eris/issues/35" title="https://github.com/prologic/eris/issues/35">https://github.com/prologic/eris/issues/35</a></td>
+</tr>
+
+        
+<tr id="id_l174" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221594"><a href="/sourcefu/2017-11-27#i_221594">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221594"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">its pdurbin kzisme and Hellson</td>
+</tr>
+
+        
+<tr id="id_l175" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221595"><a href="/sourcefu/2017-11-27#i_221595">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221595"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">haha</td>
+</tr>
+
+        
+<tr id="id_l176" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221596"><a href="/sourcefu/2017-11-27#i_221596">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221596"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">3 users that apparently don't care :)</td>
+</tr>
+
+        
+<tr id="id_l177" class="new nick nick_bear">
+
+<td class="time" id="i_221597"><a href="/sourcefu/2017-11-27#i_221597">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221597"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">afk for a bit, doing some chares</td>
+</tr>
+
+        
+<tr id="id_l178" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221598"><a href="/sourcefu/2017-11-27#i_221598">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221598"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear danke!</td>
+</tr>
+
+        
+<tr id="id_l179" class="new nick nick_bear">
+
+<td class="time" id="i_221599"><a href="/sourcefu/2017-11-27#i_221599">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221599"  /></td>
+<td class="nick nick2">bear</td>
+<td class="msg ">your very welcome</td>
+</tr>
+
+        
+<tr id="id_l180" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221600"><a href="/sourcefu/2017-11-27#i_221600">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221600"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">chores*</td>
+</tr>
+
+        
+<tr id="id_l181" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221601"><a href="/sourcefu/2017-11-27#i_221601">03:03</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221601"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">:)</td>
+</tr>
+
+        
+<tr id="id_l182" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221602"><a href="/sourcefu/2017-11-27#i_221602">03:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221602"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">I'm not planning on leaking any secrets on your <abbr title="Internet Relay Chat">IRC</abbr> network, prologic :)</td>
+</tr>
+
+        
+<tr id="id_l183" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221603"><a href="/sourcefu/2017-11-27#i_221603">03:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221603"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">:P</td>
+</tr>
+
+        
+<tr id="id_l184" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221604"><a href="/sourcefu/2017-11-27#i_221604">03:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221604"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">that's okay :)</td>
+</tr>
+
+        
+<tr id="id_l185" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221605"><a href="/sourcefu/2017-11-27#i_221605">03:04</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221605"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">but as bear just pointed out</td>
+</tr>
+
+        
+<tr id="id_l186" class="cont nick nick_prologic dark">
+
+<td class="time" id="i_221606"><a href="/sourcefu/2017-11-27#i_221606">03:05</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221606"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">you'll be restricted to &quot;public&quot; channels only ;)</td>
+</tr>
+
+        
+<tr id="id_l187" class="new nick nick_pdurbin">
+
+<td class="time" id="i_221607"><a href="/sourcefu/2017-11-27#i_221607">03:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221607"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">you can restrict me to the logged ones, once they're logged :)</td>
+</tr>
+
+        
+<tr id="id_l188" class="cont nick nick_pdurbin">
+
+<td class="time" id="i_221608"><a href="/sourcefu/2017-11-27#i_221608">03:12</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221608"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">‘I was just learning about open source, and then I’m like, “Wow, all of this can just be, like, taken away by, like, a large company?” And then I became an anarchist.’ <a href="https://trackchanges.postlight.com/jenn-schiffer-relates-to-developers-5075c696d7e5" title="https://trackchanges.postlight.com/jenn-schiffer-relates-to-developers-5075c696d7e5">https://trackchanges.postlight.com/jenn-schiffer-relates-to-developers-5075c696d7e5</a></td>
+</tr>
+
+        
+<tr id="id_l189" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221609"><a href="/sourcefu/2017-11-27#i_221609">03:25</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221609"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">pdurbin done deal :P</td>
+</tr>
+
+        
+<tr id="id_l190" class="new special">
+
+<td class="time" id="i_221610"><a href="/sourcefu/2017-11-27#i_221610">04:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221610"  /></td>
+<td class="nick"></td>
+<td class="msg ">kzisme joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l191" class="cont special">
+
+<td class="time" id="i_221611"><a href="/sourcefu/2017-11-27#i_221611">04:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221611"  /></td>
+<td class="nick"></td>
+<td class="msg ">kzisme joined #sourcefu</td>
+</tr>
+
+        
+<tr id="id_l192" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221618"><a href="/sourcefu/2017-11-27#i_221618">08:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221618"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">bear <a href="https://github.com/prologic/eris/pull/36" title="https://github.com/prologic/eris/pull/36">https://github.com/prologic/eris/pull/36</a></td>
+</tr>
+
+        
+<tr id="id_l193" class="new nick nick_aditsu">
+
+<td class="time" id="i_221629"><a href="/sourcefu/2017-11-27#i_221629">12:15</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221629"  /></td>
+<td class="nick nick5">aditsu</td>
+<td class="msg ">pdurbin: she, like, says &quot;like&quot;, like, way too much</td>
+</tr>
+
+        
+<tr id="id_l194" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_221630"><a href="/sourcefu/2017-11-27#i_221630">13:55</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221630"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">prologic: you're done with the <abbr title="Structured Query Language">SQL</abbr> backend already? Wow.</td>
+</tr>
+
+        
+<tr id="id_l195" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_221631"><a href="/sourcefu/2017-11-27#i_221631">13:56</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221631"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">aditsu: on the rare occasion that I transcribe part of a podcast, I take &quot;like&quot; and &quot;um&quot; out. :)</td>
+</tr>
+
+        
+<tr id="id_l196" class="new nick nick_aditsu">
+
+<td class="time" id="i_221632"><a href="/sourcefu/2017-11-27#i_221632">13:59</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221632"  /></td>
+<td class="nick nick5">aditsu</td>
+<td class="msg ">so you're saying you didn't transcribe that :p</td>
+</tr>
+
+        
+<tr id="id_l197" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_221633"><a href="/sourcefu/2017-11-27#i_221633">14:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221633"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">nope</td>
+</tr>
+
+        
+<tr id="id_l198" class="cont nick nick_pdurbin dark">
+
+<td class="time" id="i_221634"><a href="/sourcefu/2017-11-27#i_221634">14:00</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221634"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">good episode though</td>
+</tr>
+
+        
+<tr id="id_l199" class="new nick nick_codex">
+
+<td class="time" id="i_221734"><a href="/sourcefu/2017-11-27#i_221734">19:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221734"  /></td>
+<td class="nick nick4">codex</td>
+<td class="msg ">prologic: share passwords -- please please use lastpass (over sharing over gpg)</td>
+</tr>
+
+        
+<tr id="id_l200" class="cont nick nick_codex">
+
+<td class="time" id="i_221735"><a href="/sourcefu/2017-11-27#i_221735">19:20</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221735"  /></td>
+<td class="nick nick4">codex</td>
+<td class="msg ">prologic: assuming (re: encrypt irc) you are talking about something like this: <a href="https://github.com/flakes/mirc_fish_10" title="https://github.com/flakes/mirc_fish_10">https://github.com/flakes/mirc_fish_10</a></td>
+</tr>
+
+        
+<tr id="id_l201" class="cont nick nick_codex">
+
+<td class="time" id="i_221736"><a href="/sourcefu/2017-11-27#i_221736">19:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221736"  /></td>
+<td class="nick nick4">codex</td>
+<td class="msg ">The first question I would ask (and always do when someone says &quot;i want/need to encrypt&quot;) is -- who are you trying to protect against?</td>
+</tr>
+
+        
+<tr id="id_l202" class="cont nick nick_codex">
+
+<td class="time" id="i_221737"><a href="/sourcefu/2017-11-27#i_221737">19:21</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221737"  /></td>
+<td class="nick nick4">codex</td>
+<td class="msg ">prologic: (btw, follow up to github link above - <a href="http://ultrx.net/doc/fish/)" title="http://ultrx.net/doc/fish/)">http://ultrx.net/doc/fish/)</a></td>
+</tr>
+
+        
+<tr id="id_l203" class="new nick nick_prologic dark">
+
+<td class="time" id="i_221738"><a href="/sourcefu/2017-11-27#i_221738">20:54</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_221738"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">codex: umm wtf?! Begging me to use a SaaS is not cool — can you please elaborate on intent and context here?</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2017-11-26" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2017-11-28" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2017-11-27">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2017-11-27;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2017-11-27;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->

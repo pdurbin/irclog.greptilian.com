@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta name="description" content="IRC LOG for channel #sourcefu" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/style.css" title="Irclog Stylesheet" />
+    <link rel="shortcut icon" href="/moose1.ico" type="image/x-icon" />
+    <link rel="canonical" 
+        href="/sourcefu/2018-05-16" />
+    <title>IRC log for #sourcefu, 2018-05-16</title>
+
+
+<script type="text/javascript" src="/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="http://greptilian.com"><img style="float:right; border:none" src="/camelia.png" width="193" height="180"
+    alt="greptilian logo"/></a></p>
+    
+    <h1>IRC log for #sourcefu, 2018-05-16</h1>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+        <p><a href="/sourcefu/2018-05-15" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-17" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-16">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-16;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-16;summary=1">summary</a>
+    
+    
+
+</p>
+
+
+    <p>All times shown according to <abbr title="Coordinated Universal Time">UTC</abbr>.</p>
+<!--
+    
+    <div id="summary_container" />
+    
+-->
+
+    <form action="#" name="summary_form" id="summary_form">
+
+
+<!--
+<p style="display: none;" id="filter_toggle"></p>
+-->
+
+    <table id="log" style="clear:both">
+        <tr class="head">
+
+            <th width="19%">Time</th>
+            <th class="summary">S</th>
+            <th width="24%">Nick</th>
+            <th>Message</th>
+        </tr>
+        
+<tr id="id_l2" class="new nick nick_kzisme dark">
+
+<td class="time" id="i_230027"><a href="/sourcefu/2018-05-16#i_230027">05:37</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230027"  /></td>
+<td class="nick nick2">kzisme</td>
+<td class="msg ">I have never used `git stash` before.  If I currently have some code I want to maybe use later (80% working) but decided to go with another approach.  Would it be best to use `git stash` or just throw it in a branch?  (or something else?)</td>
+</tr>
+
+        
+<tr id="id_l3" class="new nick nick_prologic">
+
+<td class="time" id="i_230029"><a href="/sourcefu/2018-05-16#i_230029">07:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230029"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">kzisme use later?</td>
+</tr>
+
+        
+<tr id="id_l4" class="cont nick nick_prologic">
+
+<td class="time" id="i_230030"><a href="/sourcefu/2018-05-16#i_230030">07:17</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230030"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">commit it to a branch</td>
+</tr>
+
+        
+<tr id="id_l5" class="cont nick nick_prologic">
+
+<td class="time" id="i_230031"><a href="/sourcefu/2018-05-16#i_230031">07:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230031"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">git stash is useful for more &quot;temporary&quot; things</td>
+</tr>
+
+        
+<tr id="id_l6" class="cont nick nick_prologic">
+
+<td class="time" id="i_230032"><a href="/sourcefu/2018-05-16#i_230032">07:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230032"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">i.e: oh let me cleanup my working dir so I can do this other operaiton, then I'll git stahs pop, keep working then commit *that* chagne</td>
+</tr>
+
+        
+<tr id="id_l7" class="cont nick nick_prologic">
+
+<td class="time" id="i_230033"><a href="/sourcefu/2018-05-16#i_230033">07:18</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230033"  /></td>
+<td class="nick nick1">prologic</td>
+<td class="msg ">I don't use git stash or hg shelve that often tbh</td>
+</tr>
+
+        
+<tr id="id_l8" class="new nick nick_pdurbin dark">
+
+<td class="time" id="i_230036"><a href="/sourcefu/2018-05-16#i_230036">09:06</a></td>
+    <td class="summary"><input type="checkbox" class="summary_checkbox" name="in_summary_230036"  /></td>
+<td class="nick nick3">pdurbin</td>
+<td class="msg ">kzisme: in that case I'd probably commit it to a branch. That said, I do use `git stash` quite a bit. It's especially useful if you want to set aside the thing you're working on for a bit to work on an entirely different part of the code base.</td>
+</tr>
+
+        
+
+    </table>
+
+</form>
+
+        <p><a href="/sourcefu/2018-05-15" rel="prev">&larr; Previous
+    day</a> | 
+    <a href="/">Channels</a> |
+<a href="/sourcefu/">#sourcefu index</a> |
+<a href="/sourcefu/today">Today</a> |
+    
+<a href="/sourcefu/2018-05-17" rel="next">Next day &rarr;</a> |
+
+    <a href="/search.pl?channel=sourcefu">Search</a> |
+    <a href="http://www.google.com/search?q=site%3Airclog.greptilian.com+inurl%3Asourcefu">Google Search</a>
+| <a href="/text.pl?channel=sourcefu;date=2018-05-16">Plain-Text</a>
+    | <a href="/text.pl?channel=sourcefu;date=2018-05-16;reverse=1">plain, newest first</a > |
+    
+    <a href="/out.pl?channel=sourcefu;date=2018-05-16;summary=1">summary</a>
+    
+    
+
+</p>
+
+    <p> <a href="http://sourcefu.com">http://sourcefu.com</a>
+</p>
+
+
+    <div id="footer">
+    <p>Powered by <a href="https://github.com/pdurbin/philbot">philbot</a> (a fork of <a href="http://moritz.faui2k3.org/en/ilbot">ilbot</a>). Questions? Comments? Please <a href="https://github.com/pdurbin/philbot/issues">open an issue</a>.</p>
+</div>
+
+
+<script type="text/javascript" src="/nickfilter.js"></script>
+<script type="text/javascript" src="/summary.js"></script>
+<script type="text/javascript" src="/collapse.js"></script>
+</body>
+</html>
+<!--  -->
